@@ -1,0 +1,154 @@
+{
+  "input_files": 32,
+  "all_hashes_verified": true,
+  "independent_downloads_verified": true,
+  "derivedage_rows": 1866,
+  "unicodedata_rows": 41341,
+  "assigned_expanded_count": 312389,
+  "emoji_data_rows": 1243,
+  "emoji_test_data_lines": 5244,
+  "emoji_test_parse_errors": [],
+  "fully_qualified_rows": 3963,
+  "audit_counts": {
+    "E0.6/atomic": {
+      "raw": 698,
+      "families": 698
+    },
+    "E0.7/atomic": {
+      "raw": 139,
+      "families": 139
+    },
+    "E1.0/atomic": {
+      "raw": 170,
+      "families": 170
+    },
+    "E11.0/atomic": {
+      "raw": 64,
+      "families": 64
+    },
+    "E11.0/zwj": {
+      "raw": 73,
+      "families": 13
+    },
+    "E12.0/atomic": {
+      "raw": 61,
+      "families": 61
+    },
+    "E12.0/zwj": {
+      "raw": 129,
+      "families": 17
+    },
+    "E12.1/zwj": {
+      "raw": 168,
+      "families": 26
+    },
+    "E13.0/atomic": {
+      "raw": 56,
+      "families": 56
+    },
+    "E13.0/zwj": {
+      "raw": 51,
+      "families": 11
+    },
+    "E13.1/zwj": {
+      "raw": 207,
+      "families": 15
+    },
+    "E14.0/atomic": {
+      "raw": 37,
+      "families": 37
+    },
+    "E14.0/zwj": {
+      "raw": 20,
+      "families": 1
+    },
+    "E15.0/atomic": {
+      "raw": 20,
+      "families": 20
+    },
+    "E15.0/zwj": {
+      "raw": 1,
+      "families": 1
+    },
+    "E15.1/zwj": {
+      "raw": 118,
+      "families": 28
+    },
+    "E16.0/atomic": {
+      "raw": 7,
+      "families": 7
+    },
+    "E17.0/atomic": {
+      "raw": 7,
+      "families": 7
+    },
+    "E17.0/zwj": {
+      "raw": 146,
+      "families": 11
+    },
+    "E18.0/atomic": {
+      "raw": 9,
+      "families": 9
+    },
+    "E2.0/atomic": {
+      "raw": 1,
+      "families": 1
+    },
+    "E2.0/zwj": {
+      "raw": 22,
+      "families": 22
+    },
+    "E3.0/atomic": {
+      "raw": 72,
+      "families": 72
+    },
+    "E4.0/atomic": {
+      "raw": 3,
+      "families": 3
+    },
+    "E4.0/zwj": {
+      "raw": 579,
+      "families": 117
+    },
+    "E5.0/atomic": {
+      "raw": 56,
+      "families": 56
+    },
+    "E5.0/zwj": {
+      "raw": 100,
+      "families": 20
+    }
+  },
+  "cldr_annotation_rows": 3952,
+  "frequency_rows_mapped": 1454,
+  "unicode_release_dates": {
+    "13.0": "2020-03-10",
+    "14.0": "2021-09-14",
+    "15.0": "2022-09-13",
+    "15.1": "2023-09-12",
+    "16.0": "2024-09-10",
+    "17.0": "2025-09-09",
+    "18.0": "2026-09-16"
+  },
+  "emoji_dates_source": "pinned tr51.html Emoji Versions table",
+  "emoji_dates": {
+    "E0.6": "2010-10-11",
+    "E0.7": "2014-06-16",
+    "E1.0": "2015-06-09",
+    "E2.0": "2015-11-12",
+    "E3.0": "2016-06-03",
+    "E4.0": "2016-11-22",
+    "E5.0": "2017-06-20",
+    "E11.0": "2018-05-21",
+    "E12.0": "2019-03-05",
+    "E12.1": "2019-10-21",
+    "E13.0": "2020-03-10",
+    "E13.1": "2020-09-15",
+    "E14.0": "2021-09-14",
+    "E15.0": "2022-09-13",
+    "E15.1": "2023-09-12",
+    "E16.0": "2024-09-10",
+    "E17.0": "2025-09-09",
+    "E18.0": "2026-09-15"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "seed": 20261125,
+  "copy_count": 182,
+  "copy_roles": {
+    "new_emoji": 62,
+    "old_emoji_control": 32,
+    "new_nonemoji": 32,
+    "old_nonemoji_control": 32,
+    "ascii_control": 24
+  },
+  "new_emoji_counts": {
+    "E15.1/zwj_emoji": 28,
+    "E16.0/atomic_emoji": 7,
+    "E17.0/atomic_emoji": 7,
+    "E17.0/zwj_emoji": 11,
+    "E18.0/atomic_emoji": 9
+  },
+  "new_nonemoji_counts": {
+    "15.1/atomic_nonemoji": 4,
+    "16.0/atomic_nonemoji": 4,
+    "17.0/atomic_nonemoji": 4,
+    "18.0/atomic_nonemoji": 4,
+    "15.1/complex_nonemoji": 4,
+    "16.0/complex_nonemoji": 4,
+    "17.0/complex_nonemoji": 4,
+    "18.0/complex_nonemoji": 4
+  },
+  "emoji_matching": {
+    "atomic_reference_rule": "stratified random quotas 5/5/6 from E16/E17/E18",
+    "zwj_reference_rule": "stratified random quotas 11/5 from E15.1/E17, then deterministic fallback over remaining new items",
+    "atomic_unmatched": [],
+    "zwj_unmatched": []
+  },
+  "nonemoji_matching": {
+    "atomic_unmatched": [],
+    "complex_unmatched": []
+  },
+  "decomp_unmatched": [],
+  "count_candidates": {
+    "new": 78,
+    "legacy": 240
+  },
+  "strict_atomic_e16_e18_age_mismatches": []
+}

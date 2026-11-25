@@ -1,0 +1,17 @@
+{
+  "host_python_version": "3.12.13",
+  "host_unicodedata_version": "15.0.0",
+  "input": "results/scan_units.jsonl",
+  "native_backend_id_mismatches": {
+    "gemma3-1b-it-mirror": 0,
+    "llama2-7b-hf-mirror": 0,
+    "qwen2.5-0.5b-instruct": 0,
+    "qwen3-0.6b": 0,
+    "tinyllama-1.1b-chat": 0
+  },
+  "normalization_unicodedata_version": "18.0.0",
+  "output": "results/tokenizer_scan.jsonl",
+  "rows": 2315,
+  "sentencepiece_library_version": "0.2.3",
+  "tokenizers_library_version": "0.23.3"
+}

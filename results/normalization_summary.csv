@@ -1,0 +1,6 @@
+tokenizer_id,family,n,canonical_distinct_count,token_id_divergence_rate,nfc_roundtrip_exact_rate,nfd_roundtrip_exact_rate,mean_nfc_minus_nfd_token_count
+gemma3-1b-it-mirror,Gemma,5,5,1.0,1.0,1.0,-1.6
+llama2-7b-hf-mirror,Llama,5,5,1.0,1.0,1.0,-3.4
+qwen2.5-0.5b-instruct,Qwen,5,5,0.0,1.0,0.0,0.0
+qwen3-0.6b,Qwen,5,5,0.0,1.0,0.0,0.0
+tinyllama-1.1b-chat,Llama,5,5,1.0,1.0,1.0,-3.4

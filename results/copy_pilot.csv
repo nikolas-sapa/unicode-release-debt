@@ -1,0 +1,183 @@
+item_id,copy_role,item_type,name,text,utf8_bytes,plane_mix,codepoint_count,grapheme_clusters,complexity,primary_release_version,primary_release_date,emoji_version,frequency_row,matched_new_name
+copy-001,new_emoji,zwj_emoji,broken chain,⛓️‍💥,13,supplementary,4,1,3,E15.1,2023-09-12,E15.1,,
+copy-002,new_emoji,zwj_emoji,brown mushroom,🍄‍🟫,11,supplementary,3,1,2,E15.1,2023-09-12,E15.1,,
+copy-003,new_emoji,zwj_emoji,lime,🍋‍🟩,11,supplementary,3,1,2,E15.1,2023-09-12,E15.1,,
+copy-004,new_emoji,zwj_emoji,woman running facing right,🏃‍♀️‍➡️,22,supplementary,7,1,6,E15.1,2023-09-12,E15.1,,
+copy-005,new_emoji,zwj_emoji,man running facing right,🏃‍♂️‍➡️,22,supplementary,7,1,6,E15.1,2023-09-12,E15.1,,
+copy-006,new_emoji,zwj_emoji,person running facing right,🏃‍➡️,13,supplementary,4,1,3,E15.1,2023-09-12,E15.1,,
+copy-007,new_emoji,zwj_emoji,phoenix,🐦‍🔥,11,supplementary,3,1,2,E15.1,2023-09-12,E15.1,,
+copy-008,new_emoji,zwj_emoji,man with white cane facing right,👨‍🦯‍➡️,20,supplementary,6,1,5,E15.1,2023-09-12,E15.1,,
+copy-009,new_emoji,zwj_emoji,man in motorized wheelchair facing right,👨‍🦼‍➡️,20,supplementary,6,1,5,E15.1,2023-09-12,E15.1,,
+copy-010,new_emoji,zwj_emoji,man in manual wheelchair facing right,👨‍🦽‍➡️,20,supplementary,6,1,5,E15.1,2023-09-12,E15.1,,
+copy-011,new_emoji,zwj_emoji,woman with white cane facing right,👩‍🦯‍➡️,20,supplementary,6,1,5,E15.1,2023-09-12,E15.1,,
+copy-012,new_emoji,zwj_emoji,woman in motorized wheelchair facing right,👩‍🦼‍➡️,20,supplementary,6,1,5,E15.1,2023-09-12,E15.1,,
+copy-013,new_emoji,zwj_emoji,woman in manual wheelchair facing right,👩‍🦽‍➡️,20,supplementary,6,1,5,E15.1,2023-09-12,E15.1,,
+copy-014,new_emoji,zwj_emoji,head shaking horizontally,🙂‍↔️,13,supplementary,4,1,3,E15.1,2023-09-12,E15.1,,
+copy-015,new_emoji,zwj_emoji,head shaking vertically,🙂‍↕️,13,supplementary,4,1,3,E15.1,2023-09-12,E15.1,,
+copy-016,new_emoji,zwj_emoji,woman walking facing right,🚶‍♀️‍➡️,22,supplementary,7,1,6,E15.1,2023-09-12,E15.1,,
+copy-017,new_emoji,zwj_emoji,man walking facing right,🚶‍♂️‍➡️,22,supplementary,7,1,6,E15.1,2023-09-12,E15.1,,
+copy-018,new_emoji,zwj_emoji,person walking facing right,🚶‍➡️,13,supplementary,4,1,3,E15.1,2023-09-12,E15.1,,
+copy-019,new_emoji,zwj_emoji,woman kneeling facing right,🧎‍♀️‍➡️,22,supplementary,7,1,6,E15.1,2023-09-12,E15.1,,
+copy-020,new_emoji,zwj_emoji,man kneeling facing right,🧎‍♂️‍➡️,22,supplementary,7,1,6,E15.1,2023-09-12,E15.1,,
+copy-021,new_emoji,zwj_emoji,person kneeling facing right,🧎‍➡️,13,supplementary,4,1,3,E15.1,2023-09-12,E15.1,,
+copy-022,new_emoji,zwj_emoji,person with white cane facing right,🧑‍🦯‍➡️,20,supplementary,6,1,5,E15.1,2023-09-12,E15.1,,
+copy-023,new_emoji,zwj_emoji,person in motorized wheelchair facing right,🧑‍🦼‍➡️,20,supplementary,6,1,5,E15.1,2023-09-12,E15.1,,
+copy-024,new_emoji,zwj_emoji,person in manual wheelchair facing right,🧑‍🦽‍➡️,20,supplementary,6,1,5,E15.1,2023-09-12,E15.1,,
+copy-025,new_emoji,zwj_emoji,"family: adult, adult, child",🧑‍🧑‍🧒,18,supplementary,5,1,3,E15.1,2023-09-12,E15.1,,
+copy-026,new_emoji,zwj_emoji,"family: adult, adult, child, child",🧑‍🧑‍🧒‍🧒,25,supplementary,7,1,4,E15.1,2023-09-12,E15.1,,
+copy-027,new_emoji,zwj_emoji,"family: adult, child",🧑‍🧒,11,supplementary,3,1,2,E15.1,2023-09-12,E15.1,,
+copy-028,new_emoji,zwj_emoji,"family: adult, child, child",🧑‍🧒‍🧒,18,supplementary,5,1,3,E15.1,2023-09-12,E15.1,,
+copy-029,new_emoji,atomic_emoji,harp,🪉,4,supplementary,1,1,0,16.0,2024-09-10,E16.0,,
+copy-030,new_emoji,atomic_emoji,shovel,🪏,4,supplementary,1,1,0,16.0,2024-09-10,E16.0,,
+copy-031,new_emoji,atomic_emoji,leafless tree,🪾,4,supplementary,1,1,0,16.0,2024-09-10,E16.0,,
+copy-032,new_emoji,atomic_emoji,fingerprint,🫆,4,supplementary,1,1,0,16.0,2024-09-10,E16.0,,
+copy-033,new_emoji,atomic_emoji,root vegetable,🫜,4,supplementary,1,1,0,16.0,2024-09-10,E16.0,,
+copy-034,new_emoji,atomic_emoji,splatter,🫟,4,supplementary,1,1,0,16.0,2024-09-10,E16.0,,
+copy-035,new_emoji,atomic_emoji,face with bags under eyes,🫩,4,supplementary,1,1,0,16.0,2024-09-10,E16.0,,
+copy-036,new_emoji,atomic_emoji,landslide,🛘,4,supplementary,1,1,0,17.0,2025-09-09,E17.0,,
+copy-037,new_emoji,atomic_emoji,trombone,🪊,4,supplementary,1,1,0,17.0,2025-09-09,E17.0,,
+copy-038,new_emoji,atomic_emoji,treasure chest,🪎,4,supplementary,1,1,0,17.0,2025-09-09,E17.0,,
+copy-039,new_emoji,atomic_emoji,hairy creature,🫈,4,supplementary,1,1,0,17.0,2025-09-09,E17.0,,
+copy-040,new_emoji,atomic_emoji,orca,🫍,4,supplementary,1,1,0,17.0,2025-09-09,E17.0,,
+copy-041,new_emoji,atomic_emoji,distorted face,🫪,4,supplementary,1,1,0,17.0,2025-09-09,E17.0,,
+copy-042,new_emoji,atomic_emoji,fight cloud,🫯,4,supplementary,1,1,0,17.0,2025-09-09,E17.0,,
+copy-043,new_emoji,zwj_emoji,"men with bunny ears: light skin tone, medium-light skin tone",👨🏻‍🐰‍👨🏼,26,supplementary,7,1,5,E17.0,2025-09-09,E17.0,,
+copy-044,new_emoji,zwj_emoji,"men wrestling: light skin tone, medium-light skin tone",👨🏻‍🫯‍👨🏼,26,supplementary,7,1,5,E17.0,2025-09-09,E17.0,,
+copy-045,new_emoji,zwj_emoji,"women with bunny ears: light skin tone, medium-light skin tone",👩🏻‍🐰‍👩🏼,26,supplementary,7,1,5,E17.0,2025-09-09,E17.0,,
+copy-046,new_emoji,zwj_emoji,"women wrestling: light skin tone, medium-light skin tone",👩🏻‍🫯‍👩🏼,26,supplementary,7,1,5,E17.0,2025-09-09,E17.0,,
+copy-047,new_emoji,zwj_emoji,women with bunny ears: light skin tone,👯🏻‍♀️,17,supplementary,5,1,4,E17.0,2025-09-09,E17.0,,
+copy-048,new_emoji,zwj_emoji,men with bunny ears: light skin tone,👯🏻‍♂️,17,supplementary,5,1,4,E17.0,2025-09-09,E17.0,,
+copy-049,new_emoji,zwj_emoji,women wrestling: light skin tone,🤼🏻‍♀️,17,supplementary,5,1,4,E17.0,2025-09-09,E17.0,,
+copy-050,new_emoji,zwj_emoji,men wrestling: light skin tone,🤼🏻‍♂️,17,supplementary,5,1,4,E17.0,2025-09-09,E17.0,,
+copy-051,new_emoji,zwj_emoji,"people with bunny ears: light skin tone, medium-light skin tone",🧑🏻‍🐰‍🧑🏼,26,supplementary,7,1,5,E17.0,2025-09-09,E17.0,,
+copy-052,new_emoji,zwj_emoji,ballet dancer,🧑‍🩰,11,supplementary,3,1,2,E17.0,2025-09-09,E17.0,,
+copy-053,new_emoji,zwj_emoji,"people wrestling: light skin tone, medium-light skin tone",🧑🏻‍🫯‍🧑🏼,26,supplementary,7,1,5,E17.0,2025-09-09,E17.0,,
+copy-054,new_emoji,atomic_emoji,lighthouse,🛙,4,supplementary,1,1,0,18.0,2026-09-16,E18.0,,
+copy-055,new_emoji,atomic_emoji,meteor,🪋,4,supplementary,1,1,0,18.0,2026-09-16,E18.0,,
+copy-056,new_emoji,atomic_emoji,eraser,🪌,4,supplementary,1,1,0,18.0,2026-09-16,E18.0,,
+copy-057,new_emoji,atomic_emoji,net with handle,🪍,4,supplementary,1,1,0,18.0,2026-09-16,E18.0,,
+copy-058,new_emoji,atomic_emoji,monarch butterfly,🫌,4,supplementary,1,1,0,18.0,2026-09-16,E18.0,,
+copy-059,new_emoji,atomic_emoji,pickle,🫝,4,supplementary,1,1,0,18.0,2026-09-16,E18.0,,
+copy-060,new_emoji,atomic_emoji,cracking face,🫫,4,supplementary,1,1,0,18.0,2026-09-16,E18.0,,
+copy-061,new_emoji,atomic_emoji,leftwards thumb sign,🫹,4,supplementary,1,1,0,18.0,2026-09-16,E18.0,,
+copy-062,new_emoji,atomic_emoji,rightwards thumb sign,🫺,4,supplementary,1,1,0,18.0,2026-09-16,E18.0,,
+copy-063,old_emoji_control,atomic_emoji,hindu temple,🛕,4,supplementary,1,1,0,12.0,2019-03-05,E12.0,,harp
+copy-064,old_emoji_control,atomic_emoji,hut,🛖,4,supplementary,1,1,0,13.0,2020-03-10,E13.0,,leafless tree
+copy-065,old_emoji_control,atomic_emoji,elevator,🛗,4,supplementary,1,1,0,13.0,2020-03-10,E13.0,,fingerprint
+copy-066,old_emoji_control,atomic_emoji,wireless,🛜,4,supplementary,1,1,0,15.0,2022-09-13,E15.0,,root vegetable
+copy-067,old_emoji_control,atomic_emoji,playground slide,🛝,4,supplementary,1,1,0,14.0,2021-09-14,E14.0,,face with bags under eyes
+copy-068,old_emoji_control,atomic_emoji,wheel,🛞,4,supplementary,1,1,0,14.0,2021-09-14,E14.0,,landslide
+copy-069,old_emoji_control,atomic_emoji,ring buoy,🛟,4,supplementary,1,1,0,14.0,2021-09-14,E14.0,,trombone
+copy-070,old_emoji_control,atomic_emoji,skateboard,🛹,4,supplementary,1,1,0,11.0,2018-06-05,E11.0,,hairy creature
+copy-071,old_emoji_control,atomic_emoji,auto rickshaw,🛺,4,supplementary,1,1,0,12.0,2019-03-05,E12.0,,orca
+copy-072,old_emoji_control,atomic_emoji,pickup truck,🛻,4,supplementary,1,1,0,13.0,2020-03-10,E13.0,,distorted face
+copy-073,old_emoji_control,atomic_emoji,roller skate,🛼,4,supplementary,1,1,0,13.0,2020-03-10,E13.0,,lighthouse
+copy-074,old_emoji_control,atomic_emoji,orange circle,🟠,4,supplementary,1,1,0,12.0,2019-03-05,E12.0,,meteor
+copy-075,old_emoji_control,atomic_emoji,yellow circle,🟡,4,supplementary,1,1,0,12.0,2019-03-05,E12.0,,eraser
+copy-076,old_emoji_control,atomic_emoji,green circle,🟢,4,supplementary,1,1,0,12.0,2019-03-05,E12.0,,net with handle
+copy-077,old_emoji_control,atomic_emoji,purple circle,🟣,4,supplementary,1,1,0,12.0,2019-03-05,E12.0,,monarch butterfly
+copy-078,old_emoji_control,atomic_emoji,brown circle,🟤,4,supplementary,1,1,0,12.0,2019-03-05,E12.0,,leftwards thumb sign
+copy-079,old_emoji_control,zwj_emoji,service dog,🐕‍🦺,11,supplementary,3,1,2,E12.0,2019-03-05,E12.0,,brown mushroom
+copy-080,old_emoji_control,zwj_emoji,man feeding baby,👨‍🍼,11,supplementary,3,1,2,E13.0,2020-03-10,E13.0,,lime
+copy-081,old_emoji_control,zwj_emoji,man with white cane,👨‍🦯,11,supplementary,3,1,2,E12.0,2019-03-05,E12.0,,phoenix
+copy-082,old_emoji_control,zwj_emoji,"couple with heart: woman, man",👩‍❤️‍👨,20,supplementary,6,1,5,E2.0,2015-11-12,E2.0,14,woman with white cane facing right
+copy-083,old_emoji_control,zwj_emoji,heart on fire,❤️‍🔥,13,supplementary,4,1,3,E13.1,2020-09-15,E13.1,,person kneeling facing right
+copy-084,old_emoji_control,zwj_emoji,"couple with heart: man, man",👨‍❤️‍👨,20,supplementary,6,1,4,E2.0,2015-11-12,E2.0,12,person with white cane facing right
+copy-085,old_emoji_control,zwj_emoji,people holding hands,🧑‍🤝‍🧑,18,supplementary,5,1,3,E12.0,2019-03-05,E12.0,,"family: adult, adult, child"
+copy-086,old_emoji_control,zwj_emoji,"family: man, man, boy, boy",👨‍👨‍👦‍👦,25,supplementary,7,1,4,E2.0,2015-11-12,E2.0,14,"family: adult, adult, child, child"
+copy-087,old_emoji_control,zwj_emoji,man: red hair,👨‍🦰,11,supplementary,3,1,2,E11.0,2018-05-21,E11.0,,"family: adult, child"
+copy-088,old_emoji_control,zwj_emoji,"family: man, boy, boy",👨‍👦‍👦,18,supplementary,5,1,3,E4.0,2016-11-22,E4.0,15,"family: adult, child, child"
+copy-089,old_emoji_control,zwj_emoji,mending heart,❤️‍🩹,13,supplementary,4,1,3,E13.1,2020-09-15,E13.1,,broken chain
+copy-090,old_emoji_control,zwj_emoji,"men holding hands: light skin tone, medium-light skin tone",👨🏻‍🤝‍👨🏼,26,supplementary,7,1,5,E12.1,2019-10-21,E12.1,,"men wrestling: light skin tone, medium-light skin tone"
+copy-091,old_emoji_control,zwj_emoji,"men holding hands: medium-light skin tone, light skin tone",👨🏼‍🤝‍👨🏻,26,supplementary,7,1,5,E12.0,2019-03-05,E12.0,,"women wrestling: light skin tone, medium-light skin tone"
+copy-092,old_emoji_control,zwj_emoji,woman lifting weights: light skin tone,🏋🏻‍♀️,17,supplementary,5,1,4,E4.0,2016-11-22,E4.0,,women with bunny ears: light skin tone
+copy-093,old_emoji_control,zwj_emoji,"women holding hands: light skin tone, medium-light skin tone",👩🏻‍🤝‍👩🏼,26,supplementary,7,1,5,E12.1,2019-10-21,E12.1,,"people with bunny ears: light skin tone, medium-light skin tone"
+copy-094,old_emoji_control,zwj_emoji,"women holding hands: medium-light skin tone, light skin tone",👩🏼‍🤝‍👩🏻,26,supplementary,7,1,5,E12.0,2019-03-05,E12.0,,"people wrestling: light skin tone, medium-light skin tone"
+copy-095,new_nonemoji,atomic_nonemoji,CJK Ideograph Extension I,𮴾,4,supplementary,1,1,0,15.1,2023-09-12,,,
+copy-096,new_nonemoji,atomic_nonemoji,CJK Ideograph Extension I,𮳧,4,supplementary,1,1,0,15.1,2023-09-12,,,
+copy-097,new_nonemoji,atomic_nonemoji,CJK Ideograph Extension I,𮵫,4,supplementary,1,1,0,15.1,2023-09-12,,,
+copy-098,new_nonemoji,atomic_nonemoji,CJK Ideograph Extension I,𮵬,4,supplementary,1,1,0,15.1,2023-09-12,,,
+copy-099,new_nonemoji,atomic_nonemoji,EGYPTIAN HIEROGLYPH-13DD3,𓷓,4,supplementary,1,1,0,16.0,2024-09-10,,,
+copy-100,new_nonemoji,atomic_nonemoji,OL ONAL DIGIT FOUR,𞗵,4,supplementary,1,1,0,16.0,2024-09-10,,,
+copy-101,new_nonemoji,atomic_nonemoji,EGYPTIAN HIEROGLYPH-1418A,𔆊,4,supplementary,1,1,0,16.0,2024-09-10,,,
+copy-102,new_nonemoji,atomic_nonemoji,EGYPTIAN HIEROGLYPH-13FF8,𓿸,4,supplementary,1,1,0,16.0,2024-09-10,,,
+copy-103,new_nonemoji,atomic_nonemoji,CJK Ideograph Extension J,𲥐,4,supplementary,1,1,0,17.0,2025-09-09,,,
+copy-104,new_nonemoji,atomic_nonemoji,CJK Ideograph Extension J,𲽋,4,supplementary,1,1,0,17.0,2025-09-09,,,
+copy-105,new_nonemoji,atomic_nonemoji,CJK Ideograph Extension J,𳀓,4,supplementary,1,1,0,17.0,2025-09-09,,,
+copy-106,new_nonemoji,atomic_nonemoji,CJK Ideograph Extension J,𲡤,4,supplementary,1,1,0,17.0,2025-09-09,,,
+copy-107,new_nonemoji,atomic_nonemoji,Seal Character,𾣹,4,supplementary,1,1,0,18.0,2026-09-16,,,
+copy-108,new_nonemoji,atomic_nonemoji,Jurchen Character,𙄶,4,supplementary,1,1,0,18.0,2026-09-16,,,
+copy-109,new_nonemoji,atomic_nonemoji,Seal Character,𽆪,4,supplementary,1,1,0,18.0,2026-09-16,,,
+copy-110,new_nonemoji,atomic_nonemoji,Seal Character,𽅚,4,supplementary,1,1,0,18.0,2026-09-16,,,
+copy-111,new_nonemoji,complex_nonemoji,CJK Ideograph Extension I + COMBINING LEFT HARPOON ABOVE,𮴃⃐,7,supplementary,2,1,0,15.1,2023-09-12,,,
+copy-112,new_nonemoji,complex_nonemoji,CJK Ideograph Extension I + COMBINING LEFT HARPOON ABOVE,𮹑⃐,7,supplementary,2,1,0,15.1,2023-09-12,,,
+copy-113,new_nonemoji,complex_nonemoji,CJK Ideograph Extension I + COMBINING LEFT HARPOON ABOVE,𮵁⃐,7,supplementary,2,1,0,15.1,2023-09-12,,,
+copy-114,new_nonemoji,complex_nonemoji,CJK Ideograph Extension I + COMBINING LEFT HARPOON ABOVE,𮰃⃐,7,supplementary,2,1,0,15.1,2023-09-12,,,
+copy-115,new_nonemoji,complex_nonemoji,EGYPTIAN HIEROGLYPH-14242 + COMBINING LEFT HARPOON ABOVE,𔉂⃐,7,supplementary,2,1,0,16.0,2024-09-10,,,
+copy-116,new_nonemoji,complex_nonemoji,EGYPTIAN HIEROGLYPH-1374B + COMBINING LEFT HARPOON ABOVE,𓝋⃐,7,supplementary,2,1,0,16.0,2024-09-10,,,
+copy-117,new_nonemoji,complex_nonemoji,EGYPTIAN HIEROGLYPH-141AC + COMBINING LEFT HARPOON ABOVE,𔆬⃐,7,supplementary,2,1,0,16.0,2024-09-10,,,
+copy-118,new_nonemoji,complex_nonemoji,EGYPTIAN HIEROGLYPH-13841 + COMBINING LEFT HARPOON ABOVE,𓡁⃐,7,supplementary,2,1,0,16.0,2024-09-10,,,
+copy-119,new_nonemoji,complex_nonemoji,CJK Ideograph Extension J + COMBINING LEFT HARPOON ABOVE,𳀐⃐,7,supplementary,2,1,0,17.0,2025-09-09,,,
+copy-120,new_nonemoji,complex_nonemoji,CJK Ideograph Extension C + COMBINING LEFT HARPOON ABOVE,𫜼⃐,7,supplementary,2,1,0,17.0,2025-09-09,,,
+copy-121,new_nonemoji,complex_nonemoji,CJK Ideograph Extension J + COMBINING LEFT HARPOON ABOVE,𲡪⃐,7,supplementary,2,1,0,17.0,2025-09-09,,,
+copy-122,new_nonemoji,complex_nonemoji,CJK Ideograph Extension J + COMBINING LEFT HARPOON ABOVE,𲯃⃐,7,supplementary,2,1,0,17.0,2025-09-09,,,
+copy-123,new_nonemoji,complex_nonemoji,Seal Character + COMBINING LEFT HARPOON ABOVE,𾰫⃐,7,supplementary,2,1,0,18.0,2026-09-16,,,
+copy-124,new_nonemoji,complex_nonemoji,Seal Character + COMBINING LEFT HARPOON ABOVE,𿓔⃐,7,supplementary,2,1,0,18.0,2026-09-16,,,
+copy-125,new_nonemoji,complex_nonemoji,Seal Character + COMBINING LEFT HARPOON ABOVE,𾎅⃐,7,supplementary,2,1,0,18.0,2026-09-16,,,
+copy-126,new_nonemoji,complex_nonemoji,Seal Character + COMBINING LEFT HARPOON ABOVE,𿗛⃐,7,supplementary,2,1,0,18.0,2026-09-16,,,
+copy-127,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B008 A,𐀀,4,supplementary,1,1,0,4.0,2003-04,,,CJK Ideograph Extension I
+copy-128,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B038 E,𐀁,4,supplementary,1,1,0,4.0,2003-04,,,CJK Ideograph Extension I
+copy-129,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B028 I,𐀂,4,supplementary,1,1,0,4.0,2003-04,,,CJK Ideograph Extension I
+copy-130,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B061 O,𐀃,4,supplementary,1,1,0,4.0,2003-04,,,CJK Ideograph Extension I
+copy-131,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B010 U,𐀄,4,supplementary,1,1,0,4.0,2003-04,,,EGYPTIAN HIEROGLYPH-13DD3
+copy-132,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B001 DA,𐀅,4,supplementary,1,1,0,4.0,2003-04,,,OL ONAL DIGIT FOUR
+copy-133,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B045 DE,𐀆,4,supplementary,1,1,0,4.0,2003-04,,,EGYPTIAN HIEROGLYPH-1418A
+copy-134,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B007 DI,𐀇,4,supplementary,1,1,0,4.0,2003-04,,,EGYPTIAN HIEROGLYPH-13FF8
+copy-135,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B014 DO,𐀈,4,supplementary,1,1,0,4.0,2003-04,,,CJK Ideograph Extension J
+copy-136,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B051 DU,𐀉,4,supplementary,1,1,0,4.0,2003-04,,,CJK Ideograph Extension J
+copy-137,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B057 JA,𐀊,4,supplementary,1,1,0,4.0,2003-04,,,CJK Ideograph Extension J
+copy-138,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B046 JE,𐀋,4,supplementary,1,1,0,4.0,2003-04,,,CJK Ideograph Extension J
+copy-139,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B036 JO,𐀍,4,supplementary,1,1,0,4.0,2003-04,,,Seal Character
+copy-140,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B065 JU,𐀎,4,supplementary,1,1,0,4.0,2003-04,,,Jurchen Character
+copy-141,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B077 KA,𐀏,4,supplementary,1,1,0,4.0,2003-04,,,Seal Character
+copy-142,old_nonemoji_control,atomic_nonemoji,LINEAR B SYLLABLE B044 KE,𐀐,4,supplementary,1,1,0,4.0,2003-04,,,Seal Character
+copy-143,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B008 A + COMBINING LEFT HARPOON ABOVE,𐀀⃐,7,supplementary,2,1,0,4.0,2003-04,,,CJK Ideograph Extension I + COMBINING LEFT HARPOON ABOVE
+copy-144,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B038 E + COMBINING LEFT HARPOON ABOVE,𐀁⃐,7,supplementary,2,1,0,4.0,2003-04,,,CJK Ideograph Extension I + COMBINING LEFT HARPOON ABOVE
+copy-145,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B028 I + COMBINING LEFT HARPOON ABOVE,𐀂⃐,7,supplementary,2,1,0,4.0,2003-04,,,CJK Ideograph Extension I + COMBINING LEFT HARPOON ABOVE
+copy-146,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B061 O + COMBINING LEFT HARPOON ABOVE,𐀃⃐,7,supplementary,2,1,0,4.0,2003-04,,,CJK Ideograph Extension I + COMBINING LEFT HARPOON ABOVE
+copy-147,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B010 U + COMBINING LEFT HARPOON ABOVE,𐀄⃐,7,supplementary,2,1,0,4.0,2003-04,,,EGYPTIAN HIEROGLYPH-14242 + COMBINING LEFT HARPOON ABOVE
+copy-148,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B001 DA + COMBINING LEFT HARPOON ABOVE,𐀅⃐,7,supplementary,2,1,0,4.0,2003-04,,,EGYPTIAN HIEROGLYPH-1374B + COMBINING LEFT HARPOON ABOVE
+copy-149,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B045 DE + COMBINING LEFT HARPOON ABOVE,𐀆⃐,7,supplementary,2,1,0,4.0,2003-04,,,EGYPTIAN HIEROGLYPH-141AC + COMBINING LEFT HARPOON ABOVE
+copy-150,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B007 DI + COMBINING LEFT HARPOON ABOVE,𐀇⃐,7,supplementary,2,1,0,4.0,2003-04,,,EGYPTIAN HIEROGLYPH-13841 + COMBINING LEFT HARPOON ABOVE
+copy-151,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B014 DO + COMBINING LEFT HARPOON ABOVE,𐀈⃐,7,supplementary,2,1,0,4.0,2003-04,,,CJK Ideograph Extension J + COMBINING LEFT HARPOON ABOVE
+copy-152,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B051 DU + COMBINING LEFT HARPOON ABOVE,𐀉⃐,7,supplementary,2,1,0,4.0,2003-04,,,CJK Ideograph Extension C + COMBINING LEFT HARPOON ABOVE
+copy-153,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B057 JA + COMBINING LEFT HARPOON ABOVE,𐀊⃐,7,supplementary,2,1,0,4.0,2003-04,,,CJK Ideograph Extension J + COMBINING LEFT HARPOON ABOVE
+copy-154,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B046 JE + COMBINING LEFT HARPOON ABOVE,𐀋⃐,7,supplementary,2,1,0,4.0,2003-04,,,CJK Ideograph Extension J + COMBINING LEFT HARPOON ABOVE
+copy-155,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B036 JO + COMBINING LEFT HARPOON ABOVE,𐀍⃐,7,supplementary,2,1,0,4.0,2003-04,,,Seal Character + COMBINING LEFT HARPOON ABOVE
+copy-156,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B065 JU + COMBINING LEFT HARPOON ABOVE,𐀎⃐,7,supplementary,2,1,0,4.0,2003-04,,,Seal Character + COMBINING LEFT HARPOON ABOVE
+copy-157,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B077 KA + COMBINING LEFT HARPOON ABOVE,𐀏⃐,7,supplementary,2,1,0,4.0,2003-04,,,Seal Character + COMBINING LEFT HARPOON ABOVE
+copy-158,old_nonemoji_control,complex_nonemoji,LINEAR B SYLLABLE B044 KE + COMBINING LEFT HARPOON ABOVE,𐀐⃐,7,supplementary,2,1,0,4.0,2003-04,,,Seal Character + COMBINING LEFT HARPOON ABOVE
+copy-159,ascii_control,ascii_control,ASCII control,"(x.O,~^4z7/Kd~cw",16,bmp-only,16,16,0,ASCII,,,,
+copy-160,ascii_control,ascii_control,ASCII control,jOoG%UI01iE}FT05,16,bmp-only,16,16,0,ASCII,,,,
+copy-161,ascii_control,ascii_control,ASCII control,9 =hg*o/@v C9J.P,16,bmp-only,16,16,0,ASCII,,,,
+copy-162,ascii_control,ascii_control,ASCII control,"na2`;EFygO,g;eda",16,bmp-only,16,16,0,ASCII,,,,
+copy-163,ascii_control,ascii_control,ASCII control,-9#*ne]e[MyJ:T-V,16,bmp-only,16,16,0,ASCII,,,,
+copy-164,ascii_control,ascii_control,ASCII control,Qme~y7W`uA':P1+|,16,bmp-only,16,16,0,ASCII,,,,
+copy-165,ascii_control,ascii_control,ASCII control,"{pd`S,gY-4*v1u*X",16,bmp-only,16,16,0,ASCII,,,,
+copy-166,ascii_control,ascii_control,ASCII control,"%HS|,wF%%r#GOh|@",16,bmp-only,16,16,0,ASCII,,,,
+copy-167,ascii_control,ascii_control,ASCII control,Z.F!4WO4^/APcP7c,16,bmp-only,16,16,0,ASCII,,,,
+copy-168,ascii_control,ascii_control,ASCII control,p)t=H9_LkY$htb?N,16,bmp-only,16,16,0,ASCII,,,,
+copy-169,ascii_control,ascii_control,ASCII control,8VR[h/;lU;R}[yH#,16,bmp-only,16,16,0,ASCII,,,,
+copy-170,ascii_control,ascii_control,ASCII control,r_z1i*X_qn!~?9AY,16,bmp-only,16,16,0,ASCII,,,,
+copy-171,ascii_control,ascii_control,ASCII control,j[tCCQymlAQ9J$|;,16,bmp-only,16,16,0,ASCII,,,,
+copy-172,ascii_control,ascii_control,ASCII control,oM07U$ylJ-R&U3t[,16,bmp-only,16,16,0,ASCII,,,,
+copy-173,ascii_control,ascii_control,ASCII control,"(n,lgQ$'BbDUh^Gb",16,bmp-only,16,16,0,ASCII,,,,
+copy-174,ascii_control,ascii_control,ASCII control,":NB4#Ub/uhTm,^Q[",16,bmp-only,16,16,0,ASCII,,,,
+copy-175,ascii_control,ascii_control,ASCII control,k'f'Sm%2B]R7u^EX,16,bmp-only,16,16,0,ASCII,,,,
+copy-176,ascii_control,ascii_control,ASCII control,s8Cg?X_]TUwh2_x!,16,bmp-only,16,16,0,ASCII,,,,
+copy-177,ascii_control,ascii_control,ASCII control,JhG[Kq;|9F]]Fv#W,16,bmp-only,16,16,0,ASCII,,,,
+copy-178,ascii_control,ascii_control,ASCII control,4KF0T^-9obHRp_#),16,bmp-only,16,16,0,ASCII,,,,
+copy-179,ascii_control,ascii_control,ASCII control,)(]N*]9NIbUYN?!{,16,bmp-only,16,16,0,ASCII,,,,
+copy-180,ascii_control,ascii_control,ASCII control,x@7qR`dSXvS}Rvzi,16,bmp-only,16,16,0,ASCII,,,,
+copy-181,ascii_control,ascii_control,ASCII control,_1JY[Y4U?9Q?F3$M,16,bmp-only,16,16,0,ASCII,,,,
+copy-182,ascii_control,ascii_control,ASCII control,peU@GeK|'FAM4eVv,16,bmp-only,16,16,0,ASCII,,,,

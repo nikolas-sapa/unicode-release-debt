@@ -153,6 +153,8 @@ def normalization_summary(scan_rows):
         out.append({
             "tokenizer_id": tid, "family": family, "n": len(rows),
             "canonical_distinct_count": sum(x["nfc_nfd_canonical_distinct"] for x in rows),
+            "token_count_equal_rate": sum(x["nfc_nfd_token_count_difference"] == 0 for x in rows) / len(rows),
+            "token_count_pairing_fingerprint": "equal-counts" if all(x["nfc_nfd_token_count_difference"] == 0 for x in rows) else "divergent-counts",
             "token_id_divergence_rate": sum(x["nfc_nfd_token_ids_differ"] for x in rows) / len(rows),
             "nfc_roundtrip_exact_rate": sum(x["nfc_roundtrip_exact"] for x in rows) / len(rows),
             "nfd_roundtrip_exact_rate": sum(x["nfd_roundtrip_exact"] for x in rows) / len(rows),
@@ -194,6 +196,10 @@ def freeze_hashes():
 
 def write_report(verdict, bands, inventory, validation, norm_rows):
     ucd_audit = json.loads((RESULTS / "ucd_audit.json").read_text())
+    surface_collisions = ucd_audit.get("cross_version_zwj_surface_key_collisions", {})
+    e17_surface_collisions = sum("E17.0" in versions for versions in surface_collisions.values())
+    loc = {p.stem: len(p.read_text().splitlines()) for p in sorted((ROOT / "src").glob("*.py"))}
+    loc_detail = ", ".join(f"{k} {v}" for k, v in loc.items())
     lines = [
         "# Unicode release debt: tokenizer scan report", "",
         "Scope: Phase 0 plus tokenizer-scan portion of Phase 1. No model weights or behavioral inference were used. Tokenization uses no special tokens. SentencePiece artifacts are encoded with the native backend and cross-checked against raw `tokenizer.json`; Qwen uses raw `tokenizer.json` directly, never `transformers.AutoTokenizer`.", "",
@@ -202,7 +208,7 @@ def write_report(verdict, bands, inventory, validation, norm_rows):
         "- Audit counts reproduced: E15.1 ZWJ 28 surface families (118 raw), E17 ZWJ 11 (146 raw), strict atomic E16/E17/E18 = 7/7/9.",
         f"- Grapheme conformance: {validation['grapheme']['passed']}/{validation['grapheme']['total']} official tests ({validation['grapheme']['pass_rate']:.1%}), UAX #29 revision {validation['grapheme']['uax29_revision']} / Unicode {validation['grapheme']['unicode_version']} extended grapheme clusters, implementation `{validation['grapheme']['implementation']}`. A split-every-codepoint negative control fails {validation['grapheme']['broken_split_every_codepoint_failures']} cases, so the conformance check can fail.",
         "- Copy pilot: 182 byte-distinct items (62 new emoji, 32 old emoji controls, 32 new non-emoji, 32 old non-emoji controls, 24 ASCII). Structural base probes: 48 decomposition and 24 comparison; 36 count bundles per scanned tokenizer. Five canonical-form scan-only diagnostics were added for NFC/NFD behavior.",
-        f"- Tokenizer-scan completeness gate: {min(x['copy_metric_rate'] for x in verdict['tokenizer_metric_gates']):.1%} minimum over copy items and tokenizers (threshold 95%); native SentencePiece/fast-tokenizer ID agreement is {min(x['native_backend_agreement_rate'] for x in verdict['tokenizer_metric_gates']):.1%}.",
+        f"- Tokenizer-scan completeness gate: {min(x['copy_metric_rate'] for x in verdict['tokenizer_metric_gates']):.1%} minimum over copy items and tokenizers (threshold 95%); native SentencePiece/fast-tokenizer ID agreement is {min(x['native_backend_agreement_rate'] for x in verdict['tokenizer_metric_gates']):.1%}. The no-model-weights artifact gate passes.",
         f"- Host normalization versions are explicit: host Python {validation['host_python_version']} `unicodedata` {validation['host_unicodedata_version']}; canonical diagnostics use pinned `unicodedata2` {validation['normalization_unicodedata_version']}.", "",
         "## Tokenizer artifacts", "",
     ]
@@ -218,7 +224,7 @@ def write_report(verdict, bands, inventory, validation, norm_rows):
         newest_lines.append(f"{row['tokenizer_id']}: pipeline {row['pipeline_single_token_count']}/{row['families']}, exact-vocab {row['exact_vocab_entry_count']}/{row['families']}")
     lines.append("- " + "; ".join(newest_lines) + ".")
     lines += [
-        f"- Any newest-cohort emoji as one exact vocabulary entry in any scanned tokenizer: **{'yes' if verdict['any_newest_vocab_entry'] else 'no'}**. Any newest-cohort emoji as one token through the full pipeline: **{'yes' if verdict['any_newest_pipeline_single'] else 'no'}**. This strengthens rather than weakens the lexical-staleness mechanism, while byte fallback still makes encoding possible.",
+        f"- Any newest-cohort emoji as one exact vocabulary entry in any scanned tokenizer: **{'yes' if verdict['any_newest_vocab_entry'] else 'no'}**. Any newest-cohort emoji as one token through the full pipeline: **{'yes' if verdict['any_newest_pipeline_single'] else 'no'}**. This does not weaken the lexical-staleness mechanism, but absence is not proof of ignorance because byte fallback can still encode the sequences.",
         "", "## Proceed-rule 4 evidence", "",
         "Interpretation used: primary emoji bands from the spec, all RGI surface families pooled, monotone means non-increasing/non-decreasing with at least one strict adjacent change. Flat all-zero series are not counted as a coverage drop. Because atomic and ZWJ composition varies by release, atomic-only series are the cleaner sensitivity and are shown here.", "",
     ]
@@ -230,18 +236,18 @@ def write_report(verdict, bands, inventory, validation, norm_rows):
         lines.append(f"- {artifact['tokenizer_id']} ({artifact['family']}): pooled pipeline single-token coverage {fmt_series(seqrows)}; atomic pipeline coverage {fmt_series(atomicrows)}; atomic mean split-codepoint count {fmt_split_series(atomicrows)}; pooled signal={artifact['proceed_rule4_signal']}, atomic sensitivity signal={artifact['atomic_sensitivity_signal']}.")
     lines += [
         "",
-        f"**Verdict:** proceed-rule 4 {'FIRES' if verdict['proceed_rule4_fires'] else 'does not fire'} under the non-increasing/non-decreasing interpretation; firing families: {', '.join(verdict['firing_families']) or 'none'}. Gemma and Qwen are independent families. The atomic split prong also rises monotonically in Llama, but from 0.988 in legacy to 1.000 later, so it is near ceiling and is not treated as the primary evidence.",
+        f"**Verdict:** proceed-rule 4 {'FIRES' if verdict['proceed_rule4_fires'] else 'does not fire'} under the non-increasing/non-decreasing interpretation; firing families: {', '.join(verdict['firing_families']) or 'none'}. Even if near-ceiling Llama is discounted, Gemma and Qwen independently satisfy the two-family threshold. Llama's coverage drop is small in absolute terms (0.002 to zero) and its atomic split rise starts at 0.988, so it is ceiling-sensitive rather than primary evidence.",
         "", "## NFC/NFD tokenizer behavior", "",
     ]
     for row in norm_rows:
-        lines.append(f"- {row['tokenizer_id']}: token-ID divergence {row['token_id_divergence_rate']:.1%}, NFC round-trip {row['nfc_roundtrip_exact_rate']:.1%}, NFD round-trip {row['nfd_roundtrip_exact_rate']:.1%} (n={row['n']}).")
+        lines.append(f"- {row['tokenizer_id']}: NFC/NFD token-count pairing {row['token_count_pairing_fingerprint']} ({row['token_count_equal_rate']:.1%} equal), token-ID divergence {row['token_id_divergence_rate']:.1%}, NFC round-trip {row['nfc_roundtrip_exact_rate']:.1%}, NFD round-trip {row['nfd_roundtrip_exact_rate']:.1%} (n={row['n']}).")
     lines += [
         "", "## Caveats and protocol deviations", "",
-        "- The spec's global surface-family deduplication instruction conflicts with its 62-item audit: four E17 skin-tone-bearing ZWJ families collapse onto older no-tone E4.0 surface keys if deduplication is global. Counts and the pilot therefore dedupe within emoji version, as required to reproduce 28/11/7/7/9 and 62 items.",
+        f"- The spec's global surface-family deduplication instruction conflicts with its 62-item audit: {len(surface_collisions)} ZWJ surface keys occur in multiple emoji versions, including {e17_surface_collisions} E17 skin-tone-bearing families that collapse onto older no-tone E4.0 surface keys if deduplication is global. Counts and the pilot therefore dedupe within emoji version, as required to reproduce 28/11/7/7/9 and 62 items.",
         "- Proceed-rule 4 does not define the version series or whether monotone means strict at every adjacent step. This report uses the spec's primary bands and non-strict monotonicity with at least one strict adjacent change. Under a stricter every-adjacent-step decrease requirement, coverage cannot fire after it reaches zero; the atomic split-codepoint prong remains the cleaner positive signal.",
         "- The user prompt omitted Llama 3.2, although the spec's behavioral four-model arm includes it. Llama 3.2 tokenizer artifacts and model selection remain unresolved before behavioral inference.",
         "- Unicode 18.0 itself is dated 2026-09-16 in publicationdates.html, while Emoji 18.0 is dated 2026-09-15 in UTS #51. This is not a conflict: atomic characters use Unicode dates and emoji sequences use emoji dates.",
-        "- The current Phase-0/scan codebase exceeds the spec's eventual 575-line total artifact budget before behavioral runners exist; compression or explicit budget renegotiation is needed.",
+        f"- The current Phase-0/scan codebase totals {sum(loc.values())} LOC across src/*.py ({loc_detail}), already exceeding the spec's eventual 575-line total artifact budget before behavioral runners exist. The cap appears infeasible at the specified rigor (hand-rolled SentencePiece protobuf parsing, inventory vintage analysis, audit reproduction are not delegable); explicit budget renegotiation is needed before Phase 1 behavioral work.",
         "", "Machine-readable outputs: `manifest.json`, `ucd_audit.json`, `testset_audit.json`, `validation.json`, `tokenizer_inventory.json`, `tokenizer_scan.csv/jsonl`, `copy_scan_summary.csv`, `normalization_summary.csv`, `rgi_version_curve.csv`, `rgi_primary_band_curve.csv`, and `scan_verdict.json`.",
     ]
     (RESULTS / "SCAN_REPORT.md").write_text("\n".join(lines) + "\n")

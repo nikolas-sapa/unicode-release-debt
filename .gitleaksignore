@@ -1,0 +1,21 @@
+# False positives: SHA-256 checksums of public Hugging Face tokenizer files
+# and Unicode input files, not credentials. These pins are the reproducibility
+# mechanism of this artifact.
+results/manifest.json:generic-api-key:253
+src/pinned_inputs.json:generic-api-key:27
+src/pinned_inputs.json:generic-api-key:28
+src/pinned_inputs.json:generic-api-key:29
+src/pinned_inputs.json:generic-api-key:30
+src/pinned_inputs.json:generic-api-key:31
+src/pinned_inputs.json:generic-api-key:42
+src/pinned_inputs.json:generic-api-key:43
+src/pinned_inputs.json:generic-api-key:44
+src/pinned_inputs.json:generic-api-key:45
+src/pinned_inputs.json:generic-api-key:57
+src/pinned_inputs.json:generic-api-key:58
+src/pinned_inputs.json:generic-api-key:71
+src/pinned_inputs.json:generic-api-key:72
+src/pinned_inputs.json:generic-api-key:84
+src/pinned_inputs.json:generic-api-key:85
+src/pinned_inputs.json:generic-api-key:86
+src/pinned_inputs.json:generic-api-key:87

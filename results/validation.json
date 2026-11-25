@@ -4,7 +4,7 @@
     "uax29_revision": "49",
     "unicode_version": "18.0.0",
     "cluster_type": "extended grapheme clusters",
-    "revision_evidence": "pinned data/unicode/tr29.html declares Revision 49; implementation validated against pinned Unicode 18.0.0 GraphemeBreakTest.txt",
+    "revision_evidence": "pinned data/unicode/tr29.html revision parsed dynamically; implementation validated against pinned Unicode 18.0.0 GraphemeBreakTest.txt",
     "total": 853,
     "passed": 853,
     "failures": 0,
@@ -58,7 +58,10 @@
   },
   "host_python_version": "3.12.13",
   "host_unicodedata_version": "15.0.0",
+  "host_platform": "macOS-27.0.1-arm64-arm-64bit",
+  "host_machine": "arm64",
   "normalization_unicodedata_version": "18.0.0",
+  "model_weight_files_present": [],
   "gates": {
     "grapheme_100_percent": true,
     "grapheme_mutation_control": true,
@@ -66,6 +69,7 @@
     "copy_texts_byte_distinct": true,
     "no_delimiter_collisions": true,
     "no_boundary_whitespace": true,
-    "token_scan_invariants": true
+    "token_scan_invariants": true,
+    "tokenizer_files_only_no_model_weights": true
   }
 }

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import platform
+import re
 import sys
 import unicodedata
 from pathlib import Path
@@ -50,10 +51,13 @@ def grapheme_validation(path: Path):
             first_failure = first_failure or {"line": line_no, "expected": expected, "got": got}
         if list(text) != expected:
             broken_failures += 1
+    tr29 = (DATA / "unicode" / "tr29.html").read_text(errors="replace")
+    revision_match = re.search(r"Revision\s+(\d+)", tr29)
+    revision = revision_match.group(1) if revision_match else "unknown"
     return {
         "implementation": f"regex {regex.__version__} \\X",
-        "uax29_revision": "49", "unicode_version": "18.0.0", "cluster_type": "extended grapheme clusters",
-        "revision_evidence": "pinned data/unicode/tr29.html declares Revision 49; implementation validated against pinned Unicode 18.0.0 GraphemeBreakTest.txt",
+        "uax29_revision": revision, "unicode_version": "18.0.0", "cluster_type": "extended grapheme clusters",
+        "revision_evidence": "pinned data/unicode/tr29.html revision parsed dynamically; implementation validated against pinned Unicode 18.0.0 GraphemeBreakTest.txt",
         "total": total, "passed": total - failures, "failures": failures, "pass_rate": (total - failures) / total,
         "first_failure": first_failure, "broken_split_every_codepoint_failures": broken_failures,
         "mutation_control_detects_wrong_boundaries": broken_failures > 0,
@@ -111,11 +115,14 @@ def token_scan_invariants():
 
 
 def main():
+    weight_suffixes = {".safetensors", ".bin", ".gguf", ".pt", ".pth", ".ckpt", ".h5", ".msgpack"}
+    weight_files = [str(p.relative_to(ROOT)) for p in (DATA / "hf").rglob("*") if p.is_file() and p.suffix.lower() in weight_suffixes]
     report = {
         "grapheme": grapheme_validation(DATA / "unicode" / "GraphemeBreakTest.txt"),
         "items": validate_items(), "token_scan_invariants": token_scan_invariants(),
         "host_python_version": platform.python_version(), "host_unicodedata_version": unicodedata.unidata_version,
-        "normalization_unicodedata_version": unicodedata2.unidata_version,
+        "host_platform": platform.platform(), "host_machine": platform.machine(),
+        "normalization_unicodedata_version": unicodedata2.unidata_version, "model_weight_files_present": weight_files,
     }
     gates = {
         "grapheme_100_percent": report["grapheme"]["failures"] == 0,
@@ -125,6 +132,7 @@ def main():
         "no_delimiter_collisions": not report["items"]["delimiter_collisions"],
         "no_boundary_whitespace": not report["items"]["boundary_whitespace"],
         "token_scan_invariants": all(report["token_scan_invariants"].values()),
+        "tokenizer_files_only_no_model_weights": not weight_files,
     }
     report["gates"] = gates
     (RESULTS / "validation.json").write_text(json.dumps(report, indent=2, ensure_ascii=False))

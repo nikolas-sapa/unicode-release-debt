@@ -21,6 +21,8 @@
       "sentencepiece_metadata": {
         "model_type_enum": 2,
         "trainer_vocab_size": 262144,
+        "normalizer_name": "identity",
+        "precompiled_charsmap_sha256": null,
         "add_dummy_prefix": false
       },
       "vocab_size": 262144,
@@ -576,6 +578,8 @@
       "sentencepiece_metadata": {
         "model_type_enum": 2,
         "trainer_vocab_size": 32000,
+        "normalizer_name": "identity",
+        "precompiled_charsmap_sha256": null,
         "add_dummy_prefix": true
       },
       "vocab_size": 32000,
@@ -2233,6 +2237,8 @@
       "sentencepiece_metadata": {
         "model_type_enum": 2,
         "trainer_vocab_size": 32000,
+        "normalizer_name": "identity",
+        "precompiled_charsmap_sha256": null,
         "add_dummy_prefix": true
       },
       "vocab_size": 32000,

@@ -1,0 +1,5 @@
+model_id,newest_decomp_n,newest_decomp_correct,newest_decomp_exact_rate,newest_count_n,newest_count_correct,newest_count_exact_rate,count_high_minus_low_failure_rate,structural_hard_kill_model
+tinyllama-1.1b-chat-v1.0-bf16,24,0,0.0,18,0,0.0,0.0,True
+qwen2.5-1.5b-instruct-bf16,24,0,0.0,18,8,0.4444444444444444,0.2222222222222222,False
+qwen3-1.7b-bf16,24,0,0.0,18,2,0.1111111111111111,0.0,True
+gemma3-1b-it-bf16-mirror,24,0,0.0,18,4,0.2222222222222222,0.0,True

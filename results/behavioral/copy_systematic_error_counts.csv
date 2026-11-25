@@ -1,0 +1,5 @@
+model_id,missing_zwj,missing_vs16,normalization_only_mismatch,replacement_character_emitted,decomposed_rgi_sequence,any_systematic_class_at_least_5
+tinyllama-1.1b-chat-v1.0-bf16,38,25,0,0,0,True
+qwen2.5-1.5b-instruct-bf16,1,0,0,0,0,False
+qwen3-1.7b-bf16,0,0,0,0,0,False
+gemma3-1b-it-bf16-mirror,0,0,0,0,0,False

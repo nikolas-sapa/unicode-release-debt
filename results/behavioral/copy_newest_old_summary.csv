@@ -1,0 +1,5 @@
+model_id,newest_n,newest_correct,newest_exact_rate,newest_failure_rate,old_control_n,old_control_correct,old_control_exact_rate,old_control_failure_rate,newest_minus_old_failure_rate,newest_minus_old_failure_pp,hard_kill_copy_prong,proceed_rule1_model_signal
+tinyllama-1.1b-chat-v1.0-bf16,94,0,0.0,1.0,64,0,0.0,1.0,0.0,0.0,True,False
+qwen2.5-1.5b-instruct-bf16,94,67,0.7127659574468085,0.2872340425531915,64,47,0.734375,0.265625,0.021609042553191515,2.1609042553191515,False,False
+qwen3-1.7b-bf16,94,40,0.425531914893617,0.574468085106383,64,14,0.21875,0.78125,-0.20678191489361697,-20.678191489361698,False,False
+gemma3-1b-it-bf16-mirror,94,1,0.010638297872340425,0.9893617021276596,64,0,0.0,1.0,-0.010638297872340385,-1.0638297872340385,True,False

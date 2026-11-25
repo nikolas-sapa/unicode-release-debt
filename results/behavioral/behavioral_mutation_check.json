@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "content_mutation_rejected": true,
+    "ascii_content_mutation_rejected": true,
+    "missing_wrapper_rejected": true
+  },
+  "mutation_negative_control_pass": true,
+  "content_mutation_exact": false,
+  "ascii_mutation_exact": false,
+  "missing_wrapper_format_failure": true
+}

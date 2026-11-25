@@ -1,0 +1,9 @@
+{
+  "verification": "gemma-3-4b-it chat template identity",
+  "method": "mlx-community/gemma-3-4b-it-8bit @61cfff4d chat_template.json content vs unsloth mirror canonical tokenizer_config embedded chat_template @bf46152c; byte-identity of template strings, and transformers-loaded artifact tokenizer template equality",
+  "template_byte_identical": true,
+  "transformers_loaded_template_matches_canonical": true,
+  "template_length": 1532,
+  "verified_at": "2026-11-25T19:06:32.871134+00:00",
+  "note": "canonical google/gemma-3-4b-it is license-gated; unsloth mirror bf46152c used as accessible canonical reference per round-2 protocol"
+}

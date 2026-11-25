@@ -1,0 +1,77 @@
+{
+  "qwen2.5-3b-instruct-bf16": {
+    "copy_rows": 182,
+    "in_wrapper_mimicry_failures": 0,
+    "mimicry_inner_byte_exact": 0,
+    "mimicry_inner_byte_diff": 0,
+    "mimicry_by_cohort": {},
+    "mimicry_probe_keys": []
+  },
+  "qwen3-4b-instruct-2507-mlx8": {
+    "copy_rows": 182,
+    "in_wrapper_mimicry_failures": 0,
+    "mimicry_inner_byte_exact": 0,
+    "mimicry_inner_byte_diff": 0,
+    "mimicry_by_cohort": {},
+    "mimicry_probe_keys": []
+  },
+  "qwen2.5-7b-instruct-mlx8": {
+    "copy_rows": 182,
+    "in_wrapper_mimicry_failures": 28,
+    "mimicry_inner_byte_exact": 28,
+    "mimicry_inner_byte_diff": 0,
+    "mimicry_by_cohort": {
+      "E15.1 emoji": 7,
+      "E16.0 emoji": 3,
+      "E17.0 emoji": 9,
+      "E18.0 emoji": 6,
+      "legacy emoji": 3
+    },
+    "mimicry_probe_keys": [
+      "copy:copy-002",
+      "copy:copy-007",
+      "copy:copy-008",
+      "copy:copy-010",
+      "copy:copy-011",
+      "copy:copy-013",
+      "copy:copy-027",
+      "copy:copy-030",
+      "copy:copy-031",
+      "copy:copy-033",
+      "copy:copy-037",
+      "copy:copy-038",
+      "copy:copy-039",
+      "copy:copy-040",
+      "copy:copy-041",
+      "copy:copy-042",
+      "copy:copy-044",
+      "copy:copy-046",
+      "copy:copy-053",
+      "copy:copy-055",
+      "copy:copy-057",
+      "copy:copy-058",
+      "copy:copy-059",
+      "copy:copy-060",
+      "copy:copy-061",
+      "copy:copy-080",
+      "copy:copy-081",
+      "copy:copy-087"
+    ]
+  },
+  "gemma3-4b-it-mlx8-mirror": {
+    "copy_rows": 182,
+    "in_wrapper_mimicry_failures": 0,
+    "mimicry_inner_byte_exact": 0,
+    "mimicry_inner_byte_diff": 0,
+    "mimicry_by_cohort": {},
+    "mimicry_probe_keys": []
+  },
+  "tinyllama-1.1b-chat-v1.0-bf16": {
+    "copy_rows": 182,
+    "in_wrapper_mimicry_failures": 0,
+    "mimicry_inner_byte_exact": 0,
+    "mimicry_inner_byte_diff": 0,
+    "mimicry_by_cohort": {},
+    "mimicry_probe_keys": []
+  }
+}

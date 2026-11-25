@@ -1,0 +1,6 @@
+model_id,newest_n,newest_correct,newest_exact_rate,newest_failure_rate,old_control_n,old_control_correct,old_control_exact_rate,old_control_failure_rate,newest_minus_old_failure_rate,newest_minus_old_failure_pp,meets_operational_hard_kill_conditions,proceed_rule1_model_signal
+qwen2.5-3b-instruct-bf16,94,94,1.0,0.0,64,64,1.0,0.0,0.0,0.0,True,False
+qwen3-4b-instruct-2507-mlx8,94,94,1.0,0.0,64,64,1.0,0.0,0.0,0.0,True,False
+qwen2.5-7b-instruct-mlx8,94,69,0.7340425531914894,0.26595744680851063,64,60,0.9375,0.0625,0.20345744680851063,20.345744680851062,False,True
+gemma3-4b-it-mlx8-mirror,94,94,1.0,0.0,64,64,1.0,0.0,0.0,0.0,True,False
+tinyllama-1.1b-chat-v1.0-bf16,94,94,1.0,0.0,64,64,1.0,0.0,0.0,0.0,True,False

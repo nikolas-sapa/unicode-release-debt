@@ -1,0 +1,6 @@
+model_id,newest_decomp_n,newest_decomp_correct,newest_decomp_exact_rate,newest_count_n,newest_count_correct,newest_count_exact_rate,count_high_minus_low_failure_rate,meets_structural_hard_kill_conditions
+qwen2.5-3b-instruct-bf16,24,0,0.0,18,5,0.2777777777777778,0.5,False
+qwen3-4b-instruct-2507-mlx8,24,0,0.0,18,2,0.1111111111111111,0.2222222222222222,False
+qwen2.5-7b-instruct-mlx8,24,0,0.0,18,9,0.5,0.7222222222222222,False
+gemma3-4b-it-mlx8-mirror,24,0,0.0,18,6,0.3333333333333333,0.05555555555555547,False
+tinyllama-1.1b-chat-v1.0-bf16,24,0,0.0,18,0,0.0,0.0,False

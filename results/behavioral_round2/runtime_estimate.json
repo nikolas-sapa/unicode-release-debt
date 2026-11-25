@@ -1,0 +1,55 @@
+{
+  "generated_utc": "2026-11-25T18:57:38.991098+00:00",
+  "method": "observed Qwen2.5-1.5B bf16 ASCII few-shot seconds/probe scaled by approximate parameter count, adjusted for q8 memory bandwidth, multiplied by 290 probes, 1.20 structural-prompt overhead, and a 2x conservative safety factor",
+  "observed_qwen15b_bf16_seconds_per_ascii_probe": 0.3344593246462561,
+  "per_model_estimates": [
+    {
+      "model_id": "qwen2.5-3b-instruct-bf16",
+      "priority": 1,
+      "approx_parameters_b": 3.0,
+      "estimated_seconds_conservative": 465.5673799075885,
+      "estimated_minutes_conservative": 7.7594563317931415
+    },
+    {
+      "model_id": "qwen3-4b-instruct-2507-mlx8",
+      "priority": 2,
+      "approx_parameters_b": 4.0,
+      "estimated_seconds_conservative": 527.6430305619335,
+      "estimated_minutes_conservative": 8.794050509365558
+    },
+    {
+      "model_id": "qwen2.5-7b-instruct-mlx8",
+      "priority": 3,
+      "approx_parameters_b": 7.0,
+      "estimated_seconds_conservative": 923.3753034833838,
+      "estimated_minutes_conservative": 15.389588391389731
+    },
+    {
+      "model_id": "gemma3-4b-it-mlx8-mirror",
+      "priority": 4,
+      "approx_parameters_b": 4.0,
+      "estimated_seconds_conservative": 527.6430305619335,
+      "estimated_minutes_conservative": 8.794050509365558
+    },
+    {
+      "model_id": "tinyllama-1.1b-chat-v1.0-bf16",
+      "priority": 5,
+      "approx_parameters_b": 1.1,
+      "estimated_seconds_conservative": 170.7080392994491,
+      "estimated_minutes_conservative": 2.8451339883241515
+    }
+  ],
+  "projected_total_seconds": 2614.9367838142884,
+  "projected_total_minutes": 43.58227973023814,
+  "threshold_minutes": 360,
+  "model_count": 5,
+  "kept_model_ids": [
+    "qwen2.5-3b-instruct-bf16",
+    "qwen3-4b-instruct-2507-mlx8",
+    "qwen2.5-7b-instruct-mlx8",
+    "gemma3-4b-it-mlx8-mirror",
+    "tinyllama-1.1b-chat-v1.0-bf16"
+  ],
+  "trimmed_models": [],
+  "trimming_required": false
+}

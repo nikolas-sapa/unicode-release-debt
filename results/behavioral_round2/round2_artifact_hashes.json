@@ -1,0 +1,104 @@
+{
+  "ROUND2_REPORT.md": {
+    "sha256": "468edd2c20dd120059681594c996519943293871ba5b4896e66599f96edc9620",
+    "size": 23491
+  },
+  "behavioral_round2/gemma_template_rendering_check.json": {
+    "sha256": "80e29ea223dca67b59e32940415f7a8383a6e62277ac3254e22e7273de57e8d4",
+    "size": 639
+  },
+  "behavioral_round2/probe_identity_audit.json": {
+    "sha256": "15d385e41153132783668e0fc84e3b1c8c946f04e403599799e83bfc29ea7163",
+    "size": 7416
+  },
+  "behavioral_round2/probe_plan_round2.jsonl": {
+    "sha256": "32e8a4dfae7a5ccfe1988cc8ddea6b93dfb54bd6132de459bd85bd6fad605e9e",
+    "size": 2260771
+  },
+  "behavioral_round2/protocol_freeze.json": {
+    "sha256": "337b007b37a3ed9a0f3cf2ed3697d385170e175f0c992a6e9e3fb0f2824f46cc",
+    "size": 13842
+  },
+  "behavioral_round2/quantization_sensitivity.json": {
+    "sha256": "c57a52178f5bc2e0b43d0ba2639f0daf84995e8054cda0184005547a2e893768",
+    "size": 9132
+  },
+  "behavioral_round2/qwen3_template_rendering_check.json": {
+    "sha256": "48faac15afcba94ccf903e298af8deafd7782f7b072240c7994fa49773284a73",
+    "size": 970
+  },
+  "behavioral_round2/round2_copy_cohort_summary.csv": {
+    "sha256": "67811b537dd9d46c857068bf02effa86ff39c1de66ed5bf55e8e5e9361b74cc5",
+    "size": 3982
+  },
+  "behavioral_round2/round2_copy_error_taxonomy_summary.csv": {
+    "sha256": "466bbe4688f022c9003e8d0a8b62b1fbacdbd30d6553744157a91823cf20554f",
+    "size": 3279
+  },
+  "behavioral_round2/round2_copy_newest_old_summary.csv": {
+    "sha256": "72447197d4b1097daaa5c58238f31a9243f60ad0518a519241010d97bf93e15f",
+    "size": 719
+  },
+  "behavioral_round2/round2_copy_systematic_error_counts.csv": {
+    "sha256": "3fcbf93c1e4368c80dd32b98b6435c147e824d84f2bff939ac162df8a8c0b061",
+    "size": 367
+  },
+  "behavioral_round2/round2_count_fragmentation_summary.csv": {
+    "sha256": "71210be32d364330e6697180eb054e0684fafc1c49586ccd2bb98bd7434194f9",
+    "size": 1720
+  },
+  "behavioral_round2/round2_manifest.json": {
+    "sha256": "4d944ca2c6077909fa08cae99b9ac93001c3ee371f22c7367b34f935671bed20",
+    "size": 65056
+  },
+  "behavioral_round2/round2_raw.jsonl": {
+    "sha256": "74844348e574e7d1b2944ef29feeff52b5d994af415cd1cc8df0d4d78a27ba25",
+    "size": 3665838
+  },
+  "behavioral_round2/round2_runtime.jsonl": {
+    "sha256": "eecd3edf1fce89bd337c86f9fea584b55d594622103af93f0dac5da415887b25",
+    "size": 124152
+  },
+  "behavioral_round2/round2_runtime_summary.csv": {
+    "sha256": "afb1bd775e4794381ee8bdd936b3fe65a73741b68d62220b96de7cedcc5771b5",
+    "size": 674
+  },
+  "behavioral_round2/round2_scored.jsonl": {
+    "sha256": "6516559b18c7eee274494bf2b7dcf50c35bc50bd6a295ca1bfce6890c3f2407e",
+    "size": 2842293
+  },
+  "behavioral_round2/round2_structural_hard_kill_summary.csv": {
+    "sha256": "068476e4f81e81e6864272b40684e0c9e527e5f9c00ac240ce9a8e1102186926",
+    "size": 574
+  },
+  "behavioral_round2/round2_structural_summary.csv": {
+    "sha256": "ccc6a4487ce9c689c85aaf033f2285e0a9fafee0bb8b89b87e7c15a12617aa7c",
+    "size": 3816
+  },
+  "behavioral_round2/round2_verdict.json": {
+    "sha256": "911124f70b0238ebacc61a28d64a22b4aa7676b7846415a44ff3f2cbaa0d1725",
+    "size": 57834
+  },
+  "behavioral_round2/round2_wrapper_mimicry_analysis.json": {
+    "sha256": "16166583b2426290e158f603eda3d1fb47a486cf703f8197b2f6ce88ac620171",
+    "size": 1905
+  },
+  "behavioral_round2/runtime_estimate.json": {
+    "sha256": "d05b22b5429d5f42207bf81269800e1810af4bfba9760073011c83328c4a848f",
+    "size": 1957
+  },
+  "behavioral_round2/tokenizer_linkage_round2.json": {
+    "sha256": "844b62929c04b11cfef41aad249faf3741beb0671e9285dfab1a251fd102f0c3",
+    "size": 19140
+  },
+  "round2_code": {
+    "src/analyze_behavioral_round2.py": "90255a7ab011591a4ffb0a7e321f9f7bb0dda0319be899c98a8f86b4e3ca1673",
+    "src/analyze_round2_controls.py": "3642bec8bad88ec8bd9fd793436ceda0358c4de790d5d5aa6f06dcc69f745f5a",
+    "src/build_round2_plan.py": "b0d62e94eabee5eec6950dac21f4805df2be860ef3167af182861f3412276161",
+    "src/estimate_round2_runtime.py": "88a2b168512a750b3879ca922fbebca1c273cdb128b8d038920fb86ed7245adc",
+    "src/link_tokenizers_round2.py": "a395c81cd8c4af80209a2dd1ec0a484437224572d589f2df3240e0315f9d5256",
+    "src/round2_common.py": "881b3aafe6e9f5e9e522110a90a842da57e4cdde7ee352e29b665635d6893dde",
+    "src/run_behavioral_round2.py": "b0ad373426098da8f0d9bf61482f5289c4c16f1e1db67c582f42ec5bdf0efc6e",
+    "src/score_behavioral_round2.py": "cec1c96482f8edc75d682fe3203c3d21ecc967640b67c416f0f93496cb76ebdc"
+  }
+}

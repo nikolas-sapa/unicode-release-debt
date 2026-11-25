@@ -1,0 +1,41 @@
+model_id,cohort,n,failures,format_failures,missing_zwj,missing_vs16,normalization_only_mismatch,replacement_character_emitted,decomposed_rgi_sequence,nfc_nfd_variant,truncation,newline_padding,extra_text_after_exact_target,insertion,deletion,substitution,reordering,other_unclassified_mismatch
+gemma3-4b-it-mlx8-mirror,ASCII,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+gemma3-4b-it-mlx8-mirror,legacy emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+gemma3-4b-it-mlx8-mirror,legacy non-emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+gemma3-4b-it-mlx8-mirror,E15.1 emoji,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+gemma3-4b-it-mlx8-mirror,E16.0 emoji,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+gemma3-4b-it-mlx8-mirror,E17.0 emoji,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+gemma3-4b-it-mlx8-mirror,E18.0 emoji,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+gemma3-4b-it-mlx8-mirror,new non-emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-3b-instruct-bf16,ASCII,24,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+qwen2.5-3b-instruct-bf16,legacy emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-3b-instruct-bf16,legacy non-emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-3b-instruct-bf16,E15.1 emoji,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-3b-instruct-bf16,E16.0 emoji,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-3b-instruct-bf16,E17.0 emoji,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-3b-instruct-bf16,E18.0 emoji,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-3b-instruct-bf16,new non-emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-7b-instruct-mlx8,ASCII,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-7b-instruct-mlx8,legacy emoji,32,4,3,0,0,0,1,0,0,0,0,0,0,0,1,0,0
+qwen2.5-7b-instruct-mlx8,legacy non-emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-7b-instruct-mlx8,E15.1 emoji,28,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-7b-instruct-mlx8,E16.0 emoji,7,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-7b-instruct-mlx8,E17.0 emoji,18,9,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-7b-instruct-mlx8,E18.0 emoji,9,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen2.5-7b-instruct-mlx8,new non-emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen3-4b-instruct-2507-mlx8,ASCII,24,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen3-4b-instruct-2507-mlx8,legacy emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen3-4b-instruct-2507-mlx8,legacy non-emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen3-4b-instruct-2507-mlx8,E15.1 emoji,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen3-4b-instruct-2507-mlx8,E16.0 emoji,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen3-4b-instruct-2507-mlx8,E17.0 emoji,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen3-4b-instruct-2507-mlx8,E18.0 emoji,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+qwen3-4b-instruct-2507-mlx8,new non-emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tinyllama-1.1b-chat-v1.0-bf16,ASCII,24,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+tinyllama-1.1b-chat-v1.0-bf16,legacy emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tinyllama-1.1b-chat-v1.0-bf16,legacy non-emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tinyllama-1.1b-chat-v1.0-bf16,E15.1 emoji,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tinyllama-1.1b-chat-v1.0-bf16,E16.0 emoji,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tinyllama-1.1b-chat-v1.0-bf16,E17.0 emoji,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tinyllama-1.1b-chat-v1.0-bf16,E18.0 emoji,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tinyllama-1.1b-chat-v1.0-bf16,new non-emoji,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

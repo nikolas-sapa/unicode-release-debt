@@ -4,9 +4,11 @@ title = "unicode-release-debt gitleaks config"
 useDefault = true
 
 [allowlist]
-description = "Generated behavioral artifacts contain public model/tokenizer identifiers and SHA-256 provenance keys, not credentials. The generic-api-key rule has high false-positive rates on these deterministic strings."
+description = "Generated behavioral artifacts contain public model/tokenizer identifiers, SHA-256 provenance keys, and deliberately random ASCII copy-probe control strings, not credentials. The generic-api-key rule has high false-positive rates on these deterministic strings."
 targetRules = ["generic-api-key"]
 paths = [
   '''results/behavioral/.*''',
+  '''results/behavioral_round2/.*''',
   '''src/behavioral_probes.py''',
+  '''src/round2_common.py''',
 ]

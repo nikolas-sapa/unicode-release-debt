@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "byte_exact_copy_accepted": true,
+    "single_codepoint_substitution_rejected": true,
+    "missing_zwj_rejected_and_classified": true,
+    "missing_vs16_rejected_and_classified": true,
+    "newline_padding_rejected_and_classified": true,
+    "nfc_nfd_mutation_rejected_and_classified": true,
+    "missing_wrapper_rejected": true,
+    "duplicate_wrapper_rejected": true,
+    "echoed_prompt_rejected": true,
+    "non whitespace_prefix_rejected": true,
+    "non whitespace_suffix_rejected": true,
+    "truncation_rejected_and_classified": true
+  },
+  "extractor_mutation_checks_pass": true,
+  "strict_extraction_rule": "exactly one <OUT> and one </OUT>; no non-whitespace outside wrappers; extracted bytes are compared without stripping, normalization, or repair"
+}

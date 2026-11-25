@@ -1,0 +1,338 @@
+{
+  "generated_utc": "2026-11-25T18:57:09.756688+00:00",
+  "ascii_calibration_summary": [
+    {
+      "model_id": "qwen2.5-3b-instruct-bf16",
+      "copy_protocol": "fewshot_copy_v1",
+      "n": 24,
+      "exact_count": 18,
+      "exact_rate": 0.75,
+      "format_failures": 6,
+      "format_failure_rate": 0.25,
+      "ascii_gate_pass": false,
+      "wrapper_gate_pass_on_ascii_subset": false
+    },
+    {
+      "model_id": "qwen2.5-3b-instruct-bf16",
+      "copy_protocol": "fewshot_copy_v2",
+      "n": 24,
+      "exact_count": 15,
+      "exact_rate": 0.625,
+      "format_failures": 7,
+      "format_failure_rate": 0.2916666666666667,
+      "ascii_gate_pass": false,
+      "wrapper_gate_pass_on_ascii_subset": false
+    },
+    {
+      "model_id": "qwen2.5-3b-instruct-bf16",
+      "copy_protocol": "fewshot_copy_v3_finalcue",
+      "n": 24,
+      "exact_count": 9,
+      "exact_rate": 0.375,
+      "format_failures": 14,
+      "format_failure_rate": 0.5833333333333334,
+      "ascii_gate_pass": false,
+      "wrapper_gate_pass_on_ascii_subset": false
+    },
+    {
+      "model_id": "qwen2.5-3b-instruct-bf16",
+      "copy_protocol": "fewshot_copy_v4_multiturn",
+      "n": 24,
+      "exact_count": 23,
+      "exact_rate": 0.9583333333333334,
+      "format_failures": 0,
+      "format_failure_rate": 0.0,
+      "ascii_gate_pass": true,
+      "wrapper_gate_pass_on_ascii_subset": true
+    },
+    {
+      "model_id": "qwen2.5-3b-instruct-bf16",
+      "copy_protocol": "fewshot_copy_v5_multiturn_cueless",
+      "n": 24,
+      "exact_count": 23,
+      "exact_rate": 0.9583333333333334,
+      "format_failures": 0,
+      "format_failure_rate": 0.0,
+      "ascii_gate_pass": true,
+      "wrapper_gate_pass_on_ascii_subset": true
+    },
+    {
+      "model_id": "qwen2.5-3b-instruct-bf16",
+      "copy_protocol": "fewshot_copy_v6_multiturn_minimal",
+      "n": 24,
+      "exact_count": 19,
+      "exact_rate": 0.7916666666666666,
+      "format_failures": 4,
+      "format_failure_rate": 0.16666666666666666,
+      "ascii_gate_pass": false,
+      "wrapper_gate_pass_on_ascii_subset": false
+    },
+    {
+      "model_id": "qwen2.5-3b-instruct-bf16",
+      "copy_protocol": "instruction_v1",
+      "n": 24,
+      "exact_count": 13,
+      "exact_rate": 0.5416666666666666,
+      "format_failures": 1,
+      "format_failure_rate": 0.041666666666666664,
+      "ascii_gate_pass": false,
+      "wrapper_gate_pass_on_ascii_subset": true
+    },
+    {
+      "model_id": "tinyllama-1.1b-chat-v1.0-bf16",
+      "copy_protocol": "fewshot_copy_v1",
+      "n": 24,
+      "exact_count": 0,
+      "exact_rate": 0.0,
+      "format_failures": 24,
+      "format_failure_rate": 1.0,
+      "ascii_gate_pass": false,
+      "wrapper_gate_pass_on_ascii_subset": false
+    },
+    {
+      "model_id": "tinyllama-1.1b-chat-v1.0-bf16",
+      "copy_protocol": "fewshot_copy_v2",
+      "n": 24,
+      "exact_count": 0,
+      "exact_rate": 0.0,
+      "format_failures": 24,
+      "format_failure_rate": 1.0,
+      "ascii_gate_pass": false,
+      "wrapper_gate_pass_on_ascii_subset": false
+    },
+    {
+      "model_id": "tinyllama-1.1b-chat-v1.0-bf16",
+      "copy_protocol": "fewshot_copy_v3_finalcue",
+      "n": 24,
+      "exact_count": 0,
+      "exact_rate": 0.0,
+      "format_failures": 24,
+      "format_failure_rate": 1.0,
+      "ascii_gate_pass": false,
+      "wrapper_gate_pass_on_ascii_subset": false
+    },
+    {
+      "model_id": "tinyllama-1.1b-chat-v1.0-bf16",
+      "copy_protocol": "fewshot_copy_v4_multiturn",
+      "n": 24,
+      "exact_count": 23,
+      "exact_rate": 0.9583333333333334,
+      "format_failures": 0,
+      "format_failure_rate": 0.0,
+      "ascii_gate_pass": true,
+      "wrapper_gate_pass_on_ascii_subset": true
+    },
+    {
+      "model_id": "tinyllama-1.1b-chat-v1.0-bf16",
+      "copy_protocol": "fewshot_copy_v5_multiturn_cueless",
+      "n": 24,
+      "exact_count": 23,
+      "exact_rate": 0.9583333333333334,
+      "format_failures": 0,
+      "format_failure_rate": 0.0,
+      "ascii_gate_pass": true,
+      "wrapper_gate_pass_on_ascii_subset": true
+    },
+    {
+      "model_id": "tinyllama-1.1b-chat-v1.0-bf16",
+      "copy_protocol": "fewshot_copy_v6_multiturn_minimal",
+      "n": 24,
+      "exact_count": 24,
+      "exact_rate": 1.0,
+      "format_failures": 0,
+      "format_failure_rate": 0.0,
+      "ascii_gate_pass": true,
+      "wrapper_gate_pass_on_ascii_subset": true
+    },
+    {
+      "model_id": "tinyllama-1.1b-chat-v1.0-bf16",
+      "copy_protocol": "instruction_v1",
+      "n": 24,
+      "exact_count": 0,
+      "exact_rate": 0.0,
+      "format_failures": 24,
+      "format_failure_rate": 1.0,
+      "ascii_gate_pass": false,
+      "wrapper_gate_pass_on_ascii_subset": false
+    }
+  ],
+  "protocol_candidate_scores": [
+    {
+      "copy_protocol": "fewshot_copy_v1",
+      "models_tested": 2,
+      "models_passing_ascii_gate": 0,
+      "total_exact": 18,
+      "total_items": 48,
+      "total_format_failures": 30
+    },
+    {
+      "copy_protocol": "fewshot_copy_v2",
+      "models_tested": 2,
+      "models_passing_ascii_gate": 0,
+      "total_exact": 15,
+      "total_items": 48,
+      "total_format_failures": 31
+    },
+    {
+      "copy_protocol": "fewshot_copy_v3_finalcue",
+      "models_tested": 2,
+      "models_passing_ascii_gate": 0,
+      "total_exact": 9,
+      "total_items": 48,
+      "total_format_failures": 38
+    },
+    {
+      "copy_protocol": "fewshot_copy_v4_multiturn",
+      "models_tested": 2,
+      "models_passing_ascii_gate": 2,
+      "total_exact": 46,
+      "total_items": 48,
+      "total_format_failures": 0
+    },
+    {
+      "copy_protocol": "fewshot_copy_v5_multiturn_cueless",
+      "models_tested": 2,
+      "models_passing_ascii_gate": 2,
+      "total_exact": 46,
+      "total_items": 48,
+      "total_format_failures": 0
+    },
+    {
+      "copy_protocol": "fewshot_copy_v6_multiturn_minimal",
+      "models_tested": 2,
+      "models_passing_ascii_gate": 1,
+      "total_exact": 43,
+      "total_items": 48,
+      "total_format_failures": 4
+    },
+    {
+      "copy_protocol": "instruction_v1",
+      "models_tested": 2,
+      "models_passing_ascii_gate": 0,
+      "total_exact": 13,
+      "total_items": 48,
+      "total_format_failures": 25
+    }
+  ],
+  "selection_rule": "Use one copy protocol for every model. Rank ASCII-control candidates by number of calibration models passing the 23/24 gate, then total exact count, then fewer format failures. If exactly tied, prefer the multiturn cueless variant because the chat template supplies the assistant boundary; never optimize protocols separately per model.",
+  "tied_best_candidates": [
+    "fewshot_copy_v4_multiturn",
+    "fewshot_copy_v5_multiturn_cueless"
+  ],
+  "selected_copy_protocol": "fewshot_copy_v5_multiturn_cueless",
+  "selection_rationale": "fewshot_copy_v4_multiturn and fewshot_copy_v5_multiturn_cueless tied exactly on ASCII controls (23/24 for both the strong-instruct and vintage calibration models, zero format failures); v5 was selected because the chat template rather than duplicated user-turn text supplies the assistant output boundary",
+  "copy_protocol_templates": {
+    "instruction_v1": {
+      "template": "Copy the text between `<IN>` and `</IN>` exactly. Preserve every Unicode code point, including invisible joiners and variation selectors. Put only the copied text inside `<OUT>` and `</OUT>`. Input: `<IN>\n{target}\n</IN>`",
+      "message_style": "single_user",
+      "description": "round-1 instruction-only copy prompt, retained only for ASCII-control calibration",
+      "sha256": "b1cdacd2a0f5003684424e8af65d06438006cadaade603614b52de13a6226391",
+      "format_sha256": "b94c234c1067504a60f790ea2a978259ab40ed8b0ed412e28fb6a8010ce38ef8"
+    },
+    "fewshot_copy_v1": {
+      "template": "Copy each input exactly.\nInput: <IN>bO5*Fe%Yx^9pM=5g</IN>\nOutput: <OUT>bO5*Fe%Yx^9pM=5g</OUT>\nInput: <IN>;@N@fd=K\\+w=kEJ3</IN>\nOutput: <OUT>;@N@fd=K\\+w=kEJ3</OUT>\nInput: <IN>mX3 *vQ9!zB 2#7R</IN>\nOutput: <OUT>mX3 *vQ9!zB 2#7R</OUT>\nInput: <IN>p~4tD14z/4g;[zM!</IN>\nOutput: <OUT>p~4tD14z/4g;[zM!</OUT>\nInput: <IN>{target}</IN>\nOutput:",
+      "message_style": "single_user",
+      "description": "four held-out ASCII filler copy exemplars with inline input/output wrappers, followed by the probe; superseded ASCII calibration candidate without trailing space",
+      "sha256": "f73dd8f8c86728d6910fb3353305788daf1f071e2627df47c5e7568eb679abb9",
+      "format_sha256": "eb8e9a9a5c13a03488919ddf0ffe07c9f6797f3d0b0299f7039de267ff024a8e"
+    },
+    "fewshot_copy_v2": {
+      "template": "Copy each input exactly.\nInput: <IN>bO5*Fe%Yx^9pM=5g</IN>\nOutput: <OUT>bO5*Fe%Yx^9pM=5g</OUT>\nInput: <IN>;@N@fd=K\\+w=kEJ3</IN>\nOutput: <OUT>;@N@fd=K\\+w=kEJ3</OUT>\nInput: <IN>mX3 *vQ9!zB 2#7R</IN>\nOutput: <OUT>mX3 *vQ9!zB 2#7R</OUT>\nInput: <IN>p~4tD14z/4g;[zM!</IN>\nOutput: <OUT>p~4tD14z/4g;[zM!</OUT>\nInput: <IN>{target}</IN>\nOutput: ",
+      "message_style": "single_user",
+      "description": "four held-out ASCII filler copy exemplars with inline input/output wrappers, followed by the probe; final output cue includes the same trailing space as exemplars",
+      "sha256": "28fff2dc692bd6aa7f3c52867deabf121cb71cb0c2d36b9affaaa9c464d7dbd5",
+      "format_sha256": "7ba6684b475544d1a39f52ffa3f3c1d3a209343a8b3896b3ecb40d44a4e4a31a"
+    },
+    "fewshot_copy_v3_finalcue": {
+      "template": "Copy each input exactly.\nInput: <IN>bO5*Fe%Yx^9pM=5g</IN>\nOutput: <OUT>bO5*Fe%Yx^9pM=5g</OUT>\nInput: <IN>;@N@fd=K\\+w=kEJ3</IN>\nOutput: <OUT>;@N@fd=K\\+w=kEJ3</OUT>\nInput: <IN>mX3 *vQ9!zB 2#7R</IN>\nOutput: <OUT>mX3 *vQ9!zB 2#7R</OUT>\nInput: <IN>p~4tD14z/4g;[zM!</IN>\nOutput: <OUT>p~4tD14z/4g;[zM!</OUT>\nCopy this input exactly.\nInput: <IN>{target}</IN>\nOutput: ",
+      "message_style": "single_user",
+      "description": "four held-out ASCII filler copy exemplars plus an explicit final-copy cue and trailing output space",
+      "sha256": "cb0c3ed19c8ea5a36d7b880f017298942e249b13ca1465b6a27310e310aa67a7",
+      "format_sha256": "e749b25bd9bd074fe0ec74d9f2ca964b18232a43a7684567d1568f14f9618cf4"
+    },
+    "fewshot_copy_v4_multiturn": {
+      "template": "Copy the input exactly. Input: <IN>{target}</IN>\nOutput: ",
+      "message_style": "assistant_exemplar_pairs",
+      "description": "four held-out ASCII filler copy exemplars as alternating user/assistant chat pairs, followed by the probe user turn with an output cue",
+      "sha256": "2d49954f255d5072d158166c41cee9d7d1a3ced3cc325cf13ba99589103dfebe",
+      "format_sha256": "d86fc22879dd6346a5f89bc4b821cc34bbd0c855550dd06b5913865859f01968"
+    },
+    "fewshot_copy_v5_multiturn_cueless": {
+      "template": "Copy the input exactly. Input: <IN>{target}</IN>",
+      "message_style": "assistant_exemplar_pairs",
+      "description": "four held-out ASCII filler copy exemplars as alternating user/assistant chat pairs; probe user turn ends at the input and the chat template supplies the assistant boundary",
+      "sha256": "1687c1a717cc04c3a77aba9075c8463cf95e9ae084e53435e549bca22ec0d951",
+      "format_sha256": "e84859819d4873b1b739683534e720c8f17baaf7c6542be35c94eec106692f6d"
+    },
+    "fewshot_copy_v6_multiturn_minimal": {
+      "template": "<IN>{target}</IN>",
+      "message_style": "assistant_exemplar_pairs",
+      "description": "four held-out ASCII filler copy exemplars as minimal alternating input/output chat pairs with no prose instruction",
+      "sha256": "db37b240aed8a66573129c7e502d4001578c3e8485c7e85ab6a655997aafcb06",
+      "format_sha256": "8b77e898ef4731c497d863f082419ff5955128601704cc768fb8ab4dff3c7218"
+    }
+  },
+  "exemplar_overlap_audit": {
+    "exemplars": [
+      "bO5*Fe%Yx^9pM=5g",
+      ";@N@fd=K\\+w=kEJ3",
+      "mX3 *vQ9!zB 2#7R",
+      "p~4tD14z/4g;[zM!"
+    ],
+    "count": 4,
+    "unique": true,
+    "exact_overlap_with_any_copy_probe": [],
+    "all_ascii": true,
+    "no_wrapper_literals": true
+  },
+  "frozen_at_utc": "2026-11-25T18:57:09.758157+00:00",
+  "frozen_before_any_emoji_cohort_inference": true,
+  "freeze_scope": "ASCII-control inference only had been run when this file was written; no new-emoji, legacy-emoji, non-emoji, or structural cohort generation is permitted before this artifact",
+  "selected_template_exact": "Copy the input exactly. Input: <IN>{target}</IN>",
+  "selected_template_sha256": "1687c1a717cc04c3a77aba9075c8463cf95e9ae084e53435e549bca22ec0d951",
+  "selected_format_sha256": "e84859819d4873b1b739683534e720c8f17baaf7c6542be35c94eec106692f6d",
+  "selected_message_structure_example": [
+    {
+      "role": "user",
+      "content": "Copy the input exactly. Input: <IN>bO5*Fe%Yx^9pM=5g</IN>"
+    },
+    {
+      "role": "assistant",
+      "content": "<OUT>bO5*Fe%Yx^9pM=5g</OUT>"
+    },
+    {
+      "role": "user",
+      "content": "Copy the input exactly. Input: <IN>;@N@fd=K\\+w=kEJ3</IN>"
+    },
+    {
+      "role": "assistant",
+      "content": "<OUT>;@N@fd=K\\+w=kEJ3</OUT>"
+    },
+    {
+      "role": "user",
+      "content": "Copy the input exactly. Input: <IN>mX3 *vQ9!zB 2#7R</IN>"
+    },
+    {
+      "role": "assistant",
+      "content": "<OUT>mX3 *vQ9!zB 2#7R</OUT>"
+    },
+    {
+      "role": "user",
+      "content": "Copy the input exactly. Input: <IN>p~4tD14z/4g;[zM!</IN>"
+    },
+    {
+      "role": "assistant",
+      "content": "<OUT>p~4tD14z/4g;[zM!</OUT>"
+    },
+    {
+      "role": "user",
+      "content": "Copy the input exactly. Input: <IN>{target}</IN>"
+    }
+  ],
+  "supersedes_prior_ascii_only_freeze": {
+    "selected_copy_protocol": "fewshot_copy_v5_multiturn_cueless",
+    "selected_template_sha256": "1687c1a717cc04c3a77aba9075c8463cf95e9ae084e53435e549bca22ec0d951",
+    "frozen_at_utc": "2026-11-25T18:54:43.087833+00:00"
+  },
+  "byte_identical_user_content_rule": "the message list produced by this protocol is byte-identical across models; only each model's own chat-template wrapper may differ"
+}

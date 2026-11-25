@@ -1,0 +1,298 @@
+{
+  "generated_utc": "2026-11-25T18:57:09.687893+00:00",
+  "test": "ASCII copy controls, identical fewshot_copy_v5_multiturn_cueless prompts, greedy decoding, Qwen2.5-1.5B-Instruct bf16 versus MLX 8-bit with canonical tokenizer overlay",
+  "bf16_model": "quantcheck-qwen2.5-1.5b-instruct-bf16",
+  "q8_model": "quantcheck-qwen2.5-1.5b-instruct-mlx8",
+  "paired_items": 24,
+  "missing_paired_items": [],
+  "bf16_exact": 23,
+  "q8_exact": 23,
+  "q8_exact_drop_count": 0,
+  "q8_exact_drop_rate": 0.0,
+  "contamination_threshold_count": 2,
+  "quantization_contaminant": false,
+  "q8_within_noise": true,
+  "decision": "q8 within the prespecified +/-2-of-24 ASCII noise envelope; acceptable for 7B-class models",
+  "paired_item_results": [
+    {
+      "probe_key": "copy:copy-159",
+      "target": "(x.O,~^4z7/Kd~cw",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "(x.O,~^4z7/Kd~cw",
+      "q8_extracted": "(x.O,~^4z7/Kd~cw",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-160",
+      "target": "jOoG%UI01iE}FT05",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "jOoG%UI01iE}FT05",
+      "q8_extracted": "jOoG%UI01iE}FT05",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-161",
+      "target": "9 =hg*o/@v C9J.P",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "9 =hg*o/@v C9J.P",
+      "q8_extracted": "9 =hg*o/@v C9J.P",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-162",
+      "target": "na2`;EFygO,g;eda",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "na2`;EFygO,g;eda",
+      "q8_extracted": "na2`;EFygO,g;eda",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-163",
+      "target": "-9#*ne]e[MyJ:T-V",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "-9#*ne]e[MyJ:T-V",
+      "q8_extracted": "-9#*ne]e[MyJ:T-V",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-164",
+      "target": "Qme~y7W`uA':P1+|",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "Qme~y7W`uA':P1+|",
+      "q8_extracted": "Qme~y7W`uA':P1+|",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-165",
+      "target": "{pd`S,gY-4*v1u*X",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "{pd`S,gY-4*v1u*X",
+      "q8_extracted": "{pd`S,gY-4*v1u*X",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-166",
+      "target": "%HS|,wF%%r#GOh|@",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "%HS|,wF%%r#GOh|@",
+      "q8_extracted": "%HS|,wF%%r#GOh|@",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-167",
+      "target": "Z.F!4WO4^/APcP7c",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "Z.F!4WO4^/APcP7c",
+      "q8_extracted": "Z.F!4WO4^/APcP7c",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-168",
+      "target": "p)t=H9_LkY$htb?N",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "p)t=H9_LkY$htb?N",
+      "q8_extracted": "p)t=H9_LkY$htb?N",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-169",
+      "target": "8VR[h/;lU;R}[yH#",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "8VR[h/;lU;R}[yH#",
+      "q8_extracted": "8VR[h/;lU;R}[yH#",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-170",
+      "target": "r_z1i*X_qn!~?9AY",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "r_z1i*X_qn!~?9AY",
+      "q8_extracted": "r_z1i*X_qn!~?9AY",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-171",
+      "target": "j[tCCQymlAQ9J$|;",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "j[tCCQymlAQ9J$|;",
+      "q8_extracted": "j[tCCQymlAQ9J$|;",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-172",
+      "target": "oM07U$ylJ-R&U3t[",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "oM07U$ylJ-R&U3t[",
+      "q8_extracted": "oM07U$ylJ-R&U3t[",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-173",
+      "target": "(n,lgQ$'BbDUh^Gb",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "(n,lgQ$'BbDUh^Gb",
+      "q8_extracted": "(n,lgQ$'BbDUh^Gb",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-174",
+      "target": ":NB4#Ub/uhTm,^Q[",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": ":NB4#Ub/uhTm,^Q[",
+      "q8_extracted": ":NB4#Ub/uhTm,^Q[",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-175",
+      "target": "k'f'Sm%2B]R7u^EX",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "k'f'Sm%2B]R7u^EX",
+      "q8_extracted": "k'f'Sm%2B]R7u^EX",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-176",
+      "target": "s8Cg?X_]TUwh2_x!",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "s8Cg?X_]TUwh2_x!",
+      "q8_extracted": "s8Cg?X_]TUwh2_x!",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-177",
+      "target": "JhG[Kq;|9F]]Fv#W",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "JhG[Kq;|9F]]Fv#W",
+      "q8_extracted": "JhG[Kq;|9F]]Fv#W",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-178",
+      "target": "4KF0T^-9obHRp_#)",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "4KF0T^-9obHRp_#)",
+      "q8_extracted": "4KF0T^-9obHRp_#)",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-179",
+      "target": ")(]N*]9NIbUYN?!{",
+      "bf16_exact": false,
+      "q8_exact": false,
+      "bf16_extracted": "()N*]9NIbUYN?!{",
+      "q8_extracted": "()N*]9NIbUYN?!{",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-180",
+      "target": "x@7qR`dSXvS}Rvzi",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "x@7qR`dSXvS}Rvzi",
+      "q8_extracted": "x@7qR`dSXvS}Rvzi",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-181",
+      "target": "_1JY[Y4U?9Q?F3$M",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "_1JY[Y4U?9Q?F3$M",
+      "q8_extracted": "_1JY[Y4U?9Q?F3$M",
+      "same_extracted_bytes": true
+    },
+    {
+      "probe_key": "copy:copy-182",
+      "target": "peU@GeK|'FAM4eVv",
+      "bf16_exact": true,
+      "q8_exact": true,
+      "bf16_extracted": "peU@GeK|'FAM4eVv",
+      "q8_extracted": "peU@GeK|'FAM4eVv",
+      "same_extracted_bytes": true
+    }
+  ],
+  "ascii_summary": [
+    {
+      "model_id": "quantcheck-qwen2.5-1.5b-instruct-bf16",
+      "copy_protocol": "fewshot_copy_v1",
+      "n": 24,
+      "exact_count": 23,
+      "exact_rate": 0.9583333333333334,
+      "format_failures": 0,
+      "format_failure_rate": 0.0,
+      "ascii_gate_pass": true,
+      "wrapper_gate_pass_on_ascii_subset": true
+    },
+    {
+      "model_id": "quantcheck-qwen2.5-1.5b-instruct-bf16",
+      "copy_protocol": "fewshot_copy_v5_multiturn_cueless",
+      "n": 24,
+      "exact_count": 23,
+      "exact_rate": 0.9583333333333334,
+      "format_failures": 0,
+      "format_failure_rate": 0.0,
+      "ascii_gate_pass": true,
+      "wrapper_gate_pass_on_ascii_subset": true
+    },
+    {
+      "model_id": "quantcheck-qwen2.5-1.5b-instruct-mlx8",
+      "copy_protocol": "fewshot_copy_v1",
+      "n": 24,
+      "exact_count": 23,
+      "exact_rate": 0.9583333333333334,
+      "format_failures": 0,
+      "format_failure_rate": 0.0,
+      "ascii_gate_pass": true,
+      "wrapper_gate_pass_on_ascii_subset": true
+    },
+    {
+      "model_id": "quantcheck-qwen2.5-1.5b-instruct-mlx8",
+      "copy_protocol": "fewshot_copy_v5_multiturn_cueless",
+      "n": 24,
+      "exact_count": 23,
+      "exact_rate": 0.9583333333333334,
+      "format_failures": 0,
+      "format_failure_rate": 0.0,
+      "ascii_gate_pass": true,
+      "wrapper_gate_pass_on_ascii_subset": true
+    }
+  ],
+  "extractor_mutation_checks": {
+    "checks": {
+      "byte_exact_copy_accepted": true,
+      "single_codepoint_substitution_rejected": true,
+      "missing_zwj_rejected_and_classified": true,
+      "missing_vs16_rejected_and_classified": true,
+      "newline_padding_rejected_and_classified": true,
+      "nfc_nfd_mutation_rejected_and_classified": true,
+      "missing_wrapper_rejected": true,
+      "duplicate_wrapper_rejected": true,
+      "echoed_prompt_rejected": true,
+      "non whitespace_prefix_rejected": true,
+      "non whitespace_suffix_rejected": true,
+      "truncation_rejected_and_classified": true
+    },
+    "extractor_mutation_checks_pass": true,
+    "strict_extraction_rule": "exactly one <OUT> and one </OUT>; no non-whitespace outside wrappers; extracted bytes are compared without stripping, normalization, or repair"
+  }
+}

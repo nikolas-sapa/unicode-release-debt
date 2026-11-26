@@ -3,3 +3,6 @@ all:
 
 behavioral:
 	./run_behavioral.sh
+
+reproduce:
+	./reproduce.sh

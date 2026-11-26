@@ -1,0 +1,58 @@
+{
+  "deterministic_metadata": "SVG Date metadata removed; fixed svg.hashsalt; no wall-clock timestamp embedded by this manifest",
+  "fonts": {
+    "Geist-Regular.ttf": "2c460a7a71063e53491f343d44b382267bc0cf496e31db64865f962af3152e68",
+    "Geist-SemiBold.ttf": "01923aa148e5202ae70a2e11b2ab4dc41b80bcc374aedccc913d47bb2f591c06",
+    "GeistMono-Regular.ttf": "686914333e77a620c85b35481064788deb33fc25f69901bdbf296c1bbc26a7fe"
+  },
+  "generator": "src/make_figures.py",
+  "inputs": {
+    "results/behavioral_round2/round2_copy_newest_old_summary.csv": "72447197d4b1097daaa5c58238f31a9243f60ad0518a519241010d97bf93e15f",
+    "results/behavioral_round2/round2_count_fragmentation_summary.csv": "71210be32d364330e6697180eb054e0684fafc1c49586ccd2bb98bd7434194f9",
+    "results/behavioral_round2/round2_verdict.json": "911124f70b0238ebacc61a28d64a22b4aa7676b7846415a44ff3f2cbaa0d1725",
+    "results/manifest.json": "47a2fafa015eb592f3f6037917532c9c8f5447dbf93f3d10f3182c4856849cb7",
+    "results/rgi_primary_band_curve.csv": "f0f6adfc1d33bd74ced37933cafc04d330d50275c19d41b30c4970ccb2fa34bc",
+    "results/scan_verdict.json": "67d380dcbab85bbe5527cfacc9b5a692849f339073b881f89cee4c4088560fd6"
+  },
+  "matplotlib_version": "3.11.2",
+  "outputs": {
+    "docs/figures/f1_tokenizer_coverage_collapse.png": {
+      "sha256": "d237b7b92493a999652102d65a786b5dcb97a3e15d22e70b17e78db03bbf52e9",
+      "size": 213252
+    },
+    "docs/figures/f1_tokenizer_coverage_collapse.svg": {
+      "sha256": "b711aec20a0aa64892f0f88ecf281c164a26080390a6b09171671822109238d3",
+      "size": 137315
+    },
+    "docs/figures/f2_zwj_fragmentation_gradient.png": {
+      "sha256": "61f86ad34f9b2cdd55009eeaf99dbbc11d3f5d7b6b12c8e078c62630b19aa9e6",
+      "size": 168349
+    },
+    "docs/figures/f2_zwj_fragmentation_gradient.svg": {
+      "sha256": "e01fd68ad9a589546d7323dedadea24383ef5a591bf8a65d5edeedaf90690b7c",
+      "size": 115037
+    },
+    "docs/figures/f3_copy_vs_structural_contrast.png": {
+      "sha256": "50d2ca1103131b8a47b61f542e8a425c4daa2b93d9e5f6bec87b9916b44e7a12",
+      "size": 219311
+    },
+    "docs/figures/f3_copy_vs_structural_contrast.svg": {
+      "sha256": "3829ffb85fb2c0d45ac62a85121c3d7adfd7d315e4144d9d3bf15bfe3011687c",
+      "size": 156920
+    },
+    "docs/figures/f4_measurement_pipeline.png": {
+      "sha256": "23c959a2184e232eae61fa19cfed41f3cbaa06149aaf4ca4e41bc131670cf19c",
+      "size": 212224
+    },
+    "docs/figures/f4_measurement_pipeline.svg": {
+      "sha256": "f36ce57b07b8771af8510c9c16c21336345db1102c038c16289cc2112bed6648",
+      "size": 152792
+    }
+  },
+  "palette_constraints": {
+    "emoji_glyphs_used_in_figure_text": false,
+    "orange_used": false,
+    "primary_accent": "#006bff"
+  },
+  "python_version": "3.12.13"
+}

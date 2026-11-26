@@ -1,12 +1,12 @@
 {
   "SCAN_REPORT.md": {
-    "sha256": "d05ece3bfccfd748c2f1f06c9cbfff0a645c3cc63db5db8a405108b7c97a0d36",
-    "size": 9124
+    "sha256": "af9c54583000c91e4f2fe27a87b61b6ca14edc4a5221305eb9c84237a020dc63",
+    "size": 9140
   },
   "code_and_requirements": {
-    "/Users/nikolassapalidis/Developer/unicode-release-debt/requirements.txt": "0591bd1b35a252bc14a421a1aa5bc3edafbe5549486b080670553c67c307a64c",
+    "/Users/nikolassapalidis/Developer/unicode-release-debt/requirements.txt": "05916cf60df11c35d6035839a745cad888306d07d4f21a7b3edf9213d5c9ec98",
     "/Users/nikolassapalidis/Developer/unicode-release-debt/run.sh": "535711fd1e6ddf69440237e7d05f981b154677d4fb79b81dd02450f02cdea3c3",
-    "/Users/nikolassapalidis/Developer/unicode-release-debt/src/analyze_scan.py": "65bd87d5f709aa6220b0234b14a7d7e6898168005dc4bf3f246052d06c109f05",
+    "/Users/nikolassapalidis/Developer/unicode-release-debt/src/analyze_scan.py": "c1aff32ac0ab1912f72d390ba6bbba36695819ad151a867c8f17ba96d4f6fe02",
     "/Users/nikolassapalidis/Developer/unicode-release-debt/src/testset.py": "6c7131d5f70d2016897c8a215e4c2c0f96b6c80432c64c654f2c03708ebbcf17",
     "/Users/nikolassapalidis/Developer/unicode-release-debt/src/tokscan.py": "618e6eaa9ec8c5c9c1bdd43658e2243a382c597f4d9ff5a1f6bcf7ff8a84baf6",
     "/Users/nikolassapalidis/Developer/unicode-release-debt/src/ucd_build.py": "0cb054536746dab91006b189865222d41411adb5d85cb7d4f93a44a357c16f0d",
@@ -37,7 +37,7 @@
     "size": 67638
   },
   "manifest.json": {
-    "sha256": "d590ceb30dd7297317b5e04a77dc935d9aee8e64daa8f7c7fa5c68ee815287b5",
+    "sha256": "47a2fafa015eb592f3f6037917532c9c8f5447dbf93f3d10f3182c4856849cb7",
     "size": 19039
   },
   "normalization_summary.csv": {

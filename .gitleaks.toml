@@ -6,9 +6,14 @@ useDefault = true
 [allowlist]
 description = "Generated behavioral artifacts contain public model/tokenizer identifiers, SHA-256 provenance keys, and deliberately random ASCII copy-probe control strings, not credentials. The generic-api-key rule has high false-positive rates on these deterministic strings."
 targetRules = ["generic-api-key"]
+regexes = [
+  '''qwen2\.5-0\.5b-instruct''',
+]
 paths = [
   '''results/behavioral/.*''',
   '''results/behavioral_round2/.*''',
+  '''results/tokenizer_inventory.json''',
+  '''src/ucd_build.py''',
   '''src/behavioral_probes.py''',
   '''src/round2_common.py''',
 ]

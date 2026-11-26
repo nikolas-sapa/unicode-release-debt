@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: If you use this artifact, please cite it as below.
+title: "Unicode release debt: reproducible tokenizer-scan and behavioral pilot artifact"
+authors:
+  - family-names: Sapalidis
+    given-names: Nikolas
+year: 2026
+date-released: 2026-11-26
+url: https://github.com/nikolas-sapa/unicode-release-debt
+repository-code: https://github.com/nikolas-sapa/unicode-release-debt
+license: CC-BY-4.0
+type: dataset
+keywords:
+  - Unicode
+  - tokenization
+  - large language models
+  - grapheme clusters
+  - reproducibility

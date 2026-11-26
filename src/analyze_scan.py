@@ -15,6 +15,7 @@ RESULTS = ucd.RESULTS
 EV_BANDS = ["legacy", "E14.0", "E15.0", "E15.1", "E16.0", "E17.0", "E18.0"]
 EV_INDEX = {v: i for i, v in enumerate(ucd.EMOJI_DATES)}
 LEGACY_MAX = EV_INDEX["E13.1"]
+SCAN_SOURCE_NAMES = ["analyze_scan.py", "testset.py", "tokscan.py", "ucd_build.py", "validate.py"]
 
 
 def read_jsonl(path: Path):
@@ -190,7 +191,7 @@ def freeze_hashes():
         path = RESULTS / name
         if path.exists():
             rows[name] = {"sha256": hashlib.sha256(path.read_bytes()).hexdigest(), "size": path.stat().st_size}
-    rows["code_and_requirements"] = {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((ROOT / "src").glob("*.py")) + [ROOT / "requirements.txt", ROOT / "run.sh"] if p.exists()}
+    rows["code_and_requirements"] = {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in [ROOT / "src" / name for name in SCAN_SOURCE_NAMES] + [ROOT / "requirements.txt", ROOT / "run.sh"] if p.exists()}
     (RESULTS / "artifact_hashes.json").write_text(json.dumps(rows, indent=2, sort_keys=True))
 
 
@@ -198,7 +199,7 @@ def write_report(verdict, bands, inventory, validation, norm_rows):
     ucd_audit = json.loads((RESULTS / "ucd_audit.json").read_text())
     surface_collisions = ucd_audit.get("cross_version_zwj_surface_key_collisions", {})
     e17_surface_collisions = sum("E17.0" in versions for versions in surface_collisions.values())
-    loc = {p.stem: len(p.read_text().splitlines()) for p in sorted((ROOT / "src").glob("*.py"))}
+    loc = {name[:-3]: len((ROOT / "src" / name).read_text().splitlines()) for name in SCAN_SOURCE_NAMES}
     loc_detail = ", ".join(f"{k} {v}" for k, v in loc.items())
     lines = [
         "# Unicode release debt: tokenizer scan report", "",
@@ -247,7 +248,7 @@ def write_report(verdict, bands, inventory, validation, norm_rows):
         "- Proceed-rule 4 does not define the version series or whether monotone means strict at every adjacent step. This report uses the spec's primary bands and non-strict monotonicity with at least one strict adjacent change. Under a stricter every-adjacent-step decrease requirement, coverage cannot fire after it reaches zero; the atomic split-codepoint prong remains the cleaner positive signal.",
         "- The user prompt omitted Llama 3.2, although the spec's behavioral four-model arm includes it. Llama 3.2 tokenizer artifacts and model selection remain unresolved before behavioral inference.",
         "- Unicode 18.0 itself is dated 2026-09-16 in publicationdates.html, while Emoji 18.0 is dated 2026-09-15 in UTS #51. This is not a conflict: atomic characters use Unicode dates and emoji sequences use emoji dates.",
-        f"- The current Phase-0/scan codebase totals {sum(loc.values())} LOC across src/*.py ({loc_detail}), already exceeding the spec's eventual 575-line total artifact budget before behavioral runners exist. The cap appears infeasible at the specified rigor (hand-rolled SentencePiece protobuf parsing, inventory vintage analysis, audit reproduction are not delegable); explicit budget renegotiation is needed before Phase 1 behavioral work.",
+        f"- The current Phase-0/scan codebase totals {sum(loc.values())} LOC across the scan-stage src files ({loc_detail}), already exceeding the spec's eventual 575-line total artifact budget before behavioral runners exist. The cap appears infeasible at the specified rigor (hand-rolled SentencePiece protobuf parsing, inventory vintage analysis, audit reproduction are not delegable); explicit budget renegotiation is needed before Phase 1 behavioral work.",
         "", "Machine-readable outputs: `manifest.json`, `ucd_audit.json`, `testset_audit.json`, `validation.json`, `tokenizer_inventory.json`, `tokenizer_scan.csv/jsonl`, `copy_scan_summary.csv`, `normalization_summary.csv`, `rgi_version_curve.csv`, `rgi_primary_band_curve.csv`, and `scan_verdict.json`.",
     ]
     (RESULTS / "SCAN_REPORT.md").write_text("\n".join(lines) + "\n")

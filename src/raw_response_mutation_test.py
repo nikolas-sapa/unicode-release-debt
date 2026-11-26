@@ -37,8 +37,8 @@ def main():
             "completion_key": exact_row["completion_key"],
             "before_exact": before["task_exact"],
             "after_exact": after["task_exact"],
-            "before_hash": cf.sha_obj(exact_row["raw_text"]),
-            "after_hash": cf.sha_obj(corrupted["raw_text"]),
+            "before_hash": cf.sha_text(exact_row["raw_text"]),
+            "after_hash": cf.sha_text(corrupted["raw_text"]),
             "scoring_detected_corruption": before["task_exact"] is True and after["task_exact"] is False,
             "mutation_test_pass": before["task_exact"] is True and after["task_exact"] is False,
         }

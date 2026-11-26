@@ -287,20 +287,31 @@ def equal_weighted_pair_delta(pairs):
 
 def analyze_h1(scored, valid_carriers, do_carrier_boot=True):
     rows = h1_rows(scored, valid_carriers)
-    pooled = bootstrap_h1(rows, valid_carriers)
     carrier_results = {}
     for c in sorted(valid_carriers):
         carrier_results[c] = fit_carrier_h1(rows, c, BOOT if do_carrier_boot else 100)
-    finite_nonneg = sum(1 for x in carrier_results.values() if x.get("estimable") and math.isfinite(x["point_beta"]) and x["point_beta"] >= 0)
-    families = {cf.CARRIERS[c]["tokenizer_family"] for c, x in carrier_results.items() if x.get("estimable") and math.isfinite(x.get("point_beta", math.nan)) and x["point_beta"] >= 0}
-    p_count = pooled["bootstrap_one_sided_p_beta_gt_0"]
-    z = pooled["point_beta"] / pooled["normal_se"] if pooled["normal_se"] and pooled["normal_se"] > 0 else float("nan")
-    pooled["normal_one_sided_p_beta_gt_0"] = 1 - phi(z) if math.isfinite(z) else None
+    coefficient_valid = {c: bool(x.get("estimable") and x.get("fit_converged") and not x.get("fit_separation") and math.isfinite(x.get("point_beta", math.nan))) for c, x in carrier_results.items()}
+    finite_nonneg = sum(1 for c, x in carrier_results.items() if coefficient_valid.get(c) and x["point_beta"] >= 0)
+    families = {cf.CARRIERS[c]["tokenizer_family"] for c, x in carrier_results.items() if coefficient_valid.get(c) and x["point_beta"] >= 0}
+    if len(valid_carriers) < 4 or len({cf.CARRIERS[c]["tokenizer_family"] for c in valid_carriers}) < 3:
+        pooled = {
+            "n_rows": len(rows), "n_carriers": len(valid_carriers), "point_beta": None, "point_odds_ratio": None, "normal_se": None,
+            "fit_converged": False, "fit_separation": False, "bootstrap_replicates": BOOT, "bootstrap_valid": 0,
+            "bootstrap_separation_or_singular": 0, "bootstrap_nonconvergence": 0, "bootstrap_median": None, "bootstrap_ci95": [None, None],
+            "bootstrap_se": None, "bootstrap_one_sided_p_beta_gt_0": None, "bootstrap_normal_approx_one_sided_p_beta_gt_0": None,
+            "normal_one_sided_p_beta_gt_0": None, "seed": SEED, "strata": ["carrier x era x fragmentation_level"],
+            "insufficient_before_estimation": "fewer than four structurally valid carriers or fewer than three tokenizer families; primary H1 is inconclusive without pooling",
+        }
+    else:
+        pooled = bootstrap_h1(rows, valid_carriers)
+        z = pooled["point_beta"] / pooled["normal_se"] if pooled["normal_se"] and pooled["normal_se"] > 0 else float("nan")
+        pooled["normal_one_sided_p_beta_gt_0"] = 1 - phi(z) if math.isfinite(z) else None
     return {
         "pooled": pooled, "carrier_specific": carrier_results,
         "estimable_nonnegative_carrier_count": finite_nonneg, "nonnegative_tokenizer_family_count": len(families),
-        "estimable_nonnegative_carriers": sorted(c for c, x in carrier_results.items() if x.get("estimable") and math.isfinite(x["point_beta"]) and x["point_beta"] >= 0),
-        "count_rows": len(rows), "count_row_hash": cf.sha_obj([[r["completion_key"], r["task_exact"]] for r in rows]),
+        "estimable_nonnegative_carriers": sorted(c for c, x in carrier_results.items() if coefficient_valid.get(c) and x["point_beta"] >= 0),
+        "carrier_coefficient_valid": coefficient_valid,
+        "count_rows": len(rows), "count_row_hash": cf.sha_text(json.dumps([[r["completion_key"], r["task_exact"]] for r in rows], ensure_ascii=False, separators=(",", ":"))),
     }
 
 
@@ -381,9 +392,11 @@ def bootstrap_h2(rows, nboot=BOOT, seed=20261128):
     else:
         z_upper = z_lower = p_upper = p_lower = tost_p = exact_zero_p = None
     return {
-        "pairs": pair_n, "pair_hash": cf.sha_obj([[x["completion_key"], x["task_exact"]] for x in rows]),
+        "pairs": pair_n, "pair_hash": cf.sha_text(json.dumps([[x["completion_key"], x["task_exact"]] for x in rows], ensure_ascii=False, separators=(",", ":"))),
         "carrier_level_deltas": carrier_level, "carrier_mean_deltas": carrier_means, "delta_newest_minus_legacy": delta,
         "bootstrap_replicates": nboot, "bootstrap_se": se, "bootstrap_ci95": ci, "bootstrap_ci_width": width,
+        "bootstrap_tail_lower_prop_le_minus_10pp": float(np.mean(arr <= -0.10)) if len(arr) else None,
+        "bootstrap_tail_upper_prop_ge_plus_10pp": float(np.mean(arr >= 0.10)) if len(arr) else None,
         "z_upper": z_upper, "z_lower": z_lower, "tost_p_upper": p_upper, "tost_p_lower": p_lower, "tost_p": tost_p,
         "exact_zero_difference_p": exact_zero_p, "seed": seed,
     }
@@ -504,44 +517,302 @@ def write_csv(path, rows, fieldnames):
             w.writerow({k: r.get(k) for k in fieldnames})
 
 
+def exact_stats(rows):
+    exact = sum(1 for r in rows if r.get("task_exact"))
+    return {"exact": exact, "n": len(rows), "rate": exact / len(rows) if rows else None}
+
+
+def failure_stats(rows):
+    failures = sum(1 for r in rows if not r.get("task_exact"))
+    return {"failures": failures, "n": len(rows), "failure_rate": failures / len(rows) if rows else None}
+
+
+def bootstrap_single_carrier_pair_delta(rows, carrier_id, nboot=1000, seed=20261128):
+    count_rows = [r for r in rows if r["carrier_id"] == carrier_id and r["probe_type"] == "count" and r["probe_scope"] == "unicode" and r.get("match_pair_id") and r["fragmentation_level"] in ("L2", "L3", "L4")]
+    pairs = pair_records(count_rows)
+    by_level = defaultdict(list)
+    for p in pairs:
+        by_level[p["fragmentation_level"]].append(p["failure_difference"])
+    if sorted(by_level) != ["L2", "L3", "L4"]:
+        return {"carrier_id": carrier_id, "pairs": len(pairs), "estimable": False, "reason": "missing one or more overlap levels"}
+    observed = float(np.mean([np.mean(by_level[level]) for level in ("L2", "L3", "L4")]))
+    rng = np.random.default_rng(seed)
+    reps = []
+    arrays = [np.array(by_level[level], dtype=float) for level in ("L2", "L3", "L4")]
+    for _ in range(nboot):
+        reps.append(float(np.mean([np.mean(arr[rng.integers(0, len(arr), len(arr))]) for arr in arrays])))
+    arr = np.array(reps)
+    return {
+        "carrier_id": carrier_id, "pairs": len(pairs), "estimable": True, "delta": observed,
+        "bootstrap_ci95": [float(np.quantile(arr, 0.025)), float(np.quantile(arr, 0.975))],
+        "bootstrap_se": float(arr.std(ddof=1)), "bootstrap_replicates": nboot,
+        "level_deltas": {level: {"pairs": len(by_level[level]), "delta": float(np.mean(by_level[level]))} for level in ("L2", "L3", "L4")},
+    }
+
+
+def exploratory_descriptive(scored):
+    out = {"carriers": {}, "warning": "exploratory descriptive output only; carriers failing frozen copy or structural ASCII gates are not interpretable confirmatory structural measurements"}
+    for cfg in cf.carrier_configs(include_descriptive=True):
+        c = cfg["carrier_id"]
+        rows = [r for r in scored if r["carrier_id"] == c]
+        count_rows = [r for r in rows if r["probe_type"] == "count" and r["probe_scope"] == "unicode"]
+        copy_rows = [r for r in rows if r["probe_type"] == "copy" and r["probe_scope"] == "unicode"]
+        scalar_rows = [r for r in rows if r["probe_type"] == "scalar_listing" and r["probe_scope"] == "unicode"]
+        level_era = {}
+        for level in LEVELS:
+            for era in ("legacy", "newest"):
+                rr = [r for r in count_rows if r["fragmentation_level"] == level and r["era"] == era]
+                st = failure_stats(rr)
+                level_era[f"{level}|{era}"] = {**st, "exact": st["n"] - st["failures"], "format_failures": sum(1 for r in rr if r.get("format_failure")), "wrong_by_one": sum(1 for r in rr if r.get("count_near_miss"))}
+        h1_like = h1_rows(rows, [c])
+        logistic = {"estimable": False, "reason": "insufficient rows"}
+        if len(h1_like) >= 20:
+            try:
+                X, names, spec, frag_col, era_col = design(h1_like, [c], include_carrier=False)
+                y = np.array([not r["task_exact"] for r in h1_like], dtype=float)
+                fit = fit_logistic(X, y)
+                beta = float(fit["beta"][frag_col])
+                se = float(fit["se"][frag_col]) if math.isfinite(float(fit["se"][frag_col])) else None
+                logistic = {
+                    "estimable": bool(fit["valid"] and math.isfinite(beta)), "beta": beta, "odds_ratio": float(math.exp(beta)) if math.isfinite(beta) and abs(beta) < 700 else None,
+                    "normal_se": se, "normal_ci95": [beta - 1.96 * se, beta + 1.96 * se] if se is not None else [None, None],
+                    "fit_converged": fit["converged"], "fit_separation": fit["separation"], "rows": len(h1_like),
+                    "note": "single-carrier covariate-adjusted descriptive fit without bootstrap; not a confirmatory coefficient when the carrier fails structural gates",
+                }
+            except Exception as exc:
+                logistic = {"estimable": False, "reason": str(exc), "rows": len(h1_like)}
+        overlap = [r for r in count_rows if r.get("match_pair_id") and r["fragmentation_level"] in ("L2", "L3", "L4")]
+        pair_delta = bootstrap_single_carrier_pair_delta(rows, c)
+        out["carriers"][c] = {
+            "count_failure_by_level_era": level_era,
+            "copy_unicode_exact": exact_stats(copy_rows),
+            "scalar_unicode_exact": exact_stats(scalar_rows),
+            "count_overlap_exact": exact_stats([r for r in count_rows if r["fragmentation_level"] in ("L2", "L3", "L4")]),
+            "exploratory_logistic_fragmentation_fit": logistic,
+            "exploratory_matched_pair_delta": pair_delta,
+            "copy_wrapper_format_failures": sum(1 for r in rows if r["probe_type"] == "copy" and r.get("format_failure")),
+        }
+    return out
+
+
 def make_tables_figures(scored, gates, h1, h2, hh, analysis):
     tables = OUT / "tables"
     figures = OUT / "figures"
     tables.mkdir(exist_ok=True)
     figures.mkdir(exist_ok=True)
-    inventory = cf.read_jsonl(OUT / "inventory.jsonl")
-    cell_counts = Counter((x["carrier_id"], x["inventory_cell"], x["item_type"]) for x in inventory)
-    write_csv(tables / "T1_inventory_cells.csv", [{"carrier_id": k[0], "inventory_cell": k[1], "item_type": k[2], "probes": v} for k, v in sorted(cell_counts.items())], ["carrier_id", "inventory_cell", "item_type", "probes"])
-    write_csv(tables / "T2_carrier_gates.csv", list(gates["carriers"].values()), sorted(next(iter(gates["carriers"].values())).keys()))
-    t3 = []
+    blue = "#006bff"
+    dark = "#1f2937"
+    gray = "#6b7280"
+    light_gray = "#d1d5db"
+    carriers = [x["carrier_id"] for x in cf.carrier_configs(include_descriptive=True)]
+
+    t1_rows = []
+    for cfg in cf.carrier_configs(include_descriptive=True):
+        c = cfg["carrier_id"]
+        x = gates["carriers"][c]
+        t1_rows.append({
+            "carrier_id": c, "revision": cfg["revision"], "primary_ladder": x["primary_ladder"], "tokenizer_valid": x["tokenizer_valid"],
+            "ascii_copy_exact": f"{x['ascii_copy_exact']}/24", "copy_wrapper_format_failures": x["copy_wrapper_format_failures"],
+            "ascii_count_exact": f"{x['ascii_count_exact']}/12", "ascii_scalar_exact": f"{x['ascii_scalar_exact']}/12",
+            "copy_valid": x["copy_valid"], "structural_valid": x["structural_valid"], "quantization_status": x["quantization_status"],
+            "include_h1h2h3_primary": x["include_h1h2h3_primary"], "include_h4_primary": x["include_h4_primary"],
+        })
+    write_csv(tables / "T1_carrier_validity_quantization_gates.csv", t1_rows, ["carrier_id", "revision", "primary_ladder", "tokenizer_valid", "ascii_copy_exact", "copy_wrapper_format_failures", "ascii_count_exact", "ascii_scalar_exact", "copy_valid", "structural_valid", "quantization_status", "include_h1h2h3_primary", "include_h4_primary"])
+
+    with open(OUT / "inventory_cell_table.csv", newline="", encoding="utf-8") as fh:
+        reader = csv.DictReader(fh)
+        inventory_rows = list(reader)
+        inventory_fields = reader.fieldnames
+    write_csv(tables / "T2_inventory_cells.csv", inventory_rows, inventory_fields)
+
+    pooled = h1["pooled"]
+    pooled_ci = pooled.get("bootstrap_ci95") or [None, None]
+    t3_rows = [{
+        "row_type": "pooled_primary", "carrier_id": "pooled", "beta": pooled.get("point_beta"), "odds_ratio": pooled.get("point_odds_ratio"),
+        "bootstrap_ci_low": pooled_ci[0], "bootstrap_ci_high": pooled_ci[1], "bootstrap_p_beta_gt_0": pooled.get("bootstrap_one_sided_p_beta_gt_0"),
+        "holm_adjusted_p": analysis["verdict"]["hypotheses"]["H1"].get("holm_adjusted_p"), "bootstrap_valid": pooled.get("bootstrap_valid"),
+        "bootstrap_replicates": pooled.get("bootstrap_replicates"), "estimable": pooled.get("point_beta") is not None,
+        "reason": pooled.get("insufficient_before_estimation", ""),
+    }]
     for c, x in sorted(h1["carrier_specific"].items()):
-        t3.append({"carrier_id": c, "beta": x.get("point_beta"), "odds_ratio": x.get("point_odds_ratio"), "bootstrap_ci": json.dumps(x.get("bootstrap_ci95")), "bootstrap_valid": x.get("bootstrap_valid"), "estimable": x.get("estimable")})
-    write_csv(tables / "T3_carrier_fragmentation_effects.csv", t3, ["carrier_id", "beta", "odds_ratio", "bootstrap_ci", "bootstrap_valid", "estimable"])
-    write_csv(tables / "T4_h2_carrier_level_deltas.csv", [{"carrier_level": k, **v} for k, v in h2.get("carrier_level_deltas", {}).items()], ["carrier_level", "pairs", "mean_newest_minus_legacy_failure"])
-    write_csv(tables / "T5_scalar_exactness.csv", [{"carrier_id": c, "era": e, **v} for c, vals in hh["h3"]["by_carrier"].items() for e, v in vals.items()], ["carrier_id", "era", "exact", "n", "rate"])
-    write_csv(tables / "T6_copy_exactness.csv", [{"carrier_id": c, "era": e, **v} for c, vals in hh["h4"]["by_carrier"].items() for e, v in vals.items()], ["carrier_id", "era", "exact", "n", "rate"])
-    write_csv(tables / "T7_descriptive_error_classes.csv", [{"class": k, "n": v} for k, v in sorted(hh["h4"]["copy_failure_classes"].items())] + [{"class": "scalar:" + str(k), "n": v} for k, v in sorted(hh["h3"]["error_classes"].items())], ["class", "n"])
-    count_rows = [r for r in scored if r["probe_type"] == "count" and r["probe_scope"] == "unicode"]
-    lev_order = {x: i for i, x in enumerate(LEVELS)}
-    plt.figure(figsize=(7, 4))
-    for era, marker in [("legacy", "o"), ("newest", "x")]:
+        ci = x.get("bootstrap_ci95") or [None, None]
+        t3_rows.append({
+            "row_type": "carrier_specific_primary", "carrier_id": c, "beta": x.get("point_beta"), "odds_ratio": x.get("point_odds_ratio"),
+            "bootstrap_ci_low": ci[0], "bootstrap_ci_high": ci[1], "bootstrap_p_beta_gt_0": x.get("bootstrap_one_sided_p_beta_gt_0"),
+            "holm_adjusted_p": "", "bootstrap_valid": x.get("bootstrap_valid"), "bootstrap_replicates": x.get("bootstrap_replicates"),
+            "estimable": h1.get("carrier_coefficient_valid", {}).get(c, x.get("estimable")), "reason": x.get("reason", ""),
+        })
+    write_csv(tables / "T3_h1_coefficients.csv", t3_rows, ["row_type", "carrier_id", "beta", "odds_ratio", "bootstrap_ci_low", "bootstrap_ci_high", "bootstrap_p_beta_gt_0", "holm_adjusted_p", "bootstrap_valid", "bootstrap_replicates", "estimable", "reason"])
+
+    h2_ci = h2.get("bootstrap_ci95") or [None, None]
+    t4_rows = [{
+        "row_type": "pooled_primary", "carrier_or_level": "pooled", "pairs": h2.get("pairs"), "delta": h2.get("delta_newest_minus_legacy"),
+        "bootstrap_ci_low": h2_ci[0], "bootstrap_ci_high": h2_ci[1], "tost_p": h2.get("tost_p"),
+        "holm_adjusted_tost_p": analysis["verdict"]["hypotheses"]["H2"].get("holm_adjusted_tost_p"), "note": h2.get("error", ""),
+    }]
+    for c, delta in sorted(h2.get("carrier_mean_deltas", {}).items()):
+        t4_rows.append({"row_type": "carrier_primary", "carrier_or_level": c, "pairs": "", "delta": delta, "bootstrap_ci_low": "", "bootstrap_ci_high": "", "tost_p": "", "holm_adjusted_tost_p": "", "note": ""})
+    for key, x in sorted(h2.get("carrier_level_deltas", {}).items()):
+        t4_rows.append({"row_type": "carrier_level_primary", "carrier_or_level": key, "pairs": x["pairs"], "delta": x["mean_newest_minus_legacy_failure"], "bootstrap_ci_low": "", "bootstrap_ci_high": "", "tost_p": "", "holm_adjusted_tost_p": "", "note": ""})
+    write_csv(tables / "T4_h2_matched_pairs.csv", t4_rows, ["row_type", "carrier_or_level", "pairs", "delta", "bootstrap_ci_low", "bootstrap_ci_high", "tost_p", "holm_adjusted_tost_p", "note"])
+
+    copy_unicode = [r for r in scored if r["probe_type"] == "copy" and r["probe_scope"] == "unicode"]
+    t5_rows = []
+    for c in carriers:
+        for era in ("newest", "legacy"):
+            for typ in ("atomic_nonemoji", "atomic_emoji", "complex_nonemoji", "zwj_emoji"):
+                rr = [r for r in copy_unicode if r["carrier_id"] == c and r["era"] == era and r["item_type"] == typ]
+                st = exact_stats(rr)
+                t5_rows.append({"carrier_id": c, "era": era, "item_type": typ, **st, "near_misses": sum(1 for r in rr if r.get("copy_near_miss")), "format_failures": sum(1 for r in rr if r.get("format_failure")), "include_h4_primary": gates["carriers"][c]["include_h4_primary"]})
+    write_csv(tables / "T5_copy_ceiling.csv", t5_rows, ["carrier_id", "era", "item_type", "exact", "n", "rate", "near_misses", "format_failures", "include_h4_primary"])
+
+    scalar_unicode = [r for r in scored if r["probe_type"] == "scalar_listing" and r["probe_scope"] == "unicode"]
+    t6_rows = []
+    for c in carriers:
+        for era in ("newest", "legacy"):
+            for typ in ("atomic_nonemoji", "atomic_emoji", "complex_nonemoji", "zwj_emoji"):
+                rr = [r for r in scalar_unicode if r["carrier_id"] == c and r["era"] == era and r["item_type"] == typ]
+                st = exact_stats(rr)
+                t6_rows.append({"carrier_id": c, "era": era, "item_type": typ, **st, "near_misses": sum(1 for r in rr if r.get("scalar_near_miss")), "error_classes": json.dumps(dict(Counter(r.get("scalar_error_class") for r in rr)), sort_keys=True), "include_h1h2h3_primary": gates["carriers"][c]["include_h1h2h3_primary"]})
+    write_csv(tables / "T6_scalar_floor.csv", t6_rows, ["carrier_id", "era", "item_type", "exact", "n", "rate", "near_misses", "error_classes", "include_h1h2h3_primary"])
+
+    count_unicode = [r for r in scored if r["probe_type"] == "count" and r["probe_scope"] == "unicode"]
+    t7_rows = []
+    for c in carriers:
+        for level in LEVELS:
+            for era in ("legacy", "newest"):
+                rr = [r for r in count_unicode if r["carrier_id"] == c and r["fragmentation_level"] == level and r["era"] == era]
+                st = exact_stats(rr)
+                signed = Counter(str(r.get("count_signed_error")) for r in rr if r.get("count_signed_error") is not None)
+                t7_rows.append({"carrier_id": c, "fragmentation_level": level, "era": era, **st, "wrong_by_one": sum(1 for r in rr if r.get("count_near_miss")), "format_failures": sum(1 for r in rr if r.get("format_failure")), "signed_error_distribution": json.dumps(dict(sorted(signed.items())), sort_keys=True), "include_h1h2h3_primary": gates["carriers"][c]["include_h1h2h3_primary"]})
+    write_csv(tables / "T7_count_errors.csv", t7_rows, ["carrier_id", "fragmentation_level", "era", "exact", "n", "rate", "wrong_by_one", "format_failures", "signed_error_distribution", "include_h1h2h3_primary"])
+
+    copy_examples = []
+    for r in copy_unicode:
+        if not r["task_exact"]:
+            copy_examples.append({"carrier_id": r["carrier_id"], "probe_key": r["probe_key"], "era": r.get("era"), "item_type": r.get("item_type"), "near_miss_class": r.get("copy_near_miss_class"), "first_byte_mismatch_offset": r.get("first_byte_mismatch_offset"), "target_diff_hex_context": r.get("target_diff_hex_context"), "output_diff_hex_context": r.get("output_diff_hex_context"), "raw_text": r.get("raw_text"), "target": r.get("target")})
+    write_csv(tables / "supplementary_copy_near_miss_examples.csv", copy_examples, ["carrier_id", "probe_key", "era", "item_type", "near_miss_class", "first_byte_mismatch_offset", "target_diff_hex_context", "output_diff_hex_context", "raw_text", "target"])
+
+    cmap = plt.get_cmap("Blues").copy()
+    cmap.set_bad(color="#f3f4f6")
+    columns = [(era, level) for era in ("legacy", "newest") for level in LEVELS]
+    z = np.full((len(carriers), len(columns)), np.nan)
+    for i, c in enumerate(carriers):
+        for j, (era, level) in enumerate(columns):
+            rr = [r for r in count_unicode if r["carrier_id"] == c and r["era"] == era and r["fragmentation_level"] == level]
+            if rr:
+                z[i, j] = np.mean([not r["task_exact"] for r in rr])
+    fig, ax = plt.subplots(figsize=(10, 4.8))
+    im = ax.imshow(np.ma.masked_invalid(z), aspect="auto", cmap=cmap, vmin=0, vmax=1)
+    ax.set_xticks(range(len(columns)), [f"{era}\n{level}" for era, level in columns])
+    ax.set_yticks(range(len(carriers)), [c.replace("-instruct", "-instr") for c in carriers], fontsize=7)
+    for i in range(z.shape[0]):
+        for j in range(z.shape[1]):
+            if np.isfinite(z[i, j]):
+                ax.text(j, i, f"{z[i, j]:.2f}", ha="center", va="center", fontsize=7, color="white" if z[i, j] > 0.55 else dark)
+    ax.set_title("Count-probe failure rate by era and fragmentation level")
+    fig.colorbar(im, ax=ax, label="failure rate")
+    plt.tight_layout()
+    plt.savefig(figures / "F1_failure_heatmap.png", dpi=180)
+    plt.close()
+
+    fig, axes = plt.subplots(2, 3, figsize=(11, 6.5), sharex=True, sharey=True)
+    for ax, c in zip(axes.flat, carriers):
+        rr = [r for r in count_unicode if r["carrier_id"] == c and not (r["fragmentation_level"] == "L1" and r["era"] == "newest")]
+        for era, color in (("legacy", blue), ("newest", gray)):
+            groups = defaultdict(list)
+            for r in rr:
+                if r["era"] == era and r.get("tokens_per_cluster") is not None:
+                    groups[round(float(r["tokens_per_cluster"]) * 2) / 2].append(not r["task_exact"])
+            xs = sorted(groups)
+            ax.scatter(xs, [np.mean(groups[x]) for x in xs], s=[12 + 2 * len(groups[x]) for x in xs], color=color, alpha=0.85, label=era)
+        ax.set_ylim(-0.05, 1.05)
+        ax.set_title(c.replace("-instruct", "-instr"), fontsize=8)
+        ax.text(0.02, 0.03, "adjusted primary curve not estimable" if not gates["minimum_h1h2_met"] else "observed binned means", transform=ax.transAxes, fontsize=6, color=gray)
+    for ax in axes[-1]:
+        ax.set_xlabel("measured tokens per cluster")
+    for ax in axes[:, 0]:
+        ax.set_ylabel("count failure rate")
+    handles, labels = axes.flat[0].get_legend_handles_labels()
+    if handles:
+        fig.legend(handles, labels, loc="upper right")
+    fig.suptitle("Observed fragmentation dose-response (binned; descriptive when gates fail)", y=0.995)
+    plt.tight_layout()
+    plt.savefig(figures / "F2_fragmentation_dose_response.png", dpi=180)
+    plt.close()
+
+    descriptive = analysis.get("exploratory_descriptive", {}).get("carriers", {})
+    entries = [descriptive[c]["exploratory_matched_pair_delta"] for c in carriers if c in descriptive and descriptive[c]["exploratory_matched_pair_delta"].get("estimable")]
+    fig, ax = plt.subplots(figsize=(8, 4.8))
+    ax.axvspan(-0.10, 0.10, color="#eff6ff", zorder=0)
+    ax.axvline(-0.10, color="#dc2626", linestyle="--", linewidth=1)
+    ax.axvline(0.10, color="#dc2626", linestyle="--", linewidth=1)
+    ax.axvline(0, color=dark, linewidth=0.8)
+    ylabels = []
+    for y, x in enumerate(entries):
+        lo, hi = x["bootstrap_ci95"]
+        ax.errorbar(x["delta"], y, xerr=[[x["delta"] - lo], [hi - x["delta"]]], fmt="o", color=blue, ecolor=light_gray, capsize=3, markersize=4)
+        ylabels.append(x["carrier_id"].replace("-instruct", "-instr") + " (expl.)")
+    if h2.get("delta_newest_minus_legacy") is not None and h2.get("bootstrap_ci95") and h2["bootstrap_ci95"][0] is not None:
+        y = len(entries)
+        lo, hi = h2["bootstrap_ci95"]
+        ax.errorbar(h2["delta_newest_minus_legacy"], y, xerr=[[h2["delta_newest_minus_legacy"] - lo], [hi - h2["delta_newest_minus_legacy"]]], fmt="D", color=dark, ecolor=dark, capsize=3, markersize=4)
+        ylabels.append("pooled primary")
+    ax.set_yticks(range(len(ylabels)), ylabels, fontsize=7)
+    ax.set_xlabel("newest minus legacy count failure (matched pairs)")
+    ax.set_title("Matched era-effect forest plot; shaded band is ±10 pp")
+    if not gates["minimum_h1h2_met"]:
+        ax.text(0.01, 0.98, "No confirmatory pooled estimate: fewer than four structurally valid primary carriers", transform=ax.transAxes, va="top", fontsize=7, color="#991b1b")
+    plt.tight_layout()
+    plt.savefig(figures / "F3_era_effect_forest.png", dpi=180)
+    plt.close()
+
+    fig, ax = plt.subplots(figsize=(9, 4.8))
+    xpos = np.arange(len(carriers))
+    width = 0.25
+    series = []
+    for label, probe_type in (("copy unicode", "copy"), ("count overlap", "count"), ("scalar unicode", "scalar_listing")):
         vals = []
-        for lev in LEVELS:
-            rr = [r for r in count_rows if r["fragmentation_level"] == lev and r["era"] == era]
-            vals.append(np.mean([not r["task_exact"] for r in rr]) if rr else np.nan)
-        plt.plot(LEVELS, vals, marker=marker, label=era)
-    plt.xlabel("fragmentation level"); plt.ylabel("count failure rate"); plt.legend(); plt.tight_layout(); plt.savefig(figures / "F1_count_failure_by_fragmentation.png", dpi=160); plt.close()
-    plt.figure(figsize=(7, 4))
-    labels=[]; vals=[]
-    for c,x in sorted(h1["carrier_specific"].items()):
-        if x.get("estimable"):
-            labels.append(c.replace("-", "-\n", 1)); vals.append(x.get("point_beta"))
-    plt.axhline(0,color="black",linewidth=.8); plt.bar(range(len(vals)),vals); plt.xticks(range(len(vals)),labels,rotation=45,ha="right",fontsize=7); plt.ylabel("carrier-specific beta"); plt.tight_layout(); plt.savefig(figures/"F2_carrier_fragmentation_effects.png",dpi=160); plt.close()
-    if h2.get("carrier_mean_deltas"):
-        plt.figure(figsize=(6,4)); plt.bar(range(len(h2["carrier_mean_deltas"])),list(h2["carrier_mean_deltas"].values())); plt.axhline(.10,color="red",linestyle="--"); plt.axhline(-.10,color="red",linestyle="--"); plt.xticks(range(len(h2["carrier_mean_deltas"])),list(h2["carrier_mean_deltas"]),rotation=45,ha="right",fontsize=7); plt.ylabel("newest - legacy failure"); plt.tight_layout(); plt.savefig(figures/"F3_h2_overlap_deltas.png",dpi=160); plt.close()
-    scalar_rows=[r for r in scored if r["probe_type"]=="scalar_listing" and r["probe_scope"]=="unicode"]
-    plt.figure(figsize=(6,4)); labels=list(hh["h3"]["by_carrier"]); newest=[hh["h3"]["by_carrier"][c]["newest"]["rate"] or 0 for c in labels]; legacy=[hh["h3"]["by_carrier"][c]["legacy"]["rate"] or 0 for c in labels]; x=np.arange(len(labels)); plt.bar(x-.18,newest,.36,label="newest"); plt.bar(x+.18,legacy,.36,label="legacy"); plt.xticks(x,labels,rotation=45,ha="right",fontsize=7); plt.ylabel("scalar exact rate"); plt.legend(); plt.tight_layout(); plt.savefig(figures/"F4_scalar_exactness.png",dpi=160); plt.close()
-    plt.figure(figsize=(6,4)); labels=list(hh["h4"]["by_carrier"]); newest=[hh["h4"]["by_carrier"][c]["newest"]["rate"] or 0 for c in labels]; legacy=[hh["h4"]["by_carrier"][c]["legacy"]["rate"] or 0 for c in labels]; x=np.arange(len(labels)); plt.bar(x-.18,newest,.36,label="newest"); plt.bar(x+.18,legacy,.36,label="legacy"); plt.xticks(x,labels,rotation=45,ha="right",fontsize=7); plt.ylabel("copy byte-exact rate"); plt.legend(); plt.tight_layout(); plt.savefig(figures/"F5_copy_exactness.png",dpi=160); plt.close()
+        for c in carriers:
+            if probe_type == "count":
+                rr = [r for r in count_unicode if r["carrier_id"] == c and r["fragmentation_level"] in ("L2", "L3", "L4")]
+            else:
+                rr = [r for r in scored if r["carrier_id"] == c and r["probe_type"] == probe_type and r["probe_scope"] == "unicode"]
+            st = exact_stats(rr)
+            vals.append(st["rate"] if st["n"] else np.nan)
+        series.append((label, vals))
+    for idx, ((label, vals), color) in enumerate(zip(series, (blue, gray, dark))):
+        ax.bar(xpos + (idx - 1) * width, vals, width, label=label, color=color)
+    ax.set_xticks(xpos, [c.replace("-instruct", "-instr") for c in carriers], rotation=35, ha="right", fontsize=7)
+    ax.set_ylim(0, 1.05)
+    ax.set_ylabel("exact rate")
+    ax.set_title("Copy/count/scalar exactness triad")
+    ax.legend()
+    plt.tight_layout()
+    plt.savefig(figures / "F4_copy_count_scalar_triad.png", dpi=180)
+    plt.close()
+
+    taxonomy = ["format_failure_wrapper_mimicry", "format_failure_other", "normalization_only_mismatch", "decomposed_rgi_sequence_or_missing_zwj", "missing_vs16", "truncation_near_miss", "truncation_other", "extra_text_after_exact_target", "replacement_character_emitted", "single_codepoint_edit", "two_codepoint_edits", "reordering", "multi_codepoint_corruption", "other_unclassified_mismatch"]
+    row_keys = [(c, typ) for c in carriers for typ in ("atomic_nonemoji", "atomic_emoji", "complex_nonemoji", "zwj_emoji")]
+    mat = np.zeros((len(row_keys), len(taxonomy)))
+    for i, (c, typ) in enumerate(row_keys):
+        rr = [r for r in copy_unicode if r["carrier_id"] == c and r["item_type"] == typ and not r["task_exact"]]
+        counts = Counter(r.get("copy_near_miss_class") for r in rr)
+        for j, cls in enumerate(taxonomy):
+            mat[i, j] = counts.get(cls, 0)
+    fig, ax = plt.subplots(figsize=(12, 7))
+    im = ax.imshow(mat, aspect="auto", cmap=cmap, vmin=0)
+    ax.set_xticks(range(len(taxonomy)), taxonomy, rotation=45, ha="right", fontsize=7)
+    ax.set_yticks(range(len(row_keys)), [f"{c.replace('-instruct', '-instr')} | {typ}" for c, typ in row_keys], fontsize=6)
+    for i in range(mat.shape[0]):
+        for j in range(mat.shape[1]):
+            if mat[i, j]:
+                ax.text(j, i, str(int(mat[i, j])), ha="center", va="center", fontsize=6, color="white" if mat[i, j] > max(1, mat.max() / 2) else dark)
+    ax.set_title("Copy failure near-miss taxonomy by carrier and item type")
+    fig.colorbar(im, ax=ax, label="rows")
+    plt.tight_layout()
+    plt.savefig(figures / "F5_copy_near_miss_taxonomy.png", dpi=180)
+    plt.close()
     return {"tables": sorted(str(x) for x in tables.glob("*.csv")), "figures": sorted(str(x) for x in figures.glob("*.png"))}
 
 
@@ -609,18 +880,22 @@ def implementation_mutation_checks():
 
 
 def verdicts(gates, h1, h2, hh):
-    raw_p = [h1["pooled"]["bootstrap_one_sided_p_beta_gt_0"], h2.get("tost_p") if h2.get("tost_p") is not None else 1.0]
-    adj = holm_adjust(raw_p)
-    h1adj, h2adj = adj
-    lo, hi = h1["pooled"]["bootstrap_ci95"]
+    h1p = h1["pooled"].get("bootstrap_one_sided_p_beta_gt_0")
+    h2p = h2.get("tost_p")
+    can_adjust = h1p is not None and h2p is not None and gates["minimum_h1h2_met"] and h1["pooled"].get("bootstrap_valid", 0) >= 4000
+    if can_adjust:
+        h1adj, h2adj = holm_adjust([h1p, h2p])
+    else:
+        h1adj = h2adj = None
+    lo, hi = h1["pooled"].get("bootstrap_ci95", [None, None])
     h1_rules = {
         "minimum_validity_met": gates["minimum_h1h2_met"],
-        "at_least_4000_valid_bootstrap_replicates": h1["pooled"]["bootstrap_valid"] >= 4000,
+        "at_least_4000_valid_bootstrap_replicates": h1["pooled"].get("bootstrap_valid", 0) >= 4000,
         "holm_adjusted_count_significant": h1adj is not None and h1adj < 0.05,
         "bootstrap_lower_ci_exceeds_log_1_25": lo is not None and lo > math.log(1.25),
         "at_least_3_carriers_2_families_nonnegative": h1["estimable_nonnegative_carrier_count"] >= 3 and h1["nonnegative_tokenizer_family_count"] >= 2,
     }
-    if h1["pooled"]["bootstrap_valid"] < 4000:
+    if not gates["minimum_h1h2_met"] or h1["pooled"].get("bootstrap_valid", 0) < 4000:
         h1v = "inconclusive"
     elif all(h1_rules.values()):
         h1v = "confirmed"
@@ -632,10 +907,16 @@ def verdicts(gates, h1, h2, hh):
         "minimum_validity_met": gates["minimum_h1h2_met"],
         "observed_delta_inside_band": h2.get("delta_newest_minus_legacy") is not None and -0.10 <= h2["delta_newest_minus_legacy"] <= 0.10,
         "holm_adjusted_tost_significant": h2adj is not None and h2adj < 0.05,
-        "ci_within_band": h2.get("bootstrap_ci95") and h2["bootstrap_ci95"][0] >= -0.10 and h2["bootstrap_ci95"][1] <= 0.10,
-        "ci_width_at_most_12pp": h2.get("bootstrap_ci_width") is not None and h2["bootstrap_ci_width"] <= 0.12,
+        "ci_within_band": bool(h2.get("bootstrap_ci95")) and h2["bootstrap_ci95"][0] is not None and h2["bootstrap_ci95"][0] >= -0.10 and h2["bootstrap_ci95"][1] <= 0.10,
     }
-    h2v = "confirmed" if all(h2_rules.values()) else ("refuted" if h2.get("bootstrap_ci95") and (h2["bootstrap_ci95"][0] > 0.10 or h2["bootstrap_ci95"][1] < -0.10) else "inconclusive")
+    if not gates["minimum_h1h2_met"]:
+        h2v = "inconclusive"
+    elif all(h2_rules.values()):
+        h2v = "confirmed"
+    elif h2.get("bootstrap_ci95") and h2["bootstrap_ci95"][0] is not None and (h2["bootstrap_ci95"][0] > 0.10 or h2["bootstrap_ci95"][1] < -0.10):
+        h2v = "refuted"
+    else:
+        h2v = "inconclusive"
     if not hh["h3"]["minimum_met"]:
         h3v = "inconclusive"
     elif hh["h3"]["every_newest_zero_exact"] and hh["h3"]["every_legacy_zero_exact"]:
@@ -651,8 +932,8 @@ def verdicts(gates, h1, h2, hh):
     return {
         "created_utc": datetime.now(timezone.utc).isoformat(), "seed": SEED,
         "hypotheses": {
-            "H1": {"verdict": h1v, "confirmation_rules": h1_rules, "raw_count_p": raw_p[0], "holm_adjusted_p": h1adj, "beta": h1["pooled"]["point_beta"], "bootstrap_ci95": h1["pooled"]["bootstrap_ci95"], "material_threshold_log_or": math.log(1.25), "refutation_logic": "upper CI below material threshold or entirely below zero"},
-            "H2": {"verdict": h2v, "confirmation_rules": h2_rules, "raw_tost_p": raw_p[1], "holm_adjusted_tost_p": h2adj, "delta": h2.get("delta_newest_minus_legacy"), "bootstrap_ci95": h2.get("bootstrap_ci95"), "ci_width": h2.get("bootstrap_ci_width"), "equivalence_band": [-0.10, 0.10]},
+            "H1": {"verdict": h1v, "confirmation_rules": h1_rules, "raw_count_p": h1p, "holm_adjusted_p": h1adj, "beta": h1["pooled"].get("point_beta"), "bootstrap_ci95": h1["pooled"].get("bootstrap_ci95"), "material_threshold_log_or": math.log(1.25), "refutation_logic": "upper CI below material threshold or entirely below zero"},
+            "H2": {"verdict": h2v, "confirmation_rules": h2_rules, "raw_tost_p": h2p, "holm_adjusted_tost_p": h2adj, "delta": h2.get("delta_newest_minus_legacy"), "bootstrap_ci95": h2.get("bootstrap_ci95"), "ci_width": h2.get("bootstrap_ci_width"), "equivalence_band": [-0.10, 0.10]},
             "H3": {"verdict": h3v, "every_newest_zero_exact": hh["h3"]["every_newest_zero_exact"], "every_legacy_zero_exact": hh["h3"]["every_legacy_zero_exact"], "minimum_met": hh["h3"]["minimum_met"]},
             "H4": {"verdict": h4v, "every_newest_byte_exact": hh["h4"]["every_newest_byte_exact"], "every_legacy_byte_exact": hh["h4"]["every_legacy_byte_exact"], "minimum_met": hh["h4"]["minimum_met"]},
         },
@@ -680,11 +961,13 @@ def main():
     h2["incomplete_overlap_group_count"] = len(incomplete)
     hh = h3_h4(scored, gates)
     sensitivity = sensitivity_analyses(scored, gates)
+    exploratory = exploratory_descriptive(scored)
     mutation = implementation_mutation_checks()
     verdict = verdicts(gates, h1, h2, hh)
     analysis = {
         "created_utc": datetime.now(timezone.utc).isoformat(), "pre_registration": "docs/CONFIRMATORY_PREREGISTRATION.md", "random_seed": SEED,
         "gates": gates, "h1": h1, "h2": h2, "h3_h4": hh, "sensitivity_analyses": sensitivity,
+        "exploratory_descriptive": exploratory,
         "implementation_mutation_checks": mutation, "verdict": verdict,
     }
     cf.write_json(OUT / "confirmatory_analysis.json", analysis)

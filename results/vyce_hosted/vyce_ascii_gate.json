@@ -1,0 +1,5 @@
+{
+  "adaptation": "round-2 chat messages passed directly to OpenAI-compatible chat API; no system prompt and no template rewrite",
+  "generated_utc": "2026-11-26T06:46:37.565037+00:00",
+  "models": {}
+}

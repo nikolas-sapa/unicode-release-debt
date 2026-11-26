@@ -1,0 +1,41 @@
+{
+  "corrupted_negative_control": {
+    "corrupted_response": "<OUT>A😀♂️X</OUT>",
+    "corrupted_response_exact": false,
+    "missing_zwj_classified": true,
+    "negative_control_pass": true,
+    "target": "A😀‍♂️X"
+  },
+  "extractor_mutation_checks_pass": true,
+  "generated_utc": "2026-11-26T07:06:42.978231+00:00",
+  "harness_validation_pass": false,
+  "probe_plan_integrity": {
+    "expected_rows": 104,
+    "manifest_sha256": "e0c319a66512b4d73d6c76bc89b2441e8eb88ce2680891f48ef87edf83b67962",
+    "pass": true,
+    "rows": 104,
+    "sha256": "e0c319a66512b4d73d6c76bc89b2441e8eb88ce2680891f48ef87edf83b67962"
+  },
+  "production_ledger_integrity": {
+    "api_calls": 30,
+    "pass": true,
+    "problems": [],
+    "rows": 30
+  },
+  "scored_response_mutation": {
+    "pass": false,
+    "ran": false,
+    "reason": "no scored byte-exact copy response yet"
+  },
+  "scored_response_mutation_required_before_completion": true,
+  "tiny_cap_batch_check": {
+    "aborted_before_any_api_call": true,
+    "api_call_rows": 0,
+    "batch_rows": 2,
+    "budget_abort_rows": 1,
+    "cap_usd": 1e-09,
+    "error_text": "{\"budget_abort\": \"projected conservative cost for logical batch would exceed hard cap\", \"cap_usd\": 1e-09, \"cumulative_cap_cost_usd\": 0.0, \"projection\": {\"cost_bound_method\": \"sum of per-call UTF-8 byte/overhead input upper bounds plus max_tokens output upper bounds\", \"input_tokens_upper_bound\": 1192, \"output_tokens_upper_bound\": 128, \"projected_cap_cost_usd\": 0.001576}}",
+    "new_validation_ledger_rows": 1,
+    "pass": true
+  }
+}

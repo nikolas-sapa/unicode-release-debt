@@ -1,0 +1,13 @@
+{
+  "network_error": null,
+  "privacy_note": "public artifact allowlist: balance, lifetime spend, key name, timestamps, and lifetime modelUsage counters omitted",
+  "response_body_sha256": "336838cdb95119ddeb89c996f826b6a7dae0fcb0d74f64b066906c1f509f13c2",
+  "sanitized": {
+    "enabled": true,
+    "rateLimit": 60,
+    "tier": "free",
+    "verified": false
+  },
+  "secret_redacted": false,
+  "status": 200
+}

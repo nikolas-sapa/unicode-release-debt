@@ -1,0 +1,162 @@
+{
+  "artifacts": [
+    {
+      "file": "tokenizer.json",
+      "independent_download_sha256": "0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3",
+      "independent_download_sha256_match": true,
+      "path": "data/hf/openai-gpt-oss-120b/tokenizer.json",
+      "repo": "openai/gpt-oss-120b",
+      "retrieval_date": "2026-11-26T06:43:25.137717+00:00",
+      "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+      "sha256": "0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3",
+      "size": 27868174,
+      "tokenizer_id": "openai-gpt-oss-120b",
+      "url": "https://huggingface.co/openai/gpt-oss-120b/resolve/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/tokenizer.json"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "independent_download_sha256": "9279e942392b742d633c7adbb89ebe002c98399db8926a7af5125c726f404070",
+      "independent_download_sha256_match": true,
+      "path": "data/hf/openai-gpt-oss-120b/tokenizer_config.json",
+      "repo": "openai/gpt-oss-120b",
+      "retrieval_date": "2026-11-26T06:43:31.034650+00:00",
+      "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+      "sha256": "9279e942392b742d633c7adbb89ebe002c98399db8926a7af5125c726f404070",
+      "size": 4200,
+      "tokenizer_id": "openai-gpt-oss-120b",
+      "url": "https://huggingface.co/openai/gpt-oss-120b/resolve/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/tokenizer_config.json"
+    },
+    {
+      "file": "special_tokens_map.json",
+      "independent_download_sha256": "dd5e191d20c12d2fee1da5bae14ca1db0f5f4215300af691f23cdee97120a293",
+      "independent_download_sha256_match": true,
+      "path": "data/hf/openai-gpt-oss-120b/special_tokens_map.json",
+      "repo": "openai/gpt-oss-120b",
+      "retrieval_date": "2026-11-26T06:43:31.667249+00:00",
+      "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+      "sha256": "dd5e191d20c12d2fee1da5bae14ca1db0f5f4215300af691f23cdee97120a293",
+      "size": 98,
+      "tokenizer_id": "openai-gpt-oss-120b",
+      "url": "https://huggingface.co/openai/gpt-oss-120b/resolve/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/special_tokens_map.json"
+    },
+    {
+      "file": "tokenizer.json",
+      "independent_download_sha256": "8f9f37ca37fdc4f5fd36d5cf4d3b0e8392edb4e894fd10cc0d70b4957c8633cf",
+      "independent_download_sha256_match": true,
+      "path": "data/hf/deepseek-v4-flash/tokenizer.json",
+      "repo": "deepseek-ai/DeepSeek-V4-Flash",
+      "retrieval_date": "2026-11-26T06:43:32.806604+00:00",
+      "revision": "60d8d70770c6776ff598c94bb586a859a38244f1",
+      "sha256": "8f9f37ca37fdc4f5fd36d5cf4d3b0e8392edb4e894fd10cc0d70b4957c8633cf",
+      "size": 6367146,
+      "tokenizer_id": "deepseek-v4-flash",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/resolve/60d8d70770c6776ff598c94bb586a859a38244f1/tokenizer.json"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "independent_download_sha256": "6ac8c8dc065ed118161d02dd532749ae3f52c243deac27872134fae2f50d8547",
+      "independent_download_sha256_match": true,
+      "path": "data/hf/deepseek-v4-flash/tokenizer_config.json",
+      "repo": "deepseek-ai/DeepSeek-V4-Flash",
+      "retrieval_date": "2026-11-26T06:43:33.792960+00:00",
+      "revision": "60d8d70770c6776ff598c94bb586a859a38244f1",
+      "sha256": "6ac8c8dc065ed118161d02dd532749ae3f52c243deac27872134fae2f50d8547",
+      "size": 801,
+      "tokenizer_id": "deepseek-v4-flash",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/resolve/60d8d70770c6776ff598c94bb586a859a38244f1/tokenizer_config.json"
+    },
+    {
+      "file": "tokenizer.json",
+      "independent_download_sha256": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b",
+      "independent_download_sha256_match": true,
+      "path": "data/hf/deepseek-v4.1-flash/tokenizer.json",
+      "repo": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "retrieval_date": "2026-11-26T06:43:35.039896+00:00",
+      "revision": "314113f8a7dadb388215396ba5fbee2c610a04d6",
+      "sha256": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b",
+      "size": 6367257,
+      "tokenizer_id": "deepseek-v4.1-flash",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/314113f8a7dadb388215396ba5fbee2c610a04d6/tokenizer.json"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "independent_download_sha256": "6ac8c8dc065ed118161d02dd532749ae3f52c243deac27872134fae2f50d8547",
+      "independent_download_sha256_match": true,
+      "path": "data/hf/deepseek-v4.1-flash/tokenizer_config.json",
+      "repo": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "retrieval_date": "2026-11-26T06:43:35.887289+00:00",
+      "revision": "314113f8a7dadb388215396ba5fbee2c610a04d6",
+      "sha256": "6ac8c8dc065ed118161d02dd532749ae3f52c243deac27872134fae2f50d8547",
+      "size": 801,
+      "tokenizer_id": "deepseek-v4.1-flash",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/314113f8a7dadb388215396ba5fbee2c610a04d6/tokenizer_config.json"
+    },
+    {
+      "file": "tokenizer.json",
+      "independent_download_sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+      "independent_download_sha256_match": true,
+      "path": "data/hf/glm-5.3-flash/tokenizer.json",
+      "repo": "zai-org/GLM-5.3-Flash",
+      "retrieval_date": "2026-11-26T06:43:38.324941+00:00",
+      "revision": "46a050bec13002ad29ee795c16e61cf4fa3c4a9c",
+      "sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+      "size": 20217442,
+      "tokenizer_id": "glm-5.3-flash",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash/resolve/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/tokenizer.json"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "independent_download_sha256": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc",
+      "independent_download_sha256_match": true,
+      "path": "data/hf/glm-5.3-flash/tokenizer_config.json",
+      "repo": "zai-org/GLM-5.3-Flash",
+      "retrieval_date": "2026-11-26T06:43:41.690799+00:00",
+      "revision": "46a050bec13002ad29ee795c16e61cf4fa3c4a9c",
+      "sha256": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc",
+      "size": 761,
+      "tokenizer_id": "glm-5.3-flash",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash/resolve/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/tokenizer_config.json"
+    }
+  ],
+  "generated_utc": "2026-11-26T06:43:41.906675+00:00",
+  "hf_api_metadata": {
+    "deepseek-v4-flash": {
+      "createdAt": "2026-04-22T06:04:20.000Z",
+      "downloads": 979695,
+      "gated": false,
+      "id": "deepseek-ai/DeepSeek-V4-Flash",
+      "lastModified": "2026-06-22T12:12:13.000Z",
+      "private": false,
+      "sha": "60d8d70770c6776ff598c94bb586a859a38244f1"
+    },
+    "deepseek-v4.1-flash": {
+      "createdAt": "2026-09-10T02:17:58.000Z",
+      "downloads": 1096257,
+      "gated": false,
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "lastModified": "2026-10-16T09:27:28.000Z",
+      "private": false,
+      "sha": "314113f8a7dadb388215396ba5fbee2c610a04d6"
+    },
+    "glm-5.3-flash": {
+      "createdAt": "2026-08-25T06:43:14.000Z",
+      "downloads": 6226276,
+      "gated": false,
+      "id": "zai-org/GLM-5.3-Flash",
+      "lastModified": "2026-10-15T06:32:52.000Z",
+      "private": false,
+      "sha": "46a050bec13002ad29ee795c16e61cf4fa3c4a9c"
+    },
+    "openai-gpt-oss-120b": {
+      "createdAt": "2025-08-04T22:33:06.000Z",
+      "downloads": 2275800,
+      "gated": false,
+      "id": "openai/gpt-oss-120b",
+      "lastModified": "2025-08-26T17:25:03.000Z",
+      "private": false,
+      "sha": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a"
+    }
+  },
+  "revision_policy": "exact HF commit revision pinned; tokenizer file bytes SHA-256 pinned; independent second download must match",
+  "scope": "VYCE exploratory hosted-arm tokenizer extension; local scan only, no hosted API cost"
+}

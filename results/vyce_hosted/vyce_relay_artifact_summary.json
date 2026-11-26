@@ -1,0 +1,415 @@
+{
+  "availability_attempts": [
+    {
+      "content": null,
+      "error_message": "This model is currently unavailable. Please try again later.",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "gpt-oss-120b",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T06:38:11.983263+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "This model is temporarily disabled",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "deepseek-v4-flash",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T06:38:12.109240+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "You do not have access to this resource.",
+      "finish_reason": null,
+      "http_status": 403,
+      "model": "deepseek-v4-flash-lr",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T06:38:12.363488+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "This model is currently unavailable. Please try again later.",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "glm-5.3-flash",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T06:38:12.523649+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "This model is currently unavailable. Please try again later.",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "gpt-oss-120b",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T06:48:31.455436+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "This model is temporarily disabled",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "deepseek-v4-flash",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T06:48:31.635072+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "You do not have access to this resource.",
+      "finish_reason": null,
+      "http_status": 403,
+      "model": "deepseek-v4-flash-lr",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T06:48:31.870687+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "This model is currently unavailable. Please try again later.",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "glm-5.3-flash",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T06:48:32.077384+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "This model is currently unavailable. Please try again later.",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "gpt-oss-120b",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T06:58:25.697425+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "This model is temporarily disabled",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "deepseek-v4-flash",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T06:58:25.806123+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "You do not have access to this resource.",
+      "finish_reason": null,
+      "http_status": 403,
+      "model": "deepseek-v4-flash-lr",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T06:58:26.149837+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "This model is currently unavailable. Please try again later.",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "glm-5.3-flash",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T06:58:26.287933+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "This model is currently unavailable. Please try again later.",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "gpt-oss-120b",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T07:01:47.041729+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "This model is temporarily disabled",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "deepseek-v4-flash",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T07:01:49.519744+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "You do not have access to this resource.",
+      "finish_reason": null,
+      "http_status": 403,
+      "model": "deepseek-v4-flash-lr",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T07:01:49.726487+00:00"
+    },
+    {
+      "content": null,
+      "error_message": "This model is currently unavailable. Please try again later.",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "glm-5.3-flash",
+      "network_error": null,
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "responds": false,
+      "returned_model": null,
+      "utc": "2026-11-26T07:01:49.865883+00:00"
+    }
+  ],
+  "diagnostic_probes": [
+    {
+      "content": null,
+      "endpoint": "https://www.vyceai.com/v1/chat/completions",
+      "finish_reason": null,
+      "http_status": 404,
+      "model": "gpt-oss-120b",
+      "note": "body reconstructed and hash-verified against the cost-ledger row because this initial infrastructure diagnostic was logged before the diagnostic jsonl existed",
+      "purpose": "www_host_diagnostic",
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "returned_model": null,
+      "utc": "2026-11-26T06:48:57.672730+00:00"
+    },
+    {
+      "content": "OK",
+      "endpoint": "https://vyceai.com/v1/chat/completions",
+      "finish_reason": "stop",
+      "http_status": 200,
+      "model": "wave",
+      "note": "non-target control only: establishes whether the key/relay can complete any chat request; not part of the scientific battery",
+      "purpose": "non_target_infrastructure_control",
+      "relay_artifacts": [],
+      "returned_model": "wave",
+      "utc": "2026-11-26T06:51:13.096560+00:00"
+    },
+    {
+      "content": null,
+      "endpoint": "https://vyceai.com/v1/chat/completions",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "openai/gpt-oss-120b",
+      "note": "alias diagnostic only: checks whether an upstream-style model identifier is routed; not part of the scientific battery unless separately justified",
+      "purpose": "alias_model_diagnostic",
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "returned_model": null,
+      "utc": "2026-11-26T06:51:51.659873+00:00"
+    },
+    {
+      "content": null,
+      "endpoint": "https://vyceai.com/v1/chat/completions",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "deepseek-ai/DeepSeek-V4-Flash",
+      "note": "alias diagnostic only: checks whether an upstream-style model identifier is routed; not part of the scientific battery unless separately justified",
+      "purpose": "alias_model_diagnostic",
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "returned_model": null,
+      "utc": "2026-11-26T06:51:51.833704+00:00"
+    },
+    {
+      "content": null,
+      "endpoint": "https://vyceai.com/v1/chat/completions",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "deepseek-ai/deepseek-v4-flash",
+      "note": "alias diagnostic only: checks whether an upstream-style model identifier is routed; not part of the scientific battery unless separately justified",
+      "purpose": "alias_model_diagnostic",
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "returned_model": null,
+      "utc": "2026-11-26T06:51:51.930078+00:00"
+    },
+    {
+      "content": null,
+      "endpoint": "https://vyceai.com/v1/chat/completions",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "zai-org/GLM-5.3-Flash",
+      "note": "alias diagnostic only: checks whether an upstream-style model identifier is routed; not part of the scientific battery unless separately justified",
+      "purpose": "alias_model_diagnostic",
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "returned_model": null,
+      "utc": "2026-11-26T06:51:52.057313+00:00"
+    },
+    {
+      "content": null,
+      "endpoint": "https://vyceai.com/v1/chat/completions",
+      "finish_reason": null,
+      "http_status": 503,
+      "model": "zai-org/glm-5.3-flash",
+      "note": "alias diagnostic only: checks whether an upstream-style model identifier is routed; not part of the scientific battery unless separately justified",
+      "purpose": "alias_model_diagnostic",
+      "relay_artifacts": [
+        "api_error_object",
+        "content_missing",
+        "http_error",
+        "no_choices",
+        "usage_missing"
+      ],
+      "returned_model": null,
+      "utc": "2026-11-26T06:51:52.179151+00:00"
+    }
+  ],
+  "per_model": []
+}

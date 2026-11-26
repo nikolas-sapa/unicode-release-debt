@@ -1,0 +1,287 @@
+{
+  "all_listed_artifacts_exist": true,
+  "generated_utc": "2026-11-26T07:07:21.273920+00:00",
+  "rows": [
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_probe_plan.jsonl",
+      "sha256": "61a6cfbba17fb2c0be65fd736b21a6802d979104e6569f8bdb2bdd00486880c7",
+      "size": 266351
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_selection_manifest.json",
+      "sha256": "feeaebf2d8c9244366a3afa0a3153a1593b6bef6198ac65fa399e0f8be687c18",
+      "size": 5286
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/models_list_response.json",
+      "sha256": "3c58b1a63dd4d72ca5778ccc530c8f965a1d3fef42fef1d8947484a3a8c10334",
+      "size": 2449
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/availability_probe.jsonl",
+      "sha256": "a68a568ad0241620d0af60b3b517d0218989f24c6103bcd5905b5aeac83ae7e8",
+      "size": 19016
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/availability_summary.json",
+      "sha256": "a7e83fe746c65f5761722f78a9210ea5959d24c6f595b6bb16712c594a71ec9e",
+      "size": 2505
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/diagnostic_probe.jsonl",
+      "sha256": "236fedbcc68a3ae5eac21208c2ba2a0f7a499a66af94b700c047c93c4d855ce8",
+      "size": 9355
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/v1_me_sanitized.json",
+      "sha256": "6837ace697babbea4b620718716d9d3ed743cb20935f1224eb3863cdcccc9de2",
+      "size": 409
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/v1_me_snapshots.jsonl",
+      "sha256": "8d9c3d280ce846b8c6671db4425b97bd43485a9a4787f760c3dba055d051c6c3",
+      "size": 913
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/v1_me_usage_delta.json",
+      "sha256": "ddfd537d17c33884434d42bdee59c49e0334cb6d1a7b2c92daa71d13976ea28e",
+      "size": 629
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/cost_ledger.jsonl",
+      "sha256": "a1da55f01f3e3e0f8f7829ac06a48380ceea558639336a0d5b11235f1692072b",
+      "size": 45072
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/cost_ledger_validation_tiny_cap.jsonl",
+      "sha256": "715baa345591861472a15a233079c0541b5be32624943ab96bf19427687cf852",
+      "size": 1818
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_raw.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_runtime.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_scored.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_scoring_validation.json",
+      "sha256": "5347a27afe068978965bc93185394365ecad635daaae7f68feb0c8124e569019",
+      "size": 1417
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_harness_validation.json",
+      "sha256": "775c1a2c6fe94ee79a05d8a277870ee71b67a17f03c08e7fa2938b2040abc2a2",
+      "size": 1579
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_copy_cohort_summary.csv",
+      "sha256": "d69331a09905e003b39e56ecf08ef2862398ed762ed0d6d20d7672aff3b86faf",
+      "size": 142
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_copy_newest_old_summary.csv",
+      "sha256": "f5bb80d04f49f62790a1ef40eb63b020cbc64f2539634e818806504f1836c669",
+      "size": 137
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_structural_summary.csv",
+      "sha256": "d848daa15d4d63c22f2239eb6b221509f4a0b55952ee74a2e8a10babb26a2bbe",
+      "size": 140
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_count_fragmentation_summary.csv",
+      "sha256": "ee5b0743d8894bbdd789ca837c9337ab159af0936c9d15407bb38d98843675f2",
+      "size": 111
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_count_tokenizer_covariates.csv",
+      "sha256": "059d948856a6f32ba8e29a3c895cbc86b34083fc5b4f1b40c6f6245256a8f3c0",
+      "size": 684
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_analysis.json",
+      "sha256": "04f68c6a694a060280a54f22bda14de2ed8be41d67591b5d42b027254a849c50",
+      "size": 24958
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_cost_summary.json",
+      "sha256": "b808707bf0fc1b3cc27231f584219da4844f98390dc03d8456ffeb3b93917494",
+      "size": 3824
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/vyce_relay_artifact_summary.json",
+      "sha256": "6864e7445168b08520b3398f3435354bfb66d038ceb12e8f61ac8c7ef17542f6",
+      "size": 12265
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/tokenizer_extension_manifest.json",
+      "sha256": "e5efe61bec868de494eb2806d51d72557eabbd65d2bbd9b238df0527b5e2ff6e",
+      "size": 7930
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/tokenizer_scan_extension.jsonl",
+      "sha256": "2b33e3ec0c355df9178f2556cb3e8d8a225685900b1647eec7ca9fef8287f15e",
+      "size": 2703850
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/tokenizer_scan_extension.metadata.json",
+      "sha256": "803212adc56246df059c4311def44343b54508ffaaadb0ee3e6b66f36a503888",
+      "size": 575
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/tokenizer_inventory_extension.json",
+      "sha256": "ac2614fb102f05a8367e18d98b58929a15dfb3f6678da102492dfe1f7c89a583",
+      "size": 77603
+    },
+    {
+      "exists": true,
+      "kind": "artifact",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/VYCE_ARM_REPORT.md",
+      "sha256": "e35ba17e92b46930ff88207278af62c93ed7abf3bfe9e990e0a9051e6fd99df0",
+      "size": 11676
+    },
+    {
+      "exists": true,
+      "kind": "script",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/src/vyce_common.py",
+      "sha256": "7ba69eacf3df3e4f75c7be98563e0f2a894338f9835b11bed70e06468cb35f4f",
+      "size": 18504
+    },
+    {
+      "exists": true,
+      "kind": "script",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/src/build_vyce_plan.py",
+      "sha256": "1d3f1af4178c2a367989b9a745fcd57773c4510cd124aff34c13eff6d4c55281",
+      "size": 9979
+    },
+    {
+      "exists": true,
+      "kind": "script",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/src/probe_vyce_availability.py",
+      "sha256": "fa97f72dbd59dc76fecee565a1738c86ad2863637196d14173440d5b4d3b7759",
+      "size": 4546
+    },
+    {
+      "exists": true,
+      "kind": "script",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/src/probe_vyce_diagnostics.py",
+      "sha256": "7b799ad2c443d5d52d71d03324bde9da52467c2b81255599484253fc1eb2e638",
+      "size": 6033
+    },
+    {
+      "exists": true,
+      "kind": "script",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/src/capture_vyce_me.py",
+      "sha256": "c5501b1e88493da8b5e3c2bc6f4a1695cfb2786500529062ad2f68891d192f78",
+      "size": 4018
+    },
+    {
+      "exists": true,
+      "kind": "script",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/src/run_vyce_hosted.py",
+      "sha256": "2c4aecb10a26f18bfa233a847462c328d5c81e3cf962d7d7844900df736132da",
+      "size": 11171
+    },
+    {
+      "exists": true,
+      "kind": "script",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/src/score_vyce_hosted.py",
+      "sha256": "e48774bf7a4064211c8372ac8ccfd7bc7e2ceefc49ece59cc0ee8c09ebc0dba5",
+      "size": 9785
+    },
+    {
+      "exists": true,
+      "kind": "script",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/src/analyze_vyce_hosted.py",
+      "sha256": "a49bc5331ce7bed9c78cabe8d1fd25d5c2ea5fed72a306c25985bd0f94fc23ca",
+      "size": 32228
+    },
+    {
+      "exists": true,
+      "kind": "script",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/src/vyce_tokenizer_scan.py",
+      "sha256": "bdb7fbdcca875e9807044cd6e3cb86f509c7a9ece87c6234686e497978c8e463",
+      "size": 12412
+    },
+    {
+      "exists": true,
+      "kind": "script",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/src/validate_vyce_harness.py",
+      "sha256": "be9938987ffa8a3aae056fba96b0d3ad8b66945370f39977d4d3f48e0b2b7e70",
+      "size": 5233
+    },
+    {
+      "exists": true,
+      "kind": "script",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/src/hash_vyce_artifacts.py",
+      "sha256": "b509a9fcf2cd26172d722c0ba886091ede99670a7845ccb865f99eeee59d59b8",
+      "size": 3184
+    }
+  ],
+  "scope": "VYCE exploratory hosted-arm artifact and script hashes; excludes cost_ledger key material because no key material is ever written"
+}

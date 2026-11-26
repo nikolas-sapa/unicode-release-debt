@@ -1,0 +1,675 @@
+{
+  "design": {
+    "copy_ascii": 24,
+    "copy_unicode": 100,
+    "count_ascii": 12,
+    "count_boundary_l1_legacy": 40,
+    "count_boundary_l1_newest_if_structurally_feasible": 40,
+    "count_overlap_l2_l4_both_eras": 240,
+    "decomposition_ascii": 12,
+    "decomposition_unicode": 32,
+    "per_carrier_maximum": 500,
+    "per_carrier_minimum": 460,
+    "per_era_level_cell": 40,
+    "six_carrier_maximum": 3000,
+    "six_carrier_minimum": 2760
+  },
+  "environment": {
+    "numpy_version": "2.5.5",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python_version": "3.12.13"
+  },
+  "generation_runtime_estimate_max_rows": {
+    "generation_only_total_hours": 0.957886859096448,
+    "generation_only_total_minutes": 57.47321154578688,
+    "per_model": [
+      {
+        "assumed_rows": 500,
+        "estimated_generation_minutes": 3.278980149600478,
+        "model_id": "tinyllama-1.1b-chat-v1.0-bf16",
+        "seconds_per_probe_source": 0.3934776179520574
+      },
+      {
+        "assumed_rows": 500,
+        "estimated_generation_minutes": 6.641036420026875,
+        "model_id": "qwen2.5-3b-instruct-bf16",
+        "seconds_per_probe_source": 0.796924370403225
+      },
+      {
+        "assumed_rows": 500,
+        "estimated_generation_minutes": 11.203708353736063,
+        "model_id": "qwen3-4b-instruct-2507-mlx8",
+        "seconds_per_probe_source": 1.3444450024483277
+      },
+      {
+        "assumed_rows": 500,
+        "estimated_generation_minutes": 8.135655895588068,
+        "model_id": "gemma3-4b-it-mlx8-mirror",
+        "seconds_per_probe_source": 0.9762787074705682
+      },
+      {
+        "assumed_rows": 500,
+        "estimated_generation_minutes": 17.010122373099332,
+        "model_id": "mistral7b-instruct-v03-mlx8",
+        "seconds_per_probe_source": 2.0412146847719197
+      },
+      {
+        "assumed_rows": 500,
+        "estimated_generation_minutes": 11.203708353736063,
+        "model_id": "llama32-3b-instruct-mlx8",
+        "seconds_per_probe_source": 1.3444450024483277
+      }
+    ]
+  },
+  "h1_power": [
+    {
+      "carriers": 5,
+      "criterion": "lower Wald 95% bound for beta_fragmentation_level exceeds log(1.25), using z=1.959964; conservative fixed alpha=0.025 approximation",
+      "mean_beta_per_level_log_or": 0.7566975328117423,
+      "mean_odds_ratio_per_level": 2.131226280943612,
+      "mean_wald_se": 0.07689281560684519,
+      "per_era_level_cell": 40,
+      "power": 1.0,
+      "scenario": "pilot_moderate_22p2pp",
+      "simulations": 2000,
+      "unicode_count_rows_simulated": 1400
+    },
+    {
+      "carriers": 4,
+      "criterion": "lower Wald 95% bound for beta_fragmentation_level exceeds log(1.25), using z=1.959964; conservative fixed alpha=0.025 approximation",
+      "mean_beta_per_level_log_or": 0.7530737475260688,
+      "mean_odds_ratio_per_level": 2.12351715105825,
+      "mean_wald_se": 0.08583853244707661,
+      "per_era_level_cell": 40,
+      "power": 1.0,
+      "scenario": "pilot_moderate_22p2pp",
+      "simulations": 2000,
+      "unicode_count_rows_simulated": 1120
+    },
+    {
+      "carriers": 5,
+      "criterion": "lower Wald 95% bound for beta_fragmentation_level exceeds log(1.25), using z=1.959964; conservative fixed alpha=0.025 approximation",
+      "mean_beta_per_level_log_or": 1.3271141035766363,
+      "mean_odds_ratio_per_level": 3.770147417862179,
+      "mean_wald_se": 0.08947177451552167,
+      "per_era_level_cell": 40,
+      "power": 1.0,
+      "scenario": "pilot_strong_50pp_capped",
+      "simulations": 2000,
+      "unicode_count_rows_simulated": 1400
+    },
+    {
+      "carriers": 4,
+      "criterion": "lower Wald 95% bound for beta_fragmentation_level exceeds log(1.25), using z=1.959964; conservative fixed alpha=0.025 approximation",
+      "mean_beta_per_level_log_or": 1.3277240698218602,
+      "mean_odds_ratio_per_level": 3.772447782027517,
+      "mean_wald_se": 0.10002195308518805,
+      "per_era_level_cell": 40,
+      "power": 1.0,
+      "scenario": "pilot_strong_50pp_capped",
+      "simulations": 2000,
+      "unicode_count_rows_simulated": 1120
+    },
+    {
+      "carriers": 5,
+      "criterion": "lower Wald 95% bound for beta_fragmentation_level exceeds log(1.25), using z=1.959964; conservative fixed alpha=0.025 approximation",
+      "mean_beta_per_level_log_or": 0.552285386790651,
+      "mean_odds_ratio_per_level": 1.7372187012534372,
+      "mean_wald_se": 0.0660242344343775,
+      "per_era_level_cell": 40,
+      "power": 0.999,
+      "scenario": "heterogeneous_pilot_mix",
+      "simulations": 2000,
+      "unicode_count_rows_simulated": 1400
+    },
+    {
+      "carriers": 5,
+      "criterion": "lower Wald 95% bound for beta_fragmentation_level exceeds log(1.25), using z=1.959964; conservative fixed alpha=0.025 approximation",
+      "mean_beta_per_level_log_or": -0.0015121053870846913,
+      "mean_odds_ratio_per_level": 0.9984890372682551,
+      "mean_wald_se": 0.058660883115439724,
+      "per_era_level_cell": 40,
+      "power": 0.0,
+      "scenario": "flat_null",
+      "simulations": 2000,
+      "unicode_count_rows_simulated": 1400
+    },
+    {
+      "carriers": 4,
+      "criterion": "lower Wald 95% bound for beta_fragmentation_level exceeds log(1.25), using z=1.959964; conservative fixed alpha=0.025 approximation",
+      "mean_beta_per_level_log_or": 5.762016241579349e-05,
+      "mean_odds_ratio_per_level": 1.0000576218224893,
+      "mean_wald_se": 0.06562424427966487,
+      "per_era_level_cell": 40,
+      "power": 0.0,
+      "scenario": "flat_null",
+      "simulations": 2000,
+      "unicode_count_rows_simulated": 1120
+    }
+  ],
+  "h2_power": [
+    {
+      "carriers": 5,
+      "criterion": "confirmation: paired difference-in-means 95% normal CI inside +/-0.10; refutation: 95% CI entirely outside +/-0.10; conservative fixed alpha=0.025 approximation",
+      "equivalence_confirmation_power": 0.996,
+      "equivalence_margin_pp": 10.0,
+      "input_probability_shift_before_ceiling": 0.0,
+      "matched_pairs": 600,
+      "mean_se": 0.020883388861081053,
+      "meaningful_effect_refutation_power": 0.0,
+      "pair_difficulty_logit_noise_sd": 0.5,
+      "per_era_level_cell": 40,
+      "realized_mean_risk_difference": -0.0009758333333333333,
+      "simulations": 2000
+    },
+    {
+      "carriers": 5,
+      "criterion": "confirmation: paired difference-in-means 95% normal CI inside +/-0.10; refutation: 95% CI entirely outside +/-0.10; conservative fixed alpha=0.025 approximation",
+      "equivalence_confirmation_power": 0.005,
+      "equivalence_margin_pp": 10.0,
+      "input_probability_shift_before_ceiling": 0.15,
+      "matched_pairs": 600,
+      "mean_se": 0.017677635005829338,
+      "meaningful_effect_refutation_power": 0.0845,
+      "pair_difficulty_logit_noise_sd": 0.5,
+      "per_era_level_cell": 40,
+      "realized_mean_risk_difference": 0.11033333333333332,
+      "simulations": 2000
+    },
+    {
+      "carriers": 5,
+      "criterion": "confirmation: paired difference-in-means 95% normal CI inside +/-0.10; refutation: 95% CI entirely outside +/-0.10; conservative fixed alpha=0.025 approximation",
+      "equivalence_confirmation_power": 0.0,
+      "equivalence_margin_pp": 10.0,
+      "input_probability_shift_before_ceiling": 0.25,
+      "matched_pairs": 600,
+      "mean_se": 0.016572723071653445,
+      "meaningful_effect_refutation_power": 0.8,
+      "pair_difficulty_logit_noise_sd": 0.5,
+      "per_era_level_cell": 40,
+      "realized_mean_risk_difference": 0.14583333333333331,
+      "simulations": 2000
+    },
+    {
+      "carriers": 4,
+      "criterion": "confirmation: paired difference-in-means 95% normal CI inside +/-0.10; refutation: 95% CI entirely outside +/-0.10; conservative fixed alpha=0.025 approximation",
+      "equivalence_confirmation_power": 0.977,
+      "equivalence_margin_pp": 10.0,
+      "input_probability_shift_before_ceiling": 0.0,
+      "matched_pairs": 480,
+      "mean_se": 0.023333383513109453,
+      "meaningful_effect_refutation_power": 0.0,
+      "pair_difficulty_logit_noise_sd": 0.5,
+      "per_era_level_cell": 40,
+      "realized_mean_risk_difference": 0.0005458333333333332,
+      "simulations": 2000
+    },
+    {
+      "carriers": 4,
+      "criterion": "confirmation: paired difference-in-means 95% normal CI inside +/-0.10; refutation: 95% CI entirely outside +/-0.10; conservative fixed alpha=0.025 approximation",
+      "equivalence_confirmation_power": 0.008,
+      "equivalence_margin_pp": 10.0,
+      "input_probability_shift_before_ceiling": 0.15,
+      "matched_pairs": 480,
+      "mean_se": 0.01976135616339179,
+      "meaningful_effect_refutation_power": 0.069,
+      "pair_difficulty_logit_noise_sd": 0.5,
+      "per_era_level_cell": 40,
+      "realized_mean_risk_difference": 0.10969583333333333,
+      "simulations": 2000
+    },
+    {
+      "carriers": 4,
+      "criterion": "confirmation: paired difference-in-means 95% normal CI inside +/-0.10; refutation: 95% CI entirely outside +/-0.10; conservative fixed alpha=0.025 approximation",
+      "equivalence_confirmation_power": 0.0,
+      "equivalence_margin_pp": 10.0,
+      "input_probability_shift_before_ceiling": 0.25,
+      "matched_pairs": 480,
+      "mean_se": 0.01851652688256808,
+      "meaningful_effect_refutation_power": 0.686,
+      "pair_difficulty_logit_noise_sd": 0.5,
+      "per_era_level_cell": 40,
+      "realized_mean_risk_difference": 0.14511145833333336,
+      "simulations": 2000
+    },
+    {
+      "carriers": 3,
+      "criterion": "confirmation: paired difference-in-means 95% normal CI inside +/-0.10; refutation: 95% CI entirely outside +/-0.10; conservative fixed alpha=0.025 approximation",
+      "equivalence_confirmation_power": 0.9175,
+      "equivalence_margin_pp": 10.0,
+      "input_probability_shift_before_ceiling": 0.0,
+      "matched_pairs": 360,
+      "mean_se": 0.026934654029073562,
+      "meaningful_effect_refutation_power": 0.0,
+      "pair_difficulty_logit_noise_sd": 0.5,
+      "per_era_level_cell": 40,
+      "realized_mean_risk_difference": 2.3611111111111083e-05,
+      "simulations": 2000
+    },
+    {
+      "carriers": 3,
+      "criterion": "confirmation: paired difference-in-means 95% normal CI inside +/-0.10; refutation: 95% CI entirely outside +/-0.10; conservative fixed alpha=0.025 approximation",
+      "equivalence_confirmation_power": 0.007,
+      "equivalence_margin_pp": 10.0,
+      "input_probability_shift_before_ceiling": 0.15,
+      "matched_pairs": 360,
+      "mean_se": 0.02280619152147233,
+      "meaningful_effect_refutation_power": 0.047,
+      "pair_difficulty_logit_noise_sd": 0.5,
+      "per_era_level_cell": 40,
+      "realized_mean_risk_difference": 0.10959583333333334,
+      "simulations": 2000
+    },
+    {
+      "carriers": 3,
+      "criterion": "confirmation: paired difference-in-means 95% normal CI inside +/-0.10; refutation: 95% CI entirely outside +/-0.10; conservative fixed alpha=0.025 approximation",
+      "equivalence_confirmation_power": 0.0,
+      "equivalence_margin_pp": 10.0,
+      "input_probability_shift_before_ceiling": 0.25,
+      "matched_pairs": 360,
+      "mean_se": 0.021401341465272106,
+      "meaningful_effect_refutation_power": 0.5745,
+      "pair_difficulty_logit_noise_sd": 0.5,
+      "per_era_level_cell": 40,
+      "realized_mean_risk_difference": 0.14591805555555556,
+      "simulations": 2000
+    }
+  ],
+  "mutation_check": {
+    "baseline_gap": 0.5,
+    "mutated_gap": 0.4444444444444444,
+    "mutation_description": "flip exactly one qwen2.5-3b high-fragmentation count failure to success",
+    "mutation_detected": true
+  },
+  "notes": [
+    "Power is a design approximation over stimulus sampling, not a claim that deterministic greedy decoding is random.",
+    "H1 simulation omits item-type fixed effects and therefore is optimistic; the inventory uses homogeneous matched probes to limit that omission.",
+    "H2 assumes pair-level outcomes conditionally independent given matched difficulty; positive within-pair dependence would improve precision, while unmodeled stimulus dependence would worsen it.",
+    "The flat_null H1 row is a false-positive/check scenario, not a power scenario."
+  ],
+  "pilot_audit": {
+    "copy_exact_by_role": {
+      "gemma3-4b-it-mlx8-mirror": {
+        "copy_format_failures": 0,
+        "copy_n": 182,
+        "legacy_exact": 64,
+        "legacy_n": 64,
+        "newest_exact": 94,
+        "newest_n": 94
+      },
+      "qwen2.5-3b-instruct-bf16": {
+        "copy_format_failures": 0,
+        "copy_n": 182,
+        "legacy_exact": 64,
+        "legacy_n": 64,
+        "newest_exact": 94,
+        "newest_n": 94
+      },
+      "qwen2.5-7b-instruct-mlx8": {
+        "copy_format_failures": 28,
+        "copy_n": 182,
+        "legacy_exact": 60,
+        "legacy_n": 64,
+        "newest_exact": 69,
+        "newest_n": 94
+      },
+      "qwen3-4b-instruct-2507-mlx8": {
+        "copy_format_failures": 1,
+        "copy_n": 182,
+        "legacy_exact": 64,
+        "legacy_n": 64,
+        "newest_exact": 94,
+        "newest_n": 94
+      },
+      "tinyllama-1.1b-chat-v1.0-bf16": {
+        "copy_format_failures": 0,
+        "copy_n": 182,
+        "legacy_exact": 64,
+        "legacy_n": 64,
+        "newest_exact": 94,
+        "newest_n": 94
+      }
+    },
+    "count_fragmentation": {
+      "gemma3-4b-it-mlx8-mirror": {
+        "high_exact": 6,
+        "high_failure_rate": 0.6666666666666667,
+        "high_minus_low_failure_pp": 5.555555555555558,
+        "high_minus_low_failure_rate": 0.05555555555555558,
+        "high_n": 18,
+        "low_exact": 7,
+        "low_failure_rate": 0.6111111111111112,
+        "low_n": 18
+      },
+      "qwen2.5-3b-instruct-bf16": {
+        "high_exact": 0,
+        "high_failure_rate": 1.0,
+        "high_minus_low_failure_pp": 50.0,
+        "high_minus_low_failure_rate": 0.5,
+        "high_n": 18,
+        "low_exact": 9,
+        "low_failure_rate": 0.5,
+        "low_n": 18
+      },
+      "qwen2.5-7b-instruct-mlx8": {
+        "high_exact": 2,
+        "high_failure_rate": 0.8888888888888888,
+        "high_minus_low_failure_pp": 72.22222222222221,
+        "high_minus_low_failure_rate": 0.7222222222222222,
+        "high_n": 18,
+        "low_exact": 15,
+        "low_failure_rate": 0.16666666666666663,
+        "low_n": 18
+      },
+      "qwen3-4b-instruct-2507-mlx8": {
+        "high_exact": 2,
+        "high_failure_rate": 0.8888888888888888,
+        "high_minus_low_failure_pp": 22.22222222222221,
+        "high_minus_low_failure_rate": 0.2222222222222221,
+        "high_n": 18,
+        "low_exact": 6,
+        "low_failure_rate": 0.6666666666666667,
+        "low_n": 18
+      },
+      "tinyllama-1.1b-chat-v1.0-bf16": {
+        "high_exact": 0,
+        "high_failure_rate": 1.0,
+        "high_minus_low_failure_pp": 0.0,
+        "high_minus_low_failure_rate": 0.0,
+        "high_n": 18,
+        "low_exact": 0,
+        "low_failure_rate": 1.0,
+        "low_n": 18
+      }
+    },
+    "decomposition_exact": {
+      "gemma3-4b-it-mlx8-mirror": {
+        "exact": 0,
+        "n": 48
+      },
+      "qwen2.5-3b-instruct-bf16": {
+        "exact": 0,
+        "n": 48
+      },
+      "qwen2.5-7b-instruct-mlx8": {
+        "exact": 0,
+        "n": 48
+      },
+      "qwen3-4b-instruct-2507-mlx8": {
+        "exact": 0,
+        "n": 48
+      },
+      "tinyllama-1.1b-chat-v1.0-bf16": {
+        "exact": 0,
+        "n": 48
+      }
+    },
+    "model_count": 5,
+    "models": [
+      "gemma3-4b-it-mlx8-mirror",
+      "qwen2.5-3b-instruct-bf16",
+      "qwen2.5-7b-instruct-mlx8",
+      "qwen3-4b-instruct-2507-mlx8",
+      "tinyllama-1.1b-chat-v1.0-bf16"
+    ],
+    "probe_type_counts_per_model": {
+      "gemma3-4b-it-mlx8-mirror": {
+        "comparison": 24,
+        "copy": 182,
+        "count": 36,
+        "decomposition": 48
+      },
+      "qwen2.5-3b-instruct-bf16": {
+        "comparison": 24,
+        "copy": 182,
+        "count": 36,
+        "decomposition": 48
+      },
+      "qwen2.5-7b-instruct-mlx8": {
+        "comparison": 24,
+        "copy": 182,
+        "count": 36,
+        "decomposition": 48
+      },
+      "qwen3-4b-instruct-2507-mlx8": {
+        "comparison": 24,
+        "copy": 182,
+        "count": 36,
+        "decomposition": 48
+      },
+      "tinyllama-1.1b-chat-v1.0-bf16": {
+        "comparison": 24,
+        "copy": 182,
+        "count": 36,
+        "decomposition": 48
+      }
+    },
+    "row_count": 1450,
+    "rows_per_model": {
+      "gemma3-4b-it-mlx8-mirror": 290,
+      "qwen2.5-3b-instruct-bf16": 290,
+      "qwen2.5-7b-instruct-mlx8": 290,
+      "qwen3-4b-instruct-2507-mlx8": 290,
+      "tinyllama-1.1b-chat-v1.0-bf16": 290
+    }
+  },
+  "pilot_validation": {
+    "all_pass": true,
+    "checks": [
+      {
+        "actual": 1450,
+        "expected": 1450,
+        "name": "round2 row count",
+        "pass": true
+      },
+      {
+        "actual": 5,
+        "expected": 5,
+        "name": "round2 model count",
+        "pass": true
+      },
+      {
+        "actual": {
+          "gemma3-4b-it-mlx8-mirror": 290,
+          "qwen2.5-3b-instruct-bf16": 290,
+          "qwen2.5-7b-instruct-mlx8": 290,
+          "qwen3-4b-instruct-2507-mlx8": 290,
+          "tinyllama-1.1b-chat-v1.0-bf16": 290
+        },
+        "expected": {
+          "gemma3-4b-it-mlx8-mirror": 290,
+          "qwen2.5-3b-instruct-bf16": 290,
+          "qwen2.5-7b-instruct-mlx8": 290,
+          "qwen3-4b-instruct-2507-mlx8": 290,
+          "tinyllama-1.1b-chat-v1.0-bf16": 290
+        },
+        "name": "rows per model",
+        "pass": true
+      },
+      {
+        "actual": {
+          "gemma3-4b-it-mlx8-mirror": {
+            "comparison": 24,
+            "copy": 182,
+            "count": 36,
+            "decomposition": 48
+          },
+          "qwen2.5-3b-instruct-bf16": {
+            "comparison": 24,
+            "copy": 182,
+            "count": 36,
+            "decomposition": 48
+          },
+          "qwen2.5-7b-instruct-mlx8": {
+            "comparison": 24,
+            "copy": 182,
+            "count": 36,
+            "decomposition": 48
+          },
+          "qwen3-4b-instruct-2507-mlx8": {
+            "comparison": 24,
+            "copy": 182,
+            "count": 36,
+            "decomposition": 48
+          },
+          "tinyllama-1.1b-chat-v1.0-bf16": {
+            "comparison": 24,
+            "copy": 182,
+            "count": 36,
+            "decomposition": 48
+          }
+        },
+        "expected": {
+          "comparison": 24,
+          "copy": 182,
+          "count": 36,
+          "decomposition": 48
+        },
+        "name": "probe-type inventory per model",
+        "pass": true
+      },
+      {
+        "actual": 94,
+        "expected": 94,
+        "name": "qwen2.5-3b-instruct-bf16 newest copy exact",
+        "pass": true
+      },
+      {
+        "actual": 64,
+        "expected": 64,
+        "name": "qwen2.5-3b-instruct-bf16 legacy copy exact",
+        "pass": true
+      },
+      {
+        "actual": {
+          "exact": 0,
+          "n": 48
+        },
+        "expected": {
+          "exact": 0,
+          "n": 48
+        },
+        "name": "qwen2.5-3b-instruct-bf16 decomposition floor",
+        "pass": true
+      },
+      {
+        "actual": 94,
+        "expected": 94,
+        "name": "qwen3-4b-instruct-2507-mlx8 newest copy exact",
+        "pass": true
+      },
+      {
+        "actual": 64,
+        "expected": 64,
+        "name": "qwen3-4b-instruct-2507-mlx8 legacy copy exact",
+        "pass": true
+      },
+      {
+        "actual": {
+          "exact": 0,
+          "n": 48
+        },
+        "expected": {
+          "exact": 0,
+          "n": 48
+        },
+        "name": "qwen3-4b-instruct-2507-mlx8 decomposition floor",
+        "pass": true
+      },
+      {
+        "actual": 94,
+        "expected": 94,
+        "name": "gemma3-4b-it-mlx8-mirror newest copy exact",
+        "pass": true
+      },
+      {
+        "actual": 64,
+        "expected": 64,
+        "name": "gemma3-4b-it-mlx8-mirror legacy copy exact",
+        "pass": true
+      },
+      {
+        "actual": {
+          "exact": 0,
+          "n": 48
+        },
+        "expected": {
+          "exact": 0,
+          "n": 48
+        },
+        "name": "gemma3-4b-it-mlx8-mirror decomposition floor",
+        "pass": true
+      },
+      {
+        "actual": 94,
+        "expected": 94,
+        "name": "tinyllama-1.1b-chat-v1.0-bf16 newest copy exact",
+        "pass": true
+      },
+      {
+        "actual": 64,
+        "expected": 64,
+        "name": "tinyllama-1.1b-chat-v1.0-bf16 legacy copy exact",
+        "pass": true
+      },
+      {
+        "actual": {
+          "exact": 0,
+          "n": 48
+        },
+        "expected": {
+          "exact": 0,
+          "n": 48
+        },
+        "name": "tinyllama-1.1b-chat-v1.0-bf16 decomposition floor",
+        "pass": true
+      },
+      {
+        "actual": 0.5,
+        "expected": 0.5,
+        "name": "qwen2.5-3b count fragmentation failure gap",
+        "pass": true
+      },
+      {
+        "actual": 0.2222222222222221,
+        "expected": 0.2222222222222222,
+        "name": "qwen3-4b count fragmentation failure gap",
+        "pass": true
+      },
+      {
+        "actual": 0.05555555555555558,
+        "expected": 0.05555555555555555,
+        "name": "gemma3-4b count fragmentation failure gap",
+        "pass": true
+      },
+      {
+        "actual": {
+          "format_failures": 28,
+          "n": 182
+        },
+        "expected": {
+          "format_failures": 28,
+          "n": 182
+        },
+        "name": "qwen2.5-7b copy wrapper failures",
+        "pass": true
+      },
+      {
+        "actual": {
+          "exact": 0,
+          "n": 36
+        },
+        "expected": {
+          "exact": 0,
+          "n": 36
+        },
+        "name": "tinyllama count floor",
+        "pass": true
+      }
+    ]
+  },
+  "script": "confirmatory_power_analysis.py",
+  "script_sha256": "fa0d973c2b4f3359de5433e45fd8a26226ee8b128866244141074859946a90ca",
+  "seed": 20261126,
+  "simulations": 2000
+}

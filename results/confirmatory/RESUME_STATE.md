@@ -1,6 +1,6 @@
 # Confirmatory execution resume state
 
-Updated UTC: 2026-11-26T12:51:46.696052+00:00
+Updated UTC: 2026-11-26T13:11:36.817797+00:00
 
 Resume rule: rerun `src/run_confirmatory_behavioral.py` for the interrupted carrier/phase with the same or a lower batch size. Completed completion keys are skipped; never regenerate completed keys.
 
@@ -11,9 +11,9 @@ Resume rule: rerun `src/run_confirmatory_behavioral.py` for the interrupted carr
 | `llama32-3b-instruct-mlx8` | 500 | 500 | 0 |
 | `gemma3-4b-it-mlx8-mirror` | 460 | 460 | 0 |
 | `qwen3-4b-instruct-2507-mlx8` | 500 | 500 | 0 |
-| `mistral7b-instruct-v03-mlx8` | 0 | 460 | 460 |
+| `mistral7b-instruct-v03-mlx8` | 460 | 460 | 0 |
 
-Current carrier: `qwen3-4b-instruct-2507-mlx8`
+Current carrier: `mistral7b-instruct-v03-mlx8`
 Current phase: `unicode`
 
-Phase `unicode` finished for `qwen3-4b-instruct-2507-mlx8`.
+Phase `unicode` finished for `mistral7b-instruct-v03-mlx8`.

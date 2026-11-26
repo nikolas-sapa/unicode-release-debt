@@ -1,0 +1,36 @@
+{
+  "corrupted_negative_control": {
+    "corrupted_response": "<OUT>A😀♂️X</OUT>",
+    "corrupted_response_exact": false,
+    "missing_zwj_classified": true,
+    "negative_control_pass": true,
+    "target": "A😀‍♂️X"
+  },
+  "extractor_mutation_checks_pass": true,
+  "extractor_mutation_detail": {
+    "checks": {
+      "byte_exact_copy_accepted": true,
+      "duplicate_wrapper_rejected": true,
+      "echoed_prompt_rejected": true,
+      "missing_vs16_rejected_and_classified": true,
+      "missing_wrapper_rejected": true,
+      "missing_zwj_rejected_and_classified": true,
+      "newline_padding_rejected_and_classified": true,
+      "nfc_nfd_mutation_rejected_and_classified": true,
+      "non whitespace_prefix_rejected": true,
+      "non whitespace_suffix_rejected": true,
+      "single_codepoint_substitution_rejected": true,
+      "truncation_rejected_and_classified": true
+    },
+    "extractor_mutation_checks_pass": true,
+    "strict_extraction_rule": "exactly one <OUT> and one </OUT>; no non-whitespace outside wrappers; extracted bytes are compared without stripping, normalization, or repair"
+  },
+  "generated_utc": "2026-11-26T06:46:37.564741+00:00",
+  "host_unicodedata_version": "15.0.0",
+  "normalization_unicodedata_version": "18.0.0",
+  "scored_response_mutation": {
+    "ran": false,
+    "reason": "no scored byte-exact copy response yet"
+  },
+  "scoring_validation_pass": true
+}

@@ -1,0 +1,20 @@
+{
+  "host_python_version": "3.12.13",
+  "input": "results/scan_units.jsonl",
+  "native_backend_id_mismatches": {
+    "deepseek-v4-flash": 0,
+    "deepseek-v4.1-flash": 0,
+    "glm-5.3-flash": 0,
+    "openai-gpt-oss-120b": 0
+  },
+  "output": "/Users/nikolassapalidis/Developer/unicode-release-debt/results/vyce_hosted/tokenizer_scan_extension.jsonl",
+  "rows": 1852,
+  "sentencepiece_library_version": "0.2.3",
+  "tokenizers": [
+    "deepseek-v4-flash",
+    "deepseek-v4.1-flash",
+    "glm-5.3-flash",
+    "openai-gpt-oss-120b"
+  ],
+  "tokenizers_library_version": "0.23.3"
+}

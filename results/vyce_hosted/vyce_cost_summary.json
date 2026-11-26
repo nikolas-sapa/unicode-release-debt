@@ -1,0 +1,139 @@
+{
+  "by_model": {
+    "deepseek-ai/DeepSeek-V4-Flash": {
+      "calls": 1,
+      "cap_cost_usd": 0.000114,
+      "estimated_cost_usd": 0.000114,
+      "input_tokens": 102,
+      "output_tokens": 4
+    },
+    "deepseek-ai/deepseek-v4-flash": {
+      "calls": 1,
+      "cap_cost_usd": 0.000114,
+      "estimated_cost_usd": 0.000114,
+      "input_tokens": 102,
+      "output_tokens": 4
+    },
+    "deepseek-v4-flash": {
+      "calls": 4,
+      "cap_cost_usd": 0.000528,
+      "estimated_cost_usd": 0.0001194,
+      "input_tokens": 408,
+      "output_tokens": 40
+    },
+    "deepseek-v4-flash-lr": {
+      "calls": 4,
+      "cap_cost_usd": 0.000528,
+      "estimated_cost_usd": 0.000528,
+      "input_tokens": 408,
+      "output_tokens": 40
+    },
+    "glm-5.3-flash": {
+      "calls": 4,
+      "cap_cost_usd": 0.000528,
+      "estimated_cost_usd": 9.14e-05,
+      "input_tokens": 408,
+      "output_tokens": 40
+    },
+    "gpt-oss-120b": {
+      "calls": 5,
+      "cap_cost_usd": 0.000642,
+      "estimated_cost_usd": 8.939999999999999e-05,
+      "input_tokens": 510,
+      "output_tokens": 44
+    },
+    "non_completion_endpoint": {
+      "calls": 7,
+      "cap_cost_usd": 0.0,
+      "estimated_cost_usd": 0.0,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "openai/gpt-oss-120b": {
+      "calls": 1,
+      "cap_cost_usd": 0.000114,
+      "estimated_cost_usd": 0.000114,
+      "input_tokens": 102,
+      "output_tokens": 4
+    },
+    "wave": {
+      "calls": 1,
+      "cap_cost_usd": 6e-05,
+      "estimated_cost_usd": 6e-05,
+      "input_tokens": 15,
+      "output_tokens": 15
+    },
+    "zai-org/GLM-5.3-Flash": {
+      "calls": 1,
+      "cap_cost_usd": 0.000114,
+      "estimated_cost_usd": 0.000114,
+      "input_tokens": 102,
+      "output_tokens": 4
+    },
+    "zai-org/glm-5.3-flash": {
+      "calls": 1,
+      "cap_cost_usd": 0.000114,
+      "estimated_cost_usd": 0.000114,
+      "input_tokens": 102,
+      "output_tokens": 4
+    }
+  },
+  "by_purpose": {
+    "alias_model_diagnostic": {
+      "calls": 5,
+      "cap_cost_usd": 0.00057,
+      "estimated_cost_usd": 0.00057,
+      "input_tokens": 510,
+      "output_tokens": 20
+    },
+    "availability_probe": {
+      "calls": 16,
+      "cap_cost_usd": 0.0021119999999999997,
+      "estimated_cost_usd": 0.000815,
+      "input_tokens": 1632,
+      "output_tokens": 160
+    },
+    "models_list": {
+      "calls": 4,
+      "cap_cost_usd": 0.0,
+      "estimated_cost_usd": 0.0,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "non_target_infrastructure_control": {
+      "calls": 1,
+      "cap_cost_usd": 6e-05,
+      "estimated_cost_usd": 6e-05,
+      "input_tokens": 15,
+      "output_tokens": 15
+    },
+    "v1_me_metadata": {
+      "calls": 2,
+      "cap_cost_usd": 0.0,
+      "estimated_cost_usd": 0.0,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "v1_me_metadata_final": {
+      "calls": 1,
+      "cap_cost_usd": 0.0,
+      "estimated_cost_usd": 0.0,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "www_host_diagnostic": {
+      "calls": 1,
+      "cap_cost_usd": 0.000114,
+      "estimated_cost_usd": 1.32e-05,
+      "input_tokens": 102,
+      "output_tokens": 4
+    }
+  },
+  "cap_remaining_usd": 7.997144,
+  "generated_utc": "2026-11-26T07:07:21.218005+00:00",
+  "hard_cap_usd": 8.0,
+  "pricing_caveat": "vyce exposes no public price-schedule endpoint. Its /v1/me endpoint exposes key usage/balance metadata, but exact per-run prepaid-credit debit is only measurable through adjacent before/after snapshots; estimated cost uses external published proxy prices where available, while cap cost conservatively prices every model at $1/$3 per million input/output tokens.",
+  "total_api_calls": 30,
+  "total_conservative_cap_cost_usd": 0.002855999999999999,
+  "total_estimated_cost_usd": 0.0014581999999999998
+}

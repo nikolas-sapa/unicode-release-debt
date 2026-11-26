@@ -1,0 +1,9 @@
+tokenizer_id,frozen_fragmentation_group,n,mean_tokens_per_cluster,min_tokens_per_cluster,max_tokens_per_cluster,mean_split_codepoint_count
+deepseek-v4-flash,low,12,2.8958333333333335,2.0,5.0,3.25
+deepseek-v4-flash,high,12,6.206944444444445,4.333333333333333,7.6,6.166666666666667
+deepseek-v4.1-flash,low,12,2.8958333333333335,2.0,5.0,3.25
+deepseek-v4.1-flash,high,12,6.206944444444445,4.333333333333333,7.6,6.166666666666667
+glm-5.3-flash,low,12,2.618055555555556,1.0,7.0,1.75
+glm-5.3-flash,high,12,6.666666666666667,4.0,9.2,4.75
+openai-gpt-oss-120b,low,12,2.9069444444444446,1.8,5.0,3.1666666666666665
+openai-gpt-oss-120b,high,12,6.183333333333334,4.333333333333333,8.4,6.0

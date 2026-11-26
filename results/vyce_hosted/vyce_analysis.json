@@ -1,0 +1,789 @@
+{
+  "arm_label": "EXPLORATORY hosted scale/diversity extension; not confirmatory and not a replacement for the local confirmatory scale-up",
+  "copy_cohort_summary": [],
+  "copy_newest_old_summary": [],
+  "cost_summary": {
+    "by_model": {
+      "deepseek-ai/DeepSeek-V4-Flash": {
+        "calls": 1,
+        "cap_cost_usd": 0.000114,
+        "estimated_cost_usd": 0.000114,
+        "input_tokens": 102,
+        "output_tokens": 4
+      },
+      "deepseek-ai/deepseek-v4-flash": {
+        "calls": 1,
+        "cap_cost_usd": 0.000114,
+        "estimated_cost_usd": 0.000114,
+        "input_tokens": 102,
+        "output_tokens": 4
+      },
+      "deepseek-v4-flash": {
+        "calls": 4,
+        "cap_cost_usd": 0.000528,
+        "estimated_cost_usd": 0.0001194,
+        "input_tokens": 408,
+        "output_tokens": 40
+      },
+      "deepseek-v4-flash-lr": {
+        "calls": 4,
+        "cap_cost_usd": 0.000528,
+        "estimated_cost_usd": 0.000528,
+        "input_tokens": 408,
+        "output_tokens": 40
+      },
+      "glm-5.3-flash": {
+        "calls": 4,
+        "cap_cost_usd": 0.000528,
+        "estimated_cost_usd": 9.14e-05,
+        "input_tokens": 408,
+        "output_tokens": 40
+      },
+      "gpt-oss-120b": {
+        "calls": 5,
+        "cap_cost_usd": 0.000642,
+        "estimated_cost_usd": 8.939999999999999e-05,
+        "input_tokens": 510,
+        "output_tokens": 44
+      },
+      "non_completion_endpoint": {
+        "calls": 7,
+        "cap_cost_usd": 0.0,
+        "estimated_cost_usd": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "openai/gpt-oss-120b": {
+        "calls": 1,
+        "cap_cost_usd": 0.000114,
+        "estimated_cost_usd": 0.000114,
+        "input_tokens": 102,
+        "output_tokens": 4
+      },
+      "wave": {
+        "calls": 1,
+        "cap_cost_usd": 6e-05,
+        "estimated_cost_usd": 6e-05,
+        "input_tokens": 15,
+        "output_tokens": 15
+      },
+      "zai-org/GLM-5.3-Flash": {
+        "calls": 1,
+        "cap_cost_usd": 0.000114,
+        "estimated_cost_usd": 0.000114,
+        "input_tokens": 102,
+        "output_tokens": 4
+      },
+      "zai-org/glm-5.3-flash": {
+        "calls": 1,
+        "cap_cost_usd": 0.000114,
+        "estimated_cost_usd": 0.000114,
+        "input_tokens": 102,
+        "output_tokens": 4
+      }
+    },
+    "by_purpose": {
+      "alias_model_diagnostic": {
+        "calls": 5,
+        "cap_cost_usd": 0.00057,
+        "estimated_cost_usd": 0.00057,
+        "input_tokens": 510,
+        "output_tokens": 20
+      },
+      "availability_probe": {
+        "calls": 16,
+        "cap_cost_usd": 0.0021119999999999997,
+        "estimated_cost_usd": 0.000815,
+        "input_tokens": 1632,
+        "output_tokens": 160
+      },
+      "models_list": {
+        "calls": 4,
+        "cap_cost_usd": 0.0,
+        "estimated_cost_usd": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "non_target_infrastructure_control": {
+        "calls": 1,
+        "cap_cost_usd": 6e-05,
+        "estimated_cost_usd": 6e-05,
+        "input_tokens": 15,
+        "output_tokens": 15
+      },
+      "v1_me_metadata": {
+        "calls": 2,
+        "cap_cost_usd": 0.0,
+        "estimated_cost_usd": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "v1_me_metadata_final": {
+        "calls": 1,
+        "cap_cost_usd": 0.0,
+        "estimated_cost_usd": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "www_host_diagnostic": {
+        "calls": 1,
+        "cap_cost_usd": 0.000114,
+        "estimated_cost_usd": 1.32e-05,
+        "input_tokens": 102,
+        "output_tokens": 4
+      }
+    },
+    "cap_remaining_usd": 7.997144,
+    "generated_utc": "2026-11-26T07:07:21.218005+00:00",
+    "hard_cap_usd": 8.0,
+    "pricing_caveat": "vyce exposes no public price-schedule endpoint. Its /v1/me endpoint exposes key usage/balance metadata, but exact per-run prepaid-credit debit is only measurable through adjacent before/after snapshots; estimated cost uses external published proxy prices where available, while cap cost conservatively prices every model at $1/$3 per million input/output tokens.",
+    "total_api_calls": 30,
+    "total_conservative_cap_cost_usd": 0.002855999999999999,
+    "total_estimated_cost_usd": 0.0014581999999999998
+  },
+  "count_fragmentation_summary": [],
+  "count_tokenizer_covariates": [
+    {
+      "frozen_fragmentation_group": "low",
+      "max_tokens_per_cluster": 5.0,
+      "mean_split_codepoint_count": 3.25,
+      "mean_tokens_per_cluster": 2.8958333333333335,
+      "min_tokens_per_cluster": 2.0,
+      "n": 12,
+      "tokenizer_id": "deepseek-v4-flash"
+    },
+    {
+      "frozen_fragmentation_group": "high",
+      "max_tokens_per_cluster": 7.6,
+      "mean_split_codepoint_count": 6.166666666666667,
+      "mean_tokens_per_cluster": 6.206944444444445,
+      "min_tokens_per_cluster": 4.333333333333333,
+      "n": 12,
+      "tokenizer_id": "deepseek-v4-flash"
+    },
+    {
+      "frozen_fragmentation_group": "low",
+      "max_tokens_per_cluster": 5.0,
+      "mean_split_codepoint_count": 3.25,
+      "mean_tokens_per_cluster": 2.8958333333333335,
+      "min_tokens_per_cluster": 2.0,
+      "n": 12,
+      "tokenizer_id": "deepseek-v4.1-flash"
+    },
+    {
+      "frozen_fragmentation_group": "high",
+      "max_tokens_per_cluster": 7.6,
+      "mean_split_codepoint_count": 6.166666666666667,
+      "mean_tokens_per_cluster": 6.206944444444445,
+      "min_tokens_per_cluster": 4.333333333333333,
+      "n": 12,
+      "tokenizer_id": "deepseek-v4.1-flash"
+    },
+    {
+      "frozen_fragmentation_group": "low",
+      "max_tokens_per_cluster": 7.0,
+      "mean_split_codepoint_count": 1.75,
+      "mean_tokens_per_cluster": 2.618055555555556,
+      "min_tokens_per_cluster": 1.0,
+      "n": 12,
+      "tokenizer_id": "glm-5.3-flash"
+    },
+    {
+      "frozen_fragmentation_group": "high",
+      "max_tokens_per_cluster": 9.2,
+      "mean_split_codepoint_count": 4.75,
+      "mean_tokens_per_cluster": 6.666666666666667,
+      "min_tokens_per_cluster": 4.0,
+      "n": 12,
+      "tokenizer_id": "glm-5.3-flash"
+    },
+    {
+      "frozen_fragmentation_group": "low",
+      "max_tokens_per_cluster": 5.0,
+      "mean_split_codepoint_count": 3.1666666666666665,
+      "mean_tokens_per_cluster": 2.9069444444444446,
+      "min_tokens_per_cluster": 1.8,
+      "n": 12,
+      "tokenizer_id": "openai-gpt-oss-120b"
+    },
+    {
+      "frozen_fragmentation_group": "high",
+      "max_tokens_per_cluster": 8.4,
+      "mean_split_codepoint_count": 6.0,
+      "mean_tokens_per_cluster": 6.183333333333334,
+      "min_tokens_per_cluster": 4.333333333333333,
+      "n": 12,
+      "tokenizer_id": "openai-gpt-oss-120b"
+    }
+  ],
+  "expected_rows_per_model": 104,
+  "gates": [],
+  "generated_utc": "2026-11-26T07:07:21.239721+00:00",
+  "harness_validation": {
+    "corrupted_negative_control": {
+      "corrupted_response": "<OUT>A😀♂️X</OUT>",
+      "corrupted_response_exact": false,
+      "missing_zwj_classified": true,
+      "negative_control_pass": true,
+      "target": "A😀‍♂️X"
+    },
+    "extractor_mutation_checks_pass": true,
+    "generated_utc": "2026-11-26T07:06:42.978231+00:00",
+    "harness_validation_pass": false,
+    "probe_plan_integrity": {
+      "expected_rows": 104,
+      "manifest_sha256": "e0c319a66512b4d73d6c76bc89b2441e8eb88ce2680891f48ef87edf83b67962",
+      "pass": true,
+      "rows": 104,
+      "sha256": "e0c319a66512b4d73d6c76bc89b2441e8eb88ce2680891f48ef87edf83b67962"
+    },
+    "production_ledger_integrity": {
+      "api_calls": 30,
+      "pass": true,
+      "problems": [],
+      "rows": 30
+    },
+    "scored_response_mutation": {
+      "pass": false,
+      "ran": false,
+      "reason": "no scored byte-exact copy response yet"
+    },
+    "scored_response_mutation_required_before_completion": true,
+    "tiny_cap_batch_check": {
+      "aborted_before_any_api_call": true,
+      "api_call_rows": 0,
+      "batch_rows": 2,
+      "budget_abort_rows": 1,
+      "cap_usd": 1e-09,
+      "error_text": "{\"budget_abort\": \"projected conservative cost for logical batch would exceed hard cap\", \"cap_usd\": 1e-09, \"cumulative_cap_cost_usd\": 0.0, \"projection\": {\"cost_bound_method\": \"sum of per-call UTF-8 byte/overhead input upper bounds plus max_tokens output upper bounds\", \"input_tokens_upper_bound\": 1192, \"output_tokens_upper_bound\": 128, \"projected_cap_cost_usd\": 0.001576}}",
+      "new_validation_ledger_rows": 1,
+      "pass": true
+    }
+  },
+  "models_with_any_raw_rows": [],
+  "raw_rows": 0,
+  "relay_account_metadata": {
+    "available": true,
+    "enabled": true,
+    "latest_snapshot_sha256": "336838cdb95119ddeb89c996f826b6a7dae0fcb0d74f64b066906c1f509f13c2",
+    "rateLimit": 60,
+    "response_body_sha256": "336838cdb95119ddeb89c996f826b6a7dae0fcb0d74f64b066906c1f509f13c2",
+    "snapshot_count": 2,
+    "tier": "free",
+    "usage_delta": {
+      "baseline_utc": null,
+      "delta": {
+        "deepseek-v4-flash": {
+          "cost": 0.0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        },
+        "deepseek-v4-flash-lr": {
+          "cost": 0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        },
+        "glm-5.3-flash": {
+          "cost": 0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        },
+        "gpt-oss-120b": {
+          "cost": 0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        },
+        "wave": {
+          "cost": 0,
+          "inputTokens": 0,
+          "outputTokens": 0
+        }
+      },
+      "generated_utc": "2026-11-26T07:02:50.201071+00:00",
+      "latest_utc": "2026-11-26T07:02:50.198246+00:00"
+    },
+    "verified": false
+  },
+  "relay_artifacts": {
+    "availability_attempts": [
+      {
+        "content": null,
+        "error_message": "This model is currently unavailable. Please try again later.",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "gpt-oss-120b",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T06:38:11.983263+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "This model is temporarily disabled",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "deepseek-v4-flash",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T06:38:12.109240+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "You do not have access to this resource.",
+        "finish_reason": null,
+        "http_status": 403,
+        "model": "deepseek-v4-flash-lr",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T06:38:12.363488+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "This model is currently unavailable. Please try again later.",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "glm-5.3-flash",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T06:38:12.523649+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "This model is currently unavailable. Please try again later.",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "gpt-oss-120b",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T06:48:31.455436+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "This model is temporarily disabled",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "deepseek-v4-flash",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T06:48:31.635072+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "You do not have access to this resource.",
+        "finish_reason": null,
+        "http_status": 403,
+        "model": "deepseek-v4-flash-lr",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T06:48:31.870687+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "This model is currently unavailable. Please try again later.",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "glm-5.3-flash",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T06:48:32.077384+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "This model is currently unavailable. Please try again later.",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "gpt-oss-120b",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T06:58:25.697425+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "This model is temporarily disabled",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "deepseek-v4-flash",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T06:58:25.806123+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "You do not have access to this resource.",
+        "finish_reason": null,
+        "http_status": 403,
+        "model": "deepseek-v4-flash-lr",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T06:58:26.149837+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "This model is currently unavailable. Please try again later.",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "glm-5.3-flash",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T06:58:26.287933+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "This model is currently unavailable. Please try again later.",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "gpt-oss-120b",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T07:01:47.041729+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "This model is temporarily disabled",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "deepseek-v4-flash",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T07:01:49.519744+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "You do not have access to this resource.",
+        "finish_reason": null,
+        "http_status": 403,
+        "model": "deepseek-v4-flash-lr",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T07:01:49.726487+00:00"
+      },
+      {
+        "content": null,
+        "error_message": "This model is currently unavailable. Please try again later.",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "glm-5.3-flash",
+        "network_error": null,
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "responds": false,
+        "returned_model": null,
+        "utc": "2026-11-26T07:01:49.865883+00:00"
+      }
+    ],
+    "diagnostic_probes": [
+      {
+        "content": null,
+        "endpoint": "https://www.vyceai.com/v1/chat/completions",
+        "finish_reason": null,
+        "http_status": 404,
+        "model": "gpt-oss-120b",
+        "note": "body reconstructed and hash-verified against the cost-ledger row because this initial infrastructure diagnostic was logged before the diagnostic jsonl existed",
+        "purpose": "www_host_diagnostic",
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "returned_model": null,
+        "utc": "2026-11-26T06:48:57.672730+00:00"
+      },
+      {
+        "content": "OK",
+        "endpoint": "https://vyceai.com/v1/chat/completions",
+        "finish_reason": "stop",
+        "http_status": 200,
+        "model": "wave",
+        "note": "non-target control only: establishes whether the key/relay can complete any chat request; not part of the scientific battery",
+        "purpose": "non_target_infrastructure_control",
+        "relay_artifacts": [],
+        "returned_model": "wave",
+        "utc": "2026-11-26T06:51:13.096560+00:00"
+      },
+      {
+        "content": null,
+        "endpoint": "https://vyceai.com/v1/chat/completions",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "openai/gpt-oss-120b",
+        "note": "alias diagnostic only: checks whether an upstream-style model identifier is routed; not part of the scientific battery unless separately justified",
+        "purpose": "alias_model_diagnostic",
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "returned_model": null,
+        "utc": "2026-11-26T06:51:51.659873+00:00"
+      },
+      {
+        "content": null,
+        "endpoint": "https://vyceai.com/v1/chat/completions",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "deepseek-ai/DeepSeek-V4-Flash",
+        "note": "alias diagnostic only: checks whether an upstream-style model identifier is routed; not part of the scientific battery unless separately justified",
+        "purpose": "alias_model_diagnostic",
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "returned_model": null,
+        "utc": "2026-11-26T06:51:51.833704+00:00"
+      },
+      {
+        "content": null,
+        "endpoint": "https://vyceai.com/v1/chat/completions",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "deepseek-ai/deepseek-v4-flash",
+        "note": "alias diagnostic only: checks whether an upstream-style model identifier is routed; not part of the scientific battery unless separately justified",
+        "purpose": "alias_model_diagnostic",
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "returned_model": null,
+        "utc": "2026-11-26T06:51:51.930078+00:00"
+      },
+      {
+        "content": null,
+        "endpoint": "https://vyceai.com/v1/chat/completions",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "zai-org/GLM-5.3-Flash",
+        "note": "alias diagnostic only: checks whether an upstream-style model identifier is routed; not part of the scientific battery unless separately justified",
+        "purpose": "alias_model_diagnostic",
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "returned_model": null,
+        "utc": "2026-11-26T06:51:52.057313+00:00"
+      },
+      {
+        "content": null,
+        "endpoint": "https://vyceai.com/v1/chat/completions",
+        "finish_reason": null,
+        "http_status": 503,
+        "model": "zai-org/glm-5.3-flash",
+        "note": "alias diagnostic only: checks whether an upstream-style model identifier is routed; not part of the scientific battery unless separately justified",
+        "purpose": "alias_model_diagnostic",
+        "relay_artifacts": [
+          "api_error_object",
+          "content_missing",
+          "http_error",
+          "no_choices",
+          "usage_missing"
+        ],
+        "returned_model": null,
+        "utc": "2026-11-26T06:51:52.179151+00:00"
+      }
+    ],
+    "per_model": []
+  },
+  "scored_rows": 0,
+  "structural_summary": [],
+  "tokenizer_extension_summary": {
+    "continuity": [
+      {
+        "left": "deepseek-v4-flash",
+        "left_merges": 127741,
+        "left_vocab": 127997,
+        "merges_equal": true,
+        "regular_vocab_equal": true,
+        "right": "deepseek-v4.1-flash",
+        "right_merges": 127741,
+        "right_vocab": 127997
+      }
+    ],
+    "ran": true,
+    "rows": [
+      {
+        "algorithm": "BPE",
+        "e151_zwj_mean_tokens_per_cluster": 8.178571428571429,
+        "e17_zwj_mean_tokens_per_cluster": 9.0,
+        "family": "DeepSeek",
+        "max_atomic_age": "8.0",
+        "newest_exact_vocab_entry_count": 0,
+        "newest_families": 62,
+        "newest_pipeline_single_token_count": 0,
+        "tokenizer_id": "deepseek-v4-flash",
+        "vocab_size": 128000
+      },
+      {
+        "algorithm": "BPE",
+        "e151_zwj_mean_tokens_per_cluster": 8.178571428571429,
+        "e17_zwj_mean_tokens_per_cluster": 9.0,
+        "family": "DeepSeek",
+        "max_atomic_age": "8.0",
+        "newest_exact_vocab_entry_count": 0,
+        "newest_families": 62,
+        "newest_pipeline_single_token_count": 0,
+        "tokenizer_id": "deepseek-v4.1-flash",
+        "vocab_size": 128000
+      },
+      {
+        "algorithm": "BPE",
+        "e151_zwj_mean_tokens_per_cluster": 8.321428571428571,
+        "e17_zwj_mean_tokens_per_cluster": 7.909090909090909,
+        "family": "GLM",
+        "max_atomic_age": "18.0",
+        "newest_exact_vocab_entry_count": 0,
+        "newest_families": 62,
+        "newest_pipeline_single_token_count": 0,
+        "tokenizer_id": "glm-5.3-flash",
+        "vocab_size": 154820
+      },
+      {
+        "algorithm": "BPE",
+        "e151_zwj_mean_tokens_per_cluster": 8.107142857142858,
+        "e17_zwj_mean_tokens_per_cluster": 8.909090909090908,
+        "family": "OpenAI-gpt-oss",
+        "max_atomic_age": "9.0",
+        "newest_exact_vocab_entry_count": 0,
+        "newest_families": 62,
+        "newest_pipeline_single_token_count": 0,
+        "tokenizer_id": "openai-gpt-oss-120b",
+        "vocab_size": 199998
+      }
+    ]
+  }
+}

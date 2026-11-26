@@ -19,3 +19,33 @@ src/pinned_inputs.json:generic-api-key:84
 src/pinned_inputs.json:generic-api-key:85
 src/pinned_inputs.json:generic-api-key:86
 src/pinned_inputs.json:generic-api-key:87
+
+# False positives in the vyce hosted arm: SHA-256 probe-deduplication keys
+# and tokenizer preprocessing hashes. These are provenance hashes, not credentials.
+results/vyce_hosted/diagnostic_probe.jsonl:generic-api-key:1
+results/vyce_hosted/diagnostic_probe.jsonl:generic-api-key:2
+results/vyce_hosted/diagnostic_probe.jsonl:generic-api-key:3
+results/vyce_hosted/diagnostic_probe.jsonl:generic-api-key:4
+results/vyce_hosted/diagnostic_probe.jsonl:generic-api-key:5
+results/vyce_hosted/diagnostic_probe.jsonl:generic-api-key:6
+results/vyce_hosted/diagnostic_probe.jsonl:generic-api-key:7
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:1
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:2
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:3
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:4
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:5
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:6
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:7
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:8
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:9
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:10
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:11
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:12
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:13
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:14
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:15
+results/vyce_hosted/availability_probe.jsonl:generic-api-key:16
+results/vyce_hosted/tokenizer_inventory_extension.json:generic-api-key:193
+results/vyce_hosted/tokenizer_inventory_extension.json:generic-api-key:744
+results/vyce_hosted/tokenizer_inventory_extension.json:generic-api-key:1295
+results/vyce_hosted/tokenizer_inventory_extension.json:generic-api-key:1846

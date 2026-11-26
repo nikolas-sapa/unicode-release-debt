@@ -10,43 +10,43 @@
     "results/behavioral_round2/round2_copy_newest_old_summary.csv": "72447197d4b1097daaa5c58238f31a9243f60ad0518a519241010d97bf93e15f",
     "results/behavioral_round2/round2_count_fragmentation_summary.csv": "71210be32d364330e6697180eb054e0684fafc1c49586ccd2bb98bd7434194f9",
     "results/behavioral_round2/round2_verdict.json": "911124f70b0238ebacc61a28d64a22b4aa7676b7846415a44ff3f2cbaa0d1725",
-    "results/manifest.json": "47a2fafa015eb592f3f6037917532c9c8f5447dbf93f3d10f3182c4856849cb7",
+    "results/manifest.json": "eae8a8e9604287e53bc1f957378c729826e01cc31def3b113ffbc73a2bf60893",
     "results/rgi_primary_band_curve.csv": "f0f6adfc1d33bd74ced37933cafc04d330d50275c19d41b30c4970ccb2fa34bc",
     "results/scan_verdict.json": "67d380dcbab85bbe5527cfacc9b5a692849f339073b881f89cee4c4088560fd6"
   },
   "matplotlib_version": "3.11.2",
   "outputs": {
     "docs/figures/f1_tokenizer_coverage_collapse.png": {
-      "sha256": "d237b7b92493a999652102d65a786b5dcb97a3e15d22e70b17e78db03bbf52e9",
-      "size": 213252
+      "sha256": "61103f31d9473d74966dd7aaede8b176f72a43fce4262fc5ca43607b3781667c",
+      "size": 237206
     },
     "docs/figures/f1_tokenizer_coverage_collapse.svg": {
-      "sha256": "b711aec20a0aa64892f0f88ecf281c164a26080390a6b09171671822109238d3",
-      "size": 137315
+      "sha256": "bdc7e1619499fc5c3eaafdab117cbe8026ed0c802aaa9b28eef0da610db88058",
+      "size": 151439
     },
     "docs/figures/f2_zwj_fragmentation_gradient.png": {
-      "sha256": "61f86ad34f9b2cdd55009eeaf99dbbc11d3f5d7b6b12c8e078c62630b19aa9e6",
-      "size": 168349
+      "sha256": "0c6268788aaf9b23e7f1d824b7cb2a12a44efe2dde20a34fb6e10ec828eb1980",
+      "size": 158772
     },
     "docs/figures/f2_zwj_fragmentation_gradient.svg": {
-      "sha256": "e01fd68ad9a589546d7323dedadea24383ef5a591bf8a65d5edeedaf90690b7c",
-      "size": 115037
+      "sha256": "d71dcf19944aa25e81e6f85bef8e4a250408e71f0e9fe9d4e79f4869e4e1becc",
+      "size": 113276
     },
     "docs/figures/f3_copy_vs_structural_contrast.png": {
-      "sha256": "50d2ca1103131b8a47b61f542e8a425c4daa2b93d9e5f6bec87b9916b44e7a12",
-      "size": 219311
+      "sha256": "dc400feaa5f602cd62357b2144cdb2eedd0801b63158a8a274eac2ad3e67ca6b",
+      "size": 212299
     },
     "docs/figures/f3_copy_vs_structural_contrast.svg": {
-      "sha256": "3829ffb85fb2c0d45ac62a85121c3d7adfd7d315e4144d9d3bf15bfe3011687c",
-      "size": 156920
+      "sha256": "a84bfb5a76b3dc5f82a2d1df480e0cdaf176705493dc492870e1708253a538fd",
+      "size": 156902
     },
     "docs/figures/f4_measurement_pipeline.png": {
-      "sha256": "23c959a2184e232eae61fa19cfed41f3cbaa06149aaf4ca4e41bc131670cf19c",
-      "size": 212224
+      "sha256": "c04741b82fc89a389c138327bf2facadb9281d528c2e2bbec9af3170bfdb23a2",
+      "size": 218337
     },
     "docs/figures/f4_measurement_pipeline.svg": {
-      "sha256": "f36ce57b07b8771af8510c9c16c21336345db1102c038c16289cc2112bed6648",
-      "size": 152792
+      "sha256": "7dc7cde1def254a3ea2f8f743df217d1e552064911fe16365e098d7628f7950b",
+      "size": 152920
     }
   },
   "palette_constraints": {

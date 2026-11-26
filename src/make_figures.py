@@ -165,34 +165,57 @@ def figure_coverage(rows: list[dict[str, str]], scan_verdict: dict) -> list[Path
         "Full-pipeline coverage of skin-tone-stripped RGI surface families; representative artifact per tokenizer family.",
     )
     axes = [fig.add_axes([0.075, 0.205, 0.405, 0.57]), fig.add_axes([0.555, 0.205, 0.405, 0.57])]
-    panels = [("all", "All RGI surface families", axes[0]), ("atomic", "Strict atomic sensitivity", axes[1])]
+    panels = [("all", "A  All RGI surface families", axes[0]), ("atomic", "B  Strict atomic sensitivity", axes[1])]
     x = np.arange(len(BANDS))
     for sequence_type, panel_title, ax in panels:
         style_axis(ax)
         ax.axvspan(2.55, 6.45, color=ACCENT_LIGHT, alpha=0.55, zorder=0)
         ns_for_ticks = None
+        family_vals = {}
         for family, tid in REPRESENTATIVES.items():
             vals, ns = series_by_band(rows, tid, sequence_type, BANDS, "exact_single_token_rate")
             ns_for_ticks = ns
+            family_vals[family] = vals
             st = FAMILY_STYLE[family]
             ax.plot(x, 100 * np.array(vals), color=st["color"], linewidth=2.2, linestyle=st["linestyle"], marker=st["marker"], markersize=5.2, markeredgewidth=0, label=st["label"], zorder=3)
         labels = []
         for band, n in zip(BANDS, ns_for_ticks):
             labels.append(f"{band}\nn={n:,}")
         ax.set_xticks(x, labels)
-        ax.tick_params(axis="x", labelsize=8.3)
+        ax.tick_params(axis="x", labelsize=8.6)
         ax.set_ylim(0, 100)
         ax.set_yticks(range(0, 101, 20), [percent_tick(v) for v in range(0, 101, 20)])
         ax.set_title(panel_title, loc="left", fontsize=12.5, weight=600, color=INK, pad=11)
         ax.grid(axis="x", visible=False)
         ax.axhline(0, color=TEXT, linewidth=0.8, zorder=2)
+
+        ax.set_xlim(-0.98, 6.55)
+        legacy_nudges = {"Gemma": 1.6, "Qwen": -1.6}
+        for family, vals in family_vals.items():
+            st = FAMILY_STYLE[family]
+            legacy = 100 * vals[0]
+            if family == "Llama":
+                ax.text(0.10, legacy + 2.6, f"{legacy:.1f}%", color=st["color"], fontsize=8.6, weight=600, ha="left", va="bottom")
+            else:
+                ax.text(-0.09, legacy + legacy_nudges[family], f"{legacy:.1f}%", color=st["color"], fontsize=8.6, weight=600, ha="right", va="center")
+        gemma = family_vals["Gemma"]
+        for xi in (1, 2):
+            if gemma[xi] and gemma[xi] > 0:
+                ax.text(xi + 0.09, 100 * gemma[xi] + 3.5, f"{100 * gemma[xi]:.1f}%", color=FAMILY_STYLE["Gemma"]["color"], fontsize=8.2, ha="left", va="bottom")
+        if sequence_type == "all":
+            chip_x = 2.75
+            for family in REPRESENTATIVES:
+                st = FAMILY_STYLE[family]
+                ax.plot([chip_x, chip_x + 0.30], [93.5, 93.5], color=st["color"], linewidth=2.2, linestyle=st["linestyle"], marker=st["marker"], markersize=5.0, markeredgewidth=0, zorder=3)
+                ax.text(chip_x + 0.40, 93.5, family, color=TEXT, fontsize=8.8, weight=600, va="center", ha="left")
+                chip_x += 1.22
+    axes[0].text(4.5, 10, "every family exactly 0%\nfrom E15.1 onward", ha="center", va="center", fontsize=9, weight=600, color=ACCENT, linespacing=1.5)
     axes[0].set_ylabel("Exact single-token coverage", fontsize=10)
-    axes[0].legend(loc="upper right", frameon=False, fontsize=8.8, ncols=1)
     exactness = scan_verdict["newest_cohort_exactness"]
     if not exactness or not all(x["pipeline_single_token_count"] == 0 and x["exact_vocab_entry_count"] == 0 for x in exactness):
         raise ValueError("scan verdict no longer supports the 0/62 newest-cohort callout")
     callout = "Newest copy-pilot cohort\n0/62 exact single-token in every scanned tokenizer"
-    axes[0].text(0.985, 0.74, callout, transform=axes[0].transAxes, ha="right", va="top", fontsize=9.2, weight=600, color=ACCENT, bbox={"boxstyle": "round,pad=0.55", "facecolor": WHITE, "edgecolor": ACCENT, "linewidth": 1.1})
+    axes[0].text(4.5, 78, callout, transform=axes[0].transData, ha="center", va="center", fontsize=9.4, weight=600, color=ACCENT, linespacing=1.55, bbox={"boxstyle": "round,pad=0.6", "facecolor": WHITE, "edgecolor": ACCENT, "linewidth": 1.1})
     axes[1].text(0.50, 0.52, "E15.1 contributes no strict atomic families\nin the Unicode 18 snapshot", transform=axes[1].transAxes, ha="center", va="center", fontsize=9, color=MUTED, bbox={"boxstyle": "round,pad=0.45", "facecolor": WHITE, "edgecolor": BORDER, "linewidth": 0.8})
     add_footer(
         fig,
@@ -234,16 +257,20 @@ def figure_fragmentation(rows: list[dict[str, str]]) -> list[Path]:
     ax.set_ylim(0, upper)
     ax.set_yticks(range(0, upper + 1, 3))
     ax.set_ylabel("Mean tokens per grapheme cluster", fontsize=10)
-    ax.set_xlim(-0.25, 2.72)
+    ax.set_xlim(-0.38, 2.98)
     ax.grid(axis="x", visible=False)
     ax.axhline(0, color=TEXT, linewidth=0.8)
-    for value, family, color in sorted(endpoints):
-        ax.text(2.08, value, f"{value:.1f}  {family}", va="center", ha="left", fontsize=9.3, weight=600, color=color)
-    ax.text(0.015, 0.94, "Legacy-to-E17 mean increase", transform=ax.transAxes, fontsize=9, color=MUTED, weight=600)
     for family, tid in REPRESENTATIVES.items():
         vals, _ = series_by_band(rows, tid, "zwj", ZWJ_BANDS, "mean_tokens_per_cluster")
         increase = vals[-1] - vals[0]
-        ax.text(0.015, 0.88 - 0.055 * list(REPRESENTATIVES).index(family), f"{family}: +{increase:.1f} tokens/cluster", transform=ax.transAxes, fontsize=9, color=FAMILY_STYLE[family]["color"])
+        color = FAMILY_STYLE[family]["color"]
+        ax.text(-0.09, vals[0], f"{vals[0]:.1f}", va="center", ha="right", fontsize=8.6, color=color, weight=600)
+        ax.text(1.0, vals[1] + 0.42, f"{vals[1]:.1f}", va="bottom", ha="center", fontsize=8.2, color=color)
+    for value, family, color in sorted(endpoints):
+        vals, _ = series_by_band(rows, REPRESENTATIVES[family], "zwj", ZWJ_BANDS, "mean_tokens_per_cluster")
+        increase = vals[-1] - vals[0]
+        ax.text(2.08, value + 0.32, f"{family} {value:.1f}", va="center", ha="left", fontsize=9.3, weight=600, color=color)
+        ax.text(2.08, value - 0.55, f"+{increase:.1f} vs legacy", va="center", ha="left", fontsize=8.2, color=color)
     add_footer(
         fig,
         "Source: results/rgi_primary_band_curve.csv. Descriptive tokenizer mechanism, not adjusted for sequence complexity. "
@@ -255,6 +282,10 @@ def figure_fragmentation(rows: list[dict[str, str]]) -> list[Path]:
 
 def exact_count_text(num: str | int, den: str | int) -> str:
     return f"{num}/{den}"
+
+
+def rate_text(value: float) -> str:
+    return f"{value:.0f}%" if value == round(value) else f"{value:.1f}%"
 
 
 def figure_central_contrast() -> list[Path]:
@@ -271,79 +302,90 @@ def figure_central_contrast() -> list[Path]:
     missing = [m for m in valid_models if m not in copy_by_model or m not in count_by_model]
     if missing:
         raise ValueError(f"missing summary rows for {missing}")
+    for model in valid_models:
+        row = copy_by_model[model]
+        if float(row["newest_exact_rate"]) != 1.0 or float(row["old_control_exact_rate"]) != 1.0:
+            raise ValueError(f"copy ceiling no longer holds for {model}; single-dot copy encoding would be dishonest")
 
-    fig = plt.figure(figsize=(12.4, 7.1))
+    fig = plt.figure(figsize=(12.2, 7.2))
     add_heading(
         fig,
         "Behavioral round 2 / central contrast",
-        "Byte copying stays at ceiling; grapheme operations do not",
+        "Byte copying stays at ceiling; grapheme operations collapse",
         "Gate-valid models only. Exact rates use total failure scoring: format failure and content failure both count as failure.",
     )
-    ax_copy = fig.add_axes([0.075, 0.215, 0.29, 0.56])
-    ax_count = fig.add_axes([0.455, 0.215, 0.505, 0.56])
-    for ax in (ax_copy, ax_count):
-        style_axis(ax)
-        ax.set_ylim(0, 100)
-        ax.set_yticks(range(0, 101, 25), [percent_tick(v) for v in range(0, 101, 25)])
-        ax.grid(axis="x", visible=False)
-        ax.axhline(0, color=TEXT, linewidth=0.8)
+    ax = fig.add_axes([0.065, 0.185, 0.885, 0.565])
+    style_axis(ax)
+    ax.set_ylim(-3.5, 108)
+    ax.set_yticks(range(0, 101, 25), [percent_tick(v) for v in range(0, 101, 25)])
+    ax.set_xlim(-0.55, 3.85)
+    ax.grid(axis="x", visible=False)
+    ax.axhline(0, color=TEXT, linewidth=0.8)
     x = np.arange(len(valid_models))
     labels = [MODEL_SHORT[m] for m in valid_models]
+    ax.set_xticks(x, labels)
+    ax.tick_params(axis="x", labelsize=9.6)
+    ax.set_ylabel("Exact-match rate", fontsize=10)
 
-    ax_copy.set_title("A  Copy exact-match rate", loc="left", fontsize=12.5, weight=600, pad=11)
+    ax.axhline(100, color=INK, linewidth=1.1, zorder=2)
     for i, model in enumerate(valid_models):
-        row = copy_by_model[model]
-        newest = 100 * float(row["newest_exact_rate"])
-        old = 100 * float(row["old_control_exact_rate"])
-        ax_copy.scatter(i - 0.09, old, s=56, color=MID_GRAY, marker="o", zorder=3, label="Old controls" if i == 0 else None)
-        ax_copy.scatter(i + 0.09, newest, s=62, color=ACCENT, marker="o", zorder=3, label="Newest cohort" if i == 0 else None)
-    ax_copy.set_xticks(x, labels)
-    ax_copy.tick_params(axis="x", labelsize=8.6)
-    ax_copy.set_ylabel("Exact rate", fontsize=10)
-    ax_copy.legend(loc="lower right", frameon=False, fontsize=8.7)
-    ax_copy.text(0.03, 0.89, "Every valid model:\n94/94 newest, 64/64 old", transform=ax_copy.transAxes, fontsize=9.4, weight=600, color=ACCENT, va="top", bbox={"boxstyle": "round,pad=0.55", "facecolor": WHITE, "edgecolor": ACCENT, "linewidth": 1.0})
+        ax.scatter(i, 100, s=92, color=INK, marker="o", zorder=4)
+    ax.plot(x, [100] * len(x), color=INK, linewidth=1.6, zorder=3)
+    ax.text(-0.46, 94.4, "copy exact rate: newest cohort 94/94, old controls 64/64 — flat at ceiling in every valid model", ha="left", va="center", fontsize=8.8, weight=600, color=INK)
 
-    ax_count.set_title("B  Grapheme-count exact rate by fragmentation", loc="left", fontsize=12.5, weight=600, pad=11)
     for i, model in enumerate(valid_models):
         row = count_by_model[model]
         low = 100 * (1.0 - float(row["low_failure_rate"]))
         high = 100 * (1.0 - float(row["high_failure_rate"]))
-        ax_count.plot([i, i], [low, high], color=LIGHT_GRAY, linewidth=2.2, zorder=2)
-        ax_count.scatter(i - 0.075, low, s=58, color=DARK_GRAY, marker="o", zorder=3, label="Low fragmentation" if i == 0 else None)
-        ax_count.scatter(i + 0.075, high, s=66, color=ACCENT, marker="D", zorder=3, label="High fragmentation" if i == 0 else None)
         gap = float(row["high_minus_low_failure_pp"])
-        ytext = max(low, high) + 8 if max(low, high) < 82 else max(low, high) - 13
-        ax_count.text(i, ytext, f"+{gap:.1f} pp\nfailure", ha="center", va="center", fontsize=8.4, color=ACCENT if gap >= 15 else MUTED, weight=600 if gap >= 15 else 400)
-    ax_count.set_xticks(x, labels)
-    ax_count.tick_params(axis="x", labelsize=8.6)
-    ax_count.legend(loc="upper right", frameon=False, fontsize=8.7)
+        if low != high:
+            ax.plot([i, i], [low, high], color=LIGHT_GRAY, linewidth=2.4, zorder=2)
+        ax.scatter(i - 0.09, low, s=64, color=MUTED, marker="o", zorder=3)
+        ax.scatter(i + 0.09, high, s=76, color=ACCENT, marker="D", zorder=3)
+        ax.text(i - 0.17, low, rate_text(low), ha="right", va="center", fontsize=8.6, color=TEXT)
+        high_label_y = high + 4.5 if high < 90 else high - 5.5
+        ax.text(i + 0.09, high_label_y, rate_text(high), ha="center", va="bottom" if high < 90 else "top", fontsize=8.6, weight=600, color=ACCENT)
+        if gap > 0:
+            mid = (low + high) / 2
+            strong = gap >= 15
+            gap_y = mid if strong else low + 6.5
+            ax.text(i + 0.21, gap_y, f"+{gap:.1f} pp\nfailure", ha="left", va="center", fontsize=8.4, color=ACCENT if strong else MUTED, weight=600 if strong else 400, linespacing=1.35)
+
+    ax.annotate("low fragmentation", xy=(0 - 0.09, 50), xytext=(0.38, 56), fontsize=8.8, color=MUTED, weight=600, ha="left", va="center", arrowprops={"arrowstyle": "-", "color": LIGHT_GRAY, "linewidth": 0.9, "shrinkA": 2, "shrinkB": 6})
+    ax.annotate("high fragmentation", xy=(0 + 0.09, 1), xytext=(0.55, 5.5), fontsize=8.8, color=ACCENT, weight=600, ha="left", va="center", arrowprops={"arrowstyle": "-", "color": LIGHT_GRAY, "linewidth": 0.9, "shrinkA": 2, "shrinkB": 6})
+
     rule2_models = verdict["behavioral_proceed_rule2_models"]
-    ax_count.text(0.015, 0.945, f"Proceed rule 2 fires in {len(rule2_models)}/4 valid models", transform=ax_count.transAxes, fontsize=9.2, weight=600, color=ACCENT, va="top")
-    ax_count.text(0.015, 0.875, "Decomposition floor: 0/48 exact in every valid model", transform=ax_count.transAxes, fontsize=8.8, color=INK, va="top", bbox={"boxstyle": "round,pad=0.42", "facecolor": WHITE, "edgecolor": BORDER, "linewidth": 0.8})
+    ax.text(0.985, 0.755, f"Proceed rule 2 fires in {len(rule2_models)}/4 valid models", transform=ax.transAxes, fontsize=9.4, weight=600, color=ACCENT, va="center", ha="right")
+    ax.text(0.985, 0.685, "Decomposition floor: 0/48 exact in every valid model", transform=ax.transAxes, fontsize=8.8, color=INK, va="center", ha="right", bbox={"boxstyle": "round,pad=0.45", "facecolor": WHITE, "edgecolor": BORDER, "linewidth": 0.8})
 
     invalid = verdict["validity_gates"]["qwen2.5-7b-instruct-mlx8"]["wrapper"]
-    fig.text(0.955, 0.835, f"Excluded from rule evaluation: qwen2.5-7b\nwrapper failures {invalid['format_failures']}/{invalid['n']} ({100 * invalid['format_failure_rate']:.1f}%)", ha="right", va="top", fontsize=8.7, color=TEXT, bbox={"boxstyle": "round,pad=0.55", "facecolor": CARD, "edgecolor": BORDER, "linewidth": 0.9})
+    ax.text(0.985, 0.52, f"Excluded from rule evaluation: qwen2.5-7b\nwrapper failures {invalid['format_failures']}/{invalid['n']} ({100 * invalid['format_failure_rate']:.1f}%)", transform=ax.transAxes, ha="right", va="center", fontsize=8.6, color=TEXT, linespacing=1.5, bbox={"boxstyle": "round,pad=0.55", "facecolor": CARD, "edgecolor": BORDER, "linewidth": 0.9})
     add_footer(
         fig,
         "Source: results/behavioral_round2/round2_verdict.json, round2_copy_newest_old_summary.csv, and round2_count_fragmentation_summary.csv. "
         "Count rates pool legacy and newest bundles (18 low-fragmentation and 18 high-fragmentation rows per model). "
         "TinyLlama emits no valid structural answer format; its structural zeros are therefore format-floor results, not representation evidence. "
-        "Copy gates: ASCII at least 23/24 and copy-wrapper failure at most 5%.",
+        "Copy gates: ASCII at least 23/24 and copy-wrapper failure at most 5%. Copy newest-cohort and old-control exact rates are both exactly 100% in every valid model; one marker per model carries both.",
     )
     return save_figure(fig, "f3_copy_vs_structural_contrast")
 
 
 def box(ax, xywh, number, title, body, accent=False):
+    from matplotlib.patches import Ellipse
     x, y, w, h = xywh
     fill = ACCENT_LIGHT if accent else CARD
     edge = ACCENT if accent else BORDER
     patch = FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.012,rounding_size=0.018", transform=ax.transAxes, facecolor=fill, edgecolor=edge, linewidth=1.1, zorder=2)
     ax.add_patch(patch)
-    circle = plt.Circle((x + 0.025, y + h - 0.045), 0.016, transform=ax.transAxes, facecolor=ACCENT, edgecolor="none", zorder=3)
-    ax.add_patch(circle)
-    ax.text(x + 0.025, y + h - 0.045, number, transform=ax.transAxes, ha="center", va="center", fontsize=6.7, color=WHITE, weight=600, zorder=4)
-    ax.text(x + 0.047, y + h - 0.045, title, transform=ax.transAxes, ha="left", va="center", fontsize=7.8, color=INK, weight=600, zorder=4)
-    ax.text(x + 0.022, y + h - 0.091, body, transform=ax.transAxes, ha="left", va="top", fontsize=7.75, color=TEXT, linespacing=1.42, zorder=4)
+    fw, fh = ax.figure.get_size_inches()
+    aspect = fw / fh
+    chip_d = 0.0245
+    cx, cy = x + 0.030, y + h - 0.048
+    chip_color = ACCENT if not accent else ACCENT
+    ax.add_patch(Ellipse((cx, cy), width=chip_d, height=chip_d * aspect, transform=ax.transAxes, facecolor=chip_color, edgecolor="none", zorder=3))
+    ax.text(cx, cy, number, transform=ax.transAxes, ha="center", va="center", fontsize=6.9, color=WHITE, weight=600, zorder=4)
+    ax.text(x + 0.053, cy + 0.002, title, transform=ax.transAxes, ha="left", va="center", fontsize=8.1, color=INK, weight=600, zorder=4)
+    ax.text(x + 0.024, y + h - 0.088, body, transform=ax.transAxes, ha="left", va="top", fontsize=7.7, color=TEXT, linespacing=1.5, zorder=4)
 
 
 def arrow(ax, start, end, dashed=False):
@@ -379,23 +421,24 @@ def figure_pipeline(scan_verdict: dict, round2_verdict: dict) -> list[Path]:
     ax.add_patch(panel)
 
     xs = [0.065, 0.247, 0.429, 0.611, 0.793]
-    w, h = 0.15, 0.19
-    y_top, y_bottom = 0.50, 0.17
+    w, h = 0.15, 0.205
+    y_top, y_mid, y_bottom = 0.50, 0.335, 0.17
     box(ax, (xs[0], y_top, w, h), "01", "UNICODE INPUTS", f"Unicode 18.0 / Emoji 18\nCLDR 49; {input_count} pinned files\nindependent hash replication")
     box(ax, (xs[1], y_top, w, h), "03", "TEST UNIVERSE", "182 copy items per model\n108 structural rows per model\nASCII and legacy controls")
-    box(ax, (xs[2], y_top, w, h), "05", "BEHAVIORAL PROBES", f"copy / count / decompose\ncompare; greedy local inference\n{model_count} x {rows_per_model} rows = {total_rows:,}\nappend-only raw JSONL")
-    box(ax, (xs[3], y_top, w, h), "06", "VALIDITY GATES", "ASCII copy at least 23/24\nwrapper failure at most 5%\nmutation-tested extraction")
-    box(ax, (xs[4], y_top, w, h), "07", "VERDICTS", "scan rule 4 fires\ncopy arm hard-killed\nstructural rule 2 proceeds", accent=True)
+    box(ax, (xs[2], y_mid, w, h), "05", "BEHAVIORAL PROBES", f"copy / count / decompose\ncompare; greedy local inference\n{model_count} x {rows_per_model} rows = {total_rows:,}\nappend-only raw JSONL")
+    box(ax, (xs[3], y_mid, w, h), "06", "VALIDITY GATES", "ASCII copy at least 23/24\nwrapper failure at most 5%\nmutation-tested extraction")
+    box(ax, (xs[4], y_mid, w, h), "07", "VERDICTS", "scan rule 4 fires\ncopy arm hard-killed\nstructural rule 2 proceeds", accent=True)
     box(ax, (xs[0], y_bottom, w, h), "02", "PINNED TOKENIZERS", "five artifacts, three families\nvocabulary and merge continuity\nhash-pinned tokenizer files")
     box(ax, (xs[1], y_bottom, w, h), "04", "TOKENIZER SCAN", "exact single-token coverage\ntokens per cluster\nsplit codepoints; NFC/NFD")
 
+    mid_y = y_mid + h / 2
     arrow(ax, (xs[0] + w, y_top + h / 2), (xs[1], y_top + h / 2))
-    arrow(ax, (xs[1] + w, y_top + h / 2), (xs[2], y_top + h / 2))
-    arrow(ax, (xs[2] + w, y_top + h / 2), (xs[3], y_top + h / 2))
-    arrow(ax, (xs[3] + w, y_top + h / 2), (xs[4], y_top + h / 2))
     arrow(ax, (xs[0] + w, y_bottom + h / 2), (xs[1], y_bottom + h / 2))
-    arrow(ax, (xs[1] + w, y_bottom + h / 2), (xs[2] + 0.025, y_top - 0.01))
-    ax.text(xs[2] + 0.026, 0.425, "scan covariates join behavior by item and tokenizer", transform=ax.transAxes, fontsize=7.8, color=MUTED, ha="left")
+    arrow(ax, (xs[1] + w, y_top + h / 2), (xs[2], y_mid + h - 0.02))
+    arrow(ax, (xs[1] + w, y_bottom + h / 2), (xs[2], y_mid + 0.02))
+    arrow(ax, (xs[2] + w, mid_y), (xs[3], mid_y))
+    arrow(ax, (xs[3] + w, mid_y), (xs[4], mid_y))
+    ax.text(xs[2] + 0.012, y_mid - 0.048, "scan covariates join behavior by item and tokenizer", transform=ax.transAxes, fontsize=7.8, color=MUTED, ha="left", va="center", zorder=6)
 
     add_footer(
         fig,

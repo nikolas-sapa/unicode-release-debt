@@ -1,0 +1,30 @@
+{
+  "utc": "baseline-before-resume",
+  "raw_sha256": "d2139174239675656bc9f77bdc766848238b629d43b823b0c7d1901eb4e27d5d",
+  "raw_rows": 1780,
+  "unique_completion_keys": 1780,
+  "duplicate_completion_keys": 0,
+  "duplicate_carrier_probe_keys": 0,
+  "counts": {
+    "gemma3-4b-it-mlx8-mirror": 320,
+    "llama32-3b-instruct-mlx8": 500,
+    "qwen2.5-3b-instruct-bf16": 500,
+    "tinyllama-1.1b-chat-v1.0-bf16": 460
+  },
+  "plan_counts": {
+    "gemma3-4b-it-mlx8-mirror": 460,
+    "llama32-3b-instruct-mlx8": 500,
+    "mistral7b-instruct-v03-mlx8": 460,
+    "qwen2.5-3b-instruct-bf16": 500,
+    "qwen3-4b-instruct-2507-mlx8": 500,
+    "tinyllama-1.1b-chat-v1.0-bf16": 460
+  },
+  "remaining": {
+    "gemma3-4b-it-mlx8-mirror": 140,
+    "llama32-3b-instruct-mlx8": 0,
+    "mistral7b-instruct-v03-mlx8": 460,
+    "qwen2.5-3b-instruct-bf16": 0,
+    "qwen3-4b-instruct-2507-mlx8": 500,
+    "tinyllama-1.1b-chat-v1.0-bf16": 0
+  }
+}

@@ -12,6 +12,7 @@ regexes = [
 paths = [
   '''results/behavioral/.*''',
   '''results/behavioral_round2/.*''',
+  '''results/confirmatory/.*''',
   '''results/tokenizer_inventory.json''',
   '''src/ucd_build.py''',
   '''src/behavioral_probes.py''',

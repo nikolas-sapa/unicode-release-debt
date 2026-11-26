@@ -1,0 +1,223 @@
+{
+  "checks": {
+    "gemma3-4b-it-mlx8-mirror": {
+      "all_match": true,
+      "checked": true,
+      "comparisons": [
+        {
+          "actual_sha256": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+          "expected_sha256": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+          "file": "added_tokens.json",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+          "expected_sha256": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+          "file": "special_tokens_map.json",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795",
+          "expected_sha256": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795",
+          "file": "tokenizer.json",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+          "expected_sha256": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+          "file": "tokenizer.model",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "0d95398b39395e5cfb290683a78f3fb0551223c672d8b033333c1a5307473760",
+          "expected_sha256": "0d95398b39395e5cfb290683a78f3fb0551223c672d8b033333c1a5307473760",
+          "file": "tokenizer_config.json",
+          "match": true,
+          "source": "model_snapshot"
+        }
+      ],
+      "model_loaded_events": 3,
+      "overlay_used": false
+    },
+    "llama32-3b-instruct-mlx8": {
+      "all_match": true,
+      "checked": true,
+      "comparisons": [
+        {
+          "actual_sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+          "expected_sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+          "file": "tokenizer.json",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "9823dcfdc1121869029da45192238e85cf44f0b232a6d9dc20e4fe6f4242a14e",
+          "expected_sha256": "9823dcfdc1121869029da45192238e85cf44f0b232a6d9dc20e4fe6f4242a14e",
+          "file": "tokenizer_config.json",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+          "expected_sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+          "file": "special_tokens_map.json",
+          "match": true,
+          "source": "model_snapshot"
+        }
+      ],
+      "model_loaded_events": 2,
+      "overlay_used": false
+    },
+    "mistral7b-instruct-v03-mlx8": {
+      "all_match": true,
+      "checked": true,
+      "comparisons": [
+        {
+          "actual_sha256": "ad379250e3a923686183c1ee60398c6f278da0a40520dc4b22e69c53cfc9af9e",
+          "expected_sha256": "ad379250e3a923686183c1ee60398c6f278da0a40520dc4b22e69c53cfc9af9e",
+          "file": "tokenizer.json",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89",
+          "expected_sha256": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89",
+          "file": "tokenizer.model",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "489746d6758f2e62d01eb30b7b6486e60ebae4728a97cbce4905a2eb7264f5fd",
+          "expected_sha256": "489746d6758f2e62d01eb30b7b6486e60ebae4728a97cbce4905a2eb7264f5fd",
+          "file": "tokenizer_config.json",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+          "expected_sha256": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+          "file": "special_tokens_map.json",
+          "match": true,
+          "source": "model_snapshot"
+        }
+      ],
+      "model_loaded_events": 2,
+      "overlay_used": false
+    },
+    "qwen2.5-3b-instruct-bf16": {
+      "all_match": true,
+      "checked": true,
+      "comparisons": [
+        {
+          "actual_sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+          "expected_sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+          "file": "merges.txt",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+          "expected_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+          "file": "tokenizer.json",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+          "expected_sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+          "file": "tokenizer_config.json",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "expected_sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "file": "vocab.json",
+          "match": true,
+          "source": "model_snapshot"
+        }
+      ],
+      "model_loaded_events": 2,
+      "overlay_used": false
+    },
+    "qwen3-4b-instruct-2507-mlx8": {
+      "all_match": true,
+      "checked": true,
+      "comparisons": [
+        {
+          "actual_sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+          "expected_sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+          "file": "merges.txt",
+          "match": true,
+          "source": "canonical_overlay"
+        },
+        {
+          "actual_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "expected_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "file": "tokenizer.json",
+          "match": true,
+          "source": "canonical_overlay"
+        },
+        {
+          "actual_sha256": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3",
+          "expected_sha256": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3",
+          "file": "tokenizer_config.json",
+          "match": true,
+          "source": "canonical_overlay"
+        },
+        {
+          "actual_sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "expected_sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "file": "vocab.json",
+          "match": true,
+          "source": "canonical_overlay"
+        }
+      ],
+      "model_loaded_events": 3,
+      "overlay_used": true
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16": {
+      "all_match": true,
+      "checked": true,
+      "comparisons": [
+        {
+          "actual_sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+          "expected_sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+          "file": "tokenizer.json",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "expected_sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "file": "tokenizer.model",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "7b41ba7d0eb91e77914ca3dafde559ea3e19878769b7e68409e89bed5222e77a",
+          "expected_sha256": "7b41ba7d0eb91e77914ca3dafde559ea3e19878769b7e68409e89bed5222e77a",
+          "file": "tokenizer_config.json",
+          "match": true,
+          "source": "model_snapshot"
+        },
+        {
+          "actual_sha256": "82d96d7a9e6ced037f12394b7ea6a5b02e6ca87e0d11edaa8d60d9be857ce7db",
+          "expected_sha256": "82d96d7a9e6ced037f12394b7ea6a5b02e6ca87e0d11edaa8d60d9be857ce7db",
+          "file": "special_tokens_map.json",
+          "match": true,
+          "source": "model_snapshot"
+        }
+      ],
+      "model_loaded_events": 2,
+      "overlay_used": false
+    }
+  },
+  "created_utc": "2026-11-26T13:12:37.578739+00:00",
+  "errors": [],
+  "inference_tokenizer_verification_pass": true
+}

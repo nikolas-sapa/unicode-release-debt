@@ -1,0 +1,15 @@
+{
+  "carriers_checked": [
+    "tinyllama-1.1b-chat-v1.0-bf16",
+    "qwen2.5-3b-instruct-bf16",
+    "llama32-3b-instruct-mlx8",
+    "gemma3-4b-it-mlx8-mirror",
+    "qwen3-4b-instruct-2507-mlx8",
+    "mistral7b-instruct-v03-mlx8"
+  ],
+  "completion_audit_pass": true,
+  "created_utc": "2026-11-26T13:12:37.221002+00:00",
+  "errors": [],
+  "raw_rows": 2880,
+  "raw_sha256_before_scoring": "d16c5336a2ff1f97fa63d27b21dd4a19783cfc19d4c2c470ad6e92423c7f8607"
+}

@@ -1,0 +1,34 @@
+{
+  "carrier_id": "llama32-3b-instruct-mlx8",
+  "checkpoint_utc": "2026-11-26T12:25:34.056988+00:00",
+  "scored_rows": 500,
+  "expected_total_rows": 500,
+  "exact_by_task_scope": {
+    "copy_ascii": {
+      "exact": 23,
+      "n": 24
+    },
+    "copy_unicode": {
+      "exact": 84,
+      "n": 100
+    },
+    "count_ascii": {
+      "exact": 6,
+      "n": 12
+    },
+    "count_unicode": {
+      "exact": 13,
+      "n": 320
+    },
+    "scalar_listing_ascii": {
+      "exact": 2,
+      "n": 12
+    },
+    "scalar_listing_unicode": {
+      "exact": 0,
+      "n": 32
+    }
+  },
+  "raw_sha256_at_checkpoint": "cb2edaa43aed044a8187ef16b9d666a310300c1cdb7eeca087cb10eac7757573",
+  "note": "raw hash mutable append-only"
+}

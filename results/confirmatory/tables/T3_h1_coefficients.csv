@@ -1,0 +1,2 @@
+row_type,carrier_id,beta,odds_ratio,bootstrap_ci_low,bootstrap_ci_high,bootstrap_p_beta_gt_0,holm_adjusted_p,bootstrap_valid,bootstrap_replicates,estimable,reason
+pooled_primary,pooled,,,,,,,0,5000,False,fewer than four structurally valid carriers or fewer than three tokenizer families; primary H1 is inconclusive without pooling

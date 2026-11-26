@@ -1,0 +1,7 @@
+carrier_id,revision,primary_ladder,tokenizer_valid,ascii_copy_exact,copy_wrapper_format_failures,ascii_count_exact,ascii_scalar_exact,copy_valid,structural_valid,quantization_status,include_h1h2h3_primary,include_h4_primary
+tinyllama-1.1b-chat-v1.0-bf16,fe8a4ea1ffedaf415f4da2f062534de366a451e6,True,True,23/24,0,0/12,0/12,True,False,bf16_no_comparison_required,False,True
+qwen2.5-3b-instruct-bf16,aa8e72537993ba99e69dfaafa59ed015b17504d1,True,True,23/24,0,3/12,0/12,True,False,bf16_no_comparison_required,False,True
+llama32-3b-instruct-mlx8,ff054899609078569493def2823f9acd2780c0c9,True,True,23/24,16,6/12,2/12,False,False,narrow_validation_only_no_bf16_comparator_downloaded_allowed_by_frozen_user_resolution,False,False
+gemma3-4b-it-mlx8-mirror,61cfff4de4bc5b975437be840d504f07f0424df2,True,True,24/24,0,2/12,1/12,True,False,narrow_validation_only_no_bf16_comparator_downloaded_allowed_by_frozen_user_resolution,False,True
+qwen3-4b-instruct-2507-mlx8,0e42af58449718de7931ee04f28191fbe6c43a56,True,True,23/24,1,4/12,1/12,True,False,narrow_validation_only_no_bf16_comparator_downloaded_allowed_by_frozen_user_resolution,False,True
+mistral7b-instruct-v03-mlx8,c282bcd11a64be44ac3f130f0b819d48ecc1846d,False,True,23/24,4,0/12,0/12,True,False,narrow_validation_only_no_bf16_comparator_downloaded_allowed_by_frozen_user_resolution,False,False

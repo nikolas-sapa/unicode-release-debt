@@ -1,0 +1,329 @@
+{
+  "carrier_audits": {
+    "gemma3-4b-it-mlx8-mirror": {
+      "ascii_count_rows": 12,
+      "copy_rows": 124,
+      "count_rows": 280,
+      "empty_cells": [
+        {
+          "carrier_id": "gemma3-4b-it-mlx8-mirror",
+          "era": "newest",
+          "expected_count": 1,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        },
+        {
+          "carrier_id": "gemma3-4b-it-mlx8-mirror",
+          "era": "newest",
+          "expected_count": 2,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        },
+        {
+          "carrier_id": "gemma3-4b-it-mlx8-mirror",
+          "era": "newest",
+          "expected_count": 3,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        },
+        {
+          "carrier_id": "gemma3-4b-it-mlx8-mirror",
+          "era": "newest",
+          "expected_count": 4,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        },
+        {
+          "carrier_id": "gemma3-4b-it-mlx8-mirror",
+          "era": "newest",
+          "expected_count": 5,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        }
+      ],
+      "inventory_rows": 460,
+      "newest_l1_feasible": false,
+      "overlap_pairs": 120,
+      "overlap_substitutions": {
+        "atomic_emoji->atomic_nonemoji": 1,
+        "atomic_emoji->complex_nonemoji": 20,
+        "atomic_emoji->zwj_emoji": 1,
+        "atomic_nonemoji->complex_nonemoji": 20,
+        "complex_nonemoji->zwj_emoji": 10,
+        "zwj_emoji->atomic_nonemoji": 1,
+        "zwj_emoji->complex_nonemoji": 1
+      },
+      "pair_matching": {
+        "pairs_constructed": 120
+      },
+      "scalar_rows": 44,
+      "static_rows": 180
+    },
+    "llama32-3b-instruct-mlx8": {
+      "ascii_count_rows": 12,
+      "copy_rows": 124,
+      "count_rows": 320,
+      "empty_cells": [],
+      "inventory_rows": 500,
+      "newest_l1_feasible": true,
+      "overlap_pairs": 120,
+      "overlap_substitutions": {
+        "atomic_emoji->atomic_nonemoji": 2,
+        "atomic_emoji->complex_nonemoji": 20,
+        "atomic_nonemoji->complex_nonemoji": 20,
+        "complex_nonemoji->atomic_nonemoji": 10,
+        "zwj_emoji->atomic_nonemoji": 10,
+        "zwj_emoji->complex_nonemoji": 6
+      },
+      "pair_matching": {
+        "pairs_constructed": 120
+      },
+      "scalar_rows": 44,
+      "static_rows": 180
+    },
+    "mistral7b-instruct-v03-mlx8": {
+      "ascii_count_rows": 12,
+      "copy_rows": 124,
+      "count_rows": 280,
+      "empty_cells": [
+        {
+          "carrier_id": "mistral7b-instruct-v03-mlx8",
+          "era": "newest",
+          "expected_count": 1,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        },
+        {
+          "carrier_id": "mistral7b-instruct-v03-mlx8",
+          "era": "newest",
+          "expected_count": 2,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        },
+        {
+          "carrier_id": "mistral7b-instruct-v03-mlx8",
+          "era": "newest",
+          "expected_count": 3,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        },
+        {
+          "carrier_id": "mistral7b-instruct-v03-mlx8",
+          "era": "newest",
+          "expected_count": 4,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        },
+        {
+          "carrier_id": "mistral7b-instruct-v03-mlx8",
+          "era": "newest",
+          "expected_count": 5,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        }
+      ],
+      "inventory_rows": 460,
+      "newest_l1_feasible": false,
+      "overlap_pairs": 120,
+      "overlap_substitutions": {
+        "atomic_emoji->atomic_nonemoji": 2,
+        "atomic_emoji->complex_nonemoji": 20,
+        "atomic_nonemoji->complex_nonemoji": 20,
+        "complex_nonemoji->atomic_nonemoji": 10,
+        "zwj_emoji->atomic_nonemoji": 10,
+        "zwj_emoji->complex_nonemoji": 2
+      },
+      "pair_matching": {
+        "pairs_constructed": 120
+      },
+      "scalar_rows": 44,
+      "static_rows": 180
+    },
+    "qwen2.5-3b-instruct-bf16": {
+      "ascii_count_rows": 12,
+      "copy_rows": 124,
+      "count_rows": 320,
+      "empty_cells": [],
+      "inventory_rows": 500,
+      "newest_l1_feasible": true,
+      "overlap_pairs": 120,
+      "overlap_substitutions": {
+        "atomic_emoji->atomic_nonemoji": 2,
+        "atomic_emoji->complex_nonemoji": 20,
+        "atomic_nonemoji->complex_nonemoji": 20,
+        "complex_nonemoji->atomic_nonemoji": 6,
+        "complex_nonemoji->zwj_emoji": 4,
+        "zwj_emoji->atomic_nonemoji": 7
+      },
+      "pair_matching": {
+        "pairs_constructed": 120
+      },
+      "scalar_rows": 44,
+      "static_rows": 180
+    },
+    "qwen3-4b-instruct-2507-mlx8": {
+      "ascii_count_rows": 12,
+      "copy_rows": 124,
+      "count_rows": 320,
+      "empty_cells": [],
+      "inventory_rows": 500,
+      "newest_l1_feasible": true,
+      "overlap_pairs": 120,
+      "overlap_substitutions": {
+        "atomic_emoji->atomic_nonemoji": 2,
+        "atomic_emoji->complex_nonemoji": 20,
+        "atomic_nonemoji->complex_nonemoji": 20,
+        "complex_nonemoji->atomic_nonemoji": 6,
+        "complex_nonemoji->zwj_emoji": 4,
+        "zwj_emoji->atomic_nonemoji": 7
+      },
+      "pair_matching": {
+        "pairs_constructed": 120
+      },
+      "scalar_rows": 44,
+      "static_rows": 180
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16": {
+      "ascii_count_rows": 12,
+      "copy_rows": 124,
+      "count_rows": 280,
+      "empty_cells": [
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "era": "newest",
+          "expected_count": 1,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        },
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "era": "newest",
+          "expected_count": 2,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        },
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "era": "newest",
+          "expected_count": 3,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        },
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "era": "newest",
+          "expected_count": 4,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        },
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "era": "newest",
+          "expected_count": 5,
+          "level": "L1",
+          "reason": "structurally infeasible: fewer than eight unique valid probes available"
+        }
+      ],
+      "inventory_rows": 460,
+      "newest_l1_feasible": false,
+      "overlap_pairs": 120,
+      "overlap_substitutions": {
+        "atomic_emoji->atomic_nonemoji": 4,
+        "atomic_emoji->complex_nonemoji": 20,
+        "atomic_nonemoji->complex_nonemoji": 20,
+        "complex_nonemoji->atomic_nonemoji": 10,
+        "zwj_emoji->atomic_nonemoji": 10,
+        "zwj_emoji->complex_nonemoji": 10
+      },
+      "pair_matching": {
+        "pairs_constructed": 120
+      },
+      "scalar_rows": 44,
+      "static_rows": 180
+    }
+  },
+  "created_utc": "2026-11-26T11:59:57.057621+00:00",
+  "inventory_rows": 2880,
+  "inventory_sha256": "c655cc3943df35666b58e23d57c0dc870f08d253dbb4a81468ba93b76c7365cb",
+  "probe_plan_rows": 2880,
+  "probe_plan_sha256": "fc20aea12260e2ec5c61703a81c86c2244b00b0040697e9484fcd715b2d96eda",
+  "seed": 20261126,
+  "static_selection": {
+    "copy_selection": {
+      "legacy/atomic_emoji": {
+        "quota": 10,
+        "round2_overlap_available": 16,
+        "round2_overlap_selected": 10
+      },
+      "legacy/atomic_nonemoji": {
+        "quota": 10,
+        "round2_overlap_available": 0,
+        "round2_overlap_selected": 0
+      },
+      "legacy/complex_nonemoji": {
+        "quota": 10,
+        "round2_overlap_available": 0,
+        "round2_overlap_selected": 0
+      },
+      "legacy/zwj_emoji": {
+        "quota": 10,
+        "round2_overlap_available": 16,
+        "round2_overlap_selected": 10
+      },
+      "newest/atomic_emoji": {
+        "quota": 20,
+        "round2_overlap_available": 23,
+        "round2_overlap_selected": 20
+      },
+      "newest/atomic_nonemoji": {
+        "quota": 10,
+        "round2_overlap_available": 16,
+        "round2_overlap_selected": 10
+      },
+      "newest/complex_nonemoji": {
+        "quota": 10,
+        "round2_overlap_available": 2,
+        "round2_overlap_selected": 2
+      },
+      "newest/zwj_emoji": {
+        "quota": 20,
+        "round2_overlap_available": 39,
+        "round2_overlap_selected": 20
+      }
+    },
+    "scalar_selection": {
+      "legacy/atomic": {
+        "copy_excluded_texts": 100,
+        "quota": 8,
+        "selected_by_type": {
+          "atomic_emoji": 4,
+          "atomic_nonemoji": 4
+        }
+      },
+      "legacy/complex_or_zwj": {
+        "copy_excluded_texts": 100,
+        "quota": 8,
+        "selected_by_type": {
+          "complex_nonemoji": 4,
+          "zwj_emoji": 4
+        }
+      },
+      "newest/atomic": {
+        "copy_excluded_texts": 100,
+        "quota": 8,
+        "selected_by_type": {
+          "atomic_emoji": 3,
+          "atomic_nonemoji": 5
+        }
+      },
+      "newest/complex_or_zwj": {
+        "copy_excluded_texts": 100,
+        "quota": 8,
+        "selected_by_type": {
+          "complex_nonemoji": 4,
+          "zwj_emoji": 4
+        }
+      }
+    }
+  }
+}

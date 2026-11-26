@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-11-26T13:12:48.590883+00:00",
+  "exploratory_not_confirmatory": "all subtype, formatting, scalar-error, timing, post-Unicode-17, and tokenizer-property analyses are descriptive unless explicitly pre-registered as sensitivity analyses",
+  "holms_family": "H1 one-sided fragmentation count test and H2 two-sided TOST count test only; H3/H4 are exact replication tests outside the alpha family",
+  "hypotheses": {
+    "H1": {
+      "beta": null,
+      "bootstrap_ci95": [
+        null,
+        null
+      ],
+      "confirmation_rules": {
+        "at_least_3_carriers_2_families_nonnegative": false,
+        "at_least_4000_valid_bootstrap_replicates": false,
+        "bootstrap_lower_ci_exceeds_log_1_25": false,
+        "holm_adjusted_count_significant": false,
+        "minimum_validity_met": false
+      },
+      "holm_adjusted_p": null,
+      "material_threshold_log_or": 0.22314355131420976,
+      "raw_count_p": null,
+      "refutation_logic": "upper CI below material threshold or entirely below zero",
+      "verdict": "inconclusive"
+    },
+    "H2": {
+      "bootstrap_ci95": null,
+      "ci_width": null,
+      "confirmation_rules": {
+        "ci_within_band": false,
+        "holm_adjusted_tost_significant": false,
+        "minimum_validity_met": false,
+        "observed_delta_inside_band": false
+      },
+      "delta": null,
+      "equivalence_band": [
+        -0.1,
+        0.1
+      ],
+      "holm_adjusted_tost_p": null,
+      "raw_tost_p": null,
+      "verdict": "inconclusive"
+    },
+    "H3": {
+      "every_legacy_zero_exact": false,
+      "every_newest_zero_exact": false,
+      "minimum_met": false,
+      "verdict": "inconclusive"
+    },
+    "H4": {
+      "every_legacy_byte_exact": false,
+      "every_newest_byte_exact": true,
+      "minimum_met": true,
+      "verdict": "refuted"
+    }
+  },
+  "seed": 20261127
+}

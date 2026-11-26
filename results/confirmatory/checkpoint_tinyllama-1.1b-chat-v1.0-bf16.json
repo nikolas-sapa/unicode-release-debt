@@ -1,0 +1,34 @@
+{
+  "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+  "checkpoint_utc": "2026-11-26T12:13:03.323428+00:00",
+  "scored_rows": 460,
+  "expected_total_rows": 460,
+  "exact_by_task_scope": {
+    "copy_ascii": {
+      "exact": 23,
+      "n": 24
+    },
+    "copy_unicode": {
+      "exact": 100,
+      "n": 100
+    },
+    "count_ascii": {
+      "exact": 0,
+      "n": 12
+    },
+    "count_unicode": {
+      "exact": 0,
+      "n": 280
+    },
+    "scalar_listing_ascii": {
+      "exact": 0,
+      "n": 12
+    },
+    "scalar_listing_unicode": {
+      "exact": 0,
+      "n": 32
+    }
+  },
+  "raw_sha256_at_checkpoint": "dca8ea68dd783eb188c0b0333db36fe9251eafaf9b3fed5960afb6effb9751cb",
+  "note": "raw hash is mutable append-only and may include later carriers after this checkpoint"
+}

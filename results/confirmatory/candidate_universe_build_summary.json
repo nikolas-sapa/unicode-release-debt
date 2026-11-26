@@ -1,0 +1,37 @@
+{
+  "candidate_rows": 32151,
+  "composition": {
+    "legacy/atomic_emoji": 1377,
+    "legacy/atomic_nonemoji": 3000,
+    "legacy/complex_nonemoji": 1500,
+    "legacy/zwj_emoji": 243,
+    "newest/atomic_emoji": 23,
+    "newest/atomic_nonemoji": 23469,
+    "newest/complex_nonemoji": 2500,
+    "newest/zwj_emoji": 39
+  },
+  "design_reference_comparison": "execution uses a superset of the design scan for legacy emoji and non-emoji pools; quotas were fixed before model execution",
+  "exclusion_rules": [
+    "emoji-property scalars excluded from non-emoji candidates",
+    "general categories outside L/N/P/S excluded",
+    "surrogates, noncharacters, unassigned scalars, whitespace/control/mark categories excluded by construction",
+    "documented deprecated scalar exclusions applied",
+    "non-NFC-stable scalars excluded because byte-exact target identity is otherwise altered by tokenizer NFC normalization"
+  ],
+  "input_rows": {
+    "eligible_scalars": 167485,
+    "legacy_atomic_bases": 3000,
+    "legacy_complex_bases": 1500,
+    "legacy_eligible_scalars": 144016,
+    "newest_complex_bases": 2500,
+    "newest_eligible_scalars": 23469
+  },
+  "quotas": {
+    "emoji": "all fully-qualified atomic and ZWJ surface families",
+    "legacy_atomic_nonemoji": 3000,
+    "legacy_complex_nonemoji": 1500,
+    "newest_atomic_nonemoji": "all eligible newest scalars",
+    "newest_complex_nonemoji": 2500
+  },
+  "seed": 20261126
+}

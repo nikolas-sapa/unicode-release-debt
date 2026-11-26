@@ -19,3 +19,22 @@ src/pinned_inputs.json:generic-api-key:84
 src/pinned_inputs.json:generic-api-key:85
 src/pinned_inputs.json:generic-api-key:86
 src/pinned_inputs.json:generic-api-key:87
+# False positives: pinned public Hugging Face revisions and tokenizer SHA-256
+# values in the confirmatory freeze. These are provenance pins, not credentials.
+results/confirmatory/tokenizer_freeze.json:generic-api-key:122
+results/confirmatory/tokenizer_freeze.json:generic-api-key:172
+results/confirmatory/tokenizer_freeze.json:generic-api-key:244
+results/confirmatory/tokenizer_freeze.json:generic-api-key:305
+results/confirmatory/tokenizer_freeze.json:generic-api-key:366
+src/confirmatory_common.py:generic-api-key:78
+src/confirmatory_common.py:generic-api-key:96
+src/confirmatory_common.py:generic-api-key:99
+src/confirmatory_common.py:generic-api-key:100
+src/confirmatory_common.py:generic-api-key:101
+src/confirmatory_common.py:generic-api-key:119
+src/confirmatory_common.py:generic-api-key:138
+src/confirmatory_common.py:generic-api-key:163
+src/confirmatory_common.py:generic-api-key:166
+src/confirmatory_common.py:generic-api-key:167
+src/confirmatory_common.py:generic-api-key:168
+src/confirmatory_common.py:generic-api-key:169

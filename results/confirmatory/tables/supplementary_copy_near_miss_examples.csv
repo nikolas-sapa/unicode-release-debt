@@ -1,0 +1,54 @@
+carrier_id,probe_key,era,item_type,near_miss_class,first_byte_mismatch_offset,target_diff_hex_context,output_diff_hex_context,raw_text,target
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0046,newest,atomic_nonemoji,format_failure_other,,,,"<OUT>𓿸</OUT>
+
+(Note: The character is a Unicode character and may not display correctly in all systems.)",𓿸
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0047,newest,atomic_nonemoji,format_failure_other,,,,"<OUT>𔆊</OUT>
+
+(Note: The character is a Unicode character and may not display correctly in all systems.)",𔆊
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0048,newest,atomic_nonemoji,format_failure_other,,,,"<OUT>𞗵</OUT>
+
+(Note: The character 𞗵 is a Unicode character and may not display correctly in all systems.)",𞗵
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0054,newest,atomic_nonemoji,format_failure_other,,,,"<OUT>𲥐</OUT>
+
+(Note: The character is a Unicode character and may not display correctly in all systems.)",𲥐
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0055,newest,complex_nonemoji,format_failure_other,,,,"<OUT>𐵐⃐</OUT>
+
+(Note: The characters are Unicode characters, specifically ""U+1D8A0"" and ""U+2328"")",𐵐⃐
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0056,newest,complex_nonemoji,format_failure_other,,,,"<OUT>𓙜⃐</OUT>
+
+(Note: The characters are Unicode characters, specifically Middle Eastern symbols)",𓙜⃐
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0057,newest,complex_nonemoji,format_failure_other,,,,"<OUT>𓝋⃐</OUT>
+
+(Note: The characters are Unicode characters, specifically ""LEFT-TO-RIGHT MARK"" and ""LEFT-TO-RIGHT MARK"" respectively)",𓝋⃐
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0060,newest,complex_nonemoji,format_failure_other,,,,"<OUT>𾈀⃐</OUT>
+
+(Note: The characters are Unicode characters, specifically ""Vertical Line"" and ""Box Drawing Middle Horizontal"".)",𾈀⃐
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0061,newest,complex_nonemoji,format_failure_other,,,,"<OUT>𾎅⃐</OUT>
+
+(Note: The character 𾎅⃐ is a Unicode character and may not display correctly in all systems.)",𾎅⃐
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0062,newest,complex_nonemoji,format_failure_other,,,,"<OUT>𾑖⃐</OUT>
+
+(Note: The character 𾑖⃐ is a Unicode character and may not display correctly in all systems.)",𾑖⃐
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0063,newest,complex_nonemoji,format_failure_other,,,,"<OUT>𾓇⃐</OUT>
+
+(Note: The characters are Unicode characters, specifically ""Regional Indicator Symbols"")",𾓇⃐
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0097,legacy,atomic_nonemoji,format_failure_other,,,,"<OUT>𘀰</OUT>
+
+(Note: The character is a Unicode character and may not display correctly in all systems.)",𘀰
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0105,legacy,complex_nonemoji,format_failure_other,,,,"<OUT>𑵶⃐</OUT>
+
+(Note: The characters are Unicode characters, specifically ""Middle Eastern Number Symbol 6"" and ""Left-Pointing Double Angle Quotation Mark"")",𑵶⃐
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0107,legacy,complex_nonemoji,format_failure_other,,,,"<OUT>𗀙⃐</OUT>
+
+(Note: The characters used here are Unicode characters, specifically ""Middle Eastern Letter Ra"" and ""Left-Pointing Double Angle Quotation Mark"")",𗀙⃐
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0108,legacy,complex_nonemoji,format_failure_other,,,,"<OUT>𪝾⃐</OUT>
+
+(Note: The characters are Unicode characters, specifically ""LEFT-TO-RIGHT MARK"" and ""LEFT-TO-RIGHT MARK"" respectively)",𪝾⃐
+llama32-3b-instruct-mlx8,llama32-3b-instruct-mlx8:copy:unicode:0109,legacy,complex_nonemoji,format_failure_other,,,,"<OUT>𮧽⃐</OUT>
+
+(Note: The characters are Unicode characters, specifically ""Small Circle"" and ""Left Tackle"" respectively)",𮧽⃐
+gemma3-4b-it-mlx8-mirror,gemma3-4b-it-mlx8-mirror:copy:unicode:0096,legacy,atomic_nonemoji,multi_codepoint_corruption,0,f0928587,746f6f6c5374726970427574746f6e,<OUT>toolStripButton</OUT>,𒅇
+mistral7b-instruct-v03-mlx8,mistral7b-instruct-v03-mlx8:copy:unicode:0045,newest,atomic_nonemoji,format_failure_other,,,,"<OUT>𓷓</OUT> (This is a Unicode character, specifically U+10383, which is a hieroglyphic Egyptian character for ""a"" or ""an"")",𓷓
+mistral7b-instruct-v03-mlx8,mistral7b-instruct-v03-mlx8:copy:unicode:0069,newest,zwj_emoji,format_failure_other,,,,"<OUT>🏃‍➡️</OUT> (This is an emoji, so it doesn't have a text representation.)",🏃‍➡️
+mistral7b-instruct-v03-mlx8,mistral7b-instruct-v03-mlx8:copy:unicode:0093,legacy,atomic_emoji,format_failure_other,,,,<OUT>🟣</OUT> (This is a red square emoji),🟣
+mistral7b-instruct-v03-mlx8,mistral7b-instruct-v03-mlx8:copy:unicode:0094,legacy,atomic_emoji,format_failure_other,,,,<OUT>🟤</OUT> (This is a red square emoji),🟤

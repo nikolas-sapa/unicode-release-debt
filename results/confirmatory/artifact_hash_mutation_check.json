@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-11-26T13:12:37.403286+00:00",
+  "frozen_sha256": "c655cc3943df35666b58e23d57c0dc870f08d253dbb4a81468ba93b76c7365cb",
+  "mutated_copy_path": "/Users/nikolassapalidis/Developer/unicode-release-debt/data/confirmatory_scan/artifact_mutation_test/inventory.corrupted-for-mutation-test.jsonl",
+  "mutated_sha256": "bc0ec8729f9ce7be1c789635bb37777980ee7d2f030a3c19508297e0d7d182a5",
+  "mutation_test_pass": true,
+  "target_error": [
+    {
+      "actual": "bc0ec8729f9ce7be1c789635bb37777980ee7d2f030a3c19508297e0d7d182a5",
+      "error": "sha256_mismatch",
+      "expected": "c655cc3943df35666b58e23d57c0dc870f08d253dbb4a81468ba93b76c7365cb",
+      "path": "/Users/nikolassapalidis/Developer/unicode-release-debt/data/confirmatory_scan/artifact_mutation_test/inventory.corrupted-for-mutation-test.jsonl"
+    }
+  ],
+  "target_error_detected": true,
+  "target_original_path": "results/confirmatory/inventory.jsonl",
+  "test": "corrupt one byte in a temporary copy of frozen inventory.jsonl; retained artifact is never mutated",
+  "verification_error_count": 1
+}

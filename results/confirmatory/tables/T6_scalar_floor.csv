@@ -1,0 +1,49 @@
+carrier_id,era,item_type,exact,n,rate,near_misses,error_classes,include_h1h2h3_primary
+tinyllama-1.1b-chat-v1.0-bf16,newest,atomic_nonemoji,0,5,0.0,0,"{""format_failure"": 5}",False
+tinyllama-1.1b-chat-v1.0-bf16,newest,atomic_emoji,0,3,0.0,0,"{""format_failure"": 3}",False
+tinyllama-1.1b-chat-v1.0-bf16,newest,complex_nonemoji,0,4,0.0,0,"{""format_failure"": 4}",False
+tinyllama-1.1b-chat-v1.0-bf16,newest,zwj_emoji,0,4,0.0,0,"{""format_failure"": 4}",False
+tinyllama-1.1b-chat-v1.0-bf16,legacy,atomic_nonemoji,0,4,0.0,0,"{""format_failure"": 4}",False
+tinyllama-1.1b-chat-v1.0-bf16,legacy,atomic_emoji,0,4,0.0,0,"{""format_failure"": 4}",False
+tinyllama-1.1b-chat-v1.0-bf16,legacy,complex_nonemoji,0,4,0.0,0,"{""format_failure"": 4}",False
+tinyllama-1.1b-chat-v1.0-bf16,legacy,zwj_emoji,0,4,0.0,0,"{""format_failure"": 4}",False
+qwen2.5-3b-instruct-bf16,newest,atomic_nonemoji,0,5,0.0,3,"{""correct_count_one_wrong_scalar"": 3, ""format_failure"": 1, ""wrong_number_of_scalar_tokens"": 1}",False
+qwen2.5-3b-instruct-bf16,newest,atomic_emoji,0,3,0.0,1,"{""correct_count_one_wrong_scalar"": 1, ""wrong_number_of_scalar_tokens"": 2}",False
+qwen2.5-3b-instruct-bf16,newest,complex_nonemoji,0,4,0.0,0,"{""correct_count_multiple_wrong_scalars"": 3, ""wrong_number_of_scalar_tokens"": 1}",False
+qwen2.5-3b-instruct-bf16,newest,zwj_emoji,0,4,0.0,0,"{""correct_count_multiple_wrong_scalars"": 1, ""format_failure"": 1, ""wrong_number_of_scalar_tokens"": 2}",False
+qwen2.5-3b-instruct-bf16,legacy,atomic_nonemoji,0,4,0.0,2,"{""correct_count_one_wrong_scalar"": 2, ""format_failure"": 2}",False
+qwen2.5-3b-instruct-bf16,legacy,atomic_emoji,0,4,0.0,3,"{""correct_count_one_wrong_scalar"": 3, ""wrong_number_of_scalar_tokens"": 1}",False
+qwen2.5-3b-instruct-bf16,legacy,complex_nonemoji,0,4,0.0,0,"{""correct_count_multiple_wrong_scalars"": 1, ""format_failure"": 2, ""wrong_number_of_scalar_tokens"": 1}",False
+qwen2.5-3b-instruct-bf16,legacy,zwj_emoji,0,4,0.0,0,"{""wrong_number_of_scalar_tokens"": 4}",False
+llama32-3b-instruct-mlx8,newest,atomic_nonemoji,0,5,0.0,0,"{""wrong_number_of_scalar_tokens"": 5}",False
+llama32-3b-instruct-mlx8,newest,atomic_emoji,0,3,0.0,0,"{""wrong_number_of_scalar_tokens"": 3}",False
+llama32-3b-instruct-mlx8,newest,complex_nonemoji,0,4,0.0,0,"{""correct_count_multiple_wrong_scalars"": 4}",False
+llama32-3b-instruct-mlx8,newest,zwj_emoji,0,4,0.0,0,"{""wrong_number_of_scalar_tokens"": 4}",False
+llama32-3b-instruct-mlx8,legacy,atomic_nonemoji,0,4,0.0,0,"{""wrong_number_of_scalar_tokens"": 4}",False
+llama32-3b-instruct-mlx8,legacy,atomic_emoji,0,4,0.0,0,"{""wrong_number_of_scalar_tokens"": 4}",False
+llama32-3b-instruct-mlx8,legacy,complex_nonemoji,0,4,0.0,0,"{""correct_count_multiple_wrong_scalars"": 2, ""format_failure"": 2}",False
+llama32-3b-instruct-mlx8,legacy,zwj_emoji,0,4,0.0,0,"{""wrong_number_of_scalar_tokens"": 4}",False
+gemma3-4b-it-mlx8-mirror,newest,atomic_nonemoji,0,5,0.0,1,"{""correct_count_one_wrong_scalar"": 1, ""wrong_number_of_scalar_tokens"": 4}",False
+gemma3-4b-it-mlx8-mirror,newest,atomic_emoji,0,3,0.0,0,"{""wrong_number_of_scalar_tokens"": 3}",False
+gemma3-4b-it-mlx8-mirror,newest,complex_nonemoji,0,4,0.0,0,"{""correct_count_multiple_wrong_scalars"": 3, ""wrong_number_of_scalar_tokens"": 1}",False
+gemma3-4b-it-mlx8-mirror,newest,zwj_emoji,0,4,0.0,0,"{""wrong_number_of_scalar_tokens"": 4}",False
+gemma3-4b-it-mlx8-mirror,legacy,atomic_nonemoji,0,4,0.0,1,"{""correct_count_one_wrong_scalar"": 1, ""wrong_number_of_scalar_tokens"": 3}",False
+gemma3-4b-it-mlx8-mirror,legacy,atomic_emoji,0,4,0.0,0,"{""wrong_number_of_scalar_tokens"": 4}",False
+gemma3-4b-it-mlx8-mirror,legacy,complex_nonemoji,0,4,0.0,0,"{""correct_count_multiple_wrong_scalars"": 1, ""wrong_number_of_scalar_tokens"": 3}",False
+gemma3-4b-it-mlx8-mirror,legacy,zwj_emoji,0,4,0.0,0,"{""correct_count_multiple_wrong_scalars"": 2, ""wrong_number_of_scalar_tokens"": 2}",False
+qwen3-4b-instruct-2507-mlx8,newest,atomic_nonemoji,0,5,0.0,0,"{""format_failure"": 5}",False
+qwen3-4b-instruct-2507-mlx8,newest,atomic_emoji,0,3,0.0,0,"{""format_failure"": 3}",False
+qwen3-4b-instruct-2507-mlx8,newest,complex_nonemoji,0,4,0.0,0,"{""format_failure"": 4}",False
+qwen3-4b-instruct-2507-mlx8,newest,zwj_emoji,0,4,0.0,0,"{""format_failure"": 4}",False
+qwen3-4b-instruct-2507-mlx8,legacy,atomic_nonemoji,0,4,0.0,0,"{""format_failure"": 4}",False
+qwen3-4b-instruct-2507-mlx8,legacy,atomic_emoji,0,4,0.0,1,"{""correct_count_one_wrong_scalar"": 1, ""format_failure"": 3}",False
+qwen3-4b-instruct-2507-mlx8,legacy,complex_nonemoji,0,4,0.0,0,"{""format_failure"": 4}",False
+qwen3-4b-instruct-2507-mlx8,legacy,zwj_emoji,0,4,0.0,0,"{""format_failure"": 2, ""wrong_number_of_scalar_tokens"": 2}",False
+mistral7b-instruct-v03-mlx8,newest,atomic_nonemoji,0,5,0.0,0,"{""format_failure"": 5}",False
+mistral7b-instruct-v03-mlx8,newest,atomic_emoji,0,3,0.0,0,"{""format_failure"": 3}",False
+mistral7b-instruct-v03-mlx8,newest,complex_nonemoji,0,4,0.0,0,"{""format_failure"": 4}",False
+mistral7b-instruct-v03-mlx8,newest,zwj_emoji,0,4,0.0,0,"{""format_failure"": 4}",False
+mistral7b-instruct-v03-mlx8,legacy,atomic_nonemoji,0,4,0.0,0,"{""format_failure"": 4}",False
+mistral7b-instruct-v03-mlx8,legacy,atomic_emoji,0,4,0.0,0,"{""format_failure"": 4}",False
+mistral7b-instruct-v03-mlx8,legacy,complex_nonemoji,0,4,0.0,0,"{""format_failure"": 4}",False
+mistral7b-instruct-v03-mlx8,legacy,zwj_emoji,0,4,0.0,0,"{""format_failure"": 4}",False

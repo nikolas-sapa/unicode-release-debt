@@ -1,0 +1,11 @@
+{
+  "after_exact": false,
+  "after_hash": "9db510d9321d954aa6f4829c1f303aaff70015db8a6a89d9f430809e52150c51",
+  "before_exact": true,
+  "before_hash": "2efb585273d86253df30cc90c62ecca2a422a561e2f2b7ec628ed43edde3ca8b",
+  "completion_key": "49b7ac10169485a35eb077e02b673b248b994585886c18e8a04c05376e105ed1",
+  "created_utc": "2026-11-26T13:12:37.500473+00:00",
+  "mutation_test_pass": true,
+  "scoring_detected_corruption": true,
+  "test": "copy one exact raw response in memory, corrupt one output byte, rescore; retained raw jsonl is never mutated"
+}

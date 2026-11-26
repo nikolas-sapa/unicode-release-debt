@@ -1,0 +1,2 @@
+row_type,carrier_or_level,pairs,delta,bootstrap_ci_low,bootstrap_ci_high,tost_p,holm_adjusted_tost_p,note
+pooled_primary,pooled,0,,,,,,no complete overlap pairs

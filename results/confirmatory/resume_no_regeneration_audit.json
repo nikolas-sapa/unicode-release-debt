@@ -1,0 +1,95 @@
+{
+  "append_only_evidence": {
+    "baseline_prefix_hash_match": true,
+    "current_startswith_gemma_checkpoint_raw": true,
+    "current_startswith_qwen_checkpoint_raw": true,
+    "gemma_checkpoint_commit": "7129d98",
+    "gemma_checkpoint_rows": 1920,
+    "qwen_checkpoint_commit": "3d5ec04",
+    "qwen_checkpoint_rows": 2420
+  },
+  "baseline": {
+    "counts": {
+      "gemma3-4b-it-mlx8-mirror": 320,
+      "llama32-3b-instruct-mlx8": 500,
+      "qwen2.5-3b-instruct-bf16": 500,
+      "tinyllama-1.1b-chat-v1.0-bf16": 460
+    },
+    "duplicate_carrier_probe_keys": 0,
+    "duplicate_completion_keys": 0,
+    "plan_counts": {
+      "gemma3-4b-it-mlx8-mirror": 460,
+      "llama32-3b-instruct-mlx8": 500,
+      "mistral7b-instruct-v03-mlx8": 460,
+      "qwen2.5-3b-instruct-bf16": 500,
+      "qwen3-4b-instruct-2507-mlx8": 500,
+      "tinyllama-1.1b-chat-v1.0-bf16": 460
+    },
+    "raw_rows": 1780,
+    "raw_sha256": "d2139174239675656bc9f77bdc766848238b629d43b823b0c7d1901eb4e27d5d",
+    "remaining": {
+      "gemma3-4b-it-mlx8-mirror": 140,
+      "llama32-3b-instruct-mlx8": 0,
+      "mistral7b-instruct-v03-mlx8": 460,
+      "qwen2.5-3b-instruct-bf16": 0,
+      "qwen3-4b-instruct-2507-mlx8": 500,
+      "tinyllama-1.1b-chat-v1.0-bf16": 0
+    },
+    "unique_completion_keys": 1780,
+    "utc": "baseline-before-resume"
+  },
+  "checks": {
+    "append_only_since_gemma_checkpoint": true,
+    "append_only_since_qwen_checkpoint": true,
+    "baseline_prefix_hash_match": true,
+    "counts_match_probe_plan_exactly": true,
+    "final_row_count_is_2880": true,
+    "increments_match_expected_resume_rows": true,
+    "no_carrier_count_regressed": true,
+    "no_carrier_probe_key_duplicates": true,
+    "no_completion_key_duplicates": true
+  },
+  "created_utc": "2026-11-26T13:12:24.507491+00:00",
+  "expected_increments": {
+    "gemma3-4b-it-mlx8-mirror": 140,
+    "llama32-3b-instruct-mlx8": 0,
+    "mistral7b-instruct-v03-mlx8": 460,
+    "qwen2.5-3b-instruct-bf16": 0,
+    "qwen3-4b-instruct-2507-mlx8": 500,
+    "tinyllama-1.1b-chat-v1.0-bf16": 0
+  },
+  "final": {
+    "all_plan_rows_complete_exactly_once": true,
+    "counts": {
+      "gemma3-4b-it-mlx8-mirror": 460,
+      "llama32-3b-instruct-mlx8": 500,
+      "mistral7b-instruct-v03-mlx8": 460,
+      "qwen2.5-3b-instruct-bf16": 500,
+      "qwen3-4b-instruct-2507-mlx8": 500,
+      "tinyllama-1.1b-chat-v1.0-bf16": 460
+    },
+    "duplicate_carrier_probe_keys": 0,
+    "duplicate_completion_keys": 0,
+    "plan_counts": {
+      "gemma3-4b-it-mlx8-mirror": 460,
+      "llama32-3b-instruct-mlx8": 500,
+      "mistral7b-instruct-v03-mlx8": 460,
+      "qwen2.5-3b-instruct-bf16": 500,
+      "qwen3-4b-instruct-2507-mlx8": 500,
+      "tinyllama-1.1b-chat-v1.0-bf16": 460
+    },
+    "raw_rows": 2880,
+    "raw_sha256": "d16c5336a2ff1f97fa63d27b21dd4a19783cfc19d4c2c470ad6e92423c7f8607",
+    "unique_completion_keys": 2880
+  },
+  "increments": {
+    "gemma3-4b-it-mlx8-mirror": 140,
+    "llama32-3b-instruct-mlx8": 0,
+    "mistral7b-instruct-v03-mlx8": 460,
+    "qwen2.5-3b-instruct-bf16": 0,
+    "qwen3-4b-instruct-2507-mlx8": 500,
+    "tinyllama-1.1b-chat-v1.0-bf16": 0
+  },
+  "interpretation": "row counts increased exactly by the missing 140+500+460 rows, completion keys are unique, and the retained raw file is byte-prefix append-only relative to committed checkpoints; no completed row was regenerated",
+  "no_regeneration_audit_pass": true
+}

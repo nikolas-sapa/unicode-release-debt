@@ -45,6 +45,12 @@ def rate_text(stats):
     return f"{stats['exact']}/{stats['n']} ({100 * stats['rate']:.1f}%)"
 
 
+def ci_text(ci, scale=1.0, nd=4):
+    if not ci or len(ci) != 2 or ci[0] is None or ci[1] is None:
+        return "NA"
+    return f"[{ci[0] * scale:.{nd}f}, {ci[1] * scale:.{nd}f}]"
+
+
 def bool_text(x):
     return "pass" if x else "FAIL"
 
@@ -94,6 +100,7 @@ def main():
     artifact_mutation = optional_load("artifact_hash_mutation_check.json")
     raw_mutation = optional_load("raw_response_scoring_mutation_check.json")
     resume_audit = optional_load("resume_no_regeneration_audit.json")
+    reproducibility = optional_load("final_reproducibility_checks.json")
     scored = cf.read_jsonl(OUT / "confirmatory_scored.jsonl")
 
     lines = []
@@ -260,17 +267,22 @@ def main():
     a("")
     a("## Exploratory observations, not confirmation")
     a("")
-    a("**Everything in this section is descriptive.** Most carriers failed the strict measurement-validity gates, so these numbers must not be reinterpreted as confirmatory structural evidence.")
+    a("**Everything in this section is descriptive.** Every primary carrier failed at least one strict structural-ASCII validity gate, so these numbers must not be reinterpreted as confirmatory structural evidence.")
     a("")
-    a("| Carrier | Unicode copy exact | Overlap count exact | Unicode scalar exact | Exploratory matched Delta | Exploratory fragmentation beta |")
+    a("| Carrier | Unicode copy exact | Overlap count exact | Unicode scalar exact | Exploratory matched Delta [bootstrap CI] | Exploratory fragmentation beta [normal CI] |")
     a("|---|---:|---:|---:|---:|---:|")
     for cfg in cf.carrier_configs(include_descriptive=True):
         c = cfg["carrier_id"]
         d = exploratory.get(c, {})
-        delta = d.get("exploratory_matched_pair_delta", {}).get("delta")
+        pair_delta = d.get("exploratory_matched_pair_delta", {})
+        delta = pair_delta.get("delta")
+        delta_ci = ci_text(pair_delta.get("bootstrap_ci95"), scale=100, nd=2) if pair_delta.get("estimable") else "NA"
         fit = d.get("exploratory_logistic_fragmentation_fit", {})
         beta = fit.get("beta") if fit.get("estimable") else None
-        a(f"| `{c}` | {rate_text(d.get('copy_unicode_exact', {}))} | {rate_text(d.get('count_overlap_exact', {}))} | {rate_text(d.get('scalar_unicode_exact', {}))} | {pp(delta) if delta is not None else 'NA'} | {fmt(beta)} |")
+        beta_ci = ci_text(fit.get("normal_ci95"), nd=3) if fit.get("estimable") else "NA"
+        delta_text = f"{pp(delta)} {delta_ci}" if delta is not None else "NA"
+        beta_text = f"{fmt(beta)} {beta_ci}" if beta is not None else "NA"
+        a(f"| `{c}` | {rate_text(d.get('copy_unicode_exact', {}))} | {rate_text(d.get('count_overlap_exact', {}))} | {rate_text(d.get('scalar_unicode_exact', {}))} | {delta_text} | {beta_text} |")
     a("")
     a("The descriptive pattern is strong byte-copy performance in several carriers alongside near-total scalar-listing failure and heterogeneous count performance. That pattern motivated the confirmatory design, but the frozen structural-gate failure means these observations remain hypothesis-generating here. Copy failures and near misses are classified in T5/F5; scalar error classes are in T6; count signed errors are in T7.")
     a("")
@@ -284,6 +296,12 @@ def main():
         a(f"- Corrupted raw-response scoring mutation: **{raw_mutation['mutation_test_pass']}**; one output byte corruption changed task_exact from {raw_mutation['before_exact']} to {raw_mutation['after_exact']} without touching the retained raw file")
     a(f"- Logistic/TOST/Holm implementation mutation checks: **{mutation_impl['implementation_mutation_checks_pass']}**")
     a(f"- Raw completion audit: **{completion['completion_audit_pass']}**; raw SHA-256 before scoring `{completion.get('raw_sha256_before_scoring')}`")
+    if reproducibility:
+        a(f"- Power-analysis validation and mutation self-test: **{reproducibility.get('power_self_test_pass')}**")
+        a(f"- Power-analysis deterministic rerun match after removing timestamps: **{reproducibility.get('power_deterministic_output_match')}**")
+        a(f"- Inventory audit/mutation reproducibility: **{reproducibility.get('inventory_audit_pass')}**")
+        a(f"- Chat-template smoke/rendering checks: **{reproducibility.get('template_rendering_checks_pass')}**")
+        a(f"- Inference-tokenizer hash verification: **{reproducibility.get('inference_tokenizer_verification_pass')}**")
     a("")
     a("## Limitations")
     a("")

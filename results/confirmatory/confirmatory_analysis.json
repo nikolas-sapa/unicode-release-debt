@@ -1,0 +1,1357 @@
+{
+  "created_utc": "2026-11-26T13:12:48.590892+00:00",
+  "exploratory_descriptive": {
+    "carriers": {
+      "gemma3-4b-it-mlx8-mirror": {
+        "copy_unicode_exact": {
+          "exact": 99,
+          "n": 100,
+          "rate": 0.99
+        },
+        "copy_wrapper_format_failures": 0,
+        "count_failure_by_level_era": {
+          "L1|legacy": {
+            "exact": 21,
+            "failure_rate": 0.475,
+            "failures": 19,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 11
+          },
+          "L1|newest": {
+            "exact": 0,
+            "failure_rate": null,
+            "failures": 0,
+            "format_failures": 0,
+            "n": 0,
+            "wrong_by_one": 0
+          },
+          "L2|legacy": {
+            "exact": 21,
+            "failure_rate": 0.475,
+            "failures": 19,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 12
+          },
+          "L2|newest": {
+            "exact": 16,
+            "failure_rate": 0.6,
+            "failures": 24,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 17
+          },
+          "L3|legacy": {
+            "exact": 26,
+            "failure_rate": 0.35,
+            "failures": 14,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 12
+          },
+          "L3|newest": {
+            "exact": 23,
+            "failure_rate": 0.425,
+            "failures": 17,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 12
+          },
+          "L4|legacy": {
+            "exact": 28,
+            "failure_rate": 0.3,
+            "failures": 12,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 12
+          },
+          "L4|newest": {
+            "exact": 17,
+            "failure_rate": 0.575,
+            "failures": 23,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 19
+          }
+        },
+        "count_overlap_exact": {
+          "exact": 131,
+          "n": 240,
+          "rate": 0.5458333333333333
+        },
+        "exploratory_logistic_fragmentation_fit": {
+          "beta": 0.31046000937472273,
+          "estimable": true,
+          "fit_converged": true,
+          "fit_separation": false,
+          "normal_ci95": [
+            -0.5701783235903567,
+            1.191098342339802
+          ],
+          "normal_se": 0.4493052719209589,
+          "note": "single-carrier covariate-adjusted descriptive fit without bootstrap; not a confirmatory coefficient when the carrier fails structural gates",
+          "odds_ratio": 1.36405244674479,
+          "rows": 280
+        },
+        "exploratory_matched_pair_delta": {
+          "bootstrap_ci95": [
+            0.049791666666666665,
+            0.2585416666666665
+          ],
+          "bootstrap_replicates": 1000,
+          "bootstrap_se": 0.05456810064647403,
+          "carrier_id": "gemma3-4b-it-mlx8-mirror",
+          "delta": 0.15833333333333335,
+          "estimable": true,
+          "level_deltas": {
+            "L2": {
+              "delta": 0.125,
+              "pairs": 40
+            },
+            "L3": {
+              "delta": 0.075,
+              "pairs": 40
+            },
+            "L4": {
+              "delta": 0.275,
+              "pairs": 40
+            }
+          },
+          "pairs": 120
+        },
+        "scalar_unicode_exact": {
+          "exact": 0,
+          "n": 32,
+          "rate": 0.0
+        }
+      },
+      "llama32-3b-instruct-mlx8": {
+        "copy_unicode_exact": {
+          "exact": 84,
+          "n": 100,
+          "rate": 0.84
+        },
+        "copy_wrapper_format_failures": 16,
+        "count_failure_by_level_era": {
+          "L1|legacy": {
+            "exact": 1,
+            "failure_rate": 0.975,
+            "failures": 39,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 12
+          },
+          "L1|newest": {
+            "exact": 10,
+            "failure_rate": 0.75,
+            "failures": 30,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 18
+          },
+          "L2|legacy": {
+            "exact": 2,
+            "failure_rate": 0.95,
+            "failures": 38,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 22
+          },
+          "L2|newest": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 23
+          },
+          "L3|legacy": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 4
+          },
+          "L3|newest": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 1
+          },
+          "L4|legacy": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 2
+          },
+          "L4|newest": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 2
+          }
+        },
+        "count_overlap_exact": {
+          "exact": 2,
+          "n": 240,
+          "rate": 0.008333333333333333
+        },
+        "exploratory_logistic_fragmentation_fit": {
+          "beta": -84.58814404569385,
+          "estimable": false,
+          "fit_converged": false,
+          "fit_separation": true,
+          "normal_ci95": [
+            -32241.08245268134,
+            32071.906164589953
+          ],
+          "normal_se": 16406.374647263085,
+          "note": "single-carrier covariate-adjusted descriptive fit without bootstrap; not a confirmatory coefficient when the carrier fails structural gates",
+          "odds_ratio": 1.8358441355178385e-37,
+          "rows": 280
+        },
+        "exploratory_matched_pair_delta": {
+          "bootstrap_ci95": [
+            0.0,
+            0.041666666666666664
+          ],
+          "bootstrap_replicates": 1000,
+          "bootstrap_se": 0.011512733347917487,
+          "carrier_id": "llama32-3b-instruct-mlx8",
+          "delta": 0.016666666666666666,
+          "estimable": true,
+          "level_deltas": {
+            "L2": {
+              "delta": 0.05,
+              "pairs": 40
+            },
+            "L3": {
+              "delta": 0.0,
+              "pairs": 40
+            },
+            "L4": {
+              "delta": 0.0,
+              "pairs": 40
+            }
+          },
+          "pairs": 120
+        },
+        "scalar_unicode_exact": {
+          "exact": 0,
+          "n": 32,
+          "rate": 0.0
+        }
+      },
+      "mistral7b-instruct-v03-mlx8": {
+        "copy_unicode_exact": {
+          "exact": 96,
+          "n": 100,
+          "rate": 0.96
+        },
+        "copy_wrapper_format_failures": 4,
+        "count_failure_by_level_era": {
+          "L1|legacy": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          },
+          "L1|newest": {
+            "exact": 0,
+            "failure_rate": null,
+            "failures": 0,
+            "format_failures": 0,
+            "n": 0,
+            "wrong_by_one": 0
+          },
+          "L2|legacy": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          },
+          "L2|newest": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          },
+          "L3|legacy": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          },
+          "L3|newest": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          },
+          "L4|legacy": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          },
+          "L4|newest": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          }
+        },
+        "count_overlap_exact": {
+          "exact": 0,
+          "n": 240,
+          "rate": 0.0
+        },
+        "exploratory_logistic_fragmentation_fit": {
+          "beta": -2.1657327455468436e-13,
+          "estimable": false,
+          "fit_converged": false,
+          "fit_separation": true,
+          "normal_ci95": [
+            -46753.148475763206,
+            46753.148475763206
+          ],
+          "normal_se": 23853.64718151184,
+          "note": "single-carrier covariate-adjusted descriptive fit without bootstrap; not a confirmatory coefficient when the carrier fails structural gates",
+          "odds_ratio": 0.9999999999997834,
+          "rows": 280
+        },
+        "exploratory_matched_pair_delta": {
+          "bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_replicates": 1000,
+          "bootstrap_se": 0.0,
+          "carrier_id": "mistral7b-instruct-v03-mlx8",
+          "delta": 0.0,
+          "estimable": true,
+          "level_deltas": {
+            "L2": {
+              "delta": 0.0,
+              "pairs": 40
+            },
+            "L3": {
+              "delta": 0.0,
+              "pairs": 40
+            },
+            "L4": {
+              "delta": 0.0,
+              "pairs": 40
+            }
+          },
+          "pairs": 120
+        },
+        "scalar_unicode_exact": {
+          "exact": 0,
+          "n": 32,
+          "rate": 0.0
+        }
+      },
+      "qwen2.5-3b-instruct-bf16": {
+        "copy_unicode_exact": {
+          "exact": 100,
+          "n": 100,
+          "rate": 1.0
+        },
+        "copy_wrapper_format_failures": 0,
+        "count_failure_by_level_era": {
+          "L1|legacy": {
+            "exact": 19,
+            "failure_rate": 0.525,
+            "failures": 21,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 15
+          },
+          "L1|newest": {
+            "exact": 19,
+            "failure_rate": 0.525,
+            "failures": 21,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 14
+          },
+          "L2|legacy": {
+            "exact": 24,
+            "failure_rate": 0.4,
+            "failures": 16,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 9
+          },
+          "L2|newest": {
+            "exact": 27,
+            "failure_rate": 0.325,
+            "failures": 13,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 5
+          },
+          "L3|legacy": {
+            "exact": 6,
+            "failure_rate": 0.85,
+            "failures": 34,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 16
+          },
+          "L3|newest": {
+            "exact": 3,
+            "failure_rate": 0.925,
+            "failures": 37,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 11
+          },
+          "L4|legacy": {
+            "exact": 3,
+            "failure_rate": 0.925,
+            "failures": 37,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 13
+          },
+          "L4|newest": {
+            "exact": 6,
+            "failure_rate": 0.85,
+            "failures": 34,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 12
+          }
+        },
+        "count_overlap_exact": {
+          "exact": 69,
+          "n": 240,
+          "rate": 0.2875
+        },
+        "exploratory_logistic_fragmentation_fit": {
+          "beta": -0.6303599838322291,
+          "estimable": false,
+          "fit_converged": false,
+          "fit_separation": true,
+          "normal_ci95": [
+            -1.6855856684112074,
+            0.4248657007467491
+          ],
+          "normal_se": 0.5383804513158053,
+          "note": "single-carrier covariate-adjusted descriptive fit without bootstrap; not a confirmatory coefficient when the carrier fails structural gates",
+          "odds_ratio": 0.5324001110740653,
+          "rows": 280
+        },
+        "exploratory_matched_pair_delta": {
+          "bootstrap_ci95": [
+            -0.08333333333333333,
+            0.03333333333333333
+          ],
+          "bootstrap_replicates": 1000,
+          "bootstrap_se": 0.03025386139756041,
+          "carrier_id": "qwen2.5-3b-instruct-bf16",
+          "delta": -0.024999999999999998,
+          "estimable": true,
+          "level_deltas": {
+            "L2": {
+              "delta": -0.075,
+              "pairs": 40
+            },
+            "L3": {
+              "delta": 0.075,
+              "pairs": 40
+            },
+            "L4": {
+              "delta": -0.075,
+              "pairs": 40
+            }
+          },
+          "pairs": 120
+        },
+        "scalar_unicode_exact": {
+          "exact": 0,
+          "n": 32,
+          "rate": 0.0
+        }
+      },
+      "qwen3-4b-instruct-2507-mlx8": {
+        "copy_unicode_exact": {
+          "exact": 100,
+          "n": 100,
+          "rate": 1.0
+        },
+        "copy_wrapper_format_failures": 1,
+        "count_failure_by_level_era": {
+          "L1|legacy": {
+            "exact": 12,
+            "failure_rate": 0.7,
+            "failures": 28,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 8
+          },
+          "L1|newest": {
+            "exact": 13,
+            "failure_rate": 0.675,
+            "failures": 27,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 7
+          },
+          "L2|legacy": {
+            "exact": 13,
+            "failure_rate": 0.675,
+            "failures": 27,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 4
+          },
+          "L2|newest": {
+            "exact": 14,
+            "failure_rate": 0.65,
+            "failures": 26,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 4
+          },
+          "L3|legacy": {
+            "exact": 2,
+            "failure_rate": 0.95,
+            "failures": 38,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 1
+          },
+          "L3|newest": {
+            "exact": 1,
+            "failure_rate": 0.975,
+            "failures": 39,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 6
+          },
+          "L4|legacy": {
+            "exact": 7,
+            "failure_rate": 0.825,
+            "failures": 33,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 1
+          },
+          "L4|newest": {
+            "exact": 7,
+            "failure_rate": 0.825,
+            "failures": 33,
+            "format_failures": 0,
+            "n": 40,
+            "wrong_by_one": 1
+          }
+        },
+        "count_overlap_exact": {
+          "exact": 44,
+          "n": 240,
+          "rate": 0.18333333333333332
+        },
+        "exploratory_logistic_fragmentation_fit": {
+          "beta": -110.30043053464597,
+          "estimable": false,
+          "fit_converged": false,
+          "fit_separation": true,
+          "normal_ci95": [
+            -27141.58070988657,
+            26920.979848817275
+          ],
+          "normal_se": 13791.469530281593,
+          "note": "single-carrier covariate-adjusted descriptive fit without bootstrap; not a confirmatory coefficient when the carrier fails structural gates",
+          "odds_ratio": 1.2506381350236258e-48,
+          "rows": 280
+        },
+        "exploratory_matched_pair_delta": {
+          "bootstrap_ci95": [
+            -0.03333333333333333,
+            0.03333333333333333
+          ],
+          "bootstrap_replicates": 1000,
+          "bootstrap_se": 0.016106517501220687,
+          "carrier_id": "qwen3-4b-instruct-2507-mlx8",
+          "delta": 0.0,
+          "estimable": true,
+          "level_deltas": {
+            "L2": {
+              "delta": -0.025,
+              "pairs": 40
+            },
+            "L3": {
+              "delta": 0.025,
+              "pairs": 40
+            },
+            "L4": {
+              "delta": 0.0,
+              "pairs": 40
+            }
+          },
+          "pairs": 120
+        },
+        "scalar_unicode_exact": {
+          "exact": 0,
+          "n": 32,
+          "rate": 0.0
+        }
+      },
+      "tinyllama-1.1b-chat-v1.0-bf16": {
+        "copy_unicode_exact": {
+          "exact": 100,
+          "n": 100,
+          "rate": 1.0
+        },
+        "copy_wrapper_format_failures": 0,
+        "count_failure_by_level_era": {
+          "L1|legacy": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          },
+          "L1|newest": {
+            "exact": 0,
+            "failure_rate": null,
+            "failures": 0,
+            "format_failures": 0,
+            "n": 0,
+            "wrong_by_one": 0
+          },
+          "L2|legacy": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          },
+          "L2|newest": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          },
+          "L3|legacy": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          },
+          "L3|newest": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          },
+          "L4|legacy": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          },
+          "L4|newest": {
+            "exact": 0,
+            "failure_rate": 1.0,
+            "failures": 40,
+            "format_failures": 40,
+            "n": 40,
+            "wrong_by_one": 0
+          }
+        },
+        "count_overlap_exact": {
+          "exact": 0,
+          "n": 240,
+          "rate": 0.0
+        },
+        "exploratory_logistic_fragmentation_fit": {
+          "beta": -1.0092737026799902e-12,
+          "estimable": false,
+          "fit_converged": false,
+          "fit_separation": true,
+          "normal_ci95": [
+            -78039.94572920112,
+            78039.94572920112
+          ],
+          "normal_se": 39816.29884142915,
+          "note": "single-carrier covariate-adjusted descriptive fit without bootstrap; not a confirmatory coefficient when the carrier fails structural gates",
+          "odds_ratio": 0.9999999999989907,
+          "rows": 280
+        },
+        "exploratory_matched_pair_delta": {
+          "bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_replicates": 1000,
+          "bootstrap_se": 0.0,
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "delta": 0.0,
+          "estimable": true,
+          "level_deltas": {
+            "L2": {
+              "delta": 0.0,
+              "pairs": 40
+            },
+            "L3": {
+              "delta": 0.0,
+              "pairs": 40
+            },
+            "L4": {
+              "delta": 0.0,
+              "pairs": 40
+            }
+          },
+          "pairs": 120
+        },
+        "scalar_unicode_exact": {
+          "exact": 0,
+          "n": 32,
+          "rate": 0.0
+        }
+      }
+    },
+    "warning": "exploratory descriptive output only; carriers failing frozen copy or structural ASCII gates are not interpretable confirmatory structural measurements"
+  },
+  "gates": {
+    "carriers": {
+      "gemma3-4b-it-mlx8-mirror": {
+        "ascii_copy_exact": 24,
+        "ascii_copy_gate_pass": true,
+        "ascii_copy_rows": 24,
+        "ascii_count_exact": 2,
+        "ascii_count_gate_pass": false,
+        "ascii_count_rows": 12,
+        "ascii_scalar_exact": 1,
+        "ascii_scalar_gate_pass": false,
+        "ascii_scalar_rows": 12,
+        "carrier_id": "gemma3-4b-it-mlx8-mirror",
+        "copy_complete": true,
+        "copy_rows": 124,
+        "copy_valid": true,
+        "copy_valid_provisional_until_unicode_copy_complete": false,
+        "copy_wrapper_format_failures": 0,
+        "copy_wrapper_gate_pass_at_most_6": true,
+        "descriptive_robustness_only": false,
+        "family": "Gemma3",
+        "include_h1h2h3_primary": false,
+        "include_h4_primary": true,
+        "primary_ladder": true,
+        "quantization_eligible_under_frozen_resolution": true,
+        "quantization_limitation": "no direct bf16 comparator inference because expanded comparator weight downloads were explicitly skipped before execution",
+        "quantization_status": "narrow_validation_only_no_bf16_comparator_downloaded_allowed_by_frozen_user_resolution",
+        "structural_ascii_valid": false,
+        "structural_valid": false,
+        "tokenizer_family": "gemma_sentencepiece",
+        "tokenizer_valid": true
+      },
+      "llama32-3b-instruct-mlx8": {
+        "ascii_copy_exact": 23,
+        "ascii_copy_gate_pass": true,
+        "ascii_copy_rows": 24,
+        "ascii_count_exact": 6,
+        "ascii_count_gate_pass": false,
+        "ascii_count_rows": 12,
+        "ascii_scalar_exact": 2,
+        "ascii_scalar_gate_pass": false,
+        "ascii_scalar_rows": 12,
+        "carrier_id": "llama32-3b-instruct-mlx8",
+        "copy_complete": true,
+        "copy_rows": 124,
+        "copy_valid": false,
+        "copy_valid_provisional_until_unicode_copy_complete": false,
+        "copy_wrapper_format_failures": 16,
+        "copy_wrapper_gate_pass_at_most_6": false,
+        "descriptive_robustness_only": false,
+        "family": "Llama3.2",
+        "include_h1h2h3_primary": false,
+        "include_h4_primary": false,
+        "primary_ladder": true,
+        "quantization_eligible_under_frozen_resolution": true,
+        "quantization_limitation": "no direct bf16 comparator inference because expanded comparator weight downloads were explicitly skipped before execution",
+        "quantization_status": "narrow_validation_only_no_bf16_comparator_downloaded_allowed_by_frozen_user_resolution",
+        "structural_ascii_valid": false,
+        "structural_valid": false,
+        "tokenizer_family": "llama3_byte_bpe",
+        "tokenizer_valid": true
+      },
+      "mistral7b-instruct-v03-mlx8": {
+        "ascii_copy_exact": 23,
+        "ascii_copy_gate_pass": true,
+        "ascii_copy_rows": 24,
+        "ascii_count_exact": 0,
+        "ascii_count_gate_pass": false,
+        "ascii_count_rows": 12,
+        "ascii_scalar_exact": 0,
+        "ascii_scalar_gate_pass": false,
+        "ascii_scalar_rows": 12,
+        "carrier_id": "mistral7b-instruct-v03-mlx8",
+        "copy_complete": true,
+        "copy_rows": 124,
+        "copy_valid": true,
+        "copy_valid_provisional_until_unicode_copy_complete": false,
+        "copy_wrapper_format_failures": 4,
+        "copy_wrapper_gate_pass_at_most_6": true,
+        "descriptive_robustness_only": true,
+        "family": "Mistral0.3",
+        "include_h1h2h3_primary": false,
+        "include_h4_primary": false,
+        "primary_ladder": false,
+        "quantization_eligible_under_frozen_resolution": true,
+        "quantization_limitation": "no direct bf16 comparator inference because expanded comparator weight downloads were explicitly skipped before execution",
+        "quantization_status": "narrow_validation_only_no_bf16_comparator_downloaded_allowed_by_frozen_user_resolution",
+        "structural_ascii_valid": false,
+        "structural_valid": false,
+        "tokenizer_family": "mistral_sentencepiece",
+        "tokenizer_valid": true
+      },
+      "qwen2.5-3b-instruct-bf16": {
+        "ascii_copy_exact": 23,
+        "ascii_copy_gate_pass": true,
+        "ascii_copy_rows": 24,
+        "ascii_count_exact": 3,
+        "ascii_count_gate_pass": false,
+        "ascii_count_rows": 12,
+        "ascii_scalar_exact": 0,
+        "ascii_scalar_gate_pass": false,
+        "ascii_scalar_rows": 12,
+        "carrier_id": "qwen2.5-3b-instruct-bf16",
+        "copy_complete": true,
+        "copy_rows": 124,
+        "copy_valid": true,
+        "copy_valid_provisional_until_unicode_copy_complete": false,
+        "copy_wrapper_format_failures": 0,
+        "copy_wrapper_gate_pass_at_most_6": true,
+        "descriptive_robustness_only": false,
+        "family": "Qwen2.5",
+        "include_h1h2h3_primary": false,
+        "include_h4_primary": true,
+        "primary_ladder": true,
+        "quantization_eligible_under_frozen_resolution": true,
+        "quantization_limitation": null,
+        "quantization_status": "bf16_no_comparison_required",
+        "structural_ascii_valid": false,
+        "structural_valid": false,
+        "tokenizer_family": "qwen_byte_bpe",
+        "tokenizer_valid": true
+      },
+      "qwen3-4b-instruct-2507-mlx8": {
+        "ascii_copy_exact": 23,
+        "ascii_copy_gate_pass": true,
+        "ascii_copy_rows": 24,
+        "ascii_count_exact": 4,
+        "ascii_count_gate_pass": false,
+        "ascii_count_rows": 12,
+        "ascii_scalar_exact": 1,
+        "ascii_scalar_gate_pass": false,
+        "ascii_scalar_rows": 12,
+        "carrier_id": "qwen3-4b-instruct-2507-mlx8",
+        "copy_complete": true,
+        "copy_rows": 124,
+        "copy_valid": true,
+        "copy_valid_provisional_until_unicode_copy_complete": false,
+        "copy_wrapper_format_failures": 1,
+        "copy_wrapper_gate_pass_at_most_6": true,
+        "descriptive_robustness_only": false,
+        "family": "Qwen3",
+        "include_h1h2h3_primary": false,
+        "include_h4_primary": true,
+        "primary_ladder": true,
+        "quantization_eligible_under_frozen_resolution": true,
+        "quantization_limitation": "no direct bf16 comparator inference because expanded comparator weight downloads were explicitly skipped before execution",
+        "quantization_status": "narrow_validation_only_no_bf16_comparator_downloaded_allowed_by_frozen_user_resolution",
+        "structural_ascii_valid": false,
+        "structural_valid": false,
+        "tokenizer_family": "qwen_byte_bpe",
+        "tokenizer_valid": true
+      },
+      "tinyllama-1.1b-chat-v1.0-bf16": {
+        "ascii_copy_exact": 23,
+        "ascii_copy_gate_pass": true,
+        "ascii_copy_rows": 24,
+        "ascii_count_exact": 0,
+        "ascii_count_gate_pass": false,
+        "ascii_count_rows": 12,
+        "ascii_scalar_exact": 0,
+        "ascii_scalar_gate_pass": false,
+        "ascii_scalar_rows": 12,
+        "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+        "copy_complete": true,
+        "copy_rows": 124,
+        "copy_valid": true,
+        "copy_valid_provisional_until_unicode_copy_complete": false,
+        "copy_wrapper_format_failures": 0,
+        "copy_wrapper_gate_pass_at_most_6": true,
+        "descriptive_robustness_only": false,
+        "family": "Llama2-vintage",
+        "include_h1h2h3_primary": false,
+        "include_h4_primary": true,
+        "primary_ladder": true,
+        "quantization_eligible_under_frozen_resolution": true,
+        "quantization_limitation": null,
+        "quantization_status": "bf16_no_comparison_required",
+        "structural_ascii_valid": false,
+        "structural_valid": false,
+        "tokenizer_family": "llama2_sentencepiece",
+        "tokenizer_valid": true
+      }
+    },
+    "copy_tokenizer_family_count": 3,
+    "copy_valid_primary_carriers": [
+      {
+        "ascii_copy_exact": 24,
+        "ascii_copy_gate_pass": true,
+        "ascii_copy_rows": 24,
+        "ascii_count_exact": 2,
+        "ascii_count_gate_pass": false,
+        "ascii_count_rows": 12,
+        "ascii_scalar_exact": 1,
+        "ascii_scalar_gate_pass": false,
+        "ascii_scalar_rows": 12,
+        "carrier_id": "gemma3-4b-it-mlx8-mirror",
+        "copy_complete": true,
+        "copy_rows": 124,
+        "copy_valid": true,
+        "copy_valid_provisional_until_unicode_copy_complete": false,
+        "copy_wrapper_format_failures": 0,
+        "copy_wrapper_gate_pass_at_most_6": true,
+        "descriptive_robustness_only": false,
+        "family": "Gemma3",
+        "include_h1h2h3_primary": false,
+        "include_h4_primary": true,
+        "primary_ladder": true,
+        "quantization_eligible_under_frozen_resolution": true,
+        "quantization_limitation": "no direct bf16 comparator inference because expanded comparator weight downloads were explicitly skipped before execution",
+        "quantization_status": "narrow_validation_only_no_bf16_comparator_downloaded_allowed_by_frozen_user_resolution",
+        "structural_ascii_valid": false,
+        "structural_valid": false,
+        "tokenizer_family": "gemma_sentencepiece",
+        "tokenizer_valid": true
+      },
+      {
+        "ascii_copy_exact": 23,
+        "ascii_copy_gate_pass": true,
+        "ascii_copy_rows": 24,
+        "ascii_count_exact": 3,
+        "ascii_count_gate_pass": false,
+        "ascii_count_rows": 12,
+        "ascii_scalar_exact": 0,
+        "ascii_scalar_gate_pass": false,
+        "ascii_scalar_rows": 12,
+        "carrier_id": "qwen2.5-3b-instruct-bf16",
+        "copy_complete": true,
+        "copy_rows": 124,
+        "copy_valid": true,
+        "copy_valid_provisional_until_unicode_copy_complete": false,
+        "copy_wrapper_format_failures": 0,
+        "copy_wrapper_gate_pass_at_most_6": true,
+        "descriptive_robustness_only": false,
+        "family": "Qwen2.5",
+        "include_h1h2h3_primary": false,
+        "include_h4_primary": true,
+        "primary_ladder": true,
+        "quantization_eligible_under_frozen_resolution": true,
+        "quantization_limitation": null,
+        "quantization_status": "bf16_no_comparison_required",
+        "structural_ascii_valid": false,
+        "structural_valid": false,
+        "tokenizer_family": "qwen_byte_bpe",
+        "tokenizer_valid": true
+      },
+      {
+        "ascii_copy_exact": 23,
+        "ascii_copy_gate_pass": true,
+        "ascii_copy_rows": 24,
+        "ascii_count_exact": 4,
+        "ascii_count_gate_pass": false,
+        "ascii_count_rows": 12,
+        "ascii_scalar_exact": 1,
+        "ascii_scalar_gate_pass": false,
+        "ascii_scalar_rows": 12,
+        "carrier_id": "qwen3-4b-instruct-2507-mlx8",
+        "copy_complete": true,
+        "copy_rows": 124,
+        "copy_valid": true,
+        "copy_valid_provisional_until_unicode_copy_complete": false,
+        "copy_wrapper_format_failures": 1,
+        "copy_wrapper_gate_pass_at_most_6": true,
+        "descriptive_robustness_only": false,
+        "family": "Qwen3",
+        "include_h1h2h3_primary": false,
+        "include_h4_primary": true,
+        "primary_ladder": true,
+        "quantization_eligible_under_frozen_resolution": true,
+        "quantization_limitation": "no direct bf16 comparator inference because expanded comparator weight downloads were explicitly skipped before execution",
+        "quantization_status": "narrow_validation_only_no_bf16_comparator_downloaded_allowed_by_frozen_user_resolution",
+        "structural_ascii_valid": false,
+        "structural_valid": false,
+        "tokenizer_family": "qwen_byte_bpe",
+        "tokenizer_valid": true
+      },
+      {
+        "ascii_copy_exact": 23,
+        "ascii_copy_gate_pass": true,
+        "ascii_copy_rows": 24,
+        "ascii_count_exact": 0,
+        "ascii_count_gate_pass": false,
+        "ascii_count_rows": 12,
+        "ascii_scalar_exact": 0,
+        "ascii_scalar_gate_pass": false,
+        "ascii_scalar_rows": 12,
+        "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+        "copy_complete": true,
+        "copy_rows": 124,
+        "copy_valid": true,
+        "copy_valid_provisional_until_unicode_copy_complete": false,
+        "copy_wrapper_format_failures": 0,
+        "copy_wrapper_gate_pass_at_most_6": true,
+        "descriptive_robustness_only": false,
+        "family": "Llama2-vintage",
+        "include_h1h2h3_primary": false,
+        "include_h4_primary": true,
+        "primary_ladder": true,
+        "quantization_eligible_under_frozen_resolution": true,
+        "quantization_limitation": null,
+        "quantization_status": "bf16_no_comparison_required",
+        "structural_ascii_valid": false,
+        "structural_valid": false,
+        "tokenizer_family": "llama2_sentencepiece",
+        "tokenizer_valid": true
+      }
+    ],
+    "copy_valid_primary_count": 4,
+    "created_utc": "2026-11-26T13:12:48.478616+00:00",
+    "gate_mutation_checks": {
+      "checks": {
+        "ascii_copy_22_of_24_fails_control_threshold": true,
+        "ascii_copy_23_of_24_passes_control_threshold": true,
+        "ascii_structural_10_of_12_fails": true,
+        "ascii_structural_11_of_12_passes": true,
+        "seven_wrapper_failures_fail_threshold": true,
+        "six_wrapper_failures_pass_threshold": true
+      },
+      "gate_mutation_checks_pass": true
+    },
+    "minimum_h1h2_met": false,
+    "minimum_h4_met": true,
+    "quantization_resolution": "expanded bf16 downloads skipped; MLX8 carriers remain eligible under the pre-generation user resolution, with the missing direct contrast documented as a limitation",
+    "structural_tokenizer_family_count": 0,
+    "structural_valid_primary_carriers": [],
+    "structural_valid_primary_count": 0
+  },
+  "h1": {
+    "carrier_coefficient_valid": {},
+    "carrier_specific": {},
+    "count_row_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "count_rows": 0,
+    "estimable_nonnegative_carrier_count": 0,
+    "estimable_nonnegative_carriers": [],
+    "nonnegative_tokenizer_family_count": 0,
+    "pooled": {
+      "bootstrap_ci95": [
+        null,
+        null
+      ],
+      "bootstrap_median": null,
+      "bootstrap_nonconvergence": 0,
+      "bootstrap_normal_approx_one_sided_p_beta_gt_0": null,
+      "bootstrap_one_sided_p_beta_gt_0": null,
+      "bootstrap_replicates": 5000,
+      "bootstrap_se": null,
+      "bootstrap_separation_or_singular": 0,
+      "bootstrap_valid": 0,
+      "fit_converged": false,
+      "fit_separation": false,
+      "insufficient_before_estimation": "fewer than four structurally valid carriers or fewer than three tokenizer families; primary H1 is inconclusive without pooling",
+      "n_carriers": 0,
+      "n_rows": 0,
+      "normal_one_sided_p_beta_gt_0": null,
+      "normal_se": null,
+      "point_beta": null,
+      "point_odds_ratio": null,
+      "seed": 20261127,
+      "strata": [
+        "carrier x era x fragmentation_level"
+      ]
+    }
+  },
+  "h2": {
+    "error": "no complete overlap pairs",
+    "incomplete_overlap_group_count": 0,
+    "incomplete_overlap_groups": [],
+    "pairs": 0
+  },
+  "h3_h4": {
+    "h3": {
+      "by_carrier": {},
+      "eligible_carriers": [],
+      "error_classes": {},
+      "every_legacy_zero_exact": false,
+      "every_newest_zero_exact": false,
+      "minimum_met": false,
+      "signed_or_token_errors_precluded": true
+    },
+    "h4": {
+      "by_carrier": {
+        "gemma3-4b-it-mlx8-mirror": {
+          "legacy": {
+            "exact": 39,
+            "n": 40,
+            "rate": 0.975
+          },
+          "newest": {
+            "exact": 60,
+            "n": 60,
+            "rate": 1.0
+          }
+        },
+        "qwen2.5-3b-instruct-bf16": {
+          "legacy": {
+            "exact": 40,
+            "n": 40,
+            "rate": 1.0
+          },
+          "newest": {
+            "exact": 60,
+            "n": 60,
+            "rate": 1.0
+          }
+        },
+        "qwen3-4b-instruct-2507-mlx8": {
+          "legacy": {
+            "exact": 40,
+            "n": 40,
+            "rate": 1.0
+          },
+          "newest": {
+            "exact": 60,
+            "n": 60,
+            "rate": 1.0
+          }
+        },
+        "tinyllama-1.1b-chat-v1.0-bf16": {
+          "legacy": {
+            "exact": 40,
+            "n": 40,
+            "rate": 1.0
+          },
+          "newest": {
+            "exact": 60,
+            "n": 60,
+            "rate": 1.0
+          }
+        }
+      },
+      "byte_exact_by_item_type_era": {
+        "atomic_emoji|legacy": {
+          "failure_rate": 0.0,
+          "failures": 0,
+          "n": 40
+        },
+        "atomic_emoji|newest": {
+          "failure_rate": 0.0,
+          "failures": 0,
+          "n": 80
+        },
+        "atomic_nonemoji|legacy": {
+          "failure_rate": 0.025,
+          "failures": 1,
+          "n": 40
+        },
+        "atomic_nonemoji|newest": {
+          "failure_rate": 0.0,
+          "failures": 0,
+          "n": 40
+        },
+        "complex_nonemoji|legacy": {
+          "failure_rate": 0.0,
+          "failures": 0,
+          "n": 40
+        },
+        "complex_nonemoji|newest": {
+          "failure_rate": 0.0,
+          "failures": 0,
+          "n": 40
+        },
+        "zwj_emoji|legacy": {
+          "failure_rate": 0.0,
+          "failures": 0,
+          "n": 40
+        },
+        "zwj_emoji|newest": {
+          "failure_rate": 0.0,
+          "failures": 0,
+          "n": 80
+        }
+      },
+      "copy_failure_classes": {
+        "multi_codepoint_corruption": 1
+      },
+      "eligible_carriers": [
+        "gemma3-4b-it-mlx8-mirror",
+        "qwen2.5-3b-instruct-bf16",
+        "qwen3-4b-instruct-2507-mlx8",
+        "tinyllama-1.1b-chat-v1.0-bf16"
+      ],
+      "every_legacy_byte_exact": false,
+      "every_newest_byte_exact": true,
+      "minimum_met": true,
+      "near_miss_by_item_type": {}
+    }
+  },
+  "implementation_mutation_checks": {
+    "checks": {
+      "bootstrap_stratum_draw_size_preserved": true,
+      "complete_separation_flagged": true,
+      "flat_synthetic_slope_near_zero": true,
+      "h2_equal_outcomes_delta_zero": true,
+      "h2_one_flip_exact_weight": true,
+      "holm_monotonic_example": true,
+      "logistic_intercept_reasonable": true,
+      "logistic_recovers_positive_slope": true,
+      "one_copy_flip_breaks_exact_ceiling": true,
+      "one_scalar_flip_breaks_exact_floor": true,
+      "synthetic_exact_copy_ceiling_detected": true,
+      "synthetic_exact_scalar_floor_detected": true,
+      "tost_large_delta_not_significant": true,
+      "tost_zero_delta_is_small_p": true
+    },
+    "flat_fit_beta": [
+      0.20183589187911344,
+      0.13162222404466187
+    ],
+    "implementation_mutation_checks_pass": true,
+    "separation_beta": [
+      2.4847488136214406e-06,
+      25.798944585976486
+    ],
+    "synthetic_fit_beta": [
+      1.3559371861650766,
+      0.780806721849021
+    ]
+  },
+  "pre_registration": "docs/CONFIRMATORY_PREREGISTRATION.md",
+  "random_seed": 20261127,
+  "sensitivity_analyses": {
+    "h2_exact_zero_difference_reported_in_main_h2": true,
+    "h2_sensitivities": {
+      "newest_l1_pair_sensitivity": {
+        "estimable": false,
+        "reason": "the frozen inventory contains match_pair_id values only for L2-L4; newest-L1 pairs were not constructed at freeze time, so this sensitivity cannot be run without violating the freeze"
+      },
+      "overall_unweighted_implementation_check": {
+        "carrier_count": 0,
+        "carrier_level_detail": {},
+        "delta": null
+      },
+      "pair_count": 0,
+      "type_restricted_complex_nonemoji": {
+        "error": "no rows"
+      },
+      "type_restricted_zwj_emoji": {
+        "error": "no rows"
+      }
+    },
+    "quantitative_descriptive_breakdowns": {
+      "count_failure_by_carrier_level_era": {},
+      "count_failure_by_item_type_level": {}
+    },
+    "quantization_exclusion_sensitivity": {
+      "bf16_only_carriers": [],
+      "note": "expanded bf16 comparator downloads were skipped pre-generation; this sensitivity therefore cannot estimate the intended direct quantization contrast and is reported as a frozen limitation"
+    }
+  },
+  "verdict": {
+    "created_utc": "2026-11-26T13:12:48.590883+00:00",
+    "exploratory_not_confirmatory": "all subtype, formatting, scalar-error, timing, post-Unicode-17, and tokenizer-property analyses are descriptive unless explicitly pre-registered as sensitivity analyses",
+    "holms_family": "H1 one-sided fragmentation count test and H2 two-sided TOST count test only; H3/H4 are exact replication tests outside the alpha family",
+    "hypotheses": {
+      "H1": {
+        "beta": null,
+        "bootstrap_ci95": [
+          null,
+          null
+        ],
+        "confirmation_rules": {
+          "at_least_3_carriers_2_families_nonnegative": false,
+          "at_least_4000_valid_bootstrap_replicates": false,
+          "bootstrap_lower_ci_exceeds_log_1_25": false,
+          "holm_adjusted_count_significant": false,
+          "minimum_validity_met": false
+        },
+        "holm_adjusted_p": null,
+        "material_threshold_log_or": 0.22314355131420976,
+        "raw_count_p": null,
+        "refutation_logic": "upper CI below material threshold or entirely below zero",
+        "verdict": "inconclusive"
+      },
+      "H2": {
+        "bootstrap_ci95": null,
+        "ci_width": null,
+        "confirmation_rules": {
+          "ci_within_band": false,
+          "holm_adjusted_tost_significant": false,
+          "minimum_validity_met": false,
+          "observed_delta_inside_band": false
+        },
+        "delta": null,
+        "equivalence_band": [
+          -0.1,
+          0.1
+        ],
+        "holm_adjusted_tost_p": null,
+        "raw_tost_p": null,
+        "verdict": "inconclusive"
+      },
+      "H3": {
+        "every_legacy_zero_exact": false,
+        "every_newest_zero_exact": false,
+        "minimum_met": false,
+        "verdict": "inconclusive"
+      },
+      "H4": {
+        "every_legacy_byte_exact": false,
+        "every_newest_byte_exact": true,
+        "minimum_met": true,
+        "verdict": "refuted"
+      }
+    },
+    "seed": 20261127
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "checks": {
+    "gemma3-4b-it-mlx8-mirror": {
+      "assistant_boundary_suffix": "\nCopy the input exactly. Input: <IN>test</IN><end_of_turn>\n<start_of_turn>model\n",
+      "bos_token": "<bos>",
+      "carrier_id": "gemma3-4b-it-mlx8-mirror",
+      "chat_template_sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4",
+      "ends_at_assistant_generation_boundary": true,
+      "eos_token": "<end_of_turn>",
+      "frozen_multiturn_user_content_present": true,
+      "load_path": "/Users/nikolassapalidis/.cache/huggingface/hub/models--mlx-community--gemma-3-4b-it-8bit/snapshots/61cfff4de4bc5b975437be840d504f07f0424df2",
+      "memory_smoke_pass": true,
+      "overlay_used": false,
+      "rendered_sha256": "a4cd1f65b7f2462c556da1bd3975c934dac1170718930027c8e6243bb745082a",
+      "smoke_prompt_sha256": "dfb0eb34b44869769b6af1ee8eb2687f179eba082b5e84bea8565b8536df18be"
+    },
+    "llama32-3b-instruct-mlx8": {
+      "assistant_boundary_suffix": "y. Input: <IN>test</IN><|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+      "bos_token": "<|begin_of_text|>",
+      "carrier_id": "llama32-3b-instruct-mlx8",
+      "chat_template_sha256": "5816fce10444e03c2e9ee1ef8a4a1ea61ae7e69e438613f3b17b69d0426223a4",
+      "ends_at_assistant_generation_boundary": true,
+      "eos_token": "<|eot_id|>",
+      "frozen_multiturn_user_content_present": true,
+      "load_path": "/Users/nikolassapalidis/.cache/huggingface/hub/models--mlx-community--Llama-3.2-3B-Instruct-8bit/snapshots/ff054899609078569493def2823f9acd2780c0c9",
+      "memory_smoke_pass": true,
+      "overlay_used": false,
+      "rendered_sha256": "9427f92dd132d9e1252fa2bc18ef45a5cf72024204610c5b1494abf8f881e282",
+      "smoke_prompt_sha256": "dfb0eb34b44869769b6af1ee8eb2687f179eba082b5e84bea8565b8536df18be"
+    },
+    "mistral7b-instruct-v03-mlx8": {
+      "assistant_boundary_suffix": "14z/4g;[zM!</OUT></s>[INST] Copy the input exactly. Input: <IN>test</IN> [/INST]",
+      "bos_token": "<s>",
+      "carrier_id": "mistral7b-instruct-v03-mlx8",
+      "chat_template_sha256": "26a59556925c987317ce5291811ba3b7f32ec4c647c400c6cc7e3a9993007ba7",
+      "ends_at_assistant_generation_boundary": true,
+      "eos_token": "</s>",
+      "frozen_multiturn_user_content_present": true,
+      "load_path": "/Users/nikolassapalidis/.cache/huggingface/hub/models--mlx-community--Mistral-7B-Instruct-v0.3-8bit/snapshots/c282bcd11a64be44ac3f130f0b819d48ecc1846d",
+      "memory_smoke_pass": true,
+      "overlay_used": false,
+      "rendered_sha256": "310bff60ea559c9c5a9ed47f5f0995e97b519dca594a2eff35db74c9c00cb5d0",
+      "smoke_prompt_sha256": "dfb0eb34b44869769b6af1ee8eb2687f179eba082b5e84bea8565b8536df18be"
+    },
+    "qwen2.5-3b-instruct-bf16": {
+      "assistant_boundary_suffix": "er\nCopy the input exactly. Input: <IN>test</IN><|im_end|>\n<|im_start|>assistant\n",
+      "bos_token": null,
+      "carrier_id": "qwen2.5-3b-instruct-bf16",
+      "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+      "ends_at_assistant_generation_boundary": true,
+      "eos_token": "<|im_end|>",
+      "frozen_multiturn_user_content_present": true,
+      "load_path": "/Users/nikolassapalidis/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "memory_smoke_pass": true,
+      "overlay_used": false,
+      "rendered_sha256": "29425e880d1732af704a382851e8203db1f13f8ec22faa5cc8863d4413edab8a",
+      "smoke_prompt_sha256": "dfb0eb34b44869769b6af1ee8eb2687f179eba082b5e84bea8565b8536df18be"
+    },
+    "qwen3-4b-instruct-2507-mlx8": {
+      "assistant_boundary_suffix": "er\nCopy the input exactly. Input: <IN>test</IN><|im_end|>\n<|im_start|>assistant\n",
+      "bos_token": null,
+      "carrier_id": "qwen3-4b-instruct-2507-mlx8",
+      "chat_template_sha256": "40c21f34cf67d8c760ef72f8ad3ae5afad514299d4b06e91dd9a8d705af7b541",
+      "ends_at_assistant_generation_boundary": true,
+      "eos_token": "<|im_end|>",
+      "frozen_multiturn_user_content_present": true,
+      "load_path": "/Users/nikolassapalidis/Developer/unicode-release-debt/data/mlx_confirmatory/qwen3-4b-instruct-2507-mlx8/f7cc728e8e8f749a",
+      "memory_smoke_pass": true,
+      "overlay_used": true,
+      "rendered_sha256": "e21e14442bda75d876dbced042939376f12bc38d386f07929714f50e6b1af2fa",
+      "smoke_prompt_sha256": "dfb0eb34b44869769b6af1ee8eb2687f179eba082b5e84bea8565b8536df18be"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16": {
+      "assistant_boundary_suffix": "UT></s>\n<|user|>\nCopy the input exactly. Input: <IN>test</IN></s>\n<|assistant|>\n",
+      "bos_token": "<s>",
+      "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+      "chat_template_sha256": "66291cf0045c2425a3a667cf3cbb7af2b11f09e025c02f97245323ab79119362",
+      "ends_at_assistant_generation_boundary": true,
+      "eos_token": "</s>",
+      "frozen_multiturn_user_content_present": true,
+      "load_path": "/Users/nikolassapalidis/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-Chat-v1.0/snapshots/fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "memory_smoke_pass": true,
+      "overlay_used": false,
+      "rendered_sha256": "66c3224b19538951a8599149c6bc5000bc1bf27f34182596ef8479e329035795",
+      "smoke_prompt_sha256": "dfb0eb34b44869769b6af1ee8eb2687f179eba082b5e84bea8565b8536df18be"
+    }
+  },
+  "created_utc": "2026-11-26T13:12:37.542642+00:00",
+  "template_rendering_checks_pass": true
+}

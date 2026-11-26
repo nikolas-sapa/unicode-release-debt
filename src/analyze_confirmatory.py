@@ -22,6 +22,7 @@ OUT = cf.CONFIRMATORY
 BOOT = 5000
 SEED = 20261127
 LEVELS = ["L1", "L2", "L3", "L4"]
+CARRIER_META = {x["carrier_id"]: x for x in cf.CARRIERS}
 
 
 def phi(x):
@@ -292,8 +293,8 @@ def analyze_h1(scored, valid_carriers, do_carrier_boot=True):
         carrier_results[c] = fit_carrier_h1(rows, c, BOOT if do_carrier_boot else 100)
     coefficient_valid = {c: bool(x.get("estimable") and x.get("fit_converged") and not x.get("fit_separation") and math.isfinite(x.get("point_beta", math.nan))) for c, x in carrier_results.items()}
     finite_nonneg = sum(1 for c, x in carrier_results.items() if coefficient_valid.get(c) and x["point_beta"] >= 0)
-    families = {cf.CARRIERS[c]["tokenizer_family"] for c, x in carrier_results.items() if coefficient_valid.get(c) and x["point_beta"] >= 0}
-    if len(valid_carriers) < 4 or len({cf.CARRIERS[c]["tokenizer_family"] for c in valid_carriers}) < 3:
+    families = {CARRIER_META[c]["tokenizer_family"] for c, x in carrier_results.items() if coefficient_valid.get(c) and x["point_beta"] >= 0}
+    if len(valid_carriers) < 4 or len({CARRIER_META[c]["tokenizer_family"] for c in valid_carriers}) < 3:
         pooled = {
             "n_rows": len(rows), "n_carriers": len(valid_carriers), "point_beta": None, "point_odds_ratio": None, "normal_se": None,
             "fit_converged": False, "fit_separation": False, "bootstrap_replicates": BOOT, "bootstrap_valid": 0,
@@ -432,7 +433,7 @@ def h3_h4(scored, gates):
         h4_by_carrier[c] = vals
     return {
         "h3": {"eligible_carriers": sorted(structural), "by_carrier": h3_by_carrier, "every_newest_zero_exact": bool(structural) and all(v["newest"]["n"] == 16 and v["newest"]["exact"] == 0 for v in h3_by_carrier.values()), "every_legacy_zero_exact": bool(structural) and all(v["legacy"]["n"] == 16 and v["legacy"]["exact"] == 0 for v in h3_by_carrier.values()), "minimum_met": len(structural) >= 4, "error_classes": dict(Counter(r.get("scalar_error_class") for r in scalar_rows)), "signed_or_token_errors_precluded": True},
-        "h4": {"eligible_carriers": sorted(copyvalid), "by_carrier": h4_by_carrier, "every_newest_byte_exact": bool(copyvalid) and all(v["newest"]["n"] == 60 and v["newest"]["exact"] == 60 for v in h4_by_carrier.values()), "every_legacy_byte_exact": bool(copyvalid) and all(v["legacy"]["n"] == 40 and v["legacy"]["exact"] == 40 for v in h4_by_carrier.values()), "minimum_met": len(copyvalid) >= 4, "copy_failure_classes": dict(Counter(r.get("copy_near_miss_class") for r in copy_rows if not r["task_exact"])), "byte_exact_by_item_type_era": rates(copy_rows, ["item_type", "era"]), "near_miss_by_item_type": rates([r for r in copy_rows if r.get("copy_near_miss")], ["item_type"])},
+        "h4": {"eligible_carriers": sorted(copyvalid), "by_carrier": h4_by_carrier, "every_newest_byte_exact": bool(copyvalid) and all(v["newest"]["n"] == 60 and v["newest"]["exact"] == 60 for v in h4_by_carrier.values()), "every_legacy_byte_exact": bool(copyvalid) and all(v["legacy"]["n"] == 40 and v["legacy"]["exact"] == 40 for v in h4_by_carrier.values()), "minimum_met": len(copyvalid) >= 4 and gates.get("copy_tokenizer_family_count", 0) >= 3, "copy_failure_classes": dict(Counter(r.get("copy_near_miss_class") for r in copy_rows if not r["task_exact"])), "byte_exact_by_item_type_era": rates(copy_rows, ["item_type", "era"]), "near_miss_by_item_type": rates([r for r in copy_rows if r.get("copy_near_miss")], ["item_type"])},
     }
 
 
@@ -472,7 +473,7 @@ def sensitivity_analyses(scored, gates):
         coef = np.linalg.lstsq(X, y, rcond=None)[0]
         out["linear_probability_fragmentation_coefficient"] = {"coefficient": float(coef[frag]), "note": "unregularized OLS sensitivity; inferential uncertainty not used for confirmation"}
         out["unadjusted_failure_by_level_era"] = rates(rows, ["fragmentation_level", "era"])
-    out["quantization_exclusion_sensitivity"] = {"note": "expanded bf16 comparator downloads were skipped pre-generation; this sensitivity therefore cannot estimate the intended direct quantization contrast and is reported as a frozen limitation", "bf16_only_carriers": sorted(c for c in structural if cf.CARRIERS[c]["quantization_class"] == "bf16")}
+    out["quantization_exclusion_sensitivity"] = {"note": "expanded bf16 comparator downloads were skipped pre-generation; this sensitivity therefore cannot estimate the intended direct quantization contrast and is reported as a frozen limitation", "bf16_only_carriers": sorted(c for c in structural if CARRIER_META[c]["quantization_class"] == "bf16")}
     overlap_rows, _ = h2_overlap_rows(scored, structural)
     pairs = pair_records(overlap_rows)
     h2s = {"pair_count": len(pairs), "overall_unweighted_implementation_check": equal_weighted_pair_delta(pairs)}

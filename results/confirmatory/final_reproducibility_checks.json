@@ -1,0 +1,25 @@
+{
+  "commands_exit_zero": [
+    "power self-test",
+    "power deterministic rerun",
+    "inventory audit",
+    "template rendering check",
+    "inference tokenizer verification"
+  ],
+  "created_utc": "2026-11-26T13:13:16.308894+00:00",
+  "final_reproducibility_checks_pass": true,
+  "inference_tokenizer_verification_pass": true,
+  "inventory_audit_note": "rerun passed; frozen inventory_audit.json timestamp/content restored unchanged afterward",
+  "inventory_audit_pass": true,
+  "power_committed_sha256": "94b1e80e53062f2da3158bcc7494883417e49b2e47a15ef0a7590f9f39f22fac",
+  "power_deterministic_command": ".venv/bin/python src/confirmatory_power_analysis.py --out ~/scratch/confirmatory_power_check.json",
+  "power_deterministic_output_match": true,
+  "power_rerun_sha256": "94b1e80e53062f2da3158bcc7494883417e49b2e47a15ef0a7590f9f39f22fac",
+  "power_self_test_command": ".venv/bin/python src/confirmatory_power_analysis.py --self-test",
+  "power_self_test_output": {
+    "mutation_detected": true,
+    "validation_all_pass": true
+  },
+  "power_self_test_pass": true,
+  "template_rendering_checks_pass": true
+}

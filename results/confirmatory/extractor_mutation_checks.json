@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "correct_wrapped_copy_passes": true,
+    "integer_3_passes": true,
+    "integer_3dot_fails": true,
+    "lowercase_scalar_list_fails": true,
+    "missing_zwj_precedence_class": true,
+    "non_whitespace_outside_wrapper_fails": true,
+    "one_token_scalar_error_is_near_miss": true,
+    "truncation_50_percent_not_near_miss": true,
+    "truncation_80_percent_is_near_miss": true,
+    "two_wrappers_fail": true,
+    "uppercase_scalar_list_passes": true
+  },
+  "details": {
+    "missing_zwj_class": "decomposed_rgi_sequence_or_missing_zwj",
+    "trunc85_class": "truncation_near_miss"
+  },
+  "extractor_mutation_checks_pass": true
+}

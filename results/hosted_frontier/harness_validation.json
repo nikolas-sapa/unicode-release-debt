@@ -1,0 +1,374 @@
+{
+  "components": {
+    "corrupted_canned_response_scorer_mutations": {
+      "anthropic": {
+        "checks": {
+          "ascii_copy_gate_degraded_to_23_of_24": true,
+          "exactly_one_scored_row_became_nonexact": true,
+          "mutated_row_is_first_ascii_copy": true,
+          "run_completed_despite_response_content_mutation": true
+        },
+        "nonexact_probe_key": "hosted-anthropic-claude-opus-4-5-20251101:copy:ascii:0001",
+        "nonexact_rows": 1,
+        "pass": true
+      },
+      "gemini": {
+        "checks": {
+          "ascii_copy_gate_degraded_to_23_of_24": true,
+          "exactly_one_scored_row_became_nonexact": true,
+          "mutated_row_is_first_ascii_copy": true,
+          "run_completed_despite_response_content_mutation": true
+        },
+        "nonexact_probe_key": "hosted-gemini-gemini-3.1-pro-preview:copy:ascii:0001",
+        "nonexact_rows": 1,
+        "pass": true
+      },
+      "openai": {
+        "checks": {
+          "ascii_copy_gate_degraded_to_23_of_24": true,
+          "exactly_one_scored_row_became_nonexact": true,
+          "mutated_row_is_first_ascii_copy": true,
+          "run_completed_despite_response_content_mutation": true
+        },
+        "nonexact_probe_key": "hosted-openai-gpt-5.5-2026-04-23:copy:ascii:0001",
+        "nonexact_rows": 1,
+        "pass": true
+      }
+    },
+    "corrupted_payload_adapter_mutations": {
+      "anthropic": {
+        "checks": {
+          "adapter_integrity_error_raised": true,
+          "malformed_transport_event_recorded": true,
+          "no_scientific_raw_row_accepted": true,
+          "transport_stopped_after_malformed_response": true
+        },
+        "error": "anthropic response body is not valid JSON: Expecting ',' delimiter: line 1 column 247 (char 246)",
+        "pass": true,
+        "transport_events": 2
+      },
+      "gemini": {
+        "checks": {
+          "adapter_integrity_error_raised": true,
+          "malformed_transport_event_recorded": true,
+          "no_scientific_raw_row_accepted": true,
+          "transport_stopped_after_malformed_response": true
+        },
+        "error": "gemini response body is not valid JSON: Expecting ',' delimiter: line 1 column 284 (char 283)",
+        "pass": true,
+        "transport_events": 2
+      },
+      "openai": {
+        "checks": {
+          "adapter_integrity_error_raised": true,
+          "malformed_transport_event_recorded": true,
+          "no_scientific_raw_row_accepted": true,
+          "transport_stopped_after_malformed_response": true
+        },
+        "error": "openai response body is not valid JSON: Expecting ',' delimiter: line 1 column 280 (char 279)",
+        "pass": true,
+        "transport_events": 2
+      }
+    },
+    "fake_transport_end_to_end": {
+      "anthropic": {
+        "artifact_dir": "out/hosted_frontier_validation/20261126T140130.557636_0000/e2e/anthropic/claude-opus-4-5-20251101/qwen2.5-3b-instruct-bf16",
+        "ascii_gate_counts": {
+          "copy": 24,
+          "count": 12,
+          "scalar": 12
+        },
+        "capture": {
+          "captured_calls": 501,
+          "mismatched_archived_request_bytes": [],
+          "missing_archived_requests": [],
+          "transport_events": 501
+        },
+        "checks": {
+          "all_fake_correct_responses_scored_exact": true,
+          "ascii_copy_first_24": true,
+          "ascii_first_48_rows": true,
+          "ascii_gates_pass_exact_thresholds": true,
+          "cap_not_exceeded": true,
+          "copy_valid_and_structural_valid": true,
+          "exact_payload_capture_and_archive": true,
+          "ledger_distinguishes_priced_and_conservative": true,
+          "ledger_hash_chain_valid": true,
+          "planned_rows_complete": true,
+          "preflight_served_model_matches": true,
+          "provider_payload_shape": true,
+          "scorer_extractor_mutations_pass": true,
+          "secret_absent_from_artifacts": true,
+          "status_completed": true
+        },
+        "ledger_path": "out/hosted_frontier_validation/20261126T140130.557636_0000/e2e/anthropic/cost_ledger.jsonl",
+        "ledger_totals": {
+          "api_calls": 501,
+          "conservative_cap_debit_usd": 1.785555,
+          "priced_usage_cost_usd": 0.42072499999999996
+        },
+        "pass": true,
+        "payload_shape": {
+          "checks": {
+            "max_tokens_64": true,
+            "messages_shape": true,
+            "no_system_field": true,
+            "temperature_zero": true,
+            "text_block_shape": true
+          },
+          "pass": true
+        },
+        "rows": 500,
+        "secret_scan": {
+          "files_scanned": 9,
+          "secret_absent": true,
+          "secret_matches": []
+        }
+      },
+      "gemini": {
+        "artifact_dir": "out/hosted_frontier_validation/20261126T140130.557636_0000/e2e/gemini/gemini-3.1-pro-preview/qwen2.5-3b-instruct-bf16",
+        "ascii_gate_counts": {
+          "copy": 24,
+          "count": 12,
+          "scalar": 12
+        },
+        "capture": {
+          "captured_calls": 501,
+          "mismatched_archived_request_bytes": [],
+          "missing_archived_requests": [],
+          "transport_events": 501
+        },
+        "checks": {
+          "all_fake_correct_responses_scored_exact": true,
+          "ascii_copy_first_24": true,
+          "ascii_first_48_rows": true,
+          "ascii_gates_pass_exact_thresholds": true,
+          "cap_not_exceeded": true,
+          "copy_valid_and_structural_valid": true,
+          "exact_payload_capture_and_archive": true,
+          "ledger_distinguishes_priced_and_conservative": true,
+          "ledger_hash_chain_valid": true,
+          "planned_rows_complete": true,
+          "preflight_served_model_matches": true,
+          "provider_payload_shape": true,
+          "scorer_extractor_mutations_pass": true,
+          "secret_absent_from_artifacts": true,
+          "status_completed": true
+        },
+        "ledger_path": "out/hosted_frontier_validation/20261126T140130.557636_0000/e2e/gemini/cost_ledger.jsonl",
+        "ledger_totals": {
+          "api_calls": 501,
+          "conservative_cap_debit_usd": 0.77835,
+          "priced_usage_cost_usd": 0.181386
+        },
+        "pass": true,
+        "payload_shape": {
+          "checks": {
+            "assistant_mapped_to_model_role": true,
+            "candidate_count_1": true,
+            "contents_shape": true,
+            "max_output_tokens_64": true,
+            "no_system_instruction": true,
+            "temperature_zero": true,
+            "thinking_low_no_thoughts": true
+          },
+          "pass": true
+        },
+        "rows": 500,
+        "secret_scan": {
+          "files_scanned": 9,
+          "secret_absent": true,
+          "secret_matches": []
+        }
+      },
+      "openai": {
+        "artifact_dir": "out/hosted_frontier_validation/20261126T140130.557636_0000/e2e/openai/gpt-5.5-2026-04-23/qwen2.5-3b-instruct-bf16",
+        "ascii_gate_counts": {
+          "copy": 24,
+          "count": 12,
+          "scalar": 12
+        },
+        "capture": {
+          "captured_calls": 501,
+          "mismatched_archived_request_bytes": [],
+          "missing_archived_requests": [],
+          "transport_events": 501
+        },
+        "checks": {
+          "all_fake_correct_responses_scored_exact": true,
+          "ascii_copy_first_24": true,
+          "ascii_first_48_rows": true,
+          "ascii_gates_pass_exact_thresholds": true,
+          "cap_not_exceeded": true,
+          "copy_valid_and_structural_valid": true,
+          "exact_payload_capture_and_archive": true,
+          "ledger_distinguishes_priced_and_conservative": true,
+          "ledger_hash_chain_valid": true,
+          "planned_rows_complete": true,
+          "preflight_served_model_matches": true,
+          "provider_payload_shape": true,
+          "scorer_extractor_mutations_pass": true,
+          "secret_absent_from_artifacts": true,
+          "status_completed": true
+        },
+        "ledger_path": "out/hosted_frontier_validation/20261126T140130.557636_0000/e2e/openai/cost_ledger.jsonl",
+        "ledger_totals": {
+          "api_calls": 501,
+          "conservative_cap_debit_usd": 1.945875,
+          "priced_usage_cost_usd": 0.41182
+        },
+        "pass": true,
+        "payload_shape": {
+          "checks": {
+            "chat_completions_shape": true,
+            "max_completion_tokens_64": true,
+            "no_system_message": true,
+            "reasoning_effort_none": true,
+            "temperature_zero": true
+          },
+          "pass": true
+        },
+        "rows": 500,
+        "secret_scan": {
+          "files_scanned": 9,
+          "secret_absent": true,
+          "secret_matches": []
+        }
+      }
+    },
+    "hash_pin_mutation_checks": {
+      "archive_mutation_problems": [
+        {
+          "problem": "response body hash mismatch",
+          "row": 1
+        }
+      ],
+      "checks": {
+        "archived_response_payload_mutation_detected": true,
+        "ledger_cost_mutation_detected": true
+      },
+      "ledger_mutation_problems": [
+        {
+          "actual": "fa26dc403d9f618fe1a6c7ba65835a266fcd30bafb2ef3781685220465581c1b",
+          "computed": "9683877412b96c7dcced70569e0b0ffdb3d5d71b2b59793e53ae95ed66c45c7c",
+          "problem": "entry hash mismatch",
+          "sequence": 1
+        }
+      ],
+      "pass": true
+    },
+    "rate_limit_retry_with_backoff": {
+      "api_calls": 502,
+      "checks": {
+        "all_rows_completed": true,
+        "extra_transport_attempt_is_in_cost_ledger": true,
+        "one_http_429_event": true,
+        "one_retry_backoff_event": true,
+        "retry_attempt_archived": true,
+        "run_completed_after_one_429": true
+      },
+      "pass": true,
+      "transport_events": 502
+    },
+    "secret_reflection_fail_closed": {
+      "checks": {
+        "reflection_event_recorded": true,
+        "secret_absent_from_all_artifacts": true,
+        "secret_reflection_refused": true
+      },
+      "error": "provider response reflected the API key; response was redacted and refused",
+      "pass": true,
+      "secret_scan": {
+        "files_scanned": 6,
+        "secret_absent": true,
+        "secret_matches": []
+      }
+    },
+    "served_model_pin_fail_closed": {
+      "checks": {
+        "only_availability_call_was_made": true,
+        "served_model_mismatch_aborted": true
+      },
+      "error": "{\"requested_model\": \"claude-opus-4-5-20251101\", \"served_model\": \"claude-opus-4-5-20251101-unexpected\"}",
+      "pass": true
+    },
+    "tiny_cap_aborts_before_transport": {
+      "anthropic": {
+        "abort_detail": {
+          "budget_abort": "projected conservative cost would exceed hard cap before transport",
+          "cap_usd": 1e-09,
+          "cumulative_conservative_cap_debit_usd": 0,
+          "model": "claude-opus-4-5-20251101",
+          "projection": {
+            "cost_bound_method": "sum of per-call conservative projections",
+            "input_tokens_upper_bound": 196791,
+            "output_tokens_upper_bound": 32064,
+            "projected_conservative_cost_usd": 1.785555
+          },
+          "provider": "anthropic",
+          "purpose": "initial_full_battery_preflight"
+        },
+        "checks": {
+          "budget_abort_logged_to_hash_chained_ledger": true,
+          "budget_abort_raised": true,
+          "zero_transport_attempts": true
+        },
+        "pass": true
+      },
+      "gemini": {
+        "abort_detail": {
+          "budget_abort": "projected conservative cost would exceed hard cap before transport",
+          "cap_usd": 1e-09,
+          "cumulative_conservative_cap_debit_usd": 0,
+          "model": "gemini-3.1-pro-preview",
+          "projection": {
+            "cost_bound_method": "sum of per-call conservative projections",
+            "input_tokens_upper_bound": 196791,
+            "output_tokens_upper_bound": 32064,
+            "projected_conservative_cost_usd": 0.77835
+          },
+          "provider": "gemini",
+          "purpose": "initial_full_battery_preflight"
+        },
+        "checks": {
+          "budget_abort_logged_to_hash_chained_ledger": true,
+          "budget_abort_raised": true,
+          "zero_transport_attempts": true
+        },
+        "pass": true
+      },
+      "openai": {
+        "abort_detail": {
+          "budget_abort": "projected conservative cost would exceed hard cap before transport",
+          "cap_usd": 1e-09,
+          "cumulative_conservative_cap_debit_usd": 0,
+          "model": "gpt-5.5-2026-04-23",
+          "projection": {
+            "cost_bound_method": "sum of per-call conservative projections",
+            "input_tokens_upper_bound": 196791,
+            "output_tokens_upper_bound": 32064,
+            "projected_conservative_cost_usd": 1.945875
+          },
+          "provider": "openai",
+          "purpose": "initial_full_battery_preflight"
+        },
+        "checks": {
+          "budget_abort_logged_to_hash_chained_ledger": true,
+          "budget_abort_raised": true,
+          "zero_transport_attempts": true
+        },
+        "pass": true
+      }
+    }
+  },
+  "created_utc": "2026-11-26T14:01:33.065813+00:00",
+  "overall_pass": true,
+  "validation_root": "out/hosted_frontier_validation/20261126T140130.557636_0000",
+  "verify_real": [
+    "fake transport end-to-end pass for providers: ['anthropic', 'gemini', 'openai']",
+    "corrupted canned response mutation changed byte-exact scorer outcome for every provider",
+    "corrupted payload bytes triggered adapter integrity failure before scientific-row acceptance for every provider",
+    "tiny cap aborted before any transport attempt for every provider",
+    "hash-chained cost-ledger mutation and archived-payload mutation were detected"
+  ]
+}

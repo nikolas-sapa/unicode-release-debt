@@ -1,0 +1,3132 @@
+{
+  "bundle_cache_path": "/Users/nikolassapalidis/Developer/unicode-release-debt/data/confirmatory_scan/bundle_pools.jsonl",
+  "bundle_cache_sha256": "1df167ae66e3c3c8fee2549edcc2a8df61294e4966315f912239ec3186df2e06",
+  "bundle_cache_size": 150968782,
+  "bundle_rows": 137144,
+  "created_utc": "2026-11-26T11:55:09.024519+00:00",
+  "diagnostics": {
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/1/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/1/L2": {
+      "pool_size": 230
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/1/L3": {
+      "pool_size": 12
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/2/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/2/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/3/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/3/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/4/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/4/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/5/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/5/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_emoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/1/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/1/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/1/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/2/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/2/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/3/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/3/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/4/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/4/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/5/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/5/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/atomic_nonemoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/1/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/1/L2": {
+      "pool_size": 185
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/1/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/1/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/2/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/2/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/2/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/3/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/3/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/3/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/4/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/4/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/4/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/5/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/5/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/complex_nonemoji/5/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/1/L1": {
+      "pool_size": 80
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/1/L2": {
+      "pool_size": 88
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/1/L3": {
+      "pool_size": 48
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/1/L4": {
+      "pool_size": 27
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/2/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/2/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/2/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/3/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/3/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/3/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/4/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/4/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/4/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/5/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/5/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/legacy/zwj_emoji/5/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/1/L2": {
+      "pool_size": 23
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/1/L3": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/2/L3": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/3/L3": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/4/L3": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/5/L3": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_emoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/1/L1": {
+      "pool_size": 3
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/1/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/1/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/2/L1": {
+      "pool_size": 6
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/2/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/3/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/3/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/4/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/4/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/5/L1": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/5/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/atomic_nonemoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/1/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/1/L2": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/1/L3": {
+      "pool_size": 8
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/1/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/2/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/2/L2": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/2/L3": {
+      "pool_size": 56
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/2/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/3/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/3/L2": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/3/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/3/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/4/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/4/L2": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/4/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/4/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/5/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/5/L2": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/5/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/complex_nonemoji/5/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/1/L2": {
+      "pool_size": 15
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/1/L3": {
+      "pool_size": 9
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/1/L4": {
+      "pool_size": 15
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/2/L2": {
+      "pool_size": 290
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/2/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/2/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/3/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/3/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/4/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/4/L4": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/5/L3": {
+      "pool_size": 300
+    },
+    "gemma3-4b-it-mlx8-mirror/newest/zwj_emoji/5/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/1/L1": {
+      "pool_size": 201
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/1/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/1/L3": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/2/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/2/L3": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/3/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/3/L3": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/4/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/4/L3": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/5/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/5/L3": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_emoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/1/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/1/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/1/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/2/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/2/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/3/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/3/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/4/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/4/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/5/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/5/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/atomic_nonemoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/1/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/1/L2": {
+      "pool_size": 45
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/1/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/1/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/2/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/2/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/2/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/3/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/3/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/3/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/4/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/4/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/4/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/5/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/5/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/complex_nonemoji/5/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/1/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/1/L3": {
+      "pool_size": 64
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/1/L4": {
+      "pool_size": 179
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/2/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/2/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/2/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/3/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/3/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/3/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/4/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/4/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/4/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/5/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/5/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/legacy/zwj_emoji/5/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/1/L1": {
+      "pool_size": 1
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/1/L2": {
+      "pool_size": 22
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/1/L3": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/2/L3": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/3/L3": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/4/L3": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/5/L3": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_emoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/1/L1": {
+      "pool_size": 19
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/1/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/1/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/2/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/2/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/3/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/3/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/4/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/4/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/5/L1": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/5/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/atomic_nonemoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/1/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/1/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/1/L3": {
+      "pool_size": 163
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/1/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/2/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/2/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/2/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/2/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/3/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/3/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/3/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/3/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/4/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/4/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/4/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/4/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/5/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/5/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/5/L3": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/complex_nonemoji/5/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/1/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/1/L3": {
+      "pool_size": 2
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/1/L4": {
+      "pool_size": 37
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/2/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/2/L3": {
+      "pool_size": 2
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/2/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/3/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/3/L3": {
+      "pool_size": 18
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/3/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/4/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/4/L3": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/4/L4": {
+      "pool_size": 300
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/5/L2": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/5/L3": {
+      "pool_size": 0
+    },
+    "llama32-3b-instruct-mlx8/newest/zwj_emoji/5/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/1/L1": {
+      "pool_size": 84
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/1/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/1/L3": {
+      "pool_size": 97
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/2/L1": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/2/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/3/L1": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/3/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/4/L1": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/4/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/5/L1": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/5/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_emoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/1/L1": {
+      "pool_size": 92
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/1/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/1/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/2/L1": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/2/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/3/L1": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/3/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/4/L1": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/4/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/5/L1": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/5/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/atomic_nonemoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/1/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/1/L2": {
+      "pool_size": 33
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/1/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/1/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/2/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/2/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/2/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/3/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/3/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/3/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/4/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/4/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/4/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/5/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/5/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/complex_nonemoji/5/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/1/L2": {
+      "pool_size": 5
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/1/L3": {
+      "pool_size": 5
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/1/L4": {
+      "pool_size": 233
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/2/L2": {
+      "pool_size": 20
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/2/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/2/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/3/L2": {
+      "pool_size": 60
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/3/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/3/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/4/L2": {
+      "pool_size": 120
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/4/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/4/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/5/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/legacy/zwj_emoji/5/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/1/L2": {
+      "pool_size": 23
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/1/L3": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/2/L3": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/3/L3": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/4/L3": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/5/L3": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_emoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/1/L1": {
+      "pool_size": 3
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/1/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/1/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/2/L1": {
+      "pool_size": 6
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/2/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/3/L1": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/3/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/4/L1": {
+      "pool_size": 280
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/4/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/5/L1": {
+      "pool_size": 299
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/5/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/atomic_nonemoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/1/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/1/L2": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/1/L3": {
+      "pool_size": 8
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/1/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/2/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/2/L2": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/2/L3": {
+      "pool_size": 56
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/2/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/3/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/3/L2": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/3/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/3/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/4/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/4/L2": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/4/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/4/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/5/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/5/L2": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/5/L3": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/complex_nonemoji/5/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/1/L2": {
+      "pool_size": 1
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/1/L3": {
+      "pool_size": 2
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/1/L4": {
+      "pool_size": 36
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/2/L2": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/2/L3": {
+      "pool_size": 8
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/2/L4": {
+      "pool_size": 229
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/3/L2": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/3/L3": {
+      "pool_size": 74
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/3/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/4/L2": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/4/L3": {
+      "pool_size": 120
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/4/L4": {
+      "pool_size": 300
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/5/L2": {
+      "pool_size": 0
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/5/L3": {
+      "pool_size": 76
+    },
+    "mistral7b-instruct-v03-mlx8/newest/zwj_emoji/5/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/1/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/1/L2": {
+      "pool_size": 118
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/1/L3": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/2/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/2/L3": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/3/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/3/L3": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/4/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/4/L3": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/5/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/5/L3": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_emoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/1/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/1/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/1/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/2/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/2/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/3/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/3/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/4/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/4/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/5/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/5/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/atomic_nonemoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/1/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/1/L2": {
+      "pool_size": 168
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/1/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/1/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/2/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/2/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/2/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/3/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/3/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/3/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/4/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/4/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/4/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/5/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/5/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/complex_nonemoji/5/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/1/L2": {
+      "pool_size": 51
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/1/L3": {
+      "pool_size": 144
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/1/L4": {
+      "pool_size": 48
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/2/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/2/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/3/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/3/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/4/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/4/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/5/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/legacy/zwj_emoji/5/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/1/L1": {
+      "pool_size": 3
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/1/L2": {
+      "pool_size": 20
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/1/L3": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/2/L1": {
+      "pool_size": 6
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/2/L3": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/3/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/3/L3": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/4/L1": {
+      "pool_size": 117
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/4/L3": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/5/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/5/L3": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_emoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/1/L1": {
+      "pool_size": 165
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/1/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/1/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/2/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/2/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/3/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/3/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/4/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/4/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/5/L1": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/5/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/atomic_nonemoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/1/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/1/L2": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/1/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/1/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/2/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/2/L2": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/2/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/2/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/3/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/3/L2": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/3/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/3/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/4/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/4/L2": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/4/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/4/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/5/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/5/L2": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/5/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/complex_nonemoji/5/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/1/L2": {
+      "pool_size": 2
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/1/L3": {
+      "pool_size": 11
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/1/L4": {
+      "pool_size": 26
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/2/L2": {
+      "pool_size": 2
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/2/L3": {
+      "pool_size": 226
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/2/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/3/L2": {
+      "pool_size": 14
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/3/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/3/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/4/L2": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/4/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/4/L4": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/5/L2": {
+      "pool_size": 0
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/5/L3": {
+      "pool_size": 300
+    },
+    "qwen2.5-3b-instruct-bf16/newest/zwj_emoji/5/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/1/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/1/L2": {
+      "pool_size": 118
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/1/L3": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/2/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/2/L3": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/3/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/3/L3": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/4/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/4/L3": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/5/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/5/L3": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_emoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/1/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/1/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/1/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/2/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/2/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/3/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/3/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/4/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/4/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/5/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/5/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/atomic_nonemoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/1/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/1/L2": {
+      "pool_size": 168
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/1/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/1/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/2/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/2/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/2/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/3/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/3/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/3/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/4/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/4/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/4/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/5/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/5/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/complex_nonemoji/5/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/1/L2": {
+      "pool_size": 51
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/1/L3": {
+      "pool_size": 144
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/1/L4": {
+      "pool_size": 48
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/2/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/2/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/3/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/3/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/4/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/4/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/5/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/legacy/zwj_emoji/5/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/1/L1": {
+      "pool_size": 3
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/1/L2": {
+      "pool_size": 20
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/1/L3": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/2/L1": {
+      "pool_size": 6
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/2/L3": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/3/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/3/L3": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/4/L1": {
+      "pool_size": 119
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/4/L3": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/5/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/5/L3": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_emoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/1/L1": {
+      "pool_size": 165
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/1/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/1/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/2/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/2/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/3/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/3/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/4/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/4/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/5/L1": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/5/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/atomic_nonemoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/1/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/1/L2": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/1/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/1/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/2/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/2/L2": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/2/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/2/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/3/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/3/L2": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/3/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/3/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/4/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/4/L2": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/4/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/4/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/5/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/5/L2": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/5/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/complex_nonemoji/5/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/1/L2": {
+      "pool_size": 2
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/1/L3": {
+      "pool_size": 11
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/1/L4": {
+      "pool_size": 26
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/2/L2": {
+      "pool_size": 2
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/2/L3": {
+      "pool_size": 226
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/2/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/3/L2": {
+      "pool_size": 14
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/3/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/3/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/4/L2": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/4/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/4/L4": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/5/L2": {
+      "pool_size": 0
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/5/L3": {
+      "pool_size": 300
+    },
+    "qwen3-4b-instruct-2507-mlx8/newest/zwj_emoji/5/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/1/L1": {
+      "pool_size": 16
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/1/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/1/L3": {
+      "pool_size": 97
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/2/L1": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/2/L3": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/3/L1": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/3/L3": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/4/L1": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/4/L3": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/5/L1": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/5/L3": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_emoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/1/L1": {
+      "pool_size": 71
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/1/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/1/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/2/L1": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/2/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/3/L1": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/3/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/4/L1": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/4/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/5/L1": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/5/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/atomic_nonemoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/1/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/1/L2": {
+      "pool_size": 24
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/1/L3": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/1/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/2/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/2/L3": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/2/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/3/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/3/L3": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/3/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/4/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/4/L3": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/4/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/5/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/5/L3": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/complex_nonemoji/5/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/1/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/1/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/1/L4": {
+      "pool_size": 243
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/2/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/2/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/2/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/3/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/3/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/3/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/4/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/4/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/4/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/5/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/5/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/legacy/zwj_emoji/5/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/1/L2": {
+      "pool_size": 23
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/1/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/2/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/2/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/3/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/3/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/4/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/4/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/5/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/5/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_emoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/1/L1": {
+      "pool_size": 3
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/1/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/1/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/1/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/2/L1": {
+      "pool_size": 6
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/2/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/2/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/2/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/3/L1": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/3/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/3/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/3/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/4/L1": {
+      "pool_size": 296
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/4/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/4/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/4/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/5/L1": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/5/L2": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/5/L3": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/atomic_nonemoji/5/L4": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/1/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/1/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/1/L3": {
+      "pool_size": 8
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/1/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/2/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/2/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/2/L3": {
+      "pool_size": 56
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/2/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/3/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/3/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/3/L3": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/3/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/4/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/4/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/4/L3": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/4/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/5/L1": {
+      "pool_size": 0,
+      "skipped": "structurally implausible isolated-token envelope"
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/5/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/5/L3": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/complex_nonemoji/5/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/1/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/1/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/1/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/1/L4": {
+      "pool_size": 39
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/2/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/2/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/2/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/2/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/3/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/3/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/3/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/3/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/4/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/4/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/4/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/4/L4": {
+      "pool_size": 300
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/5/L1": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/5/L2": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/5/L3": {
+      "pool_size": 0
+    },
+    "tinyllama-1.1b-chat-v1.0-bf16/newest/zwj_emoji/5/L4": {
+      "pool_size": 300
+    }
+  },
+  "elapsed_seconds": 30.311260999995284,
+  "generator_version": "confirmatory-bundle-generator-v1",
+  "pool_target_per_cell": 300
+}

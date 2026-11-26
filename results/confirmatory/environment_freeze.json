@@ -1,0 +1,128 @@
+{
+  "created_utc": "2026-11-26T11:47:16.910034+00:00",
+  "disk_bytes": {
+    "free": 64686768128,
+    "total": 494384795648,
+    "used": 429698027520
+  },
+  "disk_gate": {
+    "free_gib": 60.24424743652344,
+    "minimum_required_gib_without_bf16_comparator_downloads": 35,
+    "pass": true
+  },
+  "git": {
+    "branch": "confirmatory-execution",
+    "commit": "d4a766add70341d988f9b67fa1ca075889b9e1c2",
+    "status_porcelain": "?? results/confirmatory/\n?? src/build_confirmatory_candidates.py\n?? src/confirmatory_common.py\n?? src/freeze_confirmatory_environment.py"
+  },
+  "hf_cache_path": "/Users/nikolassapalidis/.cache/huggingface",
+  "host": {
+    "mac_ver": [
+      "27.0.1",
+      [
+        "",
+        "",
+        ""
+      ],
+      "arm64"
+    ],
+    "machine": "arm64",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "unicodedata_version": "15.0.0"
+  },
+  "package_pin_mismatches": {},
+  "packages": {
+    "mlx": {
+      "expected": "0.32.5",
+      "installed": "0.32.5",
+      "match": true
+    },
+    "mlx-lm": {
+      "expected": "0.32.2",
+      "installed": "0.32.2",
+      "match": true
+    },
+    "numpy": {
+      "expected": "2.5.5",
+      "installed": "2.5.5",
+      "match": true
+    },
+    "regex": {
+      "expected": "2026.11.24",
+      "installed": "2026.11.24",
+      "match": true
+    },
+    "sentencepiece": {
+      "expected": "0.2.3",
+      "installed": "0.2.3",
+      "match": true
+    },
+    "tokenizers": {
+      "expected": "0.23.3",
+      "installed": "0.23.3",
+      "match": true
+    },
+    "transformers": {
+      "expected": "5.24.1",
+      "installed": "5.24.1",
+      "match": true
+    },
+    "unicodedata2": {
+      "expected": "18.0.0",
+      "installed": "18.0.0",
+      "match": true
+    }
+  },
+  "python": {
+    "executable": "/Users/nikolassapalidis/Developer/unicode-release-debt/.venv/bin/python",
+    "implementation": "CPython",
+    "version": "3.12.13"
+  },
+  "unicode_input_files": {
+    "DerivedAge.txt": {
+      "sha256": "58b04334e3a31f9612694bbc3f6bff4a302b7d424565bca9c47e30aa74f8dbac",
+      "size": 142568
+    },
+    "GraphemeBreakProperty.txt": {
+      "sha256": "0839dcb79e4ac639ecd538b1abf7c9d22e3f9dd265b7e182d33627aa4d75b45a",
+      "size": 100009
+    },
+    "GraphemeBreakTest.txt": {
+      "sha256": "b0cf047ee94485bbdc846de2b902f5f8a815f6b674f9d04223cddadd91c9df31",
+      "size": 137090
+    },
+    "UnicodeData.txt": {
+      "sha256": "0736451de439ae7baf1425136617da495e09ee5afbe6e394374db7009ea08950",
+      "size": 2243593
+    },
+    "cldr-en-annotations.xml": {
+      "sha256": "14d0e9bb5003c085250df4ac7bd7ba1e26d92e74174d7a3a2f42dc16e07fb155",
+      "size": 296588
+    },
+    "emoji-data.txt": {
+      "sha256": "80d00f8e616a0ef27fd6b8de3b758c06383b5d917e2977709578e68baf733bf1",
+      "size": 108719
+    },
+    "emoji-frequency.html": {
+      "sha256": "84d1c48a5d2eca87d7b41ce47b90d9158f86ce5b05d5ea6bc6943edf3876129b",
+      "size": 28527
+    },
+    "emoji-test.txt": {
+      "sha256": "8f3735cda1f92a779d78af67cf86066bb1f07143dc22f2ac29394d9bc57ab21a",
+      "size": 671655
+    },
+    "publicationdates.html": {
+      "sha256": "20617b10bfefb97d947cc85a6824d360607e1f1cae2084eb5e846c3f61ceb234",
+      "size": 33238
+    },
+    "tr29.html": {
+      "sha256": "60fb49ee640a154d9e40468306c6b283edcef73be3af5ede778107b4787bdec8",
+      "size": 141203
+    },
+    "tr51.html": {
+      "sha256": "a12a8c986f50b97c2d82cbdabfe18928ac16375e74b6eb61b54654e132966658",
+      "size": 207223
+    }
+  },
+  "user_resolution_quantization": "expanded bf16 comparator downloads skipped before execution; quantization validation is narrower and no new bf16 comparator weight download is permitted"
+}

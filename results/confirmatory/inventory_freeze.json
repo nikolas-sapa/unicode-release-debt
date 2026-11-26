@@ -1,0 +1,178 @@
+{
+  "artifacts": [
+    {
+      "mtime_utc": "2026-11-26T11:47:16.961770+00:00",
+      "path": "results/confirmatory/environment_freeze.json",
+      "sha256": "e9b50aec9d999bbe2866b57cad40df292b51114f81eda4b46cadeb5010beb77f",
+      "size": 3663
+    },
+    {
+      "mtime_utc": "2026-11-26T11:47:56.056317+00:00",
+      "path": "results/confirmatory/tokenizer_freeze.json",
+      "sha256": "7eff2f634c0b035b68c91442d73ff4644532aa146f0997f96b79360a1ad5f1e5",
+      "size": 33584
+    },
+    {
+      "mtime_utc": "2026-11-26T11:50:36.618277+00:00",
+      "path": "results/confirmatory/candidate_universe.jsonl",
+      "sha256": "27fe8d2ca963e644fd634adc0b4e718731d8ee04194efe74438a1b9fa49f80cd",
+      "size": 26965180
+    },
+    {
+      "mtime_utc": "2026-11-26T11:50:36.618578+00:00",
+      "path": "results/confirmatory/candidate_universe_build_summary.json",
+      "sha256": "0aa54ee9eacdcb76036c452dbae5fd008ee31a3db88651534787ae191fdade0b",
+      "size": 1428
+    },
+    {
+      "mtime_utc": "2026-11-26T11:50:43.905143+00:00",
+      "path": "results/confirmatory/candidate_scan.metadata.json",
+      "sha256": "f118d8791be17fe475abc98f78af0705233f6a957f26dea955f3d4b050cbebfd",
+      "size": 961
+    },
+    {
+      "mtime_utc": "2026-11-26T11:55:09.089620+00:00",
+      "path": "results/confirmatory/bundle_scan.metadata.json",
+      "sha256": "c08305a4581965dbaddecb6fee85fcb3f021ddf91562540f9f39aca9b8a8a4a7",
+      "size": 104250
+    },
+    {
+      "mtime_utc": "2026-11-26T11:59:57.021592+00:00",
+      "path": "results/confirmatory/inventory.jsonl",
+      "sha256": "c655cc3943df35666b58e23d57c0dc870f08d253dbb4a81468ba93b76c7365cb",
+      "size": 4728689
+    },
+    {
+      "mtime_utc": "2026-11-26T11:59:57.056495+00:00",
+      "path": "results/confirmatory/probe_plan.jsonl",
+      "sha256": "fc20aea12260e2ec5c61703a81c86c2244b00b0040697e9484fcd715b2d96eda",
+      "size": 4797161
+    },
+    {
+      "mtime_utc": "2026-11-26T12:00:53.468860+00:00",
+      "path": "results/confirmatory/inventory_audit.json",
+      "sha256": "92b91d3222859ca41f668c11619aad5afe09cf27bc2d5d7ee85d8ea7a6db7bbf",
+      "size": 5481
+    },
+    {
+      "mtime_utc": "2026-11-26T12:00:53.462238+00:00",
+      "path": "results/confirmatory/inventory_cell_table.csv",
+      "sha256": "436e59a1efbe34a8a88a1e9086ebfbb334dfc19b20cd0ee4bb3f3fce758aac9b",
+      "size": 58208
+    },
+    {
+      "mtime_utc": "2026-11-26T11:59:57.064418+00:00",
+      "path": "results/confirmatory/inventory_build_summary.json",
+      "sha256": "7399fe42bdce551a46a388a9255bfd1110df72db5bcf49dae2785dc1a2ad5870",
+      "size": 10158
+    }
+  ],
+  "created_utc": "2026-11-26T12:00:53.539586+00:00",
+  "design_documents": [
+    {
+      "mtime_utc": "2026-11-26T11:38:28.081860+00:00",
+      "path": "docs/CONFIRMATORY_PREREGISTRATION.md",
+      "sha256": "ce140e744534bb1c9f2586d10f1c7b96753833c697f33c5d8507586908d862cf",
+      "size": 48449
+    },
+    {
+      "mtime_utc": "2026-11-26T11:38:28.081512+00:00",
+      "path": "docs/CONFIRMATORY_IMPLEMENTATION_PLAN.md",
+      "sha256": "9e376faea1220918ad3cdfb84d3501fa14d7429ee47c7e456b1473376d747edd",
+      "size": 30691
+    },
+    {
+      "mtime_utc": "2026-11-26T11:38:28.082147+00:00",
+      "path": "results/confirmatory_power_analysis.json",
+      "sha256": "94b1e80e53062f2da3158bcc7494883417e49b2e47a15ef0a7590f9f39f22fac",
+      "size": 21888
+    }
+  ],
+  "freeze_ready": true,
+  "freeze_schema": "confirmatory-inventory-freeze-v1",
+  "git": {
+    "branch": "confirmatory-execution",
+    "commit_before_freeze_commit": "d4a766add70341d988f9b67fa1ca075889b9e1c2"
+  },
+  "implementation_notes": [
+    "Constituent reuse penalty is operationalized as the number of already-selected count-inventory constituent uses across both sides of a candidate pair; deterministic construction order makes this objective reproducible.",
+    "Non-NFC-stable scalar candidates are excluded before inventory construction because byte-exact target identity is otherwise altered by tokenizer NFC normalization; this stricter measurement-validity exclusion is recorded in the candidate audit.",
+    "Newest-L1 is present only for carriers whose frozen feasibility audit constructs eight unique valid probes at every expected count 1-5; structurally impossible cells are explicit in the audit and report."
+  ],
+  "inventory_audit_sha256_at_freeze": "c655cc3943df35666b58e23d57c0dc870f08d253dbb4a81468ba93b76c7365cb",
+  "judgment_call_resolutions": [
+    "Mistral-7B is demoted from the primary confirmatory ladder to descriptive robustness only; it is excluded from H1/H2/H3/H4 primary carrier requirements and verdicts.",
+    "Expanded bf16 quantization-control weight downloads are skipped. Quantization validation is narrower: no new bf16 comparator weights may be downloaded; MLX8 carriers are not automatically excluded solely for missing bf16 comparators, and the absent direct quantization contrast is a frozen limitation rather than a post-hoc rescue. Strict tokenizer, ASCII copy, ASCII count, and ASCII scalar-listing gates remain binding.",
+    "Scalar-floor and copy-ceiling exact replication rules are accepted exactly as pre-registered.",
+    "Matching hard caps are accepted exactly as pre-registered: <=0.5 tokens/cluster, <=4 UTF-8 bytes, <=2 codepoints, and <=2 mean sequence-complexity units per bundle.",
+    "Probe-level bootstrap is accepted exactly as pre-registered despite constituent reuse dependence.",
+    "ASCII structural gates at 11/12 are accepted exactly as pre-registered."
+  ],
+  "pre_generation_assertion": {
+    "assertion_time_utc": "2026-11-26T12:00:53.561966+00:00",
+    "confirmatory_model_output_files_present": [],
+    "no_confirmatory_model_output_exists": true
+  },
+  "prompt_template_sha256": {
+    "copy_format_sha256_input": "cbfaeceec131d9a23e3a4795dbd1d753ea0b94db76eae87d706d4ae03822cb82",
+    "copy_user_template": "1687c1a717cc04c3a77aba9075c8463cf95e9ae084e53435e549bca22ec0d951",
+    "count_template": "a1d807952fb7ac6564037aed9ff94178e342a2da71845cfa3568cce022101833",
+    "scalar_listing_template": "24884d6100d0d8da22f3471fbeacc9cc48cda02182f01e8f30fb94cac92f22f9"
+  },
+  "scripts": [
+    {
+      "mtime_utc": "2026-11-26T11:44:52.896877+00:00",
+      "path": "src/confirmatory_common.py",
+      "sha256": "81b2ff70c6499bd4bd63cf448b6563bcaec7dff57e2a34069ccbe36939db667a",
+      "size": 13503
+    },
+    {
+      "mtime_utc": "2026-11-26T11:50:32.013013+00:00",
+      "path": "src/build_confirmatory_candidates.py",
+      "sha256": "8f463c02102a9eb7f8b36355aa628f3306b9db429fd602f8a71a6d11a2e7589c",
+      "size": 8384
+    },
+    {
+      "mtime_utc": "2026-11-26T11:48:55.593590+00:00",
+      "path": "src/scan_confirmatory_candidates.py",
+      "sha256": "d0345f24378f5952e9ac1a31a45fdd75a6a3d799fb8a342b3c7b3c8bff44c392",
+      "size": 4656
+    },
+    {
+      "mtime_utc": "2026-11-26T11:48:35.372992+00:00",
+      "path": "src/confirmatory_backend.py",
+      "sha256": "de9da3cf100e0108200965a5061c8e2a16df13c080bfa239ee284ef1ad986325",
+      "size": 3002
+    },
+    {
+      "mtime_utc": "2026-11-26T11:47:14.246681+00:00",
+      "path": "src/freeze_confirmatory_environment.py",
+      "sha256": "6b6d9e4609cb21003667a013091ef2b36d753ee6c73b573767f68f0432dc818b",
+      "size": 3007
+    },
+    {
+      "mtime_utc": "2026-11-26T11:47:52.081463+00:00",
+      "path": "src/freeze_confirmatory_tokenizers.py",
+      "sha256": "95287ceda30c701917d8fc0dced73a05bd6338f7960d2353b5291a5ba5968ae3",
+      "size": 6429
+    },
+    {
+      "mtime_utc": "2026-11-26T11:58:40.408743+00:00",
+      "path": "src/build_confirmatory_inventory.py",
+      "sha256": "882b3d61cc70894a276ad7e7bc5b8fae1da2725840eee5d6fd57bd403fb9a86f",
+      "size": 34060
+    },
+    {
+      "mtime_utc": "2026-11-26T12:00:40.692031+00:00",
+      "path": "src/audit_confirmatory_inventory.py",
+      "sha256": "0353ca45b152a4a0d80e3f25e900203ad77c50337effef92464075a4670a2696",
+      "size": 15710
+    },
+    {
+      "mtime_utc": "2026-11-26T11:57:26.642365+00:00",
+      "path": "src/freeze_confirmatory_inventory.py",
+      "sha256": "aef182f68b6c218ba000d0749a327376c144a5eda12a19c102834a4cc26a1c79",
+      "size": 5882
+    }
+  ]
+}

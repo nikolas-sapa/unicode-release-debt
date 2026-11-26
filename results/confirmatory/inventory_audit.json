@@ -1,0 +1,184 @@
+{
+  "audit_pass": true,
+  "candidate_scan_audit_pass": true,
+  "candidate_scan_sha256": "d5f18db6dac6a0707d71efd5954879151f86624fb83b77804106e9e0f59ab32b",
+  "created_utc": "2026-11-26T12:00:53.462839+00:00",
+  "errors": [],
+  "freeze_ready": true,
+  "inventory_rows": 2880,
+  "inventory_sha256": "c655cc3943df35666b58e23d57c0dc870f08d253dbb4a81468ba93b76c7365cb",
+  "mutation_checks": {
+    "duplicate_probe_id": {
+      "audit_rejected_mutation": true,
+      "error_count": 6,
+      "first_errors": [
+        {
+          "check": "unique_probe_ids",
+          "count": 1,
+          "detail": "duplicate probe_id values"
+        },
+        {
+          "check": "unique_probe_keys",
+          "detail": "duplicate probe_key values"
+        },
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "cross_cell_duplicate_targets",
+          "count": 1,
+          "examples": [
+            "𳊷"
+          ]
+        }
+      ]
+    },
+    "expected_count": {
+      "audit_rejected_mutation": true,
+      "error_count": 4,
+      "first_errors": [
+        {
+          "actual": 1,
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "regex_grapheme_count",
+          "expected": 2,
+          "probe_id": "tinyllama-1.1b-chat-v1.0-bf16:count:unicode:0001"
+        },
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "homogeneous_item_type",
+          "constituent_count": 1,
+          "constituent_types": [
+            "atomic_nonemoji"
+          ],
+          "expected_type": "atomic_nonemoji",
+          "probe_id": "tinyllama-1.1b-chat-v1.0-bf16:count:unicode:0001"
+        },
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "expected_count_slots",
+          "counts": {
+            "1": 7,
+            "2": 9,
+            "3": 8,
+            "4": 8,
+            "5": 8
+          },
+          "era": "newest",
+          "level": "L2"
+        }
+      ]
+    },
+    "fragmentation_boundary": {
+      "audit_rejected_mutation": true,
+      "error_count": 1,
+      "first_errors": [
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "fragmentation_level_consistency",
+          "level": "L2",
+          "probe_id": "tinyllama-1.1b-chat-v1.0-bf16:count:unicode:0001",
+          "tokens_per_cluster": 4.5
+        }
+      ]
+    },
+    "mixed_type_constituents": {
+      "audit_rejected_mutation": true,
+      "error_count": 1,
+      "first_errors": [
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "homogeneous_item_type",
+          "constituent_count": 1,
+          "constituent_types": [
+            "atomic_emoji"
+          ],
+          "expected_type": "atomic_nonemoji",
+          "probe_id": "tinyllama-1.1b-chat-v1.0-bf16:count:unicode:0001"
+        }
+      ]
+    },
+    "pair_era_label": {
+      "audit_rejected_mutation": true,
+      "error_count": 5,
+      "first_errors": [
+        {
+          "actual": 39,
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "unicode_count_cell_size",
+          "era": "newest",
+          "expected": 40,
+          "level": "L2"
+        },
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "expected_count_slots",
+          "counts": {
+            "1": 7,
+            "2": 8,
+            "3": 8,
+            "4": 8,
+            "5": 8
+          },
+          "era": "newest",
+          "level": "L2"
+        },
+        {
+          "actual": 41,
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "unicode_count_cell_size",
+          "era": "legacy",
+          "expected": 40,
+          "level": "L2"
+        }
+      ]
+    },
+    "pair_tpc_cap": {
+      "audit_rejected_mutation": true,
+      "error_count": 2,
+      "first_errors": [
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "fragmentation_level_consistency",
+          "level": "L2",
+          "probe_id": "tinyllama-1.1b-chat-v1.0-bf16:count:unicode:0002",
+          "tokens_per_cluster": 4.6
+        },
+        {
+          "cap": 0.5,
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "h2_pair_constraints",
+          "detail": "tokens_per_cluster hard cap violated",
+          "difference": 0.5999999999999996,
+          "match_pair_id": "tinyllama-1.1b-chat-v1.0-bf16:h2-L2-0001"
+        }
+      ]
+    },
+    "target_text_hash": {
+      "audit_rejected_mutation": true,
+      "error_count": 3,
+      "first_errors": [
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "target_hash",
+          "detail": "target_sha256 does not match target",
+          "probe_id": "tinyllama-1.1b-chat-v1.0-bf16:count:unicode:0001"
+        },
+        {
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "user_content_hash",
+          "detail": "user content hash does not recompute",
+          "probe_id": "tinyllama-1.1b-chat-v1.0-bf16:count:unicode:0001"
+        },
+        {
+          "actual": 2,
+          "carrier_id": "tinyllama-1.1b-chat-v1.0-bf16",
+          "check": "regex_grapheme_count",
+          "expected": 1,
+          "probe_id": "tinyllama-1.1b-chat-v1.0-bf16:count:unicode:0001"
+        }
+      ]
+    }
+  },
+  "mutation_checks_pass": true,
+  "probe_plan_sha256": "fc20aea12260e2ec5c61703a81c86c2244b00b0040697e9484fcd715b2d96eda",
+  "tokenizer_freeze_pass": true
+}

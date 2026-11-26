@@ -1,0 +1,29 @@
+{
+  "audit_pass": true,
+  "backend_versions": {
+    "regex": "2026.11.24",
+    "sentencepiece": "0.2.3",
+    "tokenizers": "0.23.3",
+    "unicodedata2": "18.0.0"
+  },
+  "candidate_rows": 32151,
+  "carrier_rows": {
+    "gemma3-4b-it-mlx8-mirror": 32151,
+    "llama32-3b-instruct-mlx8": 32151,
+    "mistral7b-instruct-v03-mlx8": 32151,
+    "qwen2.5-3b-instruct-bf16": 32151,
+    "qwen3-4b-instruct-2507-mlx8": 32151,
+    "tinyllama-1.1b-chat-v1.0-bf16": 32151
+  },
+  "created_utc": "2026-11-26T11:50:43.853919+00:00",
+  "elapsed_seconds": 6.931612916989252,
+  "expected_rows": 192906,
+  "native_backend_id_mismatches": {},
+  "roundtrip_failures": {},
+  "row_count_pass": true,
+  "rows": 192906,
+  "scan_path": "/Users/nikolassapalidis/Developer/unicode-release-debt/data/confirmatory_scan/candidate_scan.jsonl",
+  "scan_sha256": "d5f18db6dac6a0707d71efd5954879151f86624fb83b77804106e9e0f59ab32b",
+  "scan_size": 124324027,
+  "token_bytes_concat_mismatches": {}
+}
